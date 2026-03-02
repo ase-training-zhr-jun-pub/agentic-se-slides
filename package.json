@@ -6,18 +6,24 @@
     "dev": "slidev --open",
     "build": "slidev build",
     "preview": "vite preview",
-    "present": "npm run build && npm run preview"
+    "present": "npm run build && npm run preview",
+    "generate:exercise-repo": "tsx --tsconfig tsconfig.generator.json exercise-repo/generator/generate.ts"
   },
   "dependencies": {
     "@slidev/cli": "^52.11.2",
     "node-emoji": "^2.2.0",
     "date-fns": "^4.1.0",
+    "simple-git": "^3.27.0",
     "slidev-theme-innoq": "github:innoq/slidev-theme-innoq#v1.0.0",
-    "vue": "^3.5.26"
+    "vue": "^3.5.26",
+    "yaml": "^2.7.0"
   },
   "devDependencies": {
+    "@types/node": "^22.0.0",
     "playwright-chromium": "^1.57.0",
     "svgo": "^4.0.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
     "vite": "^7.3.1"
   }
 }

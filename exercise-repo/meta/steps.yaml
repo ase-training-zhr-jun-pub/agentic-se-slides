@@ -1,0 +1,61 @@
+commitAuthor:
+  name: Workshop Bot
+  email: workshop@example.com
+
+branches:
+  e2e: 17-e2e-scaffold
+
+steps:
+  - id: "00"
+    message: setup codespace
+
+  - id: 01-product-vision
+    message: Added Product Vision
+
+  - id: 02-glossary
+    message: Added Glossary
+
+  - id: 03-proto-persona
+    message: added proto persona
+
+  - id: 04-user-journey-and-story-map
+    message: added user journey & user story map
+
+  - id: 05-first-epic
+    message: added first epic
+
+  - id: 06-first-user-story
+    message: added first user story
+
+  - id: 07-finished-backlog
+    message: finished backlog
+
+  - id: 08-qualitaetsanforderungen
+    message: added Qualitaetsanforderungen
+
+  - id: 09-bausteinansicht-kontextabgrenzung
+    message: added bausteinansicht & kontextabgrenzung
+
+  - id: 10-adrs
+    message: added adrs
+
+  - id: 11-docs-update-technische-schulden
+    message: updated docs to adrs
+
+  - id: 12-frontend
+    message: added frontend
+
+  - id: 13-backlog-readme
+    message: added backlog readme
+
+  - id: 14-claudemd
+    message: added claudemd
+
+  - id: 15-claude-workflow
+    message: Claude Assistant workflow
+
+  - id: 16-claude-code-review-workflow
+    message: Claude Code Review workflow
+
+  - id: 17-e2e-scaffold
+    message: Add Playwright E2E test scaffold
