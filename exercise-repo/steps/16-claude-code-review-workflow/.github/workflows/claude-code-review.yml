@@ -31,6 +31,37 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Minimize old Claude bot comments
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REPO="${{ github.repository }}"
+          PR_NUMBER="${{ github.event.pull_request.number }}"
+
+          # Minimize inline review comments
+          gh api "repos/$REPO/pulls/$PR_NUMBER/comments" \
+            --jq '.[] | select(.user.login == "claude[bot]") | .node_id' | \
+            while read -r comment_node_id; do
+              [ -n "$comment_node_id" ] && gh api graphql -f query='
+                mutation($id: ID!) {
+                  minimizeComment(input: {subjectId: $id, classifier: OUTDATED}) {
+                    minimizedComment { isMinimized }
+                  }
+                }' -f id="$comment_node_id"
+            done
+
+          # Minimize regular PR comments
+          gh api "repos/$REPO/issues/$PR_NUMBER/comments" \
+            --jq '.[] | select(.user.login == "claude[bot]") | .node_id' | \
+            while read -r comment_node_id; do
+              [ -n "$comment_node_id" ] && gh api graphql -f query='
+                mutation($id: ID!) {
+                  minimizeComment(input: {subjectId: $id, classifier: OUTDATED}) {
+                    minimizedComment { isMinimized }
+                  }
+                }' -f id="$comment_node_id"
+            done
+
       - name: Run Claude Code Review
         id: claude-review
         uses: anthropics/claude-code-action@v1
