@@ -13,8 +13,13 @@
 				"esbenp.prettier-vscode",
 				"EditorConfig.EditorConfig",
 				"DavidAnson.vscode-markdownlint",
-				"bierner.markdown-mermaid"
-			]
+				"bierner.markdown-mermaid",
+				"gicentre.markdown-preview-enhanced-with-litvis"
+			],
+			"settings": {
+				"markdown-preview-enhanced-with-litvisautomaticallyShowPreviewOfMarkdownBeingEdited": false,
+				"markdown-preview-enhanced-with-litvis.frontMatterRenderingOption": "code block"
+			}
 		}
 	},
 	"secrets": {
