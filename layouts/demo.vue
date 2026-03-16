@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Center from '../innoq-theme/layouts/center.vue'
+import Center from 'slidev-theme-innoq/layouts/center.vue'
 
 const props = withDefaults(defineProps<{ background?: string, kicker?: string, link?: string }>(), {
   background: 'apricot',
