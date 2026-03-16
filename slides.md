@@ -108,3 +108,15 @@ alignContent: center
 ---
 src: ./slides/chapters/01-basics.md
 ---
+
+---
+src: ./slides/chapters/05-testing-and-qa.md
+---
+
+---
+src: ./slides/chapters/06-cicd.md
+---
+
+---
+src: ./slides/chapters/07-operations-and-monitoring.md
+---
