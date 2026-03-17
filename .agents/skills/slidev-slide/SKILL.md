@@ -69,7 +69,7 @@ Here is a quick reference of all available layouts:
 | `content-with-image` | Text left (8/12) + image right (4/12) | `image`, `imageFit`, `alignContent` |
 | `sidebar` | Main content + accent phrase on the side | `sidebarBackground`, `sidebarSide`, `image`, `alignContent` |
 | `image-caption` | Full background image + caption box | `background` (required), `captionBackground`, `position` |
-| `comparison` | Structured comparison with header auto-detection | `leftBackground`, `rightBackground`, `badge` / slots: `left`, `right`, `footer` |
+| `comparison` | Structured comparison with header auto-detection | `leftBackground`, `rightBackground`, `leftBodyBackground`, `rightBodyBackground`, `badge` / slots: `left`, `right`, `footer` |
 | `quote` | Quote with author and optional image | `image` / slots: `quote`, `author` |
 | `multi-col` | Flexible multi-column grid | slots: `header`, `default` |
 
@@ -195,6 +195,8 @@ alignContent: center
 layout: comparison
 leftBackground: petrol
 rightBackground: apricot
+leftBodyBackground: white
+rightBodyBackground: white
 badge: vs.
 ---
 
@@ -208,6 +210,11 @@ badge: vs.
 - Point one
 - Point two
 ```
+
+The comparison layout auto-detects the first heading in each column and uses it as the header
+(shown on the colored background). The body area below contains the rest of the content.
+By default, the body inherits the header's background color -- set `leftBodyBackground` and
+`rightBodyBackground` to `white` for readable content areas with colored headers.
 
 **Exercise slide** (simple centered prompt):
 ```markdown
