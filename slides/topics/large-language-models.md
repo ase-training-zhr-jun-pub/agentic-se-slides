@@ -29,9 +29,7 @@ clicks: 6
 
 # The Context Window
 
-<div h-380px mt-4>
-  <ContextWindowAnimation :tokens="tokens" :speed="12" :prefill="500" />
-</div>
+<ContextWindowAnimation h-380px text-xs leading-tight :tokens="tokens" :speed="12" :prefill="500" />
 
 <script setup>
   import { contextWindowTokens as tokens } from '../data/context-window-tokens.ts'
