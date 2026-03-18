@@ -468,7 +468,9 @@ Instead of repeating this in every slide:
 
 Use the component:
 ```html
-<LogoCard name="GPT" subtitle="OpenAI" logo="/logos/openai.svg" />
+<LogoCard name="GPT" subtitle="OpenAI">
+  <img src="/logos/openai.svg" class="h-32 w-auto object-contain" />
+</LogoCard>
 ```
 
 **Prefer custom layouts over complex HTML structures.** If a layout exists that handles a
