@@ -308,34 +308,22 @@ When adding individual slides to an existing file, just insert the new `---` sep
 block at the appropriate position within that file. Respect the existing flow: intros come
 first, content slides follow, exercises at the end.
 
-### 6. Export and verify
+### 6. Review and verify
 
-After creating or modifying slides, export and visually verify the result.
+After creating or modifying slides, **always run the `slidev-review` skill** to verify the
+result. The review skill performs a comprehensive check including PNG export, visual verification,
+styling compliance, asset validation, documentation checks, and more. Do not consider the task
+complete until the review passes.
 
-First, determine the slide number of the new/changed slide. The slide numbering is sequential
-across all included files starting from 1. You can count through `slides.md` and the included
-chapter/topic files, or start the dev server to check.
+The review skill will:
+- Export changed slides as PNG and visually inspect them
+- Verify no custom CSS or non-theme colors were introduced
+- Check that all referenced assets exist
+- Ensure new components/layouts are documented
+- Validate project structure and include chains
+- Produce a structured pass/warn/fail checklist
 
-Then export just the relevant slides:
-
-```bash
-npx slidev export --range <start>,<end> --output tmp/<descriptive-name>.pdf
-```
-
-For example, to export slides 15-17:
-```bash
-npx slidev export --range 15,17 --output tmp/new-topic-preview.pdf
-```
-
-The `tmp/` directory is gitignored and used as scratch space for exports.
-
-After exporting, open the PDF and check:
-- Does the layout render as expected?
-- Are colors, fonts, and spacing correct?
-- Do images appear and are properly sized?
-- Is the text readable and not cut off?
-
-If something looks off, adjust the slide markdown and re-export.
+If the review finds FAIL items, fix them and re-run the review before reporting completion.
 
 ## Important conventions
 

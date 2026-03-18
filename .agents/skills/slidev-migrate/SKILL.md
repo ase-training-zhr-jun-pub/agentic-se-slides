@@ -246,29 +246,20 @@ After generating the slide files:
    - Key Takeaways slide inline (layout: center, background: petrol)
 2. Add `src: ./slides/chapters/XX-<name>.md` to `slides.md` in the correct order.
 
-### 7. Verify visually
+### 7. Review and verify
 
-This step is important -- it catches layout issues, missing images, and content that doesn't
-render well.
+After migration, **always run the `slidev-review` skill** to verify the result. The review
+skill performs a comprehensive check including PNG export, visual verification against reference
+images (if available), styling compliance, asset validation, content integrity checks, and more.
 
-**If you have reference images to compare against:**
+The review is especially important after migration because:
+- Layout choices may not render as expected
+- Text from reference material may have been inadvertently altered
+- Asset paths may be incorrect
+- The migrated slides need to match the project's styling conventions
 
-1. Start the Slidev dev server: `npm run dev`
-2. Take screenshots of the migrated slides using Playwright or the export command
-3. Compare each migrated slide against its reference image
-4. Note significant differences (layout, missing content, wrong formatting)
-5. Fix issues and re-verify
-
-**Export specific slides for quick verification:**
-```bash
-npx slidev export --range <start>,<end> --output tmp/migration-preview.pdf
-```
-
-**If you don't have reference images**, at minimum export and check that:
-- Slides render without errors
-- Text is readable and not cut off
-- Images appear and are properly sized
-- Layouts look intentional (not broken/misaligned)
+Do not consider the migration complete until the review passes. If the review finds FAIL items,
+fix them and re-run the review before reporting completion.
 
 ## Key principles
 
