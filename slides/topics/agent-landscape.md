@@ -1,16 +1,4 @@
----
-layout: intro
-background: petrol
----
-
-### *The*
-# Agent Landscape
-
-<!-- Master reference: Chapter 1 / Slide 055 -->
-
----
-
-# Assistants (aka Chat Bots)
+<h1 text-center>Assistants (aka Chat Bots)</h1>
 
 <LogoRow class="h-full">
   <LogoCard name="ChatGPT" subtitle="OpenAI">
@@ -31,7 +19,7 @@ background: petrol
 
 ---
 
-# IDE Agents
+<h1 text-center>IDE Agents</h1>
 
 <LogoRow class="h-full">
   <LogoCard name="Copilot" subtitle="GitHub">
@@ -54,10 +42,8 @@ background: petrol
 <!-- Master reference: Chapter 1 / Slide 056 -->
 
 ---
-layout: center
----
 
-## CLI Agents
+<h1 text-center>CLI Agents</h1>
 
 <LogoRow>
   <LogoCard name="Claude Code" subtitle="Anthropic">
