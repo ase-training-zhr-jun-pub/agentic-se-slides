@@ -118,6 +118,10 @@ src: ./slides/03-designing-efficient-architecture/slides.md
 ---
 
 ---
+src: ./slides/04-accelerating-implementation/slides.md
+---
+
+---
 src: ./slides/05-testing-and-qa/slides.md
 ---
 
