@@ -110,6 +110,10 @@ src: ./slides/01-basics/slides.md
 ---
 
 ---
+src: ./slides/02-requirements-with-generative-ai/slides.md
+---
+
+---
 src: ./slides/05-testing-and-qa/slides.md
 ---
 
