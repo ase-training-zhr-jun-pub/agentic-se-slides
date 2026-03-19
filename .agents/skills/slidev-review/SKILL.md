@@ -144,15 +144,17 @@ Flag any explicit `font-family` declarations or non-theme font references.
 
 ### 5. Asset validation
 
-- **Path format**: All asset references must use absolute paths from public root
-  (`/images/foo.png`, not `./images/foo.png` or `../public/images/foo.png`)
-- **File exists**: Verify that every referenced image/logo/background actually exists in the
-  `public/` directory
+- **Path format**: Global assets from `public/` use absolute paths (`/logos/foo.svg`), while
+  chapter-local and topic-local assets use relative paths (`./assets/foo.png`, `./data/foo.ts`)
+- **File exists**: Verify that every referenced image/logo/background/data file actually exists in
+  its referenced location
 - **Correct directory**: Assets should be in the right subdirectory:
   - `public/backgrounds/` for slide backgrounds
-  - `public/images/` for content images
   - `public/logos/` for logos and icons
   - `public/videos/` for videos
+  - `slides/<chapter>/assets/` for chapter-local images
+  - `slides/<chapter>/<topic>/assets/` for topic-local images
+  - `slides/<chapter>/<topic>/data/` for topic-local data
 - **Image format**: Prefer `.webp` for backgrounds, `.svg` for logos, `.png` for screenshots
 
 ### 6. Component and pattern reuse
@@ -174,14 +176,13 @@ components.
 
 ### 7. Project structure compliance
 
-- **File location**: Topic files go in `slides/topics/`, chapter files in `slides/chapters/`.
-  No slide content directly in the project root or `slides/` directory.
+- **File location**: Chapter files go in `slides/<chapter>/slides.md`, topic files go in
+  `slides/<chapter>/<topic>/slides.md`. No chapter slide content directly in `slides/` root.
 - **Include chain**: New files must be included via `src:` frontmatter in the appropriate parent
   file. An orphaned topic file that isn't included anywhere is a FAIL.
-- **Include path format**: `src:` paths use relative references (`../topics/foo.md` from a
-  chapter file, `./slides/chapters/foo.md` from `slides.md`).
-- **Topic intro convention**: Topic files should start with a `layout: intro` slide as the
-  title card.
+- **Include path format**: `src:` paths use relative references (`./topic-name/slides.md` from a
+  chapter file, `./slides/chapter-name/slides.md` from `slides.md`).
+- **Topic structure**: Topic files should represent self-contained topic blocks inside a chapter.
 - **Chapter structure**: Chapter files should start with `layout: chapter` and end with a
   Key Takeaways slide (`layout: center`, `background: petrol`).
 

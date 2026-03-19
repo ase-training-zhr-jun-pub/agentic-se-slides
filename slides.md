@@ -106,61 +106,17 @@ alignContent: center
 ### Let's get to *know* each other!
 
 ---
-src: ./slides/chapters/01-basics.md
+src: ./slides/01-basics/slides.md
 ---
 
 ---
-src: ./slides/chapters/05-testing-and-qa.md
+src: ./slides/05-testing-and-qa/slides.md
 ---
 
 ---
-src: ./slides/chapters/06-cicd.md
+src: ./slides/06-cicd/slides.md
 ---
 
 ---
-src: ./slides/chapters/07-operations-and-monitoring.md
+src: ./slides/07-operations-and-monitoring/slides.md
 ---
-
----
-
-# LogoRow Test -- Foundation Models
-
-<LogoRow class="h-full">
-  <LogoCard name="GPT" subtitle="OpenAI">
-    <img src="/logos/openai.svg" class="h-32 w-auto object-contain" />
-  </LogoCard>
-  <LogoCard name="Claude" subtitle="Anthropic">
-    <img src="/logos/claude.svg" class="h-32 w-auto object-contain" />
-  </LogoCard>
-  <LogoCard name="Gemini" subtitle="Google">
-    <img src="/logos/gemini.svg" class="h-32 w-auto object-contain" />
-  </LogoCard>
-  <LogoCard name="Mistral" subtitle="Mistral">
-    <img src="/logos/mistral.svg" class="h-32 w-auto object-contain" />
-  </LogoCard>
-  <LogoCard name="Qwen" subtitle="Alibaba">
-    <img src="/logos/qwen.svg" class="h-32 w-auto object-contain" />
-  </LogoCard>
-</LogoRow>
-
----
-
-# LogoRow Test -- Mixed (with/without subtitle)
-
-<LogoRow class="h-full">
-  <LogoCard name="Copilot" subtitle="GitHub">
-    <img src="/logos/github-copilot.svg" class="h-32 w-auto object-contain" />
-  </LogoCard>
-  <LogoCard name="Cursor">
-    <img src="/logos/cursor.svg" class="h-32 w-auto object-contain" />
-  </LogoCard>
-  <LogoCard name="Zed" subtitle="Zed Industries">
-    <img src="/logos/zed.svg" class="h-32 w-auto object-contain" />
-  </LogoCard>
-  <LogoCard name="Windsurf">
-    <img src="/logos/windsurf.svg" class="h-32 w-auto object-contain" />
-  </LogoCard>
-  <LogoCard name="Junie" subtitle="JetBrains">
-    <img src="/logos/junie.svg" class="h-32 w-auto object-contain" />
-  </LogoCard>
-</LogoRow>

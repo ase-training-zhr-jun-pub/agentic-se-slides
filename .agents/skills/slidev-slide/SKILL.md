@@ -251,52 +251,56 @@ background: petrol
 
 ### 4. Place assets correctly
 
-All images, logos, and media go into the `public/` directory:
+Use the smallest sensible scope for assets:
 
 | Asset type | Directory | Example reference in markdown |
 |---|---|---|
 | Slide backgrounds | `public/backgrounds/` | `/backgrounds/4.webp` |
-| Content images | `public/images/` | `/images/my-diagram.png` |
 | Logos & icons | `public/logos/` | `/logos/some-tool.svg` |
 | Videos | `public/videos/` | `/videos/demo.mp4` |
+| Chapter-local images | `slides/<chapter>/assets/` | `./assets/chapter-diagram.png` |
+| Topic-local images | `slides/<chapter>/<topic>/assets/` | `./assets/topic-diagram.png` |
+| Topic-local data | `slides/<chapter>/<topic>/data/` | `./data/example.ts` |
 
-When referencing assets in slides, use absolute paths from public root (e.g. `/images/foo.png`),
-not relative paths. Slidev serves everything in `public/` at the root URL.
+- Use absolute paths for deck-wide reusable assets in `public/`
+- Use relative paths for chapter-local and topic-local assets/data that belong to a single content block
 
 ### 5. Integrate into the project structure
 
 The project organizes content in three levels:
 
 ```
-slides.md                          # Main entry -- includes chapters via src:
-  slides/chapters/01-basics.md     # Chapter files -- include topics via src:
-    slides/topics/testing.md       # Topic files -- actual slide content
+slides.md                                # Main entry -- includes chapters via src:
+  slides/01-basics/slides.md             # Chapter files -- include topics when needed
+    slides/01-basics/foundation-models/slides.md
 ```
 
 #### Creating a new topic file
 
-1. Create the file in `slides/topics/<topic-name>.md`
+1. Create the file in `slides/<chapter>/<topic-name>/slides.md`
 2. Start with a `layout: intro` slide (petrol background) as the topic title card
 3. Add content slides after the intro
 4. Include the topic in its chapter file via `src:` frontmatter:
 
 ```markdown
 ---
-src: ../topics/<topic-name>.md
+src: ./<topic-name>/slides.md
 ---
 ```
 
 #### Creating a new chapter
 
-1. Create the file in `slides/chapters/XX-<chapter-name>.md`
-2. Start with a `layout: chapter` slide (use `no:` for chapter number, `background: /backgrounds/4.webp`)
-3. Include topic files via `src:` references (relative path `../topics/...`)
-4. End with a Key Takeaways slide (`layout: center`, `background: petrol`)
-5. Include the chapter in `slides.md` via:
+1. Create the folder `slides/XX-<chapter-name>/`
+2. Create the chapter file `slides/XX-<chapter-name>/slides.md`
+3. Start with a `layout: chapter` slide (use `no:` for chapter number, `background: /backgrounds/4.webp`)
+4. Include topic files via `src:` references relative to the chapter file (`./<topic>/slides.md`) when the chapter has multiple self-contained topics
+5. End with a Key Takeaways slide (`layout: center`, `background: petrol`)
+6. Keep small chapters with only one topic flat and place the content directly in `slides/XX-<chapter-name>/slides.md`
+7. Include the chapter in `slides.md` via:
 
 ```markdown
 ---
-src: ./slides/chapters/XX-<chapter-name>.md
+src: ./slides/XX-<chapter-name>/slides.md
 ---
 ```
 

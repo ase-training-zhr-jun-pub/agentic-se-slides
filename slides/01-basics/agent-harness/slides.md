@@ -10,7 +10,7 @@ background: petrol
 
 ---
 layout: content-with-image
-image: /images/bender-tool-belt.png
+image: ./assets/bender-tool-belt.png
 ---
 
 # What is an agent?
@@ -144,7 +144,7 @@ rightBodyBackground: white
 
 # Assistant
 
-<img h-44 object-contain mb-8 mx-auto src="/images/assistant-worflow.png" />
+<img h-44 object-contain mb-8 mx-auto src="./assets/assistant-worflow.png" />
 
 - Linear execution path
 - Returns data to human
@@ -155,7 +155,7 @@ rightBodyBackground: white
 
 # Agent
 
-<img h-44 object-contain mb-8 mx-auto src="/images/agent-workflow.png" />
+<img h-44 object-contain mb-8 mx-auto src="./assets/agent-workflow.png" />
 
 - Uses Iterative feedback loop
 - Modifies environment directly

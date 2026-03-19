@@ -9,11 +9,11 @@ background: /backgrounds/4.webp
 <!-- Master reference: Chapter 5 / Slide 229 -->
 
 ---
-src: ../topics/testing.md
+src: ./testing/slides.md
 ---
 
 ---
-src: ../topics/quality-assurance.md
+src: ./quality-assurance/slides.md
 ---
 
 ---

@@ -139,3 +139,27 @@ link: https://play.grafana.org/dashboards
 
 https://github.com/grafana/mcp-grafana
 ```
+
+## Content structure reference
+
+Slide content follows the repository structure documented in `docs/slide-structure.md`:
+
+```text
+slides.md
+slides/
+  01-basics/
+    slides.md
+    assets/
+    foundation-models/
+      slides.md
+    context-and-memory/
+      slides.md
+      data/
+      assets/
+```
+
+- Root `slides.md` includes chapter files via `src: ./slides/<chapter>/slides.md`
+- Chapter files include topic files via `src: ./<topic>/slides.md` when the chapter has multiple self-contained topics
+- Small chapters with only one topic stay flat and keep the content directly in `slides/<chapter>/slides.md`
+- Topic-specific and chapter-specific assets use local `assets/` folders and relative paths
+- Deck-wide reusable assets stay in `public/`

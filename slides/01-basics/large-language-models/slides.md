@@ -28,7 +28,7 @@ background: petrol
   </div>
   <v-switch unmount>
       <template #0><div class="bg-black text-white px-16 py-12 text-4xl font-bold rounded">LLM</div></template>
-      <template #1><img src="/images/llm-math-meme.gif" /></template>
+      <template #1><img src="./assets/llm-math-meme.gif" /></template>
       <template #2>
           <div class="font-serif italic leading-tight text-2xl b-petrol b-3 p-2">
             <span>h ＝ Transformer(</span>
@@ -145,7 +145,7 @@ background: apricot
 
 # Further Information
 
-<img src="/images/bbycroft-screenshot.png" class="h-72 rounded shadow-lg mt-4" />
+<img src="./assets/bbycroft-screenshot.png" class="h-72 rounded shadow-lg mt-4" />
 
 *https://bbycroft.net/llm*
 

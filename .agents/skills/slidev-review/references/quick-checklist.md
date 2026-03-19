@@ -28,10 +28,10 @@ main SKILL.md with more detail.
 - [ ] Only `font-sans`, `font-serif`, `font-mono`
 
 ### Assets
-- [ ] All image/logo/background paths start with `/` (absolute from public root)
-- [ ] All referenced files exist in `public/`
+- [ ] Global assets in `public/` use `/...` paths
+- [ ] Local topic/chapter assets use `./assets/...` or `./data/...`
+- [ ] All referenced files exist at the referenced path
 - [ ] Backgrounds in `public/backgrounds/`
-- [ ] Content images in `public/images/`
 - [ ] Logos in `public/logos/`
 
 ### Content
@@ -41,16 +41,16 @@ main SKILL.md with more detail.
 
 ## Per-File Checks
 
-### Topic files (`slides/topics/*.md`)
-- [ ] Starts with `layout: intro` title card
+### Topic files (`slides/<chapter>/<topic>/slides.md`)
+- [ ] Topic block is stored in its own chapter-local folder
 - [ ] Included via `src:` in a chapter file
-- [ ] File is in `slides/topics/` directory
+- [ ] File is in `slides/<chapter>/<topic>/slides.md`
 
-### Chapter files (`slides/chapters/*.md`)
+### Chapter files (`slides/<chapter>/slides.md`)
 - [ ] Starts with `layout: chapter` opener
 - [ ] Ends with Key Takeaways (`layout: center`, `background: petrol`)
 - [ ] Included via `src:` in `slides.md`
-- [ ] File is in `slides/chapters/` directory
+- [ ] File is in a chapter folder directly under `slides/`
 
 ## New Artifact Checks
 

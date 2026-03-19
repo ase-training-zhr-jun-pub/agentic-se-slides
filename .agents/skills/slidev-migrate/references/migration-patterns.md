@@ -170,7 +170,7 @@ background: /backgrounds/4.webp
 <!-- Master reference: Chapter 2 / Slide 60 -->
 
 ---
-src: ../topics/agent-assisted-requirements.md
+src: ./agent-assisted-requirements/slides.md
 ---
 
 ---
@@ -182,11 +182,11 @@ layout: center
 <!-- Master reference: Chapter 2 / Slide 74 -->
 
 ---
-src: ../topics/prompting-techniques.md
+src: ./prompting-techniques/slides.md
 ---
 
 ---
-src: ../topics/user-journeys.md
+src: ./user-journeys/slides.md
 ---
 
 ---
@@ -412,8 +412,8 @@ layout: sidebar
 When the reference contains a diagram that can't be easily reproduced in markdown (e.g., a
 circular flow diagram, architecture diagram), you have two options:
 
-1. **If the diagram image is available as an embedded image**: Copy it to `public/images/` and
-   reference it with `<img>`.
+1. **If the diagram image is available as an embedded image**: Copy it into the nearest sensible
+   `assets/` folder (or `public/` if shared deck-wide) and reference it with `<img>`.
 2. **If the diagram can be approximated with text**: Use a combination of UnoCSS flex/grid
    layouts and text. Keep it simple -- a readable text approximation is better than a broken
    complex HTML structure.

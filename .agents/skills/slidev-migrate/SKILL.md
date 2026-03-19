@@ -118,7 +118,7 @@ Categorize what you have:
 |---|---|
 | Page images (full slide screenshots) | Primary visual reference -- your slides should look like these |
 | Extracted text with page references | Content source -- use this for slide text, headings, bullet points |
-| Embedded/extracted images (logos, diagrams, photos) | Assets to copy into `public/images/` and reference in slides |
+| Embedded/extracted images (logos, diagrams, photos) | Assets to place by scope in chapter/topic `assets/` folders or global `public/` directories |
 | Text only, no images | Content source -- generate slides from text, but you can't visually verify |
 | Images only, no text | Use vision to read the slide content from the images |
 
@@ -140,15 +140,17 @@ contains per-page text with references to image files, saving you from having to
 
 ### 3. Plan the output structure
 
-Based on the project's three-level hierarchy (`slides.md` → `slides/chapters/` → `slides/topics/`),
+Based on the project's three-level hierarchy (`slides.md` → `slides/<chapter>/slides.md` → `slides/<chapter>/<topic>/slides.md`),
 decide where the migrated content goes:
 
 **For a single topic:**
-- Create one file: `slides/topics/<topic-slug>.md`
+- Create one folder: `slides/<chapter>/<topic-slug>/`
+- Create one file: `slides/<chapter>/<topic-slug>/slides.md`
 - Add its `src:` include to the parent chapter file
 
 **For a full chapter:**
-- Create the chapter file: `slides/chapters/XX-<chapter-name>.md`
+- Create the chapter folder: `slides/XX-<chapter-name>/`
+- Create the chapter file: `slides/XX-<chapter-name>/slides.md`
 - Create topic files for each topic within the chapter
 - The chapter file contains: chapter opener + topic `src:` includes + exercise slides (inline) + key takeaways (inline)
 - Add the chapter's `src:` include to `slides.md`
@@ -222,10 +224,12 @@ When the reference material includes images that should appear in the migrated s
 1. **Identify relevant images** -- not every extracted image is useful. Skip backgrounds,
    decorative elements, and tiny icons. Focus on diagrams, screenshots, logos, and photos
    that carry meaning.
-2. **Copy to `public/images/`** (or `public/logos/` for logos/icons) with descriptive filenames.
-   Rename cryptic filenames like `img-012-024.png` to something meaningful like
-   `foundation-model-overview.png`.
-3. **Reference in slides** using absolute paths from public root: `/images/foundation-model-overview.png`
+2. **Place the image by scope**:
+   - topic-specific images in `slides/<chapter>/<topic>/assets/`
+   - chapter-specific images in `slides/<chapter>/assets/`
+   - shared logos/icons in `public/logos/`
+   - deck-wide reusable images in `public/images/`
+3. **Reference in slides** using relative paths for local assets and absolute paths for global assets.
 
 If you encounter an image that's clearly a logo for a well-known tool, check `public/logos/`
 first -- it might already exist in the project.
@@ -236,7 +240,7 @@ After generating the slide files:
 
 **For topics:**
 1. Verify the chapter file exists. If not, create it.
-2. Add `src: ../topics/<topic-name>.md` at the correct position in the chapter file.
+2. Add `src: ./<topic-name>/slides.md` at the correct position in the chapter file.
 
 **For chapters:**
 1. Create the chapter file with:
@@ -244,7 +248,7 @@ After generating the slide files:
    - Topic includes via `src:`
    - Exercise slides inline (layout: center)
    - Key Takeaways slide inline (layout: center, background: petrol)
-2. Add `src: ./slides/chapters/XX-<name>.md` to `slides.md` in the correct order.
+2. Add `src: ./slides/XX-<name>/slides.md` to `slides.md` in the correct order.
 
 ### 7. Review and verify
 

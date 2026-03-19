@@ -131,7 +131,7 @@ Erst wenn ein Kapitel fachlich waechst oder mehrere eigenstaendige Themenbloecke
 
 ## Assets
 
-Assets werden danach organisiert, ob sie global wiederverwendbar oder lokal zu einem Themenblock gehoeren.
+Assets werden danach organisiert, ob sie global wiederverwendbar, lokal zu einem Kapitel oder lokal zu einem Themenblock gehoeren.
 
 ### Globale Assets
 
@@ -164,6 +164,26 @@ Beispiel:
 
 ### Lokale Assets
 
+Assets, die nur zu einem Kapitel gehoeren und direkt in `slides/<kapitel>/slides.md` verwendet werden, liegen in einem lokalen `assets/`-Ordner direkt im Kapitelordner.
+
+Beispiel:
+
+```text
+slides/
+  01-kapitel-name/
+    slides.md
+    assets/
+      kapitelbild.png
+```
+
+Diese Assets werden relativ referenziert.
+
+Beispiel:
+
+```md
+<img src="./assets/kapitelbild.png" />
+```
+
 Assets, die nur zu einem einzelnen Themenblock gehoeren, liegen im jeweiligen Themenblock in einem lokalen `assets/`-Ordner.
 
 Beispiel:
@@ -185,7 +205,20 @@ Beispiel:
 <img src="./assets/beispielbild.png" />
 ```
 
-Es werden keine kapiteluebergreifenden Sammelordner fuer themenblockspezifische Assets angelegt.
+Lokale Daten oder Hilfsdateien, die ausschliesslich zu einem Themenblock gehoeren, liegen ebenfalls direkt im Themenblockordner, zum Beispiel in `data/`.
+
+Beispiel:
+
+```text
+slides/
+  01-kapitel-name/
+    themenblock-b/
+      slides.md
+      data/
+        beispieldaten.ts
+```
+
+Es werden keine kapiteluebergreifenden Sammelordner fuer themenblockspezifische Assets oder Daten angelegt.
 
 ## Namenskonventionen
 

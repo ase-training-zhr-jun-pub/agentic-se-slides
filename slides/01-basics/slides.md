@@ -17,32 +17,32 @@ link: https://chatgpt.com
 layout: center
 ---
 
-<img src="/images/chatgpt-meme.png" />
+<img src="./assets/chatgpt-meme.png" />
 
 <!-- Master reference: Chapter 1 / Slide 010 -->
 
 ---
-src: ../topics/foundation-models.md
+src: ./foundation-models/slides.md
 ---
 
 ---
-src: ../topics/large-language-models.md
+src: ./large-language-models/slides.md
 ---
 
 ---
-src: ../topics/context-and-memory.md
+src: ./context-and-memory/slides.md
 ---
 
 ---
-src: ../topics/tools-and-mcp.md
+src: ./tools-and-mcp/slides.md
 ---
 
 ---
-src: ../topics/agent-harness.md
+src: ./agent-harness/slides.md
 ---
 
 ---
-src: ../topics/agent-landscape.md
+src: ./agent-landscape/slides.md
 ---
 
 ---

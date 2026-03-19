@@ -35,7 +35,7 @@ layout: center
 <ContextWindowAnimation h-380px text-xs leading-tight :tokens="tokens" :speed="12" :prefill="80" />
 
 <script setup>
-  import { contextWindowTokens as tokens } from '../data/context-window-tokens.ts'
+  import { contextWindowTokens as tokens } from './data/context-window-tokens.ts'
 </script>
 
 <!--
@@ -74,7 +74,7 @@ layout: center
 layout: sidebar
 sidebarBackground: white
 ---
-<img src="/images/context-engineering.png" class="mx-auto" />
+<img src="./assets/context-engineering.png" class="mx-auto" />
 
 <p class="text-sm text-center mt-4 opacity-60">Image by https://www.philschmid.de/context-engineering</p>
 
