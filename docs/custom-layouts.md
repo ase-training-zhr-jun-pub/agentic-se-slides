@@ -140,6 +140,35 @@ link: https://play.grafana.org/dashboards
 https://github.com/grafana/mcp-grafana
 ```
 
+### `exercise`
+
+Exercise prompt slide. Extends the theme's `center` layout. Shows the chapter label and exercise
+number prominently, followed by an optional exercise title and command.
+
+**Props:**
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `background` | `string` | `'petrol'` | Background color or image path |
+| `chapter` | `number \| string` | -- | Chapter number shown as `Chapter N` |
+| `exercise` | `number \| string` | -- | Exercise number shown as `Exercise N` |
+| `task` | `string` | -- | Optional exercise title shown near the bottom |
+| `command` | `string` | -- | Optional shell command shown in mono italic with `$` prefix |
+
+**Slots:** None
+
+**Usage:**
+
+```markdown
+---
+layout: exercise
+chapter: 2
+exercise: 4
+task: Create User Stories
+command: git switch uebung-1-4
+---
+```
+
 ## Content structure reference
 
 Slide content follows the repository structure documented in `docs/slide-structure.md`:

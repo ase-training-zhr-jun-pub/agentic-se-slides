@@ -53,13 +53,12 @@ src: ./proto-personas/slides.md
 ---
 
 ---
-layout: demo
-kicker: Exercise
+layout: exercise
+chapter: 2
+exercise: 2
+task: Create a Proto Persona
+command: git switch uebung-1-2
 ---
-
-# Create a Proto Persona
-
-`$ git switch uebung-1-2`
 
 <!-- Master reference: Chapter 2 / Slide 074 -->
 
@@ -80,13 +79,12 @@ src: ./epics/slides.md
 ---
 
 ---
-layout: demo
-kicker: Exercise
+layout: exercise
+chapter: 2
+exercise: 3
+task: Create epics
+command: git switch uebung-1-3
 ---
-
-# Create Epics
-
-`$ git switch uebung-1-3`
 
 <!-- Master reference: Chapter 2 / Slide 087 -->
 
@@ -95,24 +93,22 @@ src: ./user-stories/slides.md
 ---
 
 ---
-layout: demo
-kicker: Exercise
+layout: exercise
+chapter: 2
+exercise: 4
+task: Create user stories
+command: git switch uebung-1-4
 ---
-
-# Create User Stories
-
-`$ git switch uebung-1-4`
 
 <!-- Master reference: Chapter 2 / Slide 091 -->
 
 ---
-layout: demo
-kicker: Exercise
+layout: exercise
+chapter: 2
+exercise: 5
+task: Split a user story
+command: git switch uebung-1-5
 ---
-
-# Split a User Story
-
-`$ git switch uebung-1-5`
 
 <!-- Master reference: Chapter 2 / Slide 092 -->
 
