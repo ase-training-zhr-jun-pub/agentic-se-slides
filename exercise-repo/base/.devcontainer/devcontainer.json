@@ -23,8 +23,8 @@
 		}
 	},
 	"secrets": {
-	  "ANTHROPIC_API_KEY": {
-	    "description": "Hier musst du den Anthropic API-Key eintragen. Du bekommst ihn von einem Trainer"
+	  "AWS_BEARER_TOKEN_BEDROCK": {
+	    "description": "Hier musst du den API-Key eintragen. Du bekommst ihn von einem Trainer"
 	  }
 	},
 
@@ -40,7 +40,10 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [],
 
-	//"containerEnv": {
-		//"ANTHROPIC_API_KEY": "1234"
-	//},
+	"containerEnv": {
+		"CLAUDE_CODE_USE_BEDROCK": "1",
+		"AWS_REGION": "eu-central-1",
+		"ANTHROPIC_AWS_REGION": "eu-central-1",
+		"ANTHROPIC_SMALL_FAST_MODEL_AWS_REGION": "eu-central-1"
+	}
 }
