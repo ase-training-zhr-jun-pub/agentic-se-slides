@@ -54,12 +54,14 @@ exercise-repo/
 │
 ├── steps/
 │   ├── 01-product-vision/         # Nur geänderte/neue Dateien
-│   ├── 02-glossary/
-│   ├── 03-proto-persona/
+│   ├── 02-uebung-1-1/
+│   ├── 03-glossary/
+│   ├── 04-uebung-1-2/
+│   ├── 05-proto-persona/
 │   ├── ...
-│   └── 17-bedrock-config/
-│       ├── .devcontainer/         # Geänderte Datei
-│       └── .delete                # Liste zu löschender Dateien
+│   └── 25-claude-code-review-workflow/
+│       ├── .github/               # Geänderte Datei
+│       └── .delete                # Liste zu löschender Dateien (optional)
 │
 ├── meta/
 │   └── steps.yaml                 # Step-Definitionen, Tags, Author
@@ -91,8 +93,10 @@ Wenn eine Datei geändert wird, liegt die **vollständige neue Version** im
 Step-Overlay:
 
 ```
-steps/02-glossary/docs/CLAUDE.md
+steps/03-glossary/docs/CLAUDE.md
 ```
+
+Hinweis: Die Step-IDs sind fortlaufend nummeriert; Beispiele können sich daher bei Umnummerierungen ändern.
 
 Der Generator überschreibt die vorhandene Datei im Ziel-Repo.
 
@@ -101,7 +105,7 @@ Der Generator überschreibt die vorhandene Datei im Ziel-Repo.
 Dateilöschungen werden über eine `.delete`-Datei im Step definiert:
 
 ```
-steps/17-bedrock-config/.delete
+steps/99-example/.delete
 ```
 
 Inhalt (eine Datei pro Zeile, Kommentare mit `#`):
@@ -134,17 +138,18 @@ steps:
 
   - id: 01-product-vision
     message: Added Product Vision
+
+  - id: 02-uebung-1-1
+    message: added uebung-1-1 exercise
     tags:
       - uebung-1-1
 
-  - id: 07-finished-backlog
-    message: |
-      finished backlog
+  - id: 11-finished-backlog
+    message: finished backlog
 
-      Alle Epics und User Stories für die Raumbuchungs-App
-      wurden im Product Backlog erfasst.
+  - id: 13-uebung-2-1
+    message: added uebung-2-1 exercise
     tags:
-      - uebung-1-5
       - uebung-2-1
 ```
 
