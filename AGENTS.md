@@ -9,7 +9,10 @@ This is a Slidev presentation project for an "Agentic Software Engineering" work
 
 ```bash
 npm install    # Install dependencies
-npm start      # Start local server with hot reload (opens http://localhost:3030)
+npm run dev    # Start Slidev dev server with hot reload (opens http://localhost:3030)
+npm run build  # Build the static presentation bundle
+npm run preview  # Serve the built bundle locally via Vite preview
+npm run present  # Build and preview the deck for presentations
 ```
 
 ## Important folders and files
@@ -23,3 +26,11 @@ npm start      # Start local server with hot reload (opens http://localhost:3030
 - `public/` - Global reusable assets such as backgrounds, logos, shared images, and videos
 
 Components and slides use UnoCSS/Windi CSS attributify mode for styling.
+
+## Agent workflow notes
+
+For tasks about creating or editing slides, prefer `npm run dev` because it gives fast feedback with hot reload.
+
+If the user asks to prepare the deck for a workshop, rehearsal, or live presentation, run `npm run present`. If the deck is already built, `npm run preview` is enough.
+
+Keep in mind that the preview server is meant for presenting the built output, not for live slide editing.
