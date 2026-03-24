@@ -33,6 +33,12 @@ Before picking a layout, get clear on what the slide needs to communicate:
   Look at the existing slides in the project for orientation -- if they are consistently in one
   language, suggest that language, but let the user decide.
 
+### Project-specific update patterns
+
+- If the user asks to update the trainer slide, read `references/trainer-slide-update.md`
+  before editing.
+- Follow that reference for the data source, matching rules, and the target fields to update.
+
 ### 2. Choose the right layout
 
 Read the theme documentation to understand all available layouts:
