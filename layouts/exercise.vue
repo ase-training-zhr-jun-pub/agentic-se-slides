@@ -30,12 +30,12 @@ const props = withDefaults(defineProps<{
         </VisualCenter>
 
 
-      <div v-if="props.task || props.command" class="space-y-6">
+      <div v-if="props.task || props.command" class="space-y-4 mb-16">
         <div v-if="props.task" class="text-gray text-4xl leading-tight">
           {{ props.task }}
         </div>
 
-        <p v-if="props.command" class="text-gray font-mono text-3xl">
+        <p v-if="props.command" class="text-gray font-mono font-italic text-2xl">
           $ {{ props.command }}
         </p>
       </div>
