@@ -35,7 +35,7 @@ const props = withDefaults(defineProps<{
           {{ props.task }}
         </div>
 
-        <p v-if="props.command" class="text-gray font-mono font-italic text-2xl">
+        <p v-if="props.command" class="inline-block self-center rounded-lg bg-lightGray/80 px-5 py-3 font-mono text-petrol">
           $ {{ props.command }}
         </p>
       </div>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 849 718" role="img" aria-labelledby="title desc">
+  <title id="title">Test pyramid</title>
+  <desc id="desc">A three-level test pyramid with Unit Tests, Service Tests, and UI Tests, plus arrows indicating more integration and slower at the top, more isolation and faster at the bottom.</desc>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="5" markerHeight="5" refX="2.5" refY="2.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 5 2.5 L 0 5 z" fill="#21485b" />
+    </marker>
+  </defs>
+
+  <rect width="849" height="718" fill="#ffffff" />
+
+  <polygon points="97,639 752,639 424.5,124" fill="#f3f3f3" />
+  <polygon points="220,488 638,488 552,337 307,337" fill="#21485b" />
+  <polygon points="307,337 552,337 424.5,124" fill="#f4a16a" />
+
+  <line x1="120" y1="600" x2="120" y2="165" stroke="#21485b" stroke-width="7" marker-start="url(#arrowhead)" marker-end="url(#arrowhead)" />
+  <line x1="746" y1="600" x2="746" y2="165" stroke="#21485b" stroke-width="7" marker-start="url(#arrowhead)" marker-end="url(#arrowhead)" />
+
+  <g fill="#21485b" font-family="Avenir Next, Avenir, Mark Pro, system-ui, sans-serif" font-size="24" font-style="italic">
+    <text x="86" y="60">more</text>
+    <text x="55" y="95">integration</text>
+    <text x="70" y="652">more</text>
+    <text x="69" y="688">isolation</text>
+    <text x="706" y="75">slower</text>
+    <text x="708" y="670">faster</text>
+  </g>
+
+  <g font-family="Avenir Next, Avenir, Mark Pro, system-ui, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="424.5" y="579" fill="#21485b" font-size="39">Unit Tests</text>
+    <text x="424.5" y="424" fill="#ffffff" font-size="38">Service Tests</text>
+    <text x="424.5" y="244" fill="#ffffff" font-size="39">UI</text>
+    <text x="424.5" y="303" fill="#ffffff" font-size="39">Tests</text>
+  </g>
+</svg>

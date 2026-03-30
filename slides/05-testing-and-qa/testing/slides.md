@@ -12,47 +12,39 @@ background: petrol
 layout: default
 ---
 
-# Automated Testing -- Why?
+# Automated Testing
 
 - Manual testing is error prone & time consuming
 - You can never be safe to push a new feature
 - We want to be safe not to break something
 - If the team changes, the system becomes unmaintainable without tests
 
-**So: We want automated tests to enable continuous deployment.**
+**We want automated tests to enable continuous deployment.**
 
 <!-- Master reference: Chapter 5 / Slide 231 -->
 
 ---
-layout: default
+layout: two-cols
+leftBackground: white
+rightBackground: white
 ---
+
+::left::
 
 # Test Pyramid
 
-<div class="text-center mt-8">
 
 By Mike Cohn in *Succeeding with Agile*
+Tests with different granularity.
+The higher the level, the fewer the tests.
 
+But: oversimplified with just 3 layers.
+
+::right::
+
+<div class="flex h-[28rem] items-center justify-center">
+  <img src="./assets/test-pyramid-v2.svg" class="max-h-[96%] max-w-full w-auto object-contain" />
 </div>
-
-- Tests with different granularity
-- The higher the level, the fewer the tests
-- But: oversimplified with just 3 layers
-
-<div class="flex justify-center items-end gap-0 mt-4">
-  <div class="text-center">
-    <div class="text-sm mb-2">more isolation / faster</div>
-  </div>
-  <div class="text-center">
-    <div class="text-sm mb-2">more integration / slower</div>
-  </div>
-</div>
-
-| Layer | |
-|---|---|
-| UI Tests | more integration, slower |
-| Service Tests | |
-| Unit Tests | more isolation, faster |
 
 <!-- Master reference: Chapter 5 / Slide 232 -->
 
@@ -70,7 +62,7 @@ background: apricot
 layout: default
 ---
 
-# Unit Tests -- Why?
+# Unit Tests
 
 - Testing individual components or functions in isolation
 - External dependencies are "mocked"
@@ -85,7 +77,7 @@ layout: default
 layout: default
 ---
 
-# Unit Test -- Example
+# Unit Test
 
 - **Arrange:** Setup test environment & test data
 - **Act:** Call the unit of code
@@ -97,7 +89,7 @@ layout: default
 layout: default
 ---
 
-# Unit Tests -- Agentic Use Cases
+# Agentic Use Cases for Unit Tests
 
 - Use test-driven development and generate unit tests before writing code
 - Generate tests for existing code
@@ -106,10 +98,12 @@ layout: default
 <!-- Master reference: Chapter 5 / Slide 236 -->
 
 ---
-layout: center
+layout: exercise
+chapter: 5
+exercise: 1
+task: Write unit tests
+command: git merge uebung-4-1
 ---
-
-## Chapter 5 -- Exercise 1
 
 <!-- Master reference: Chapter 5 / Slide 237 -->
 
@@ -127,7 +121,7 @@ background: apricot
 layout: default
 ---
 
-# Integration Tests -- Why?
+# Integration Tests
 
 - Testing integration with other parts like
   - Databases
@@ -142,12 +136,12 @@ layout: default
 layout: default
 ---
 
-# Integration Test -- Example
+# Integration Test Example
 
-- Start a database
-- Connect to the database
-- Trigger a function that writes to the database
-- Verify the data has been written to the database
+1. Start a database
+2. Connect to the database
+3. Trigger a function that writes to the database
+4. Verify the data has been written to the database
 
 <!-- Master reference: Chapter 5 / Slide 240 -->
 
@@ -157,7 +151,7 @@ image: /logos/testcontainers.svg
 imageFit: contain
 ---
 
-# Testcontainers -- Why?
+# Testcontainers
 
 - Starting a database in tests can be challenging
 - Use Testcontainers to run databases
@@ -166,10 +160,12 @@ imageFit: contain
 <!-- Master reference: Chapter 5 / Slide 241 -->
 
 ---
-layout: center
+layout: exercise
+chapter: 5
+exercise: 2
+task: Write integration tests
+command: git merge uebung-4-2
 ---
-
-## Chapter 5 -- Exercise 2
 
 <!-- Master reference: Chapter 5 / Slide 242 -->
 
@@ -187,7 +183,7 @@ background: apricot
 layout: default
 ---
 
-# End-to-End Tests -- Why?
+# End-to-End Tests
 
 - Testing deployed applications via its user interface
 - Performed through a headless browser
@@ -200,9 +196,11 @@ layout: default
 <!-- Master reference: Chapter 5 / Slide 244 -->
 
 ---
-layout: center
+layout: exercise
+chapter: 5
+exercise: 3
+task: Write end-to-end tests
+command: git merge uebung-4-3
 ---
-
-## Chapter 5 -- Exercise 3
 
 <!-- Master reference: Chapter 5 / Slide 245 -->
