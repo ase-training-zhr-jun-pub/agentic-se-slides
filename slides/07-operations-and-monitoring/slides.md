@@ -46,11 +46,9 @@ layout: default
 
 ---
 layout: demo
-link: https://play.grafana.org/dashboards
 ---
 
-# Grafana MCP
-
+https://play.grafana.org/dashboards <br/>
 https://github.com/grafana/mcp-grafana
 
 <!-- Master reference: Chapter 7 / Slide 274 -->
@@ -66,6 +64,14 @@ layout: default
 - Use the log inspection to fix the bug
 
 <!-- Master reference: Chapter 7 / Slide 275 -->
+
+---
+layout: exercise
+chapter: 7
+exercise: 1
+task: Trigger claude from issues
+command: git merge uebung-6-1
+---
 
 ---
 layout: default

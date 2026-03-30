@@ -19,7 +19,7 @@ const style = computed(() => handleBackground(props.background))
 <template>
   <div class="slidev-layout chapter p-25" :style="style">
       <div class="bg-petrol h-full shadow-xl grid place-content-center text-center">
-        <h4 class="font-serif font-italic my-0 text-apricot">Chapter {{props.no}}</h4>
+        <h3 class="font-serif font-italic my-1.5 text-apricot">Chapter {{props.no}}</h3>
         <slot />
       </div>
   </div>
