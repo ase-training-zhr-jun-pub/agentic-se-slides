@@ -107,6 +107,14 @@ layout: default
 <!-- Master reference: Chapter 6 / Slide 262 -->
 
 ---
+layout: exercise
+chapter: 6
+exercise: 1
+task: Setup a CI pipeline
+command: git merge uebung-5-1
+---
+
+---
 layout: intro
 background: apricot
 ---
