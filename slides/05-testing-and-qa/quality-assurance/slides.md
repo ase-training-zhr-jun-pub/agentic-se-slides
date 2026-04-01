@@ -22,7 +22,7 @@ background: apricot
 layout: default
 ---
 
-# Review Merge Requests
+# Review Merge Requests <small>Use Cases</small>
 
 - Agents can be installed on your code management platform
 - Can automatically start a review on a new MR
@@ -52,7 +52,7 @@ background: apricot
 layout: default
 ---
 
-# Identify Security Risks
+# Identify Security Risks <small>Use Cases</small>
 
 - Security vulnerabilities may be difficult to spot
 - Use agents to find vulnerabilities

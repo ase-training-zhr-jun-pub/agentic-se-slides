@@ -77,7 +77,7 @@ layout: default
 layout: default
 ---
 
-# Unit Test
+# Unit Tests: <small>Example</small>
 
 - **Arrange:** Setup test environment & test data
 - **Act:** Call the unit of code
@@ -89,7 +89,7 @@ layout: default
 layout: default
 ---
 
-# Agentic Use Cases for Unit Tests
+# Unit Tests: <small>Agentic Use Cases</small>
 
 - Use test-driven development and generate unit tests before writing code
 - Generate tests for existing code
@@ -136,7 +136,7 @@ layout: default
 layout: default
 ---
 
-# Integration Test Example
+# Integration Tests <small>Example</small>
 
 <ol class="list-decimal pl-5 text-left marker:text-apricot">
   <li>Start a database</li>
