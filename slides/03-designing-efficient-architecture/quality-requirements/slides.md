@@ -1,26 +1,20 @@
 ---
-layout: center
+layout: default
 ---
 
-<div class="space-y-8 text-center">
-  <div class="text-7xl">🤷</div>
-  <div>
-    <div class="uppercase tracking-[0.35em] text-xl mb-4">Definition</div>
-    <h2 class="!text-5xl">What is Software Architecture?</h2>
-  </div>
-  <div class="space-y-4 text-2xl leading-relaxed max-w-4xl mx-auto">
-    <p>There is no fixed academic definition.</p>
-    <p><span class="font-bold">For us:</span> Decisions in and around the software that are hard to change.</p>
-  </div>
-</div>
+# What is Software Architecture?
+
+<span class="text-3xl">🤷</span>
+There is no fixed academic definition.
+
+**For us:** <br/>
+Decisions in and around the software that are hard to change.
 
 <!-- Master reference: Chapter 3 / Slide 108 -->
 
 ---
 
-# Software Architecture
-
-## Areas
+# Software Architecture Areas
 
 - Team structure (Conway's Law)
 - Bounded contexts
@@ -34,23 +28,18 @@ layout: center
 <!-- Master reference: Chapter 3 / Slide 109 -->
 
 ---
-layout: sidebar
-alignContent: center
+layout: center
+background: petrol
 ---
 
-## How can we leverage agents
+## How can we *leverage agents*
 ## to support us in these areas?
-
-::sidebar::
-
-### A guiding
-### *question*
 
 <!-- Master reference: Chapter 3 / Slide 110 -->
 
 ---
 layout: intro
-background: petrol
+background: apricot
 ---
 
 ### *Use Agents for*
@@ -59,32 +48,43 @@ background: petrol
 <!-- Master reference: Chapter 3 / Slide 111 -->
 
 ---
-layout: center
+layout: default
 ---
 
-<img src="./assets/iso-25010-quality-model.png" class="h-full w-full object-contain" />
+# Quality Model <small>ISO 25010</small>
+
+<img src="./assets/iso-25010-quality-model.svg" class="mx-auto h-80" />
+<p class="mt-4 text-sm text-primary/60">https://www.innoq.com/en/articles/2021/08/quality-driven-software-architecture-revised/</p>
 
 <!-- Master reference: Chapter 3 / Slide 112 -->
 
 ---
-layout: center
----
 
-<img src="./assets/quality-tree-scenarios.png" class="h-full w-full object-contain" />
+# Scenarios <small>Quality Tree</small>
+
+<img src="./assets/quality-tree-scenarios.svg" class="h-80" />
+
+<small text-sm>https://www.innoq.com/en/articles/2021/08/quality-driven-software-architecture-revised/</small>
 
 <!-- Master reference: Chapter 3 / Slide 113 -->
 
 ---
-layout: center
----
 
-<img src="./assets/quality-tree-priorities.png" class="h-full w-full object-contain" />
+# Priorities <small>Quality Tree</small>
+<div class="relative w-full h-80 aspect-[1960/1104]">
+    <img src="./assets/quality-tree-scenarios.svg" class="absolute inset-0 h-full w-full object-contain" />
+    <span class="absolute left-[39%] top-[26%] grid size-6 place-items-center rounded-full bg-apricot text-white font-bold text-[1.15rem] leading-none">1</span>
+    <span class="absolute left-[39%] top-[61.5%] grid size-6 place-items-center rounded-full bg-apricot text-white font-bold text-[1.15rem] leading-none">2</span>
+    <span class="absolute left-[39%] top-[83%] grid size-6 place-items-center rounded-full bg-apricot text-white font-bold text-[1.15rem] leading-none">3</span>
+</div>
+  
+<p class="mt-4 text-sm text-primary/60">https://www.innoq.com/en/articles/2021/08/quality-driven-software-architecture-revised/</p>
 
 <!-- Master reference: Chapter 3 / Slide 114 -->
 
 ---
 
-# Document Qualities as a Table
+# Document Quality Scenarios
 
 | Prio | Quality | Scenario ID | Scenario |
 | --- | --- | --- | --- |
@@ -97,7 +97,7 @@ layout: center
 
 ---
 
-# Quality Scenario Template
+# Quality Scenario <small>Template</small>
 
 - `Environment`: In normal use
 - `Source`: A consultant
@@ -110,9 +110,7 @@ layout: center
 
 ---
 
-# Agents for Quality Scenarios
-
-## Gather
+# Gather <small>Quality Scenarios</small>
 
 Construct a quality scenario, including a reasonable measure, for the following situation:
 
@@ -122,9 +120,7 @@ Construct a quality scenario, including a reasonable measure, for the following 
 
 ---
 
-# Agents for Quality Scenarios
-
-## Prioritize
+# Prioritize <small>Quality Scenarios</small>
 
 Read in the table of quality scenarios. Find conflicting scenarios and prioritize them while respecting technical complexity and domain-specific need.
 

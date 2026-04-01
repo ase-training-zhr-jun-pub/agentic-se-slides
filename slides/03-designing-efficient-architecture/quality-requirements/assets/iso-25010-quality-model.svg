@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="66.87734 148.5 735.75 466.875" width="735.75" height="466.875">
+  <defs>
+    <font-face font-family="Arial" font-size="13" panose-1="2 11 6 4 2 2 2 2 2 4" units-per-em="1000" underline-position="-105.95703" underline-thickness="73.24219" slope="0" x-height="518.5547" cap-height="716.3086" ascent="905.2734" descent="-211.91406" font-weight="400">
+      <font-face-src>
+        <font-face-name name="ArialMT"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="12" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-03-16 10:00:59 +0000</metadata>
+  <g id="ISO-25010-all" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none" stroke-opacity="1">
+    <title>ISO-25010-all</title>
+    <rect fill="white" x="66.87734" y="148.5" width="735.75" height="466.875"/>
+    <g id="ISO-25010-all_Ebene_1">
+      <title>Ebene 1</title>
+      <g id="Graphic_1197">
+        <rect x="66.87734" y="148.5" width="735.75" height="466.875" fill="white"/>
+      </g>
+      <g id="Line_1179">
+        <line x1="485.348" y1="209.10925" x2="750.6" y2="300" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1177">
+        <line x1="471.2978" y1="210.58323" x2="666.5" y2="300" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1175">
+        <line x1="450.8835" y1="210.67115" x2="571.99714" y2="299.70385" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1173">
+        <line x1="431.16623" y1="210.8094" x2="482" y2="300" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1171">
+        <line x1="412.08697" y1="210.86646" x2="395.4" y2="300" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1170">
+        <line x1="391.72257" y1="210.72865" x2="302.5" y2="300" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1169">
+        <line x1="371.51364" y1="210.61653" x2="209.5" y2="300" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1168">
+        <line x1="353.41728" y1="210.558" x2="126" y2="300" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1167">
+        <rect x="348.75" y="160.875" width="136.125" height="49.5" fill="white"/>
+        <rect x="348.75" y="160.875" width="136.125" height="49.5" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(353.75 162.48706)" fill="black">
+          <tspan font-family="Arial" font-size="13" font-weight="400" fill="black" x="31.984375" y="12">ISO 25010</tspan>
+          <tspan font-family="Arial" font-size="13" font-weight="400" fill="black" x="13.204834" y="27.425293">Software Product </tspan>
+          <tspan font-family="Arial" font-size="13" font-weight="400" fill="black" x="42.83252" y="42.850586">Quality</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1166">
+        <rect x="90" y="300" width="72" height="45" fill="white"/>
+        <rect x="90" y="300" width="72" height="45" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(95 307.0747)" fill="black">
+          <tspan font-family="Arial" font-size="13" font-weight="400" fill="black" x="1.010498" y="12">Functional </tspan>
+          <tspan font-family="Arial" font-size="13" font-weight="400" fill="black" x="3.1813965" y="27.425293">Suitability</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1163">
+        <rect x="173.5" y="300" width="72" height="45" fill="white"/>
+        <rect x="173.5" y="300" width="72" height="45" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(178.5 314.78735)" fill="black">
+          <tspan font-family="Arial" font-size="13" font-weight="400" fill="black" x="3.1845703" y="12">Reliability</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1165">
+        <rect x="258.5" y="300" width="88" height="45" fill="white"/>
+        <rect x="258.5" y="300" width="88" height="45" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(263.5 307.0747)" fill="black">
+          <tspan font-family="Arial" font-size="13" font-weight="400" fill="black" x="1.790039" y="12">Performance </tspan>
+          <tspan font-family="Arial" font-size="13" font-weight="400" fill="black" x="11.18457" y="27.425293">Efficiency</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1172">
+        <rect x="358.5" y="300" width="73.8" height="45" fill="white"/>
+        <rect x="358.5" y="300" width="73.8" height="45" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(363.5 314.78735)" fill="black">
+          <tspan font-family="Arial" font-size="13" font-weight="400" fill="black" x="7.337744" y="12">Usability</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1174">
+        <rect x="446" y="300" width="72" height="45" fill="white"/>
+        <rect x="446" y="300" width="72" height="45" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(451 314.78735)" fill="black">
+          <tspan font-family="Arial" font-size="13" font-weight="400" fill="black" x="7.5200195" y="12">Security</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1176">
+        <rect x="528.4" y="300" width="88" height="45" fill="white"/>
+        <rect x="528.4" y="300" width="88" height="45" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(533.4 314.78735)" fill="black">
+          <tspan font-family="Arial" font-size="13" font-weight="400" fill="black" x="1.7932129" y="12">Compatibility</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1178">
+        <rect x="630.5" y="300" width="72" height="45" fill="white"/>
+        <rect x="630.5" y="300" width="72" height="45" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(635.5 307.0747)" fill="black">
+          <tspan font-family="Arial" font-size="13" font-weight="400" fill="black" x="4.2668457" y="12">Maintain-</tspan>
+          <tspan font-family="Arial" font-size="13" font-weight="400" fill="black" x="14.381836" y="27.425293">ability</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1180">
+        <rect x="714.6" y="300" width="72" height="45" fill="white"/>
+        <rect x="714.6" y="300" width="72" height="45" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(719.6 314.78735)" fill="black">
+          <tspan font-family="Arial" font-size="13" font-weight="400" fill="black" x="2.4609375" y="12">Portability</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1181">
+        <rect x="73.30469" y="371.992" width="105.39062" height="52" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(78.30469 376.992)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">* Correctness</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="25">* Appropriateness</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="39">* Completeness</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1182">
+        <rect x="160.80957" y="483" width="97.38086" height="66" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(165.80957 488)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">* Availability</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="25">* Fault tolerance</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="39">* Recoverability</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="53">* Maturity</tspan>
+        </text>
+      </g>
+      <g id="Line_1183">
+        <line x1="126" y1="345" x2="126" y2="371.992" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1184">
+        <line x1="209.5" y1="345" x2="209.5" y2="483" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1185">
+        <rect x="240.63867" y="371.992" width="122.72266" height="52" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(245.63867 376.992)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">* Time behaviour</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="25">* Resource utilization</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="39">* Capacity</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1186">
+        <rect x="331.7047" y="483" width="128.04297" height="108" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(336.7047 488)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">* Appropriateness</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="25">* Recognizability</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="39">* Learnability</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="53">* Operability</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="67">* User error protection</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="81">* UI asethetics</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="95">* Accessibility</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1187">
+        <rect x="430.13477" y="371.992" width="103.39258" height="80" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(435.13477 376.992)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">* Confidentiality</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="25">* Integrity</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="39">* Non-repudiation</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="53">* Accountability</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="67">* Authenticity</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1188">
+        <rect x="524.04355" y="483" width="96.71289" height="38" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(529.04355 488)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">* Co-existence</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="25">* Interoperability</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1189">
+        <rect x="703.9164" y="483" width="92.71094" height="52" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(708.9164 488)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">* Adaptability</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="25">* Installability</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="39">* Replaceability</tspan>
+        </text>
+      </g>
+      <g id="Graphic_1190">
+        <rect x="624.125" y="369.25" width="84.70117" height="80" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(629.125 374.25)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="11">* Modularity</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="25">* Reusability</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="39">* Analyzability</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="53">* Modifiability</tspan>
+          <tspan font-family="Helvetica" font-size="12" font-weight="400" fill="black" x="0" y="67">* Testability</tspan>
+        </text>
+      </g>
+      <g id="Line_1191">
+        <line x1="302.5" y1="345" x2="302.25004" y2="371.49202" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1192">
+        <line x1="395.4" y1="345" x2="395.6336" y2="482.5" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1193">
+        <line x1="482" y1="345" x2="481.9332" y2="371.492" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1194">
+        <line x1="572.4" y1="345" x2="572.4" y2="482.5" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1195">
+        <line x1="750.6" y1="345" x2="750.3249" y2="482.5" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_1196">
+        <line x1="666.5" y1="345" x2="666.491" y2="368.75" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

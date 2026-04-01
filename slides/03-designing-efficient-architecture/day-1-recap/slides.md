@@ -1,64 +1,59 @@
 ---
-layout: intro
-background: petrol
+layout: chapter
+background: /backgrounds/4.webp
+label: Recap
 ---
 
-### *End of*
-# Day 1 Recap
+# Day 1
 
 <!-- Master reference: Chapter 3 / Slide 135 -->
 
 ---
-layout: center
+layout: intro
+background: apricot
 ---
 
-<div class="space-y-6 text-center">
-  <div class="uppercase tracking-[0.4em] text-xl">What is?</div>
-  <h1 class="!text-7xl">Autoregression</h1>
-</div>
+### *What is?*
+# Autoregression
 
 <!-- Master reference: Chapter 3 / Slide 136 -->
 
 ---
-layout: center
+layout: intro
+background: apricot
 ---
 
-<div class="space-y-6 text-center">
-  <div class="uppercase tracking-[0.4em] text-xl">What is?</div>
-  <h1 class="!text-7xl">Prompt</h1>
-</div>
+### *What is?*
+# Prompt
 
 <!-- Master reference: Chapter 3 / Slide 137 -->
 
 ---
-layout: center
+layout: intro
+background: apricot
 ---
 
-<div class="space-y-6 text-center">
-  <div class="uppercase tracking-[0.4em] text-xl">What is?</div>
-  <h1 class="!text-7xl">Tool</h1>
-</div>
+### *What is?*
+# Tool
 
 <!-- Master reference: Chapter 3 / Slide 138 -->
 
 ---
-layout: center
+layout: intro
+background: apricot
 ---
 
-<div class="space-y-6 text-center">
-  <div class="uppercase tracking-[0.4em] text-xl">What is?</div>
-  <h1 class="!text-7xl">Feedback Loop</h1>
-</div>
+### *What is?*
+# Feedback Loop
 
 <!-- Master reference: Chapter 3 / Slide 139 -->
 
 ---
-layout: center
+layout: intro
+background: apricot
 ---
 
-<div class="space-y-6 text-center">
-  <div class="uppercase tracking-[0.4em] text-xl">What is?</div>
-  <h1 class="!text-7xl">MCP</h1>
-</div>
+### *What is?*
+# MCP
 
 <!-- Master reference: Chapter 3 / Slide 140 -->

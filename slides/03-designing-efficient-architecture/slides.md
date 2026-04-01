@@ -4,7 +4,7 @@ no: 3
 background: /backgrounds/4.webp
 ---
 
-# Designing Efficient Architecture
+## Designing Efficient Architecture
 
 <!-- Master reference: Chapter 3 / Slide 107 -->
 
@@ -51,16 +51,15 @@ command: git switch uebung-2-3
 <!-- Master reference: Chapter 3 / Slide 133 -->
 
 ---
-layout: center
+layout: takeaways
 background: petrol
+chapter: 3
 ---
 
-## Chapter 3 -- Key Takeaways
-
-- Documentation has become much easier
-- Agents help to take reasonable decisions
-- Accelerate proven methodology
-- Always validate results
+1. Documentation has become much easier
+2. Agents help to take reasonable decisions
+3. Accelerate proven methodology
+4. Always validate results
 
 <!-- Master reference: Chapter 3 / Slide 134 -->
 

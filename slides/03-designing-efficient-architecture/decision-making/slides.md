@@ -22,7 +22,7 @@ layout: center
 ---
 
 ## Our decisions must be
-## *well-reasoned* and transparent
+## *well-reasoned* and *transparent*
 
 <!-- Master reference: Chapter 3 / Slide 122 -->
 

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" version="1.1" viewBox="35.38 41.04 849.0023 461.168" width="849.0023" height="461.168">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-49.52023" y="-5.0768">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="1.308"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in"/>
+    </filter>
+    <font-face font-family="Helvetica" font-size="16" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="532.22656" cap-height="719.7266" ascent="770.0195" descent="-229.98047" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Helvetica-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica" font-size="14" units-per-em="1000" underline-position="-75.68359" underline-thickness="49.316406" slope="0" x-height="522.9492" cap-height="717.28516" ascent="770.0195" descent="-229.98047" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Helvetica"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="14" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.18.5\n2021-07-30 09:31:25 +0000</metadata>
+  <g id="q-tree-sample" stroke-dasharray="none" fill="none" fill-opacity="1" stroke="none" stroke-opacity="1">
+    <title>q-tree-sample</title>
+    <g id="q-tree-sample_Ebene_1">
+      <title>Ebene 1</title>
+      <g id="Graphic_1_shadow" filter="url(#Shadow)">
+        <rect x="38.88" y="238.86" width="162.004" height="70.73999" fill="white"/>
+        <rect x="38.88" y="238.86" width="162.004" height="70.73999" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_3_shadow" filter="url(#Shadow)">
+        <rect x="248.61818" y="136.08" width="95.2813" height="36" fill="white"/>
+        <rect x="248.61818" y="136.08" width="95.2813" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_7_shadow" filter="url(#Shadow)">
+        <rect x="248.61818" y="397.44" width="95.2813" height="36" fill="white"/>
+        <rect x="248.61818" y="397.44" width="95.2813" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9_shadow" filter="url(#Shadow)">
+        <rect x="403.06265" y="273.6" width="85.7187" height="36" fill="white"/>
+        <rect x="403.06265" y="273.6" width="85.7187" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_11_shadow" filter="url(#Shadow)">
+        <rect x="403.06265" y="331.92" width="85.7187" height="36" fill="white"/>
+        <rect x="403.06265" y="331.92" width="85.7187" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_13_shadow" filter="url(#Shadow)">
+        <rect x="403.06265" y="397.44" width="85.7187" height="36" fill="white"/>
+        <rect x="403.06265" y="397.44" width="85.7187" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_15_shadow" filter="url(#Shadow)">
+        <rect x="403.06265" y="83.52" width="85.7187" height="36" fill="white"/>
+        <rect x="403.06265" y="83.52" width="85.7187" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_25_shadow" filter="url(#Shadow)">
+        <rect x="248.61818" y="300.24" width="95.2813" height="36" fill="white"/>
+        <rect x="248.61818" y="300.24" width="95.2813" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_27_shadow" filter="url(#Shadow)">
+        <rect x="403.06265" y="153.36" width="85.7187" height="36" fill="white"/>
+        <rect x="403.06265" y="153.36" width="85.7187" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_1">
+        <rect x="38.88" y="238.86" width="162.004" height="70.73999" fill="white"/>
+        <rect x="38.88" y="238.86" width="162.004" height="70.73999" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(43.88 245.73)" fill="black">
+          <tspan font-family="Helvetica" font-size="16" font-weight="700" fill="black" x="48.88481" y="15">Quality</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="700" fill="black" x="12.880905" y="34">Requirements of</tspan>
+          <tspan font-family="Helvetica" font-size="16" font-weight="700" fill="black" x="1.7793427" y="53">Photo-Management</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <rect x="248.61818" y="136.08" width="95.2813" height="36" fill="white"/>
+        <rect x="248.61818" y="136.08" width="95.2813" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(253.61818 137.08)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="2.568386" y="14">Performance</tspan>
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="12.685574" y="31">Efficiency</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7">
+        <rect x="248.61818" y="397.44" width="95.2813" height="36" fill="white"/>
+        <rect x="248.61818" y="397.44" width="95.2813" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(253.61818 406.94)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="2.571804" y="14">Compatibility</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9">
+        <rect x="403.06265" y="273.6" width="85.7187" height="36" fill="white"/>
+        <rect x="403.06265" y="273.6" width="85.7187" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(408.06265 283.1)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="2.0595436" y="14">Learnability</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11">
+        <rect x="403.06265" y="331.92" width="85.7187" height="36" fill="white"/>
+        <rect x="403.06265" y="331.92" width="85.7187" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(408.06265 341.42)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="4.400852" y="14">Operability</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13">
+        <rect x="403.06265" y="397.44" width="85.7187" height="36" fill="white"/>
+        <rect x="403.06265" y="397.44" width="85.7187" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(408.06265 406.94)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="1.6698952" y="14">Adaptability</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15">
+        <rect x="403.06265" y="83.52" width="85.7187" height="36" fill="white"/>
+        <rect x="403.06265" y="83.52" width="85.7187" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(408.06265 93.02)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="10.624973" y="14">Capacity</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <rect x="248.61818" y="300.24" width="95.2813" height="36" fill="white"/>
+        <rect x="248.61818" y="300.24" width="95.2813" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(253.61818 309.74)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="16.188992" y="14">Usability</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <rect x="403.06265" y="153.36" width="85.7187" height="36" fill="white"/>
+        <rect x="403.06265" y="153.36" width="85.7187" height="36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(408.06265 154.36)" fill="black">
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="22.56052" y="14">Time </tspan>
+          <tspan font-family="Helvetica" font-size="14" font-weight="400" fill="black" x="7.114719" y="31">behaviour</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(243.97883 478.76)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="6536993e-19" y="15">&lt; and others &gt;</tspan>
+        </text>
+      </g>
+      <g id="Line_30">
+        <line x1="173.88333" y1="238.86" x2="248.61818" y2="154.08" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_31">
+        <line x1="200.884" y1="274.23" x2="248.61818" y2="318.24" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_32">
+        <line x1="173.88333" y1="309.6" x2="248.61818" y2="415.44" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_33">
+        <line x1="141.12" y1="309.6" x2="236.4013" y2="491" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_34">
+        <line x1="343.8995" y1="148.08" x2="403.06265" y2="101.52" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_35">
+        <line x1="343.8995" y1="148.08" x2="403.06265" y2="171.36" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_36">
+        <line x1="343.8995" y1="318.24" x2="403.06265" y2="291.6" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_37">
+        <line x1="343.8995" y1="318.24" x2="403.06265" y2="337.92" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_38">
+        <line x1="343.8995" y1="415.44" x2="403.06265" y2="415.44" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_39">
+        <text transform="translate(570.2 46.04)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">10 Million users,</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392">up to 200.000 concurrent</tspan>
+        </text>
+      </g>
+      <g id="Line_40">
+        <line x1="488.78134" y1="103.44" x2="565.2" y2="62" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_41">
+        <text transform="translate(570.2 102.92)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">For up to 10.000 concurrent users,</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392">no visible performance degradation</tspan>
+        </text>
+      </g>
+      <g id="Line_42">
+        <line x1="488.78134" y1="171.36" x2="561" y2="119.52" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_43">
+        <text transform="translate(570.2 154.968)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">Photo search by standard criteria</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392">yields results in &lt; 1sec on average</tspan>
+        </text>
+      </g>
+      <g id="Graphic_44">
+        <text transform="translate(570.2 207.016)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">Photo search by combined criteria</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392">yields results in &lt; 2sec on average</tspan>
+        </text>
+      </g>
+      <g id="Line_45">
+        <line x1="488.78134" y1="171.36" x2="559" y2="172.08" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_46">
+        <line x1="488.78134" y1="171.36" x2="565.2" y2="225" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_47">
+        <text transform="translate(565.88 275.208)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">98 out of 100 new users can start</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392">adding and searching photos without </tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="45.783997">using online help function </tspan>
+        </text>
+      </g>
+      <g id="Line_48">
+        <line x1="488.78134" y1="291.1" x2="559" y2="291.82" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_49">
+        <text transform="translate(567.1123 344.12)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">operational costs is max linear to millions of users</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392">(10 mio users have max 10x the opex of 1 mio)</tspan>
+        </text>
+      </g>
+      <g id="Line_50">
+        <line x1="488.78134" y1="349.92" x2="560.2323" y2="360.732" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_51">
+        <text transform="translate(567.1123 402.44)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="13">System can be adapted to upcoming Android and</tspan>
+          <tspan font-family="Helvetica Neue" font-size="14" font-weight="400" fill="black" x="0" y="29.392">iOS version within &lt;10 PD of development effort</tspan>
+        </text>
+      </g>
+      <g id="Line_52">
+        <line x1="488.78134" y1="415.44" x2="560.2323" y2="419.052" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
