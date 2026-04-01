@@ -1,6 +1,6 @@
 ---
 layout: intro
-background: petrol
+background: apricot
 ---
 
 ### *Let's talk about*
@@ -9,21 +9,39 @@ background: petrol
 <!-- Master reference: Chapter 4 / Slide 168 -->
 
 ---
-layout: content-with-image
-image: /images/vibe-coding-karpathy-tweet.png
-imageFit: contain
+layout: two-cols
+leftBackground: white
+rightBackground: white
 ---
 
-# Vibe Coding
+::left::
 
-## Definition
+<div class="text-petrol !font-bold mb-8">
+  <span class="text-apricot font-serif font-normal italic">Vibe Coding</span>
+  <span class="mx-2 font-normal text-petrol">|</span>
+  <h1 class="text-petrol">Definition</h1>
+</div>
 
 - Coined by Andrej Karpathy
 - Can be done with any AI tool
 - Do not read any diffs
 - Always accept all changes
 
+::right::
+
+<div class="h-full flex items-center justify-center mt-8">
+  <img src="/images/vibe-coding-karpathy-tweet.png" class="max-h-[85%] max-w-full object-contain" />
+</div>
+
 <!-- Master reference: Chapter 4 / Slide 169 -->
+
+---
+layout: exercise
+chapter: 4
+exercise: 4
+task: Vibe Coding
+command: git merge uebung-3-4
+---
 
 ---
 layout: center
@@ -44,3 +62,4 @@ background: petrol
 ## Always *review* the agent's work.
 
 <!-- Master reference: Chapter 4 / Slide 172 -->
+

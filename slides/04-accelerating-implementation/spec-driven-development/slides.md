@@ -1,63 +1,69 @@
 ---
 layout: intro
-background: petrol
+background: apricot
 ---
 
-### *Use Agents for*
+### *Let's talk about*
 # Spec Driven Development
 
 <!-- Master reference: Chapter 4 / Slide 173 -->
 
 ---
-layout: two-cols
+layout: default
+background: white
 ---
 
-::left::
+<h1 class="text-petrol !text-5xl !mb-10">Spec Driven Development</h1>
 
-# Spec Driven Development
+<div class="grid grid-cols-2 gap-12 items-center">
+  <div class="text-petrol text-2xl leading-tight space-y-3">
+    <p>New term popularized by GitHub</p>
+    <p>Announced with SpecKit</p>
+    <p>Tooling around a fixed dev process</p>
+    <p>Tells an agent exactly how to code</p>
+  </div>
 
-- New term popularized by GitHub
-- Announced with SpecKit
-- Tooling around a fixed development process
-- Tells an agent exactly how to code
-
-::right::
-
-<div class="h-full flex flex-col justify-center gap-8 text-center">
-  <div class="bg-apricot text-white text-3xl font-semibold px-6 py-5">1. Specify</div>
-  <div class="bg-apricot text-white text-3xl font-semibold px-6 py-5">2. Plan</div>
-  <div class="bg-apricot text-white text-3xl font-semibold px-6 py-5">3. Tasks</div>
-  <div class="bg-apricot text-white text-3xl font-semibold px-6 py-5">4. Implement</div>
+  <div class="flex flex-col gap-6 text-center">
+    <div class="bg-apricot text-white text-2xl font-semibold px-6 py-4">1. Specify</div>
+    <div class="bg-apricot text-white text-2xl font-semibold px-6 py-4">2. Plan</div>
+    <div class="bg-apricot text-white text-2xl font-semibold px-6 py-4">3. Tasks</div>
+    <div class="bg-apricot text-white text-2xl font-semibold px-6 py-4">4. Implement</div>
+  </div>
 </div>
 
 <!-- Master reference: Chapter 4 / Slide 174 -->
 
 ---
 
-# 1. Specify
-
-## Spec Driven Development
+<div class="text-petrol !font-bold mb-8">
+  <span class="text-apricot font-serif font-normal italic">Spec Driven Development</span>
+  <span class="mx-2 font-normal text-petrol">|</span>
+  <h1 class="text-petrol">1. Specify</h1>
+</div>
 
 Use existing documentation like
-
 - Epics and user stories
 - Wikis
 - Architecture documentation
 - UX documentation
 
-## Important
+**Important:**
 
-1. The agent must have access
-2. Keep it close to the agent
-3. Use text-based formats
+<ol class="list-decimal pl-5 text-left marker:text-apricot">
+  <li>The agent must have access</li>
+  <li>Keep it close to the agent</li>
+  <li>Use text-based formats</li>
+</ol>
 
 <!-- Master reference: Chapter 4 / Slide 175 -->
 
 ---
 
-# 2. Plan
-
-## Spec Driven Development
+<div class="text-petrol !font-bold mb-8">
+  <span class="text-apricot font-serif font-normal italic">Spec Driven Development</span>
+  <span class="mx-2 font-normal text-petrol">|</span>
+  <h1 class="text-petrol">2. Plan</h1>
+</div>
 
 Create a plan for implementing the specs.
 
@@ -72,9 +78,11 @@ Create a plan for implementing the specs.
 
 ---
 
-# 3. Tasks
-
-## Spec Driven Development
+<div class="text-petrol !font-bold mb-8">
+  <span class="text-apricot font-serif font-normal italic">Spec Driven Development</span>
+  <span class="mx-2 font-normal text-petrol">|</span>
+  <h1 class="text-petrol">3. Tasks</h1>
+</div>
 
 - Split the plan into small, reviewable chunks
 - If possible, create independent tasks
@@ -85,7 +93,11 @@ Create a plan for implementing the specs.
 
 ---
 
-# 4. Implement
+<div class="text-petrol !font-bold mb-8">
+  <span class="text-apricot font-serif font-normal italic">Spec Driven Development</span>
+  <span class="mx-2 font-normal text-petrol">|</span>
+  <h1 class="text-petrol">4. Implement</h1>
+</div>
 
 ## Spec Driven Development
 
@@ -101,34 +113,31 @@ Create a plan for implementing the specs.
 <!-- Master reference: Chapter 4 / Slide 178 -->
 
 ---
-layout: two-cols
+layout: default
+background: white
 ---
-
-::left::
 
 # Specs vs. Memory
 
-## Spec Driven Development
-
-<div class="mt-10 bg-lightGray px-8 py-10 text-center">
-  <h3 class="!text-4xl">Memory Bank</h3>
-  <div class="mt-8 flex flex-col gap-6">
-    <div class="bg-apricot px-6 py-4 text-2xl">Agents.md</div>
-    <div class="bg-apricot px-6 py-4 text-2xl">Arc42.md</div>
-    <div class="bg-apricot px-6 py-4 text-2xl">Requirements.md</div>
-    <div class="text-3xl">...</div>
+<div class="grid grid-cols-2 gap-12">
+  <div class="bg-lightGray px-8 py-8 text-center">
+    <h3 class="!text-3xl !mb-4">Memory Bank</h3>
+    <div class="mt-6 flex flex-col gap-4">
+      <div class="bg-apricot px-6 py-3 text-xl">Agents.md</div>
+      <div class="bg-apricot px-6 py-3 text-xl">Arc42.md</div>
+      <div class="bg-apricot px-6 py-3 text-xl">Requirements.md</div>
+      <div class="text-2xl">...</div>
+    </div>
   </div>
-</div>
 
-::right::
-
-<div class="mt-26 bg-lightGray px-8 py-10 text-center">
-  <h3 class="!text-4xl">Specs</h3>
-  <div class="mt-8 flex flex-col gap-6">
-    <div class="bg-apricot px-6 py-4 text-2xl">Story-042</div>
-    <div class="bg-apricot px-6 py-4 text-2xl">Subtask-123</div>
-    <div class="bg-apricot px-6 py-4 text-2xl">Plan-123</div>
-    <div class="text-3xl">...</div>
+  <div class="bg-lightGray px-8 py-8 text-center">
+    <h3 class="!text-3xl !mb-4">Specs</h3>
+    <div class="mt-6 flex flex-col gap-4">
+      <div class="bg-apricot px-6 py-3 text-xl">Story-042</div>
+      <div class="bg-apricot px-6 py-3 text-xl">Subtask-123</div>
+      <div class="bg-apricot px-6 py-3 text-xl">Plan-123</div>
+      <div class="text-2xl">...</div>
+    </div>
   </div>
 </div>
 
@@ -140,38 +149,44 @@ layout: multi-col
 
 ::header::
 
-# Spec Implementation Levels
+<h1 class="text-petrol !text-5xl !mb-8">Spec Implementation Levels</h1>
 
-## Spec Driven Development
-
-<div class="grid grid-cols-3 gap-8 pt-10 text-[0.95rem] leading-snug">
+<div class="grid grid-cols-3 gap-8 text-xl leading-snug">
   <div>
-    <div class="bg-apricot px-4 py-4 text-center text-2xl">Spec First</div>
-    <ol class="mt-6 pl-8 text-2xl leading-relaxed">
-      <li>Write a spec</li>
-      <li>Use the spec when implementing</li>
-      <li>Throw the spec away</li>
-    </ol>
+    <div class="mb-5 bg-apricot px-4 py-4 text-center text-2xl">Spec First</div>
+    <div class="grid grid-cols-[auto_1fr] gap-x-3 gap-y-2">
+      <div class="text-apricot">1.</div><div>Write a Spec</div>
+      <div class="text-apricot">2.</div><div>Use the Spec when implementing</div>
+      <div class="text-apricot">3.</div><div>Throw the spec away</div>
+    </div>
   </div>
   <div>
-    <div class="bg-apricot px-4 py-4 text-center text-2xl">Spec Anchored</div>
-    <ol class="mt-6 pl-8 text-2xl leading-relaxed">
-      <li>Write a spec</li>
-      <li>Use the spec when implementing</li>
-      <li>Keep the spec</li>
-      <li>Update the spec when something changes</li>
-    </ol>
+    <div class="mb-5 bg-apricot px-4 py-4 text-center text-2xl">Spec Anchored</div>
+    <div class="grid grid-cols-[auto_1fr] gap-x-3 gap-y-2">
+      <div class="text-apricot">1.</div><div>Write a Spec</div>
+      <div class="text-apricot">2.</div><div>Use the Spec when implementing</div>
+      <div class="text-apricot">3.</div><div>Keep the Spec</div>
+      <div class="text-apricot">4.</div><div>Update the Spec when something changes</div>
+    </div>
   </div>
   <div>
-    <div class="bg-apricot px-4 py-4 text-center text-2xl">Spec as Source</div>
-    <ol class="mt-6 pl-8 text-2xl leading-relaxed">
-      <li>Write a spec</li>
-      <li>Use the spec when implementing</li>
-      <li>Keep the spec</li>
-      <li>Update the spec when something changes</li>
-      <li>Throw away the code and rebuild from spec</li>
-    </ol>
+    <div class="mb-5 bg-apricot px-4 py-4 text-center text-2xl">Spec as Source</div>
+    <div class="grid grid-cols-[auto_1fr] gap-x-3 gap-y-2">
+      <div class="text-apricot">1.</div><div>Write a Spec</div>
+      <div class="text-apricot">2.</div><div>Use the Spec when implementing</div>
+      <div class="text-apricot">3.</div><div>Keep the Spec</div>
+      <div class="text-apricot">4.</div><div>Update the Spec when something changes</div>
+      <div class="text-apricot">5.</div><div>Throw away the code and rebuild from Spec</div>
+    </div>
   </div>
 </div>
+
+---
+layout: exercise
+chapter: 4
+exercise: 5
+task: Planning & Task Breakdown
+command: git merge uebung-3-5
+---
 
 <!-- Master reference: Chapter 4 / Slide 180 -->

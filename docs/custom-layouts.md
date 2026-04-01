@@ -169,6 +169,38 @@ command: git switch uebung-1-4
 ---
 ```
 
+### `takeaways`
+
+Key takeaways slide. Extends the theme's `center` layout. Visually it follows the `intro`
+pattern: chapter kicker above a large title, plus a numbered takeaways list below.
+
+**Props:**
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `background` | `string` | `'petrol'` | Background color or image path |
+| `chapter` | `number \| string` | -- | Chapter number shown as `Chapter N` |
+| `title` | `string` | `'Key Takeaways'` | Main heading shown below the chapter label |
+
+**Slots:**
+
+| Slot | Description |
+|------|-------------|
+| default | Takeaway content, typically an ordered list (`1.`, `2.`, `3.`) |
+
+**Usage:**
+
+```markdown
+---
+layout: takeaways
+chapter: 4
+---
+
+1. Curated context enables bigger tasks
+2. Use TDD to enhance the feedback loop
+3. You push it, you own it
+```
+
 ## Content structure reference
 
 Slide content follows the repository structure documented in `docs/slide-structure.md`:

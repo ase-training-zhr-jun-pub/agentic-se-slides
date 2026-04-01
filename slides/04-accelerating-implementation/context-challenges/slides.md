@@ -1,10 +1,9 @@
 ---
-layout: intro
+layout: center
 background: petrol
 ---
 
-### *Dealing with*
-# Context Challenges
+## Dealing with context is *hard* .
 
 <!-- Master reference: Chapter 4 / Slide 142 -->
 
@@ -23,8 +22,10 @@ alignContent: center
 
 ::sidebar::
 
-### Problem 1
-# *Overflow*
+<div class="-mx-4 text-center">
+  <h3 class="[&_em]:text-apricot"><em>Problem 1</em></h3>
+  <h1 class="text-white">Overflow</h1>
+</div>
 
 <!-- Master reference: Chapter 4 / Slide 143 -->
 
@@ -44,8 +45,10 @@ alignContent: center
 
 ::sidebar::
 
-### Problem 2
-# *Distraction*
+<div class="-mx-4 text-center">
+  <h3 class="[&_em]:text-apricot"><em>Problem 2</em></h3>
+  <h1 class="text-white">Distraction</h1>
+</div>
 
 <!-- Master reference: Chapter 4 / Slide 144 -->
 
@@ -65,8 +68,10 @@ alignContent: center
 
 ::sidebar::
 
-### Problem 3
-# *Poisoning*
+<div class="-mx-4 text-center">
+  <h3 class="[&_em]:text-apricot"><em>Problem 3</em></h3>
+  <h1 class="text-white">Poisoning</h1>
+</div>
 
 <!-- Master reference: Chapter 4 / Slide 145 -->
 
@@ -86,8 +91,10 @@ alignContent: center
 
 ::sidebar::
 
-### Problem 4
-# *Confusion*
+<div class="-mx-4 text-center">
+  <h3 class="[&_em]:text-apricot"><em>Problem 4</em></h3>
+  <h1 class="text-white">Confusion</h1>
+</div>
 
 <!-- Master reference: Chapter 4 / Slide 146 -->
 
@@ -107,8 +114,10 @@ alignContent: center
 
 ::sidebar::
 
-### Problem 5
-# *Clash*
+<div class="-mx-4 text-center">
+  <h3 class="[&_em]:text-apricot"><em>Problem 5</em></h3>
+  <h1 class="text-white">Clash</h1>
+</div>
 
 <!-- Master reference: Chapter 4 / Slide 147 -->
 
@@ -129,8 +138,10 @@ alignContent: center
 
 ::sidebar::
 
-### Problem 6
-# *Rot*
+<div class="-mx-4 text-center">
+  <h3 class="[&_em]:text-apricot"><em>Problem 6</em></h3>
+  <h1 class="text-white">Rot</h1>
+</div>
 
 <!-- Master reference: Chapter 4 / Slide 148 -->
 
