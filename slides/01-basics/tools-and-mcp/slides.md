@@ -32,10 +32,12 @@ image: /backgrounds/4.webp
 
 # Tool-Use in Action
 
-```mermaid
+<div class="flex justify-center">
+
+```mermaid {scale: 0.5}
 sequenceDiagram
   participant U as User
-  participant A as Client
+  participant A as Agent
   participant L as LLM
   
   autonumber
@@ -46,9 +48,11 @@ sequenceDiagram
   L ->> A: Tool call (name, params)
   Note over A: Agent executes the tool internally
   A ->> L: Tool result (raw data)
-  L ->> U: Final answer including integrated results
+  L ->> A: Final answer based on tool results
+  A ->> U: Final answer
 ```
 
+</div>
 
 ---
 
@@ -100,7 +104,9 @@ Der entscheidende Vorteil: Tool-Definitionen (Name, Parameter, Beschreibung) wer
 
 # Tool-Call using an MCP-Server
 
-```mermaid
+<div class="flex justify-center">
+
+```mermaid {scale: 0.5}
 sequenceDiagram
   participant U as User
   participant A as Agent
@@ -110,14 +116,16 @@ sequenceDiagram
   autonumber
 
   U ->> A: Request / Task (Prompt)
-  Note right of A: Agent knows available tools<br/>(Name, Params, Description)
-  A ->> S: Discover tools (list, schemas, capabilities)
+  Note right of A: Agent still knows its own tools
+  A -->> S: Discover tools (list, schemas, capabilities)
   S -->> A: Tool registry (names, params, metadata)
-  A ->> L: Context: Tool list & constraints (incl. MCP registry)
+  A ->> L: Context: Tool list (incl. Tools from MCP) & Prompt 
   L ->> A: Tool call (name, params)
   A ->> S: Execute tool via MCP (name, params)
   S ->> A: Tool result (raw data)
   A ->> L: Tool result (raw data)
-  L ->> U: Final answer including integrated results
+  L ->> A: Final answer based on tool results
+  A ->> U: Final answer
 ```
 
+</div>
