@@ -98,13 +98,18 @@ image: /backgrounds/5.webp
 
 # Timetable
 
-- 9:30 - 11:00 Block 1 (90min)
-- 11:00 - 11:15 Coffee Break (15min)
-- 11:15 - 12:45 Block 2 (90min)
-- 12:45 - 14:15 Lunch (90min)
-- 14:15 - 15:45 Block 3 (90min)
-- 15:45 - 16:00 Coffee Break (15min)
-- 16:00 - 17:30 Block 4 (90min)
+<Timetable
+  startTime="09:00"
+  :blocks="[
+    { label: 'Block 1', duration: 90 },
+    { label: 'Coffee Break', duration: 15, rowClass: 'opacity-60' },
+    { label: 'Block 2', duration: 90 },
+    { label: 'Lunch', duration: 90, rowClass: 'text-apricot' },
+    { label: 'Block 3', duration: 90 },
+    { label: 'Coffee Break', duration: 15, rowClass: 'opacity-60' },
+    { label: 'Block 4', duration: 90 },
+  ]"
+/>
 
 <!--
 (9:00 - 10:30)

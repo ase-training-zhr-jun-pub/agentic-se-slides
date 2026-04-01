@@ -332,6 +332,37 @@ the relative positions of the three points.
 </div>
 ```
 
+### `Timetable`
+
+Renders a two-column workshop timetable from a single start time plus an ordered list of blocks.
+Each block computes its own end time from the previous one, so the slide only needs labels,
+durations, and optional UnoCSS classes for coloring.
+
+**Props:**
+
+| Prop | Type | Required | Description |
+|------|------|----------|-------------|
+| `startTime` | `string` | yes | Start time in `HH:mm` format, e.g. `"09:00"` |
+| `blocks` | `TimetableSlot[]` | yes | Ordered list of timetable blocks |
+
+Each `TimetableSlot` has:
+- `label: string` -- visible block label (e.g. `"Coffee Break"`)
+- `duration: number` -- block duration in minutes
+- `rowClass?: string` -- optional UnoCSS classes applied to the full row, typically for text color
+
+**Usage:**
+
+```markdown
+<Timetable
+  startTime="09:00"
+  :blocks="[
+    { label: 'Block 1', duration: 90, rowClass: 'text-petrol' },
+    { label: 'Coffee Break', duration: 15, rowClass: 'opacity-60' },
+    { label: 'Lunch', duration: 90, rowClass: 'text-apricot' },
+  ]"
+/>
+```
+
 ### `Counter`
 
 Simple +/- counter widget. This is a Slidev starter template example and not used in the
