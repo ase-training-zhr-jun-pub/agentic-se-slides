@@ -18,6 +18,27 @@ without importing.
 
 ## Existing components
 
+### `PromptExample`
+
+Renders a short example label followed by a prompt-like mono card. Useful for CLI or comment
+prompts shown inside slides.
+
+**Props:**
+
+| Prop | Type | Required | Description |
+|------|------|----------|-------------|
+| `label` | `string` | yes | Short label shown above the prompt card |
+| `prompt` | `string` | yes | Prompt text rendered inside the mono card |
+
+**Usage:**
+
+```markdown
+<PromptExample
+  label="Example: Merge Request Review"
+  prompt="@claude review this merge request"
+/>
+```
+
 ### `Token`
 
 Renders a single token as a colored inline span. Color is deterministically assigned based on

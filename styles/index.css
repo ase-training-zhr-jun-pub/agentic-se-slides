@@ -1,5 +1,0 @@
-.slidev-layout :where(ul) :where(li)::before {
-  width: 0.5rem;
-  height: 0.5rem;
-  top: 0.65rem;
-}

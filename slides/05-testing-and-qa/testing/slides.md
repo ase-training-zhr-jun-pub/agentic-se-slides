@@ -43,7 +43,7 @@ But: oversimplified with just 3 layers.
 ::right::
 
 <div class="flex h-[28rem] items-center justify-center">
-  <img src="./assets/test-pyramid-v2.svg" class="max-h-[96%] max-w-full w-auto object-contain" />
+  <img src="./assets/test-pyramid.svg" class="max-h-[96%] max-w-full w-auto object-contain" />
 </div>
 
 <!-- Master reference: Chapter 5 / Slide 232 -->
@@ -138,10 +138,12 @@ layout: default
 
 # Integration Test Example
 
-1. Start a database
-2. Connect to the database
-3. Trigger a function that writes to the database
-4. Verify the data has been written to the database
+<ol class="list-decimal pl-5 text-left marker:text-apricot">
+  <li>Start a database</li>
+  <li>Connect to the database</li>
+  <li>Trigger a function that writes to the database</li>
+  <li>Verify the data has been written to the database</li>
+</ol>
 
 <!-- Master reference: Chapter 5 / Slide 240 -->
 

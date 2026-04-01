@@ -31,11 +31,11 @@ const props = withDefaults(defineProps<{
 
 
       <div v-if="props.task || props.command" class="space-y-4 mb-16">
-        <div v-if="props.task" class="text-gray text-4xl leading-tight">
+        <div v-if="props.task" class="text-4xl opacity-80 leading-tight">
           {{ props.task }}
         </div>
 
-        <p v-if="props.command" class="inline-block self-center rounded-lg bg-lightGray/80 px-5 py-3 font-mono text-petrol">
+        <p v-if="props.command" class="inline-block self-center rounded-lg bg-lightGray/20 px-5 py-3 font-mono text-primary">
           $ {{ props.command }}
         </p>
       </div>

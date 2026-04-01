@@ -11,7 +11,7 @@ const props = withDefaults(defineProps<{ background?: string, kicker?: string }>
     <div
       :class="[
         'h-full w-full flex flex-col items-center justify-center text-center',
-        props.background === 'apricot' && '[&_h3]:text-petrol [&_h3_em]:text-petrol [&_h1]:text-white',
+        props.background === 'apricot' && '[&_h3]:text-primary [&_h3_em]:text-primary [&_h1]:text-accent',
       ]"
     >
       <div v-if="props.kicker || $slots.kicker" class="mb-6">

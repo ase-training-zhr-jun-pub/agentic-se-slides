@@ -31,11 +31,10 @@ layout: default
 - Agents tend to find even little things like typos, which humans sometimes miss
 - Agent can also make changes on the spot
 
-**Example:** Merge Request Review
-
-<div class="mt-4 inline-block rounded-lg bg-lightGray px-5 py-3 font-mono text-primary">
-  @claude review this merge request
-</div>
+<PromptExample
+  label="Example: Merge Request Review"
+  prompt="@claude review this merge request"
+/>
 
 <!-- Master reference: Chapter 5 / Slide 248 -->
 
@@ -59,10 +58,9 @@ layout: default
 - Use agents to find vulnerabilities
 - If the agent does not find any, you are not safe, but safer than before
 
-**Example:** Merge Request Review
-
-<div class="mt-4 inline-block rounded-lg bg-lightGray px-5 py-3 font-mono text-primary leading-snug text-left">
-  @claude analyze the merge request and outline potential vulnerabilities in the implementation
-</div>
+<PromptExample
+  label="Example: Merge Request Review"
+  prompt="@claude analyze the merge request and outline potential vulnerabilities in the implementation"
+/>
 
 <!-- Master reference: Chapter 5 / Slide 250 -->
