@@ -9,7 +9,6 @@ background: petrol
 
 ---
 layout: content-with-image
-image: ./assets/bender-tool-belt.png
 ---
 
 # What is an agent?
@@ -21,6 +20,9 @@ image: ./assets/bender-tool-belt.png
 - Has a set of tools to get the job done
 - Got an attitude
 
+::image::
+
+<img src="./assets/bender-tool-belt.png" alt="" class="h-full w-full object-cover" />
 
 ---
 layout: sidebar
@@ -189,4 +191,3 @@ background: petrol
 ---
 
 # Think of agents as *interns*.<br/>Always *verify* their work.
-
