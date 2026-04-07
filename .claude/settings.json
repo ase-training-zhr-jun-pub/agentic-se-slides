@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx slidev:*)",
+      "Bash(npm run export:*)",
+      "Bash(gh project:*)",
+      "Bash(gh label:*)",
+      "Bash(gh issue:*)"
+    ]
+  }
+}
