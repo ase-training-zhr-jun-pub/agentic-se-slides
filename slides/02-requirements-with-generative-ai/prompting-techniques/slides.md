@@ -16,7 +16,7 @@ background: petrol
 - Hope the result will match expectations
 - Works well for common, clear tasks
 
-## When to use
+**When to use**
 
 - Simple, straightforward tasks
 - Standard operations (translate, summarize, classify)
@@ -34,7 +34,7 @@ background: petrol
 - More control over format and style
 - Good when you exactly know what you want
 
-## When to use
+**When to use**
 
 - Custom formats or structures
 - Specific requirements, like tone or style

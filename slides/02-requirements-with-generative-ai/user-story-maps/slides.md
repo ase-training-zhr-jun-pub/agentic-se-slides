@@ -9,9 +9,7 @@ background: petrol
 
 ---
 
-# User Story Maps
-
-## What are?
+# What are User Story Maps?
 
 <div class="space-y-6 text-xl leading-relaxed">
   <p><span class="font-bold">Origin:</span> User Story Mapping by Jeff Patton</p>
@@ -22,9 +20,6 @@ background: petrol
 
 ---
 
-# User Story Maps
-
-## Example
+# Example: <small>User Story Map</small>
 
 <img src="./assets/user-story-map-example.png" class="mt-4 h-[420px] mx-auto object-contain rounded-lg" />
-

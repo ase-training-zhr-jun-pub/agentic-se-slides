@@ -69,7 +69,7 @@ image: /backgrounds/4.webp
 # Agenda
 
 - Chapter 1: Introduction & Basics
-- Chapter 2: Requirements with Generative AI
+- Chapter 2: Requirements for Generative AI
 - Chapter 3: Designing Efficient Architecture
 - Chapter 4: Accelerating Implementation
 - Chapter 5: Optimizing Testing & QA

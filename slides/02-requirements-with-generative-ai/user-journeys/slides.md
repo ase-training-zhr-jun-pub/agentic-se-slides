@@ -9,9 +9,7 @@ background: petrol
 
 ---
 
-# User Journeys
-
-## What are?
+# What are User Journeys?
 
 <div class="space-y-6 text-xl leading-relaxed">
   <p><span class="font-bold">Origin:</span> Service Design, popularized by Adaptive Path and IDEO</p>
@@ -22,9 +20,6 @@ background: petrol
 
 ---
 
-# User Journeys
-
-## Example
+# Example <small>User Journey</small>
 
 <img src="./assets/user-journey-example.png" class="mt-6 w-full max-w-5xl mx-auto rounded-lg" />
-

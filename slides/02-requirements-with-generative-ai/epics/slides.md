@@ -9,9 +9,7 @@ background: petrol
 
 ---
 
-# Epics
-
-## What are?
+# What are Epics?
 
 <div class="space-y-6 text-xl leading-relaxed">
   <p><span class="font-bold">Origin:</span> Agile Software Development, popularized by the book <em>User Stories Applied</em> (Mike Cohn)</p>
@@ -22,9 +20,7 @@ background: petrol
 
 ---
 
-# Epics
-
-## Example
+# Example: <small>Epic</small>
 
 <div class="space-y-5 text-lg leading-snug">
   <div>
@@ -43,4 +39,3 @@ background: petrol
     <p>[Story 1, Story 2, Story 3]</p>
   </div>
 </div>
-

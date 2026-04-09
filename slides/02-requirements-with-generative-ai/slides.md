@@ -4,31 +4,30 @@ no: 2
 background: /backgrounds/4.webp
 ---
 
-# Requirements with Generative AI
+## Requirements for Generative AI
 
 
 ---
 layout: center
+background: white
 ---
 
-<div class="space-y-10">
-  <div class="text-7xl">🏎️</div>
-  <div class="text-center">
-    <h2 class="!text-5xl !leading-tight">A 10x faster engine</h2>
-    <p class="text-2xl mt-4">demands chassis, brakes, etc. to scale accordingly</p>
-  </div>
-</div>
+<VisualCenter>
+  <template #top>
+    <div pb-6 text-7xl>🏎️</div>
+  </template>
+  <h1 mb-0>A <em>10x</em> faster engine</h1>
+  <p mt-0 text-xl>demands chassis, brakes, etc. to scale accordingly.</p>
+</VisualCenter>
 
 
 ---
-layout: center
+layout: default
 ---
 
 # AI in the Product Development Cycle
 
-<img src="./assets-product-development-cycle.png" class="mt-8 w-full max-w-5xl mx-auto" />
-
-<p class="text-right text-sm mt-2 text-primary/60">Inspired by Dave Landis</p>
+<img src="./assets-product-development-cycle.png" class="mt-6 w-full max-w-4xl max-h-[24rem] mx-auto object-contain" />
 
 
 ---
@@ -109,53 +108,12 @@ src: ./agent-assisted-prototypes/slides.md
 ---
 
 ---
-layout: center
+layout: takeaways
 background: petrol
+chapter: 2
 ---
 
-## Chapter 2 -- Key Takeaways
-
-
----
-layout: center
-background: petrol
----
-
-<div class="space-y-10">
-  <div class="uppercase tracking-[0.5em] text-lg text-white/80">Take Away</div>
-  <h2 class="!text-5xl !leading-tight max-w-3xl mx-auto">Invite AI to the table in all areas of product development.</h2>
-</div>
-
-
----
-layout: center
-background: petrol
----
-
-<div class="space-y-10">
-  <div class="uppercase tracking-[0.5em] text-lg text-white/80">Take Away</div>
-  <h2 class="!text-5xl !leading-tight max-w-4xl mx-auto">Most of the discovery work has already happened before AI enters the picture.</h2>
-</div>
-
-
----
-layout: center
-background: petrol
----
-
-<div class="space-y-10">
-  <div class="uppercase tracking-[0.5em] text-lg text-white/80">Take Away</div>
-  <h2 class="!text-5xl !leading-tight max-w-4xl mx-auto">Agents amplify the existing foundation of product discovery, either positively or negatively.</h2>
-</div>
-
-
----
-layout: center
-background: petrol
----
-
-<div class="space-y-10">
-  <div class="uppercase tracking-[0.5em] text-lg text-white/80">Take Away</div>
-  <h2 class="!text-5xl !leading-tight max-w-4xl mx-auto">Documentation that is accessible and easy to consume for humans also works very well for AI agents.</h2>
-</div>
-
+1. Invite AI to the table in all areas of product development.
+2. Most of the discovery work has already happened before AI enters the picture.
+3. Agents amplify the existing foundation of product discovery, either positively or negatively.
+4. Documentation that is accessible and easy to consume for humans also works very well for AI agents.

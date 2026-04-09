@@ -9,9 +9,7 @@ background: petrol
 
 ---
 
-# User Stories
-
-## What are?
+# What are User Stories?
 
 <div class="space-y-6 text-xl leading-relaxed">
   <p><span class="font-bold">Origin:</span> Agile Software Development, popularized by Extreme Programming (Kent Beck)</p>
@@ -22,9 +20,7 @@ background: petrol
 
 ---
 
-# User Stories
-
-## Example
+# Examlpe: <small>User Story</small>
 
 <div class="space-y-4 text-base leading-snug">
   <div>
@@ -45,4 +41,3 @@ background: petrol
     </ul>
   </div>
 </div>
-

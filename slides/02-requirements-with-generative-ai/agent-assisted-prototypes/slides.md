@@ -11,101 +11,96 @@ background: petrol
 
 # What are prototypes good for?
 
-<div class="text-5xl mb-4">👌</div>
-
-- Making ideas visible and testable - get early feedback
-- Communication and alignment - create shared understanding within the team and among stakeholders
-- Reduce risk - identify problems early (better in prototype than production)
-- Iterate quickly - test and adjust designs without too much code
+- **Making ideas visible and testable**: get early feedback
+- **Communication and alignment**: create shared understanding within the team and among stakeholders
+- **Reduce risk**: identify problems early (better in prototype than production)
+- **Iterate quickly**: test and adjust designs without too much code
 
 
 ---
 
-# What are challenges of prototyping?
+# Prototyping Challenges
 
-<div class="text-5xl mb-4">☝️</div>
-
-- Time-consuming - expensive to create (especially interactions and states)
-- Throwaway product - prototypes are not production code
-- Quickly outdated - prototype and reality drift apart
-- Fidelity dilemma - stakeholders confuse fidelity with completion
-- False expectations - technical feasibility gets overlooked
-- Missing documentation - prototype shows what, but not why
-- Technical limitations - real data, states, edge cases are hard to represent
+- **Time-consuming**: expensive to create (especially interactions and states)
+- **Throwaway product**: prototypes are not production code
+- **Quickly outdated**: prototype and reality drift apart
+- **Fidelity dilemma**: stakeholders confuse fidelity with completion
+- **False expectations**: technical feasibility gets overlooked
+- **Missing documentation**: prototype shows what, but not why
+- **Technical limitations**: real data, states, edge cases are hard to represent
 
 
 ---
 
 # Ingredients of a prototype
 
-<div class="text-5xl mb-4">🥗</div>
-
-- Context and goals - user research, scenarios, product vision
-- Design system - color, typography, branding, spacing, components
-- Interaction design - user flows, information architecture
-- Tone and voice - wording and terminology guidelines, microcopy
-- Product requirements - personas, user journeys, user stories, ...
-- Visual references - sketches, wireframes, mood boards, screenshots
+- **Context and goals**: User research, scenarios, product vision
+- **Design system**: color, typography, branding, spacing, components
+- **Interaction design**: user flows, information architecture
+- **Tone and voice**: wording and terminology guidelines, microcopy
+- **Product requirements**: personas, user journeys, user stories, ...
+- **Visual references**: sketches, wireframes, mood boards, screenshots
 
 
+---
+layout: center
+background: petrol
 ---
 
 # Prototyping Tools
 
-### *AI-assisted design*
+---
 
-<LogoRow class="mt-12 h-[360px]">
+<h1 text-center>AI-assisted design</h1>
+
+<LogoRow h-full w="4/5" mx-auto>
   <LogoCard name="Framer">
-    <img src="./assets/framer-logo.png" class="h-32 w-auto object-contain" />
+    <img src="/logos/framer.svg" size-28 />
   </LogoCard>
   <LogoCard name="Figma">
-    <img src="./assets/figma-logo.png" class="h-32 w-auto object-contain" />
+    <img src="/logos/figma.svg" size-28 />
   </LogoCard>
   <LogoCard name="Sketch">
-    <img src="./assets/sketch-logo.png" class="h-32 w-auto object-contain" />
+    <img src="/logos/sketch.svg" size-28 />
   </LogoCard>
 </LogoRow>
 
 
 ---
 
-# Prototyping Tools
+<h1 text-center>AI-assisted <small>vibe</small> coding</h1>
 
-### *AI-assisted (vibe) coding*
-
-<LogoRow class="mt-8">
+<LogoRow h-full>
   <LogoCard name="Lovable">
-    <img src="./assets/lovable-logo.png" class="h-24 w-auto object-contain" />
+    <img src="/logos/lovable.svg" size-28 />
   </LogoCard>
   <LogoCard name="replit">
-    <img src="./assets/replit-logo.png" class="h-24 w-auto object-contain" />
+    <img src="/logos/replit.svg" size-28 />
   </LogoCard>
   <LogoCard name="bolt">
-    <img src="./assets/bolt-logo.png" class="h-24 w-auto object-contain" />
+    <img src="/logos/bolt.svg" size-28 />
   </LogoCard>
   <LogoCard name="v0">
-    <img src="./assets/v0-logo.png" class="h-24 w-auto object-contain" />
+    <img src="/logos/v0.svg" size-28 />
   </LogoCard>
   <LogoCard name="Galileo">
-    <img src="./assets/galileo-logo.png" class="h-24 w-auto object-contain" />
+      <div relative size-28>
+          <img src="/logos/galileo-rip.svg" inset-0 />
+          <div class="absolute text-4xl -top-3 -right-1">🪦</div>
+      </div>
   </LogoCard>
 </LogoRow>
 
-<div class="text-center text-6xl mt-6">🪦</div>
-
-
 ---
 
-# Prototyping Tools
+<h1 text-center>General-purpose AI chatbots</h1>
 
-### *General-purpose AI chatbots*
-
-<LogoRow class="mt-16 h-[320px]">
-  <LogoCard name="ChatGPT" subtitle="OpenAI">
-    <img src="/logos/openai.svg" class="h-32 w-auto object-contain" />
+<LogoRow h-full w="3/5" mx-auto>
+  <LogoCard name="ChatGPT">
+    <img src="/logos/openai.svg" size-28 />
   </LogoCard>
-  <LogoCard name="Claude" subtitle="Anthropic">
-    <img src="/logos/claude.svg" class="h-32 w-auto object-contain" />
+  <LogoCard name="Claude Desktop">
+    <img src="/logos/claude.svg" size-28 />
   </LogoCard>
 </LogoRow>
 
@@ -115,31 +110,23 @@ Chat-Interfaces eignen sich für schnelle Mockups und einmalige Code-Schnipsel. 
 
 ---
 
-# Prototyping Tools
+<h1 text-center>Agentic Coding</h1>
 
-### *Agentic Coding*
-
-<LogoRow class="mt-8">
-  <LogoCard name="Claude Code" subtitle="Anthropic">
-    <img src="/logos/claude-code.png" class="h-20 w-auto object-contain" />
+<LogoRow h-full>
+  <LogoCard name="Claude Code">
+    <img src="/logos/claude.svg" size-28 />
   </LogoCard>
-  <LogoCard name="Gemini CLI" subtitle="Google">
-    <img src="./assets/gemini-cli-logo.png" class="h-20 w-auto object-contain" />
+  <LogoCard name="Gemini CLI">
+    <img src="/logos/gemini-cli.svg" size-28 />
   </LogoCard>
-  <LogoCard name="Amp Code CLI">
-    <img src="./assets/amp-code-cli-logo.png" class="h-20 w-auto object-contain" />
+  <LogoCard name="Open Code">
+    <img src="/logos/opencode-square.svg" size-28 />
   </LogoCard>
-</LogoRow>
-
-<LogoRow class="mt-10">
-  <LogoCard name="OpenAI Codex CLI">
-    <img src="/logos/openai.svg" class="h-20 w-auto object-contain" />
+  <LogoCard name="Codex CLI">
+    <img src="/logos/codex.svg" size-28 />
   </LogoCard>
-  <LogoCard name="Anomaly">
-    <img src="./assets/anomaly-logo.png" class="h-20 w-auto object-contain" />
-  </LogoCard>
-  <LogoCard name="GitHub Copilot CLI">
-    <img src="/logos/github-copilot-cli.png" class="h-20 w-auto object-contain" />
+  <LogoCard name="Copilot CLI">
+    <img src="/logos/github-copilot.svg" size-28 />
   </LogoCard>
 </LogoRow>
 
@@ -156,4 +143,3 @@ Chat-Interfaces eignen sich für schnelle Mockups und einmalige Code-Schnipsel. 
   - Including a UI component library like Bootstrap, ShadCN, Preline, etc.
   - Or using classic design tools like Figma
 - Use your existing baseline documentation to get good results
-

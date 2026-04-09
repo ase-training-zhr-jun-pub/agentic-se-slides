@@ -11,10 +11,68 @@ Wir erstellen sinnvolle Dokumentation die sowohl für Menschen als auch KI nütz
 -->
 
 ---
-layout: center
+layout: default
 ---
 
-<img src="./assets/requirements-overview.png" class="h-full w-full object-contain" />
+<div class="text-primary !font-bold mb-8">
+  <span class="text-accent font-serif font-normal italic">Example</span>
+  <span class="mx-2 font-normal text-primary">|</span>
+  <h1 class="text-primary">Requirements</h1>
+</div>
+
+<div class="grid grid-cols-4 gap-x-6 gap-y-6 pt-2 text-center">
+  <div class="space-y-1">
+    <div class="text-2xl">👁️</div>
+    <p class="my-0 text-xl">Product Vision</p>
+  </div>
+  <div class="space-y-1">
+    <div class="text-2xl">🎯</div>
+    <p class="my-0 text-xl">OKRs</p>
+  </div>
+  <div class="space-y-1">
+    <div class="text-2xl">🧾</div>
+    <p class="my-0 text-xl">Specs</p>
+  </div>
+  <div class="space-y-1">
+    <div class="text-2xl">🔧</div>
+    <p class="my-0 text-xl">Functional</p>
+  </div>
+
+  <div class="space-y-1">
+    <div class="text-2xl">🧰</div>
+    <p class="my-0 text-xl">Jobs to be done</p>
+  </div>
+  <div class="space-y-1">
+    <div class="text-2xl">✨</div>
+    <p class="my-0 text-xl">Non-Functional</p>
+  </div>
+
+  <div class="space-y-1">
+    <div class="text-2xl">👥</div>
+    <p class="my-0 text-xl">Personas</p>
+  </div>
+  <div class="space-y-1">
+    <div class="text-2xl">📍</div>
+    <p class="my-0 text-xl">User Journeys</p>
+  </div>
+  <div class="space-y-1">
+    <div class="text-2xl">🎮</div>
+    <p class="my-0 text-xl">Prototypes</p>
+  </div>
+
+  <div class="space-y-1">
+    <div class="text-2xl">🗺️</div>
+    <p class="my-0 text-xl">User Story Maps</p>
+  </div>
+  <div class="space-y-1">
+    <div class="text-2xl">📄</div>
+    <p class="my-0 text-xl">User Stories</p>
+  </div>
+  <div class="space-y-1">
+    <div class="text-2xl">🎨</div>
+    <p class="my-0 text-xl">Style Guides</p>
+  </div>
+</div>
 
 
 ---
@@ -22,24 +80,23 @@ layout: center
 ---
 
 <div class="h-full flex flex-col justify-center">
-  <div class="text-center uppercase tracking-[0.4em] text-2xl mb-12">Beware</div>
-  <div class="grid grid-cols-[1fr_auto_1fr_auto_1fr] items-center gap-6 text-center">
-    <div>
-      <h2 class="!text-4xl">Random</h2>
-      <p class="text-2xl mt-2">Context</p>
+  <div class="flex items-center justify-center gap-10">
+    <div class="min-w-[10rem] text-left leading-none">
+      <p class="my-0 text-accent font-serif font-normal italic">Random</p>
+      <h3 class="!mt-1">Context</h3>
     </div>
-    <div class="text-6xl">+</div>
-    <div>
-      <h2 class="!text-4xl">Vague</h2>
-      <p class="text-2xl mt-2">Prompts</p>
+    <div class="flex items-center justify-center text-5xl">+</div>
+    <div class="min-w-[10rem] text-left leading-none">
+      <p class="my-0 text-accent font-serif font-normal italic">Vague</p>
+      <h3 class="!mt-1">Prompts</h3>
     </div>
-    <div class="text-6xl">=</div>
-    <div>
-      <h2 class="!text-4xl">Generated</h2>
-      <p class="text-2xl mt-2">Requirements</p>
+    <div class="flex items-center justify-center text-5xl">=</div>
+    <div class="min-w-[10rem] text-left leading-none">
+      <p class="my-0 text-accent font-serif font-normal italic">Generated</p>
+      <h3 class="!mt-1">Requirements</h3>
     </div>
   </div>
-  <div class="text-center text-8xl mt-14">❌</div>
+  <div class="text-center text-6xl mt-12">❌</div>
 </div>
 
 
@@ -48,99 +105,111 @@ layout: center
 ---
 
 <div class="h-full flex flex-col justify-center">
-  <div class="text-center uppercase tracking-[0.4em] text-2xl mb-12">Our Goal</div>
-  <div class="grid grid-cols-[1fr_auto_1fr_auto_1fr] items-start gap-6 text-center">
-    <div class="rounded-xl border border-lightGray p-6">
-      <h2 class="!text-3xl">Engineered Context</h2>
-      <p class="text-lg mt-4">Specific requirements crafted and verified by groups of humans</p>
+  <div class="flex items-center justify-center gap-10">
+    <div class="w-[10rem] text-left">
+      <p class="my-0 text-accent font-serif font-normal italic">Engineered</p>
+      <h3 class="!mt-1">Context</h3>
+      <p class="mt-3 text-sm leading-snug">Specific requirements crafted and verified by groups of humans</p>
     </div>
-    <div class="text-6xl mt-10">+</div>
-    <div class="rounded-xl border border-lightGray p-6">
-      <h2 class="!text-3xl">Tailored Prompts</h2>
-      <p class="text-lg mt-4">Detailed instructions based on proven methodologies</p>
+    <div class="flex items-center justify-center text-5xl">+</div>
+    <div class="w-[10rem] text-left">
+      <p class="my-0 text-accent font-serif font-normal italic">Tailored</p>
+      <h3 class="!mt-1">Prompts</h3>
+      <p class="mt-3 text-sm leading-snug">Detailed instructions based on proven methodologies</p>
     </div>
-    <div class="text-6xl mt-10">=</div>
-    <div class="rounded-xl border border-lightGray p-6">
-      <h2 class="!text-3xl">Generated Documentation</h2>
-      <p class="text-lg mt-4">Accessible output that includes feedback from humans</p>
+    <div class="flex items-center justify-center text-5xl">=</div>
+    <div class="w-[15rem] text-left">
+      <p class="my-0 text-accent font-serif font-normal italic">Generated</p>
+      <h3 class="!mt-1">Documentation</h3>
+      <p class="mt-3 text-sm leading-snug">Accessible output that includes feedback from humans</p>
     </div>
   </div>
-  <div class="text-center text-8xl mt-10">✅</div>
+  <div class="text-center text-6xl mt-12">✅</div>
 </div>
 
+
+---
+layout: default
+---
+
+# How to get there
+
+<div class="mt-10 grid grid-cols-5 items-center">
+  <div class="space-y-8">
+    <div class="flex flex-row text-center">
+      <div>
+        <div class="text-2xl">📚</div>
+        <p class="my-0 mt-2 text-xl font-bold">Baseline</p>
+      </div>
+      <div>+</div>
+      <div>
+        <div class="text-2xl">🧰</div>
+        <p class="my-0 mt-2 text-xl font-bold">Prompts</p>
+      </div>
+    </div>
+    <div class="space-y-0.5 text-sm leading-snug text-left">
+      <p class="my-0">Glossary</p>
+      <p class="my-0">Dossiers</p>
+      <p class="my-0">Concepts</p>
+      <p class="my-0">Meeting Summaries</p>
+      <p class="my-0">Studies, Research & Statistics</p>
+      <p class="my-0">Other internal documents</p>
+      <p class="my-0">...</p>
+    </div>
+  </div>
+
+  <div class="flex flex-col items-center text-petrol text-3xl gap-16">
+    <div>→</div>
+    <div>←</div>
+  </div>
+
+  <div class="pt-2 space-y-20 text-center">
+    <div class="space-y-3">
+      <div class="text-2xl">📝</div>
+      <p class="my-0 text-xl font-bold leading-tight">Generated Documentation</p>
+    </div>
+    <div class="space-y-3">
+      <div class="text-2xl">📄</div>
+      <p class="my-0 text-xl font-bold leading-tight">Refined Documentation</p>
+    </div>
+  </div>
+  <div class="flex flex-col items-center pt-6 text-petrol text-3xl gap-16">
+    <div>→</div>
+    <div>←</div>
+  </div>
+    <div class="pt-2 space-y-20 text-center">
+    <div class="space-y-3">
+      <div class="text-2xl">💬</div>
+      <p class="my-0 text-xl font-bold leading-tight">Human Feedback</p>
+    </div>
+  </div>
+</div>
 
 ---
 layout: center
+background: white
 ---
 
-<div class="h-full w-full flex flex-col justify-center">
-  <div class="uppercase tracking-[0.35em] text-xl text-center mb-10">How to Get There</div>
-  <div class="grid grid-cols-3 gap-10 items-center">
-    <div class="space-y-6">
-      <div class="text-center">
-        <div class="text-4xl">📚</div>
-        <h2 class="!text-5xl mt-2">Baseline</h2>
-      </div>
-      <ul class="text-2xl leading-relaxed list-none pl-0">
-        <li>Glossary</li>
-        <li>Dossiers</li>
-        <li>Concepts</li>
-        <li>Meeting Summaries</li>
-        <li>Studies, Research & Statistics</li>
-        <li>Other internal documents</li>
-        <li>...</li>
-      </ul>
-    </div>
-    <div class="space-y-8 text-center">
-      <div class="text-6xl text-apricot">↗</div>
-      <div>
-        <div class="text-4xl">📝</div>
-        <h2 class="!text-4xl mt-2">Generated Documentation</h2>
-      </div>
-      <div>
-        <div class="text-4xl">📄</div>
-        <h2 class="!text-4xl mt-2">Refined Documentation</h2>
-      </div>
-      <div class="text-6xl text-apricot">↙</div>
-    </div>
-    <div class="space-y-8 text-center">
-      <div class="text-6xl text-apricot">↘</div>
-      <div class="pt-6">
-        <div class="text-4xl">💬</div>
-        <h2 class="!text-5xl mt-2">Human Feedback</h2>
-      </div>
-      <div class="text-6xl text-apricot">↖</div>
-    </div>
-  </div>
-  <div class="absolute left-58 top-1/2 -translate-y-1/2 text-6xl font-bold">+</div>
-  <div class="absolute left-72 top-1/2 -translate-y-1/2 text-center">
-    <div class="text-4xl">🧰</div>
-    <div class="text-4xl font-bold mt-2">Prompts</div>
-  </div>
-</div>
+<h2 text-balance max-w="3/4">But first, we need to convert an existing baseline into an <em>usable format</em> for agents.</h2>
 
+<h3 mt-10 opacity-60 font-serif italic font-normal>For example Markdown</h3>
 
 ---
-layout: center
+layout: intro
+background: petrol
 ---
 
-<div class="space-y-8">
-  <h2 class="!text-5xl !leading-tight max-w-4xl mx-auto">But first, we need to convert an existing baseline into a usable format for agents.</h2>
-  <p class="text-3xl font-serif italic text-apricot">For example Markdown</p>
-</div>
-
-
----
-
+### *Let's create a*
 # Glossary
 
-## What is?
+---
+
+# What is a Glossary?
 
 - Contains most crucial domain and technical terms
 - Define terms so that all stakeholders have a shared understanding of these terms
 - Avoid using synonyms and homonyms
 
-<div class="mt-8 rounded-xl bg-lightGray/40 p-6 text-xl leading-relaxed">
-  <span class="font-bold">Example:</span> Standing Reservation - A permanent, ongoing booking for specific times, typically used for regular meetings or departments with priority access.
-</div>
+<h4 mt-20>Example:</h4>
 
+**Standing Reservation** - A permanent, ongoing booking for specific times, typically used for regular meetings or departments with priority access.
