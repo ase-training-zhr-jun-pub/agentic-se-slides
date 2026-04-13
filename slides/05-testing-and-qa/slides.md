@@ -17,16 +17,14 @@ src: ./quality-assurance/slides.md
 ---
 
 ---
-layout: center
-background: petrol
+layout: takeaways
+chapter: 5
 ---
 
-## Chapter 5 -- Key Takeaways
-
-- Agents are good at writing tests
-- Agents can improve an existing test suite
-- Agents are good at interpreting user interfaces
-- Any review is better than no review
-- Agents can perform tasks in the pipeline
+1. Agents are good at writing tests
+2. Agents can improve an existing test suite
+3. Agents are good at interpreting user interfaces
+4. Any review is better than no review
+5. Agents can perform tasks in the pipeline
 
 <!-- Master reference: Chapter 5 / Slide 252 -->

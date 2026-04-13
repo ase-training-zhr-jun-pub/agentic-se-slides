@@ -184,15 +184,13 @@ layout: default
 <!-- Master reference: Chapter 6 / Slide 268 -->
 
 ---
-layout: center
-background: petrol
+layout: takeaways
+chapter: 6
 ---
 
-## Chapter 6 -- Key Takeaways
-
-- Writing scripts is no longer time-consuming
-- The barrier to writing pipelines is lowered
-- Automate user-friendly release notes
-- Creating and maintaining IaC gets easier
+1. Writing scripts is no longer time-consuming
+2. The barrier to writing pipelines is lowered
+3. Automate user-friendly release notes
+4. Creating and maintaining IaC gets easier
 
 <!-- Master reference: Chapter 6 / Slide 269 -->
