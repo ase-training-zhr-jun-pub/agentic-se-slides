@@ -3,7 +3,7 @@ layout: center
 background: petrol
 ---
 
-## Dealing with context is *hard* .
+# Dealing with context is *hard*.
 
 <!-- Master reference: Chapter 4 / Slide 142 -->
 
@@ -13,7 +13,7 @@ sidebarBackground: petrol
 alignContent: center
 ---
 
-# Context gets too large for the model
+<h2 text-balance>Context gets too large for the model</h2>
 
 - The context window is exceeded
 - Older content is silently dropped once the limit is hit
@@ -35,7 +35,7 @@ sidebarBackground: petrol
 alignContent: center
 ---
 
-# Context includes irrelevant or noisy information
+<h2 text-balance>Context includes irrelevant or noisy information</h2>
 
 - Too much noise reduces answer quality
 - The model may miss the point or give generic responses
@@ -58,7 +58,7 @@ sidebarBackground: petrol
 alignContent: center
 ---
 
-# Context includes harmful or manipulative content
+<h2 text-balance>Context includes harmful or manipulative content</h2>
 
 - Can happen on purpose or not
 - LLMs might pick up and repeat poisoned inputs
@@ -81,7 +81,7 @@ sidebarBackground: petrol
 alignContent: center
 ---
 
-# Fuzzy, vague, or ambiguous inputs confuse the model
+<h2 text-balance>Fuzzy, vague, or ambiguous inputs confuse the model</h2>
 
 - Inputs are unclear, loosely worded, or open to interpretation
 - Similar but slightly different ideas are mixed together
@@ -104,7 +104,7 @@ sidebarBackground: petrol
 alignContent: center
 ---
 
-# Contradictory statements within the context
+<h2 text-balance>Contradictory statements within the context</h2>
 
 - Two or more sources explicitly disagree on a point
 - The model cannot resolve who is right and may pick randomly
@@ -127,7 +127,7 @@ sidebarBackground: petrol
 alignContent: center
 ---
 
-# LLMs degrade as context gets longer
+<h2 text-balance>LLMs degrade as context gets longer</h2>
 
 - Earlier information gets less attention
 - Long context does not equal better results
