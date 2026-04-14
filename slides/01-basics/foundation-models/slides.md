@@ -2,14 +2,16 @@
 
 <div class="flex flex-col items-center pt-20">
   <div class="grid grid-cols-3 gap-4 w-3/4">
-    <div class="bg-apricot text-white text-center py-4 px-6 text-xl rounded">Chatbot</div>
-    <div class="bg-apricot text-white text-center py-4 px-6 text-xl rounded">Coding Assistant</div>
-    <div class="bg-apricot text-white text-center py-4 px-6 text-xl rounded">Translator</div>
+    <div class="bg-apricot text-white text-center py-4 text-xl rounded">Chatbot</div>
+    <div class="bg-apricot text-white text-center py-4 text-xl rounded whitespace-nowrap">Coding Assistant</div>
+    <div class="bg-apricot text-white text-center py-4 text-xl rounded">Translator</div>
   </div>
   <div class="bg-petrol text-white text-center py-4 px-6 text-xl w-3/4 mt-4 rounded">Foundation Model</div>
-  <p class="mt-12 text-2xl text-center">Large, pre-trained models as a basis for<br/>various areas of application</p>
 </div>
 
+<p mt-12 mx-auto w="3/4" text-center text-balance>
+    Large, pre-trained models as a basis for various areas of application
+</p>
 
 ---
 
@@ -54,19 +56,18 @@ sidebarBackground: apricot
 
 # Multi-modality
 
-<div class="flex items-center justify-center h-full">
-  <div class="grid grid-cols-2 gap-16 text-6xl text-center">
-    <div>🔊</div>
-    <div>🏞️</div>
-    <div class="col-span-2 flex justify-center">
-      <div>🤖</div>
-    </div>
-    <div>📝</div>
-    <div class="text-apricot font-mono">&lt;/&gt;</div>
-  </div>
+<div class="relative h-80 mx-auto text-6xl">
+    <div absolute top-0 left-0>🔊</div>
+    <Line opacity-60 dashed start="18% 18%" end="40% 40%" head="triangle" />
+    <div absolute top-0 right-0>🏞️</div>
+    <Line opacity-60 dashed start="82% 18%" end="60% 40%" head="triangle" />
+    <div absolute top="1/2" left="1/2" anchor-center>🤖</div>
+    <div absolute bottom-0 left-0>📝</div>
+    <Line opacity-60 dashed start="18% 82%" end="40% 60%" head="triangle" tail="triangle" />
+    <div absolute bottom-0 right-0 class="text-apricot font-mono">&lt;/&gt;</div>
+    <Line opacity-60 dashed start="82% 82%" end="60% 60%" head="triangle" tail="triangle" />
 </div>
 
 ::sidebar::
 
 ### Text, Code, Images, Audio – *everything in one model*
-

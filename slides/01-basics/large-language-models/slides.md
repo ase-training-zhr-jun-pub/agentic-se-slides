@@ -11,8 +11,8 @@ background: petrol
 
 # LLMs are *Calculators* for <br /> the next best Token
 
-<div class="grid cols-3 items-center justify-center gap-8 mt-12">
-  <div text-sm leading-tight class="flex flex-wrap gap-1">
+<div grid cols-3 items-center justify-center gap-8 mt-12>
+  <div text-sm leading-tight flex flex-wrap gap-1>
         <Token value="You" />
         <Token value=" are" />
         <Token value=" a" />
@@ -25,44 +25,52 @@ background: petrol
         <Token value="ise" />
         <Token value=" and" />
   </div>
-  <v-switch unmount>
-      <template #0><div class="bg-black text-white px-16 py-12 text-4xl font-bold rounded">LLM</div></template>
-      <template #1><img src="./assets/llm-math-meme.gif" /></template>
-      <template #2>
-          <div class="font-serif italic leading-tight text-2xl b-petrol b-3 p-2">
-            <span>h ＝ Transformer(</span>
-            <span block ml-10 tracking-wide>
-                <span text-apricot>i<sub>1</sub></span>,
-                <span text-apricot>i<sub>2</sub></span>,
-                <span text-apricot>i<sub>3</sub></span>, …
-                <span text-apricot>i<sub>n</sub></span>;
-            </span>
-            <span block ml-10 tracking-wide>
-                <span text-green-400>p<sub>1</sub></span>,
-                <span text-green-400>p<sub>2</sub></span>,
-                <span text-green-400>p<sub>3</sub></span>, …
-                <span text-green-400>p<sub>n</sub></span>
-            </span>
-            <span>)</span>
+  <div h="8rem" relative>
+    <v-switch unmount>
+      <template #0>
+          <div absolute inset-0 flex items-center justify-center bg-black text-white text-4xl font-bold rounded>
+              LLM
           </div>
       </template>
-  </v-switch>
-  <div class="flex flex-col gap-2">
-    <div class="flex items-center gap-2"><Token value=" clear" /> 0.6</div>
-    <div class="flex items-center gap-2"><Token value=" give" /> 0.25</div>
-    <div class="flex items-center gap-2"><Token value=" be" /> 0.02</div>
+      <template #1>
+          <img h-full w-full absolute inset-0 object-cover rounded overflow-hidden src="./assets/llm-math-meme.gif" />
+      </template>
+      <template #2>
+          <div absolute inset-0 flex items-center rounded border-3 border-petrol px-6 py-4>
+              <p my-0 font-serif italic text-sm leading-tight>
+                  <span>h = Transformer(</span>
+                  <span text-apricot>i<sub>1</sub>, i<sub>2</sub>, i<sub>3</sub>, ..., i<sub>n</sub></span>;
+                  <br />
+                  <span ml-23 text-teal>p<sub>1</sub>, p<sub>2</sub>, p<sub>3</sub>, p<sub>4</sub>, ..., p<sub>n</sub></span>)
+              </p>
+          </div>
+      </template>
+    </v-switch>
   </div>
-  <div relative text-center>Input Sequence<div class="absolute -right-6 top-0 text-2xl">→</div></div>
-  <div relative text-center>Linear algebra<div class="absolute -right-6 top-0 text-2xl">→</div></div>
-  <div relative text-center>Output<br/>Probability</div>
+  <div flex flex-col gap-2 text-sm ml-10>
+    <div flex items-center gap-2><Token value=" clear" /> 0.6</div>
+    <div flex items-center gap-2><Token value=" give" /> 0.25</div>
+    <div flex items-center gap-2><Token value=" be" /> 0.02</div>
+  </div>
+  <div relative text-center>
+      Input Sequence
+      <div absolute -right-6 top-0 text-2xl>→</div>
+  </div>
+  <div relative text-center>
+      Linear algebra
+      <div absolute -right-6 top-0 text-2xl>→</div>
+  </div>
+  <div relative text-left ml-10>
+      Output<br/>Probability
+  </div>
 </div>
 
 <!--
 Das ist der Schlüssel zum Verständnis: LLMs sind fundamentale Rechner, die auf Basis einer Token-Sequenz die Wahrscheinlichkeit für den nächsten Token berechnen. Alles andere - Code-Generierung, Analyse, Kreativität - entsteht aus diesem einfachen Prinzip.
 
-Innerhalb des LLMs läuft eine komplexe Mathematische Berechnung ab, die uns Wahrscheinlichkeiten für den nächst besten Token berechnen.
+[click] Innerhalb des LLMs läuft eine komplexe Mathematische Berechnung ab, die uns Wahrscheinlichkeiten für den nächst besten Token berechnen.
 
-Diese Berechnungen basieren auf der Transformer-Technologie. Als Eingabe liefern wir unsere Inputs und eine lange Reihe von Parametern.
+[click] Diese Berechnungen basieren auf der Transformer-Technologie. Als Eingabe liefern wir unsere Inputs und eine lange Reihe von Parametern.
 
 Diese Parameter wird beim Training eines Modells abgestimmt und sind für uns als feste Parameter zu sehen.
 
@@ -71,6 +79,7 @@ Somit ist unser einziger Einfluss die Input-Sequenz.
 
 ---
 layout: center
+background: petrol
 ---
 
 ## The initial *input sequence* is <br/> typically called a *Prompt*
@@ -211,11 +220,13 @@ layout: center
 background: apricot
 ---
 
-# Further Information
+## Further Information
 
-<img src="./assets/bbycroft-screenshot.png" class="h-72 rounded shadow-lg mt-4" />
+<img mt-10 h-80 w-auto mx-auto rounded shadow-lg src="./assets/bbycroft-screenshot.png" />
 
-*https://bbycroft.net/llm*
+<p mt-6 mb-10 text-center text-xl font-serif italic text-accent>
+  <a href="https://bbycroft.net/llm" !border-none !text-accent hover:!text-accent>https://bbycroft.net/llm</a>
+</p>
 
 
 ---
@@ -227,13 +238,15 @@ image: /backgrounds/4.webp
 ## Teaching to converse
 
 - Special tokens are introduced during subsequent training sessions:
-  - <Token leading-tight value="<|start|>" />
-  - <Token leading-tight value="<|message|>" />
-  - <Token leading-tight value="<|end|>" />
+  - <Token text-sm leading-tight value="<|start|>" />
+  - <Token text-sm leading-tight value="<|message|>" />
+  - <Token text-sm leading-tight value="<|end|>" />
 - These tokens allow us to represent a conversation
 - LLMs are good at replicating patterns, so they can continue the conversation naturally
 
-*https://cookbook.openai.com/articles/openai-harmony#special-tokens*
+<p class="mt-6 mb-10 text-sm font-serif italic">
+  <a href="https://bbycroft.net/llm" class="!border-none hover:!text-accent">https://cookbook.openai.com/articles/openai-harmony#special-tokens</a>
+</p>
 
 ::sidebar::
 
@@ -252,8 +265,6 @@ Unser Input endet mit <|start|>assistant<|message|> und das LLM fügt die Antwor
 ---
 
 # Structured Output
-
-### For further use
 
 - Text needs full-text parsing, which is complex and error-prone.
 - Instead, force the LLM to return its output in a specific format, such as JSON

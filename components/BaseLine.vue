@@ -6,15 +6,6 @@ import { computed, onMounted, onUnmounted, ref, type Ref } from 'vue'
 export type Marker = 'none' | 'arrow' | 'triangle' | 'dot' | 'diamond'
 export type LineCap = 'butt' | 'round' | 'square'
 export type LineJoin = 'miter' | 'round' | 'bevel'
-export type StrokeColor =
-  | 'currentColor'
-  | 'petrol'
-  | 'apricot'
-  | 'teal'
-  | 'lightGray'
-  | 'white'
-  | 'black'
-
 export type PointValue = `${number}% ${number}%`
 export type RadiusValue = `${number}%`
 
@@ -206,15 +197,6 @@ export function buildCurveGeometry(start: Point, via: Point, end: Point, startTr
 const POINT_PATTERN = /^\s*(-?\d+(?:\.\d+)?)%\s+(-?\d+(?:\.\d+)?)%\s*$/
 const RADIUS_PATTERN = /^\s*(-?\d+(?:\.\d+)?)%\s*$/
 
-const COLOR_MAP: Record<Exclude<StrokeColor, 'currentColor'>, string> = {
-  petrol: 'var(--innoq-petrol)',
-  apricot: 'var(--innoq-apricot)',
-  teal: 'var(--innoq-teal)',
-  lightGray: 'var(--innoq-light-gray)',
-  white: 'white',
-  black: 'black',
-}
-
 const STROKE_SCALE = 4
 
 // ─── Internal rendering helpers ──────────────────────────────────────
@@ -223,13 +205,6 @@ interface MarkerShape {
   path: string
   mode: 'fill' | 'stroke'
   strokeWidth?: number
-}
-
-function resolveStrokeColor(color: StrokeColor): string {
-  if (color === 'currentColor')
-    return 'currentColor'
-
-  return COLOR_MAP[color]
 }
 
 function resolveDashArray(strokeWidth: number, dashed: boolean): string | undefined {
@@ -490,7 +465,6 @@ function formatNumber(value: number): number {
 const props = withDefaults(defineProps<{
   head?: Marker
   tail?: Marker
-  color?: StrokeColor
   strokeWidth?: number
   dashed?: boolean
   lineCap?: LineCap
@@ -499,7 +473,6 @@ const props = withDefaults(defineProps<{
 }>(), {
   head: 'none',
   tail: 'none',
-  color: 'currentColor',
   strokeWidth: 1,
   dashed: false,
   lineCap: 'round',
@@ -518,7 +491,6 @@ const result = computed(() =>
 const geometry = computed(() => result.value.geometry)
 const bbox = computed(() => result.value.bbox)
 
-const strokeColor = computed(() => resolveStrokeColor(props.color))
 const dashArray = computed(() => resolveDashArray(strokeWidth.value, props.dashed))
 const lineJoin = computed(() => resolveLineJoin(props.lineCap, props.lineJoin))
 
@@ -550,7 +522,7 @@ const svgStyle = computed(() => ({
   >
     <path
       :d="geometry.path"
-      :stroke="strokeColor"
+      stroke="currentColor"
       :stroke-width="strokeWidth"
       :stroke-dasharray="dashArray"
       :stroke-linecap="props.lineCap"
@@ -559,8 +531,8 @@ const svgStyle = computed(() => ({
     <path
       v-if="tailMarker"
       :d="tailMarker.path"
-      :fill="tailMarker.mode === 'fill' ? strokeColor : 'none'"
-      :stroke="tailMarker.mode === 'stroke' ? strokeColor : 'none'"
+      :fill="tailMarker.mode === 'fill' ? 'currentColor' : 'none'"
+      :stroke="tailMarker.mode === 'stroke' ? 'currentColor' : 'none'"
       :stroke-width="tailMarker.strokeWidth"
       :stroke-linecap="props.lineCap"
       :stroke-linejoin="lineJoin"
@@ -568,8 +540,8 @@ const svgStyle = computed(() => ({
     <path
       v-if="headMarker"
       :d="headMarker.path"
-      :fill="headMarker.mode === 'fill' ? strokeColor : 'none'"
-      :stroke="headMarker.mode === 'stroke' ? strokeColor : 'none'"
+      :fill="headMarker.mode === 'fill' ? 'currentColor' : 'none'"
+      :stroke="headMarker.mode === 'stroke' ? 'currentColor' : 'none'"
       :stroke-width="headMarker.strokeWidth"
       :stroke-linecap="props.lineCap"
       :stroke-linejoin="lineJoin"

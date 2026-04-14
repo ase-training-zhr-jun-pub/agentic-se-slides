@@ -5,10 +5,20 @@ background: /backgrounds/4.webp
 ---
 
 # Introduction & Basics
-
+Mach 
 ---
-layout: demo
-link: https://chatgpt.com
+layout: center
+background: petrol
+---
+
+<div mt-10 relative>
+    <img src="./assets/chatgpt-ui.png" h="420px" w-auto mx-auto />
+    <div absolute inset-0 grid place-items-center text-4xl italic font-serif text-petrol>
+        Demo
+    </div>
+</div>
+
+https://chatgpt.com
 
 <!--
 Lasst uns mit etwas Vertrautem starten.
@@ -25,9 +35,6 @@ Wie benutze ich ein Promise in Typescrpt?
 
 Das sieht einfach aus, aber dahinter steckt...
 -->
-
----
-
 
 ---
 layout: center
@@ -65,14 +72,17 @@ layout: demo
 kicker: Exercise
 ---
 
+<!--
+Übung am Whiteboard / Miro: Welche Tools kennt ihr?
+
+Tools auf einem Strahl plazieren der von Less- zu Full-Autonom führt
+-->
 
 ---
-layout: center
+layout: takeaways
 background: petrol
+chapter: 1
 ---
-
-### *Chapter 1*
-# Key Takeaways
 
 1. LLMs are token calculators
 2. Context is king

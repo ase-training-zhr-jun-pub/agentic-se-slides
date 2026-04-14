@@ -67,4 +67,3 @@ Chat-Interfaces sind perfekt für Einzelfragen, Brainstorming, Code-Erklärungen
     <img src="/logos/github-copilot.svg" size-24 />
   </LogoCard>
 </LogoRow>
-

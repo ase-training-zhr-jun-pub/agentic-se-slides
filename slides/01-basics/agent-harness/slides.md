@@ -48,12 +48,16 @@ image: /backgrounds/5.webp
 
 ---
 layout: center
+background: petrol
 ---
 
-## The agent modifies the environment to achieve goals.
+<div max-w="4/5" text-balance space-y-16>
 
-## Unlike assistants that return data, agents **change state**.
+## The agent *modifies* the environment to achieve goals.
 
+## Unlike assistants that return data, agents *change state*.
+
+</div>
 
 ---
 layout: sidebar
@@ -63,20 +67,16 @@ image: /backgrounds/5.webp
 
 # Tools
 
-- Read
-  - Files, code, config
-- Write
-  - Create, edit, delete
-- Execute
-  - Commands, Tests, Builds
-- Search
-  - Grep, Find, LSP
+- Read (files, code, config)
+- Write (create, edit, delete)
+- Execute (commands, tests, builds)
+- Search (grep, find, LSP)
 
-## Tools define the *capability boundary* of the agent
+<h3 mt-10> Tools define the <em>capability boundary</em> of the agent</h3>
 
 ::sidebar::
 
-<h3 class="text-center">How agents<br/>interact<br/>with the<br/><strong>environment</strong></h3>
+<h4 class="text-center">How agents interact with the <em>environment</em></h4>
 
 
 ---
@@ -96,7 +96,7 @@ What agents observe:
 
 ::sidebar::
 
-<h3 class="text-center">Closing<br/>the<br/><strong>loop</strong></h3>
+<h4 class="text-center">Closing the <em>loop</em></h4>
 
 
 ---

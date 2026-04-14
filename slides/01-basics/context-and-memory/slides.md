@@ -1,6 +1,6 @@
 ---
 layout: center
-background: apricot
+background: petrol
 ---
 
 ## This autoregressively generated *input <br/> sequence* is what we call *context*.
@@ -8,7 +8,7 @@ background: apricot
 
 ---
 
-# Context is the *whole* knowledge
+# Context is the only knowledge
 
 - On every new task, we start with a new context
 - Everything from a previous conversation is lost
@@ -19,10 +19,10 @@ background: apricot
 
 ---
 layout: center
+background: petrol
 ---
 
-<h1 class="text-7xl">👑 Context</h1>
-<h2 class="font-serif italic text-accent text-5xl">is King</h2>
+## *Context* is king.
 
 <!--
 Wenn LLMs nicht lernen und keine Memory haben, dann ist Context alles!
@@ -97,15 +97,19 @@ https://qwen.ai/blog?id=qwen3.5
 -->
 
 ---
-layout: sidebar
-sidebarBackground: white
+layout: default
 ---
-<img src="./assets/context-engineering.png" class="mx-auto" />
 
-<p class="text-sm text-center mt-4 opacity-60">Image by https://www.philschmid.de/context-engineering</p>
+<div class="mt-4 mb-6 h-full flex flex-col">
+  <div class="flex-1 flex items-center gap-12">
+    <h2 class="!mb-0">What's really <em>relevant</em>?</h2>
+    <img src="./assets/context-engineering.png" class="max-h-[24rem] w-auto object-contain" />
+  </div>
 
-::sidebar::
-## What's really *relevant*?
+  <p class="text-center text-sm font-serif italic">
+    <a href="https://www.philschmid.de/context-engineering" class="!border-none hover:!text-accent">https://www.philschmid.de/context-engineering</a>
+  </p>
+</div>
 
 <!--
 Die Kunst liegt darin herauszufinden: Was ist wirklich relevant für meinen Task? Nicht alles kann in den Context, also müssen wir auswählen.
@@ -116,6 +120,7 @@ layout: intro
 background: apricot
 ---
 
+### *Let's talk about*
 # Memory
 
 

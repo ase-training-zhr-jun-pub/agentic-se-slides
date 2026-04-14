@@ -1,8 +1,9 @@
 ---
-layout: center
+layout: intro
 background: apricot
 ---
 
+### *Let's talk about*
 # Tools
 
 
@@ -25,7 +26,7 @@ image: /backgrounds/4.webp
 
 ::sidebar::
 
-<h3 class="text-center">Giving an<br/>agent the<br/><em>ability to act</em></h3>
+<h4 class="text-center">Giving an<br/>agent the<br/><em>ability to act</em></h4>
 
 
 ---
@@ -59,37 +60,21 @@ sequenceDiagram
 # Model Context Protocol (MCP)
 
 <div class="grid grid-cols-2 gap-8">
-<div>
+  <div>
 
-- A protocol created by Anthropic
-- Standardizes tool discovery
-- Local and remote MCP Servers
-- Protocol defines
-  - Transport Layer (STDIO / HTTP)
-  - Data Layer
-    - Lifecycle Management
-    - Server Features
-    - Client Features
-    - Utility Features
+  - A protocol created by Anthropic
+  - Standardizes tool discovery
+  - Local and remote MCP Servers
+  - Protocol defines
+    - Transport Layer (STDIO / HTTP)
+    - Data Layer
+      - Lifecycle Management
+      - Server Features
+      - Client Features
+      - Utility Features
 
-</div>
-<div class="flex flex-col items-center justify-center text-sm">
-  <div class="border border-petrol rounded p-4 w-full text-center">
-    <div class="mb-2">MCP Host (Assistant)</div>
-    <div class="grid grid-cols-2 gap-4">
-      <div class="bg-apricot text-white rounded px-3 py-2">MCP Client 1</div>
-      <div class="bg-apricot text-white rounded px-3 py-2">MCP Client 2</div>
-    </div>
   </div>
-  <div class="grid grid-cols-2 gap-4 w-full my-2 text-center">
-    <div>↓ STDIO</div>
-    <div>↓ HTTP</div>
-  </div>
-  <div class="grid grid-cols-2 gap-4 w-full text-center">
-    <div class="bg-apricot text-white rounded px-3 py-2">MCP Server 1<br/><span class="text-xs opacity-80">File System</span></div>
-    <div class="bg-apricot text-white rounded px-3 py-2">MCP Server 2<br/><span class="text-xs opacity-80">Jira</span></div>
-  </div>
-</div>
+  <img src="./assets/mcp-bsp.png" class="w-full object-contain" />
 </div>
 
 <!--

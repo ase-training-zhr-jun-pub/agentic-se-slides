@@ -1,5 +1,5 @@
 @layer utilities {
-  .anchor-center {
+  .anchor-center, [anchor-center], [anchor="center"] {
     position: absolute;
     transform: translate(-50%, -50%);
   }

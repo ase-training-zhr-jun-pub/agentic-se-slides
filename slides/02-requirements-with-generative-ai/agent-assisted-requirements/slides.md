@@ -151,10 +151,10 @@ layout: default
     <EmojiStack emoji="💬" top="45%" right="10%">
       <h4 max-w-min>Human Feedback</h4>
     </EmojiStack>
-    <Line start="65% 30%" end="78% 50%" color="apricot" head="triangle" stroke-width="1.5" line-cap="square" />
-    <Line start="77% 62%" end="62% 75%" color="apricot" head="triangle" stroke-width="1.5" line-cap="square" />
-    <Line start="47% 75%" end="30% 70%" color="apricot" head="triangle" stroke-width="1.5" line-cap="square" />
-    <Line start="30% 38%" end="42% 30%" color="apricot" head="triangle" stroke-width="1.5" line-cap="square" />
+    <Line class="text-apricot" start="65% 30%" end="78% 50%" head="triangle" stroke-width="1.5" line-cap="square" />
+    <Line class="text-apricot" start="77% 62%" end="62% 75%" head="triangle" stroke-width="1.5" line-cap="square" />
+    <Line class="text-apricot" start="47% 75%" end="30% 70%" head="triangle" stroke-width="1.5" line-cap="square" />
+    <Line class="text-apricot" start="30% 38%" end="42% 30%" head="triangle" stroke-width="1.5" line-cap="square" />
 </div>
 
 ---
