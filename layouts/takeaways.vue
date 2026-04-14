@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Center from 'slidev-theme-innoq/layouts/center.vue'
+import VisualCenter from 'slidev-theme-innoq/components/VisualCenter.vue'
 
 const props = withDefaults(defineProps<{
   background?: string

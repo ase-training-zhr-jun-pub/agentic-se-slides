@@ -13,6 +13,10 @@ src: ./context-challenges/slides.md
 ---
 
 ---
+src: ./additional-agent-features/slides.md
+---
+
+---
 src: ./context-management/slides.md
 ---
 
