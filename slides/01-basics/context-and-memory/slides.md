@@ -29,6 +29,8 @@ layout: center
 <!-- Master reference: Chapter 1 / Slide 033 -->
 
 ---
+slideNumber: false
+---
 
 # The Context Window
 

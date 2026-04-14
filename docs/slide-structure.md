@@ -205,6 +205,33 @@ Beispiel:
 <img src="./assets/beispielbild.png" />
 ```
 
+## Frontmatter-Optionen
+
+Fuer globale Darstellungsoptionen einzelner Slides koennen zusaetzliche Frontmatter-Keys gesetzt werden.
+
+### `slideNumber`
+
+Steuert die Anzeige der globalen Seitenzahl pro Slide.
+
+- nicht gesetzt: Farbe wird automatisch aus dem Slide-Hintergrund abgeleitet
+- `false`: Seitenzahl auf dieser Slide ausblenden
+- `'petrol' | 'apricot' | 'white' | 'black' | 'primary' | 'accent'`: Seitenzahl mit fixer Farbe anzeigen
+
+Beispiele:
+
+```yaml
+---
+slideNumber: false
+---
+```
+
+```yaml
+---
+background: apricot
+slideNumber: white
+---
+```
+
 Lokale Daten oder Hilfsdateien, die ausschliesslich zu einem Themenblock gehoeren, liegen ebenfalls direkt im Themenblockordner, zum Beispiel in `data/`.
 
 Beispiel:
