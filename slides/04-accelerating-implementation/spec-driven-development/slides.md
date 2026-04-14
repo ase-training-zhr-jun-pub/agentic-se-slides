@@ -9,37 +9,40 @@ background: apricot
 <!-- Master reference: Chapter 4 / Slide 173 -->
 
 ---
-layout: default
-background: white
+layout: two-cols
+leftBackground: white
+rightBackground: white
+alignContent: center
 ---
 
-<h1 class="text-petrol !text-5xl !mb-10">Spec Driven Development</h1>
+::left::
 
-<div class="grid grid-cols-2 gap-12 items-center">
-  <div class="text-petrol text-2xl leading-tight space-y-3">
-    <p>New term popularized by GitHub</p>
-    <p>Announced with SpecKit</p>
-    <p>Tooling around a fixed dev process</p>
-    <p>Tells an agent exactly how to code</p>
-  </div>
+# Spec Driven Development
 
-  <div class="flex flex-col gap-6 text-center">
-    <div class="bg-apricot text-white text-2xl font-semibold px-6 py-4">1. Specify</div>
-    <div class="bg-apricot text-white text-2xl font-semibold px-6 py-4">2. Plan</div>
-    <div class="bg-apricot text-white text-2xl font-semibold px-6 py-4">3. Tasks</div>
-    <div class="bg-apricot text-white text-2xl font-semibold px-6 py-4">4. Implement</div>
-  </div>
+- New term popularized by GitHub
+- Announced with SpecKit
+- Tooling around a fixed dev process
+- Tells an agent exactly how to code
+
+  
+::right::
+
+<div flex justify-center>
+
+```mermaid
+flowchart TD
+  A[Specify] --> B[Plan]
+  B --> C[Tasks]
+  C --> D[Implement]
+```
+
 </div>
 
 <!-- Master reference: Chapter 4 / Slide 174 -->
 
 ---
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Spec Driven Development</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">1. Specify</h1>
-</div>
+# 1. Specify
 
 Use existing documentation like
 - Epics and user stories
@@ -49,21 +52,15 @@ Use existing documentation like
 
 **Important:**
 
-<ol class="list-decimal pl-5 text-left marker:text-apricot">
-  <li>The agent must have access</li>
-  <li>Keep it close to the agent</li>
-  <li>Use text-based formats</li>
-</ol>
+1. The agent must have access
+2. Keep it close to the agent
+3. Use text-based formats
 
 <!-- Master reference: Chapter 4 / Slide 175 -->
 
 ---
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Spec Driven Development</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">2. Plan</h1>
-</div>
+# 2. Plan
 
 Create a plan for implementing the specs.
 
@@ -78,11 +75,7 @@ Create a plan for implementing the specs.
 
 ---
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Spec Driven Development</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">3. Tasks</h1>
-</div>
+# 3. Tasks
 
 - Split the plan into small, reviewable chunks
 - If possible, create independent tasks
@@ -93,13 +86,7 @@ Create a plan for implementing the specs.
 
 ---
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Spec Driven Development</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">4. Implement</h1>
-</div>
-
-## Spec Driven Development
+# 4. Implement
 
 - Implement the tasks
 - Review the code
@@ -178,6 +165,29 @@ layout: multi-col
       <div class="text-apricot">4.</div><div>Update the Spec when something changes</div>
       <div class="text-apricot">5.</div><div>Throw away the code and rebuild from Spec</div>
     </div>
+  </div>
+</div>
+
+---
+
+# SDD Frameworks
+
+<div class="grid grid-cols-4 gap-6 pt-20 text-center text-petrol">
+  <div>
+    <h3 class="!text-3xl !mb-6">Spec Kit</h3>
+    <p class="mx-auto max-w-[15rem] break-words font-serif italic text-xl leading-snug text-petrol/40">https://github.github.com/spec-kit/</p>
+  </div>
+  <div>
+    <h3 class="!text-3xl !mb-6">OpenSpec</h3>
+    <p class="mx-auto max-w-[15rem] break-words font-serif italic text-xl leading-snug text-petrol/40">https://openspec.dev/</p>
+  </div>
+  <div>
+    <h3 class="!text-3xl !mb-6">BMAD</h3>
+    <p class="mx-auto max-w-[15rem] break-words font-serif italic text-xl leading-snug text-petrol/40">https://docs.bmad-method.org/</p>
+  </div>
+  <div>
+    <h3 class="!text-3xl !mb-6">Tessl</h3>
+    <p class="mx-auto max-w-[15rem] break-words font-serif italic text-xl leading-snug text-petrol/40">https://tessl.io</p>
   </div>
 </div>
 

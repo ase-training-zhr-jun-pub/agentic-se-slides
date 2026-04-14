@@ -107,32 +107,6 @@ background: apricot
 # Spec Driven Development
 
 ---
-layout: default
-background: white
----
-
-# SDD Frameworks
-
-<div class="grid grid-cols-4 gap-6 pt-20 text-center text-petrol">
-  <div>
-    <h3 class="!text-3xl !mb-6">Spec Kit</h3>
-    <p class="mx-auto max-w-[15rem] break-words font-serif italic text-xl leading-snug text-petrol/40">https://github.github.com/spec-kit/</p>
-  </div>
-  <div>
-    <h3 class="!text-3xl !mb-6">OpenSpec</h3>
-    <p class="mx-auto max-w-[15rem] break-words font-serif italic text-xl leading-snug text-petrol/40">https://openspec.dev/</p>
-  </div>
-  <div>
-    <h3 class="!text-3xl !mb-6">BMAD</h3>
-    <p class="mx-auto max-w-[15rem] break-words font-serif italic text-xl leading-snug text-petrol/40">https://docs.bmad-method.org/</p>
-  </div>
-  <div>
-    <h3 class="!text-3xl !mb-6">Tessl</h3>
-    <p class="mx-auto max-w-[15rem] break-words font-serif italic text-xl leading-snug text-petrol/40">https://tessl.io</p>
-  </div>
-</div>
-
----
 src: ./development-use-cases/slides.md
 ---
 

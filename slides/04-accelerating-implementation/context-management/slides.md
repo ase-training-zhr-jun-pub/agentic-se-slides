@@ -7,14 +7,8 @@ background: petrol
 # Building Blocks
 
 ---
-layout: default
----
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Memory</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">Agents.md</h1>
-</div>
+# Memory: <small>Agents.md</small>
 
 - Store relevant information for the agent
 - Agents.md files get automatically attached to the context on a new session
@@ -26,15 +20,8 @@ layout: default
 </div>
 
 ---
-layout: default
----
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Memory</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">Rules</h1>
-</div>
-
+# Memory: <small>Rules</small>
 
 - A way to store memory
 - Split up your AGENTS.md into multiple rules
@@ -47,14 +34,8 @@ Indention Rule. <br/>
 Test Strategy Rule. Always write unit tests.
 
 ---
-layout: default
----
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Instructions</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">Commands</h1>
-</div>
+# Instructions: <small>Commands</small>
 
 - Use build-in agent features, usually starting with `/`
 - Custom commands offer predefined prompts from a markdown file
@@ -66,14 +47,8 @@ Execute a custom commit command. <br/>
 `/commit`
 
 ---
-layout: default
----
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Instructions</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">Skills</h1>
-</div>
+# Instructions: <small>Skills</small>
 
 - Store different skills in SKILL.md files
 - A description of the skill is loaded into the context
@@ -84,14 +59,8 @@ layout: default
 Enforce a template for commit messages. Use when the agent wants to commit something.
 
 ---
-layout: default
----
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Delegation</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">Subagents</h1>
-</div>
+# Delegation: <small>Subagents</small>
 
 - Agents can spawn subagents to parallelize certain tasks
 - Can be triggered by
@@ -106,32 +75,15 @@ layout: default
 Executes the tests and reports the results.
 
 ---
-layout: default
----
 
 # Building Blocks
 
-<div class="grid grid-cols-[1.1fr_1.3fr_1.3fr] text-xl leading-snug">
-  <div class="bg-apricot text-white font-extrabold px-6 py-5"></div>
-  <div class="bg-apricot text-white font-extrabold px-6 py-5">Human Provided</div>
-  <div class="bg-apricot text-white font-extrabold px-6 py-5">Agent Invoked</div>
-
-  <div class="px-6 py-6">Memory</div>
-  <div class="px-6 py-6">AGENTS.md / Rules</div>
-  <div class="px-6 py-6">Read / MCP Resources</div>
-
-  <div class="bg-lightGray px-6 py-6">Instructions</div>
-  <div class="bg-lightGray px-6 py-6">Prompt / Command</div>
-  <div class="bg-lightGray px-6 py-6">Skills</div>
-
-  <div class="px-6 py-6">Execution</div>
-  <div class="px-6 py-6">Shell Injection / Hooks</div>
-  <div class="px-6 py-6">Tool Use / MCP Tools</div>
-
-  <div class="bg-lightGray px-6 py-6">Delegation</div>
-  <div class="bg-lightGray px-6 py-6">New Session</div>
-  <div class="bg-lightGray px-6 py-6">Subagents</div>
-</div>
+| Category     | Human Provided          | Agent Invoked        |
+| ------------ | ----------------------- | -------------------- |
+| Memory       | AGENTS.md / Rules       | Read / MCP Resources |
+| Instructions | Prompt / Command        | Skills               |
+| Execution    | Shell Injection / Hooks | Tool Use / MCP Tools |
+| Delegation   | New Session             | Subagents            |
 
 ---
 layout: exercise

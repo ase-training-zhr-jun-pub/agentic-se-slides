@@ -20,16 +20,12 @@ background: apricot
 
 ---
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Use Cases</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">New Features</h1>
-</div>
+# Build Features Iteratively
 
 - Work iteratively
-  - Break the big task into small pieces
-  - Do not provide tasks that are too big
-  - Then iterate quickly
+- Break the big task into small pieces
+- Do not provide tasks that are too big
+- Then iterate quickly
 
 <!-- Master reference: Chapter 4 / Slide 196 -->
 
@@ -59,20 +55,16 @@ layout: default
 
 ---
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Use Cases</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">Refactoring</h1>
-</div>
+# Tips for Refactoring
 
-### Do's
+#### Do's
 
 - Migrate all deprecated usages of library `...`
 - File `@...` is too complex. Refactor it into multiple files.
 - Method `...` in `@...` is hard to understand. Make it easier to read.
 - We decided to use pattern `...` for `...`. Refactor the existing code.
 
-### Don'ts
+#### Don'ts
 
 - Mass rename variables
 - Extract into method
@@ -86,17 +78,13 @@ background: apricot
 ---
 
 ### *Use Agents to assist with*
-# Version Management
+# Version Control
 
 <!-- Master reference: Chapter 4 / Slide 200 -->
 
 ---
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Use Cases</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">Version Management</h1>
-</div>
+# Handle Git Workflows
 
 - Commit current changes and generate a meaningful commit message
 - Create a pull request for a feature branch
@@ -118,11 +106,7 @@ background: apricot
 
 ---
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Use Cases</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">Libraries</h1>
-</div>
+# Help with Libraries
 
 - Given `...`, which libraries could I use for `...`?
 - Implement this feature `...` using library `...`
@@ -143,11 +127,7 @@ background: apricot
 
 ---
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Use Cases</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">Debugging</h1>
-</div>
+# Investigate Errors
 
 - I get the following error `...`. Why does this happen?
 - Rubber ducking: I did `...`, then `...`. The result was `...`

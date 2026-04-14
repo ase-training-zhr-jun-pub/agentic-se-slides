@@ -16,11 +16,7 @@ rightBackground: white
 
 ::left::
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Vibe Coding</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">Definition</h1>
-</div>
+## What is Vibe Coding?
 
 - Coined by Andrej Karpathy
 - Can be done with any AI tool
@@ -29,7 +25,7 @@ rightBackground: white
 
 ::right::
 
-<div class="h-full flex items-center justify-center mt-8">
+<div class="h-full flex items-center justify-center mt-10">
   <img src="/images/vibe-coding-karpathy-tweet.png" class="max-h-[85%] max-w-full object-contain" />
 </div>
 
@@ -62,4 +58,3 @@ background: petrol
 ## Always *review* the agent's work.
 
 <!-- Master reference: Chapter 4 / Slide 172 -->
-

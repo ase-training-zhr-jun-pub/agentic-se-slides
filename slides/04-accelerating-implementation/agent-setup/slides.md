@@ -1,12 +1,4 @@
----
-layout: default
----
-
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Agent Setup</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">Memory</h1>
-</div>
+# Agent Setup: <small>Memory</small>
 
 Document your project knowledge in a memory file:
 - General code structure
@@ -18,14 +10,8 @@ Document your project knowledge in a memory file:
   - Run Configurations
 
 ---
-layout: default
----
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Agent Setup</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">MCP Servers</h1>
-</div>
+# Agent Setup: <small>MCP Servers</small>
 
 - IntelliJ MCP Server
 - Playwright
@@ -35,14 +21,8 @@ layout: default
 - …
 
 ---
-layout: default
----
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Agent Setup</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">IDE Integrations</h1>
-</div>
+# Agent Setup: <small>IDE Integrations</small>
 
 - IDEs may have plugins to integrate (CLI) agents 
 - Enables to see diffs of CLI agents in the IDE
@@ -50,14 +30,8 @@ layout: default
 - CLI agents get IDE context automatically, e.g. errors or problems
 
 ---
-layout: default
----
 
-<div class="text-petrol !font-bold mb-8">
-  <span class="text-apricot font-serif font-normal italic">Agent Setup</span>
-  <span class="mx-2 font-normal text-petrol">|</span>
-  <h1 class="text-petrol">Hooks</h1>
-</div>
+# Agent Setup: <small>Hooks</small>
 
 - Lint and format code on Write / Edit
 - Secure access to .env files and keys

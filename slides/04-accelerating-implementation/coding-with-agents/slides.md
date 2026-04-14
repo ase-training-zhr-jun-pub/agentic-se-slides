@@ -12,12 +12,10 @@ background: apricot
 
 # Test-Driven Development
 
-<ol class="list-decimal pl-5 text-left marker:text-apricot">
-  <li>Write the test</li>
-  <li>Write enough code to make the test pass</li>
-  <li>Refactor other code and tests so all tests pass</li>
-  <li>Repeat</li>
-</ol>
+1. Write the test
+2. Write enough code to make the test pass
+3. Refactor other code and tests so all tests pass
+4. Repeat
 
 <!-- Master reference: Chapter 4 / Slide 183 -->
 
@@ -25,14 +23,13 @@ background: apricot
 
 <h1 class="mb-8">Agentic Test-Driven Development</h1>
 
-
-## Pros
+#### Pros
 - Agent knows when it is done
 - Tests follow the same pattern and are easy for the agent to create
 - Intervene early, before production code is written
 - See early if all edge cases get respected
 
-## Cons
+#### Cons
 - Lots of setup code makes review more difficult
 - Requires a good system prompt so the agent actually does it
 
@@ -40,7 +37,7 @@ background: apricot
 
 ---
 
-<h1 class="mb-8">General Tips</h1>
+# General Tips
 
 - Intervene early when the agent wants to reinvent the wheel
 - Intervene early when the agent goes in the wrong direction
