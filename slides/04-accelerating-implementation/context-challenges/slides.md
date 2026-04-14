@@ -149,8 +149,18 @@ alignContent: center
 layout: center
 ---
 
-<div class="w-full h-full flex items-center justify-center">
-  <img src="./assets/lost-in-the-middle.png" class="max-h-full w-auto object-contain" />
+## „Lost in the middle”
+
+<div class="flex-1 relative p-5">
+    <img src="./assets/lost-in-the-middle.svg" alt="" class="h-full w-full" />
+    <div class="absolute left-[7.5%] inset-y-0 text-center [writing-mode:vertical-rl]">
+        Impact on output
+    </div>
+    <div class="absolute bottom-[7.7%] inset-x-0 text-center">
+        Position in conversation
+    </div>
 </div>
+
+<span text-sm font-serif font-italic text-gray>https://cs.stanford.edu/~nfliu/papers/lost-in-the-middle.arxiv2023.pdf</span>
 
 <!-- Master reference: Chapter 4 / Slide 149 -->
