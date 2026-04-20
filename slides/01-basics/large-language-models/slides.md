@@ -58,7 +58,19 @@ background: petrol
   <div relative text-center>Output<br/>Probability</div>
 </div>
 
-<!-- Master reference: Chapter 1 / Slide 015 -->
+<!--
+Master reference: Chapter 1 / Slide 015
+
+Das ist der Schlüssel zum Verständnis: LLMs sind fundamentale Rechner, die auf Basis einer Token-Sequenz die Wahrscheinlichkeit für den nächsten Token berechnen. Alles andere - Code-Generierung, Analyse, Kreativität - entsteht aus diesem einfachen Prinzip.
+
+Innerhalb des LLMs läuft eine komplexe Mathematische Berechnung ab, die uns Wahrscheinlichkeiten für den nächst besten Token berechnen.
+
+Diese Berechnungen basieren auf der Transformer-Technologie. Als Eingabe liefern wir unsere Inputs und eine lange Reihe von Parametern.
+
+Diese Parameter wird beim Training eines Modells abgestimmt und sind für uns als feste Parameter zu sehen.
+
+Somit ist unser einziger Einfluss die Input-Sequenz.
+-->
 
 ---
 layout: center
@@ -75,14 +87,34 @@ background: petrol
 
 <h1 text-accent> Tokens <span text-white>≠</span> Words</h1>
 
-<!-- Master reference: Chapter 1 / Slide 019 -->
+<!--
+Master reference: Chapter 1 / Slide 019
+
+Tokens sind die Grundeinheit, mit der LLMs arbeiten - aber es sind nicht Wörter, sondern Wortteile. Ein häufiger Fehler ist anzunehmen, dass ein Wort gleich ein Token ist.
+
+Im englischen passt es noch oft, im deutschen schon weniger.
+
+Ganz zu schweigen von Source-Code.
+-->
 
 ---
 layout: demo
 link: https://tiktokenizer.vercel.app/?model=gpt2
 ---
 
-<!-- Master reference: Chapter 1 / Slide 020 -->
+<!--
+Master reference: Chapter 1 / Slide 020
+
+Hier seht ihr, wie Tokenization funktioniert.
+
+Tiktokenizer öffnen und text einfügen
+
+Source Code einfügen, da sehen die Tokens schon ganz anders aus.
+
+Token-Bewusstsein schärfen:
+- Teilnehmer schätzen Token-Anzahl verschiedener Code-Snippets
+- Dann Verifikation mit tiktokenizer.vercel.app
+-->
 
 ---
 clicks: 6
@@ -100,7 +132,30 @@ clicks: 6
   { token: '?',      candidates: [['<|end|>', 0.85], [' I', 0.06], ['  \n', 0.04], [' Thank', 0.03]] },
 ]" />
 
-<!-- Master reference: Chapter 1 / Slides 021-025 -->
+<!--
+Master reference: Chapter 1 / Slides 021-025
+
+(The)
+Für jeden Token berechnet das LLM Wahrscheinlichkeiten für alle möglichen nächsten Tokens. Meist gewinnt nicht der wahrscheinlichste, sondern es wird zufällig basierend auf den Wahrscheinlichkeiten gewählt.
+
+Der token [line] hat kein Leerzeichen am Anfang und würde [ sky] zu [sky][line] machen.
+
+Die Probability Werte werden mit Softmax normalisiert, dessen Summe über alle möglichen Werte 1 beträgt, da wir nur die Top 5 zeigen, ist die Summe etwas kleiner als 1.
+
+(·blue)
+Hier gewinnt clear.
+
+(·today)
+Der Satz könnte hier enden.
+
+Oder er geht weiter mit „today”
+
+(.)
+Nun wird der Token mit dem Satzende noch wahrscheinlicher und gewinnt letztendlich.
+
+(<|end|>)
+Dieser Vorgang wiederholt sich immer weiter, bis die Generierung gestoppt wurde.
+-->
 
 ---
 
@@ -117,7 +172,27 @@ clicks: 6
 - Dynamic token pool based on uncertainty
 - More adaptive than Top-k: token count can vary depending on the distribution
 
-<!-- Master reference: Chapter 1 / Slide 026 -->
+<!--
+Master reference: Chapter 1 / Slide 026
+
+(Deterministic)
+Wenn das LLM immer den wahrscheinlichsten Token nimmt, ist es deterministisch
+
+Das Em
+
+(Top-K)
+Falls jemand nachbohrt:
+
+Der Algorithmus für die Auswahl des finalen Tokens ist in etwa folgendermaßen:
+
+- Erzeuge Zufallszahl zwischen 0 und 1
+- Ist diese kleiner als die Probability von Token 1 → Token 1 gewinnt
+- Ist diese größer als Token 1, aber kleiner als die Summe der Probability von Token 1 und 2 → Token 2 gewinnt
+- usw.
+
+(Top-P (Nucleus Sampling))
+Das passt gut bei hoher Temperatur, weil bei hohem T die Anzahl der möglichen Token größer wird und ein Abschneiden bei einem fixen Wert k die Wirkung der höheren Temperatur wieder aufheben könnte.
+-->
 
 ---
 
@@ -136,7 +211,26 @@ clicks: 6
 
 → Balances **coherence and creativity**
 
-<!-- Master reference: Chapter 1 / Slide 027 -->
+<!--
+Master reference: Chapter 1 / Slide 027
+
+Falls jemand detailliert fragt, die Formel für Softmax mit Temperature ist:
+
+softmax_i = exp(z_i / T) / sum_j exp(z_j / T)
+
+softmax_i = Rating eines Tokens
+z_i = der reine Output des Netzes (Logit) für diesen Token
+z_j = Index über alle anderen Token
+T = Temperature
+
+Bei T = 0 wird per Konvention der höchste Token auf 1 gesetzt (Wäre ja sonst Division durch 0)
+
+Mehr Quellen:
+
+https://towardsdatascience.com/a-comprehensive-guide-to-llm-temperature/
+
+https://medium.com/thinking-sand/mastering-llm-temperature-a-step-by-step-guide-81e9f27fef77
+-->
 
 ---
 layout: center
@@ -172,7 +266,17 @@ image: /backgrounds/4.webp
 
 <h4 class="text-center">From<br/><em>text completion</em><br/>to <em>assistant</em></h4>
 
-<!-- Master reference: Chapter 1 / Slide 029 -->
+<!--
+Master reference: Chapter 1 / Slide 029
+
+In einem erweiterten Training werden dem Base-Model spezielle Tokens hinzugefügt, mit denen eine Konversation dargestellt werden kann.
+
+So kann das Modell nun auf Konversationen trainiert werden. Dazu werden Testdaten in Form von üblichen Konversationen verwendet.
+
+LLMs sind gut darin Muster fortzuführen. Somit kann es eine angefangene Konversation Fortsetzen.
+
+Unser Input endet mit <|start|>assistant<|message|> und das LLM fügt die Antwort des Assistenten an.
+-->
 
 ---
 

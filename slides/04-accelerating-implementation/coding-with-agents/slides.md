@@ -48,4 +48,8 @@ background: apricot
   - There is a Git feature for this: `worktree`
   - It creates another directory with the same files where you can start another agent
 
-<!-- Master reference: Chapter 4 / Slide 185 -->
+<!--
+Master reference: Chapter 4 / Slide 185
+
+Git Worktree
+-->

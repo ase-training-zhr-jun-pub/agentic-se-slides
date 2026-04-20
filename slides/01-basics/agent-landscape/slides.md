@@ -15,7 +15,15 @@
   </LogoCard>
 </LogoRow>
 
-<!-- Master reference: Chapter 1 / Slide 055 -->
+<!--
+Master reference: Chapter 1 / Slide 055
+
+(Evolution)
+Die Meisten Tools sind als Assistants gestartet und entwickeln sich jetzt immer mehr zu Agents
+
+(Chat Bots)
+Chat-Interfaces sind perfekt für Einzelfragen, Brainstorming, Code-Erklärungen. Schnell zugänglich, aber ohne Persistenz.
+-->
 
 ---
 

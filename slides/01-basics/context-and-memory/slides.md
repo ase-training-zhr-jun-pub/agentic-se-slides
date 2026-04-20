@@ -26,7 +26,15 @@ layout: center
 <h1 class="text-7xl">👑 Context</h1>
 <h2 class="font-serif italic text-accent text-5xl">is King</h2>
 
-<!-- Master reference: Chapter 1 / Slide 033 -->
+<!--
+Master reference: Chapter 1 / Slide 033
+
+Wenn LLMs nicht lernen und keine Memory haben, dann ist Context alles!
+
+Das LLM kann nur auf die Informationen zugreifen, die ihr ihm in der aktuellen Session gebt.
+
+Da gibt es nur ein Problem…
+-->
 
 ---
 slideNumber: false
@@ -70,7 +78,31 @@ slideNumber: false
   </LogoCard>
 </LogoRow>
 
-<!-- Master reference: Chapter 1 / Slide 035 -->
+<!--
+Master reference: Chapter 1 / Slide 035
+
+Ist das Kontext-Fenster ausgeschöpft, fallen alte Informationen hinten über, wenn neue Informationen hinzugefügt werden
+
+Context ist begrenzt.
+
+Jedes LLM hat ein Context Window - eine maximale Anzahl von Tokens, die es gleichzeitig verarbeiten kann.
+
+Bei modernen Modellen sind das 100k bis 200k Tokens.
+
+Ach wenn das Kontextfenster eines Modells größer ist, setzt Context-Rot ein, was den Nutzen wieder zunichte macht.
+
+Quellen:
+
+https://developers.openai.com/api/docs/models/gpt-5.4
+
+https://claude.com/blog/1m-context-ga
+
+https://ai.google.dev/gemini-api/docs/models?hl=de
+
+https://docs.mistral.ai/models/devstral-2-25-12
+
+https://qwen.ai/blog?id=qwen3.5
+-->
 
 ---
 layout: sidebar
@@ -83,7 +115,11 @@ sidebarBackground: white
 ::sidebar::
 ## What's really *relevant*?
 
-<!-- Master reference: Chapter 1 / Slide 036 -->
+<!--
+Master reference: Chapter 1 / Slide 036
+
+Die Kunst liegt darin herauszufinden: Was ist wirklich relevant für meinen Task? Nicht alles kann in den Context, also müssen wir auswählen.
+-->
 
 ---
 layout: intro

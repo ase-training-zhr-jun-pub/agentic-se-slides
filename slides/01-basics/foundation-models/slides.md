@@ -34,7 +34,21 @@
   </LogoCard>
 </LogoRow>
 
-<!-- Master reference: Chapter 1 / Slide 012 -->
+<!--
+Master reference: Chapter 1 / Slide 012
+
+Hier seht ihr einige der wichtigsten Foundation Models, die heute verfügbar sind.
+
+GPT-5.1 von OpenAI ist der Allrounder mit starker Code-Generierung, ein universeller Assistent
+
+Claude von Anthropic hat bei Code-Generierung und Tool-Use die Nase vorn
+
+Gemini von Google punktet bei multimodalen Aufgaben; tiefe Google-Integration
+
+Mistral das einige brauchbare europäische Modell; sehr gut in europäischen Sprachen
+
+Qwen von Alibaba ist besonders stark in komplexem Reasoning und mathematischen Aufgaben
+-->
 
 ---
 layout: sidebar

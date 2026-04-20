@@ -91,7 +91,13 @@ sequenceDiagram
 </div>
 </div>
 
-<!-- Master reference: Chapter 1 / Slide 043 -->
+<!--
+Master reference: Chapter 1 / Slide 043
+
+MCP hat inzwischen den Retrieval Part ersetzt.
+
+Deswegen gehen wir auf den nicht weiter ein
+-->
 
 ---
 

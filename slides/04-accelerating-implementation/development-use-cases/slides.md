@@ -92,7 +92,11 @@ background: apricot
 - Assist with resolving merge conflicts
 - Find information in the version history
 
-<!-- Master reference: Chapter 4 / Slide 201 -->
+<!--
+Master reference: Chapter 4 / Slide 201
+
+More than just git blame
+-->
 
 ---
 layout: intro

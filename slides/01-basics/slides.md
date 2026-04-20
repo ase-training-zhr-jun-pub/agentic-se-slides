@@ -9,6 +9,23 @@ background: /backgrounds/4.webp
 ---
 layout: demo
 link: https://chatgpt.com
+
+<!--
+Lasst uns mit etwas Vertrautem starten.
+
+ChatGPT kennt ihr bestimmt alle, oder?
+
+Schauen wir uns kurz an, was dahinter steckt.
+
+[Demo: Einfache Code-Frage an ChatGPT]
+
+```
+Wie benutze ich ein Promise in Typescrpt?
+```
+
+Das sieht einfach aus, aber dahinter steckt...
+-->
+
 ---
 
 <!-- Master reference: Chapter 1 / Slide 009 -->
@@ -65,7 +82,15 @@ background: petrol
 3. Agents run in a feedback loop
 4. They change state to reach a goal
 
-<!-- Master reference: Chapter 1 / Slide 058 -->
+<!--
+Master reference: Chapter 1 / Slide 058
+
+Die drei wichtigsten Erkenntnisse aus Block 1:
+
+- LLMs sind fundamentale Token-Rechner ohne Memory
+- Context entscheidet über Erfolg oder Misserfolg
+- und verschiedene Tools für verschiedene Anwendungsfälle.
+-->
 
 ---
 layout: intro
@@ -75,4 +100,12 @@ background: petrol
 ### *Introduction to*
 # Codespaces
 
-<!-- Master reference: Chapter 1 / Slide 059 -->
+<!--
+Master reference: Chapter 1 / Slide 059
+
+- Open Codespace
+- Start Claude Code
+- Basic navigation
+- One Shot Example:
+"Schreibe mir mal ein Raumbuchungssystem für INNOQ"
+-->

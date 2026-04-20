@@ -6,7 +6,11 @@ background: petrol
 ### *Agent assisted documentation of*
 # Human-centered Requirements
 
-<!-- Master reference: Chapter 2 / Slide 063 -->
+<!--
+Master reference: Chapter 2 / Slide 063
+
+Wir erstellen sinnvolle Dokumentation die sowohl für Menschen als auch KI nützlich ist.
+-->
 
 ---
 layout: center

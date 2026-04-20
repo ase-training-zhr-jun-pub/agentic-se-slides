@@ -50,13 +50,25 @@ sidebarBackground: white
 ::sidebar::
 <h1 class="text-6xl leading-relaxed px-16">👋<br>Hi</h1>
 
-<!-- Master reference: Chapter 1 / Prelude / Slide 2 -->
+<!--
+Master reference: Chapter 1 / Prelude / Slide 2
+-->
 
 ---
 layout: center
 ---
 
 <img src="/images/tractor-meme.png" />
+
+
+<!--
+- Wir hören es heute an jeder Ecke
+- Der Job des Softwareentwicklers wird durch KI ersetzt
+- Unserer Meinung nach erst mal nicht
+- Unser Job wird sich nur grundlegend verändern
+
+- Dazu wollen wir euch in diesem Workshop mit dem nötigen Wissen austatten
+-->
 
 ---
 layout: content-with-image
@@ -73,7 +85,22 @@ image: /backgrounds/4.webp
 - Chapter 6: Streamlining CI/CD
 - Chapter 7: Operations & Monitoring
 
-<!-- Master reference: Chapter 1 / Prelude / Slide 4 -->
+<!--
+Master reference: Chapter 1 / Prelude / Slide 4
+
+Wir starten mit einer Wiederholung der Grundlagen – weil wir sie für essenziell halten.
+
+Danach schauen wir, wie uns KI bei der Erfassung von Anforderungen unterstützen kann.
+
+Anschließend sehen wir, wie wir unsere Architektur mit KI planen können.
+Dann geht es an die Implementierung von Features – auch hier mit KI-Unterstützung.
+
+Im nächsten Schritt werfen wir einen Blick auf Testing und Qualitätssicherung.
+
+Über neue Möglichkeiten in unseren CI/CD-Pipelines kommen wir zum Betrieb & Monitoring.
+
+Zum Schluss geht’s um Integrationsmöglichkeiten bei Wartung und Weiterentwicklung unserer Software.
+-->
 
 ---
 layout: content-with-image
@@ -90,7 +117,41 @@ image: /backgrounds/5.webp
 - 15:45 - 16:00 Coffee Break (15min)
 - 16:00 - 17:30 Block 4 (90min)
 
-<!-- Master reference: Chapter 1 / Prelude / Slide 5 -->
+<!--
+Master reference: Chapter 1 / Prelude / Slide 5
+
+(9:00 - 10:30)
+VOR ORT
+
+Wir wollen unseren Tag in 4 Blöcke aufteilen.
+
+Zwischen jedem Block gibt es eine Pause:
+- Morgens eine Kaffeepause,
+- Mittags eine längere Mittagspause
+- Nachmittags noch mal eine Kaffeepause
+
+Die Zeiten sind nur grober Richtplan!
+
+Wir schauen wie wir durchkommen und passen entsprechend an.
+
+Nun aber zu euch… [nächste Folie]
+
+(Timetable)
+VOR ORT
+
+Wir wollen unseren Tag in 4 Blöcke aufteilen.
+
+Zwischen jedem Block gibt es eine Pause:
+- Morgens eine Kaffeepause,
+- Mittags eine längere Mittagspause
+- Nachmittags noch mal eine Kaffeepause
+
+Die Zeiten sind nur grober Richtplan!
+
+Wir schauen wie wir durchkommen und passen entsprechend an.
+
+Nun aber zu euch… [nächste Folie]
+-->
 
 ---
 layout: sidebar

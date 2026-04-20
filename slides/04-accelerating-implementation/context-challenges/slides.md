@@ -27,7 +27,11 @@ alignContent: center
   <h1 class="text-white">Overflow</h1>
 </div>
 
-<!-- Master reference: Chapter 4 / Slide 143 -->
+<!--
+Master reference: Chapter 4 / Slide 143
+
+Ihr wisst nun dass die Kontextgröße begrenzt ist. Zu viel Inhalt sorgt dafür, dass ältere Informationen hinten überfallen.
+-->
 
 ---
 layout: sidebar
@@ -50,7 +54,11 @@ alignContent: center
   <h1 class="text-white">Distraction</h1>
 </div>
 
-<!-- Master reference: Chapter 4 / Slide 144 -->
+<!--
+Master reference: Chapter 4 / Slide 144
+
+Distraction: Irrelevante Informationen lenken das LLM von der eigentlichen Aufgabe ab. Ein README mit Installationsanweisungen beim Code-Review ist Distraction.
+-->
 
 ---
 layout: sidebar

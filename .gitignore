@@ -9,3 +9,8 @@ components.d.ts
 
 # Local scratch space (PDF exports, crops, etc.)
 tmp/
+
+# Local working docs (not for the repo)
+docs/\[MASTER\]*
+docs/speaker-notes-from-pptx.md
+docs/speaker-notes-migration-status.md

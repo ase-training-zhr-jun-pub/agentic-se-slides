@@ -115,7 +115,11 @@ background: petrol
   </LogoCard>
 </LogoRow>
 
-<!-- Master reference: Chapter 2 / Slide 099 -->
+<!--
+Master reference: Chapter 2 / Slide 099
+
+Chat-Interfaces sind perfekt für Einzelfragen, Brainstorming, Code-Erklärungen. Schnell zugänglich, aber ohne Persistenz.
+-->
 
 ---
 

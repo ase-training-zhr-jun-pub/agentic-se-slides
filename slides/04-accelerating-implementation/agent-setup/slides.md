@@ -9,6 +9,11 @@ Document your project knowledge in a memory file:
   - Formatter
   - Run Configurations
 
+
+<!--
+Claude.md, cline.rules, …
+-->
+
 ---
 
 # Agent Setup: <small>MCP Servers</small>
@@ -19,6 +24,17 @@ Document your project knowledge in a memory file:
 - Postgres
 - Gitlab / GitHub / Jira
 - …
+
+
+<!--
+IntelliJ MCP Server makes the IDE usable for the Agent. This is very useful if you use Jetbrains Products
+
+Playwright enables the agent to click through web pages
+
+Context7 provides access to the latest versions of libraries
+
+Which MCP Servers you need is really specific to your technology
+-->
 
 ---
 

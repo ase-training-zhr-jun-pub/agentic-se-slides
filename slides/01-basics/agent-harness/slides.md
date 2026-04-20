@@ -168,7 +168,29 @@ rightBodyBackground: white
   <div class="font-serif italic text-4xl text-petrol">vs.</div>
 </div>
 
-<!-- Master reference: Chapter 1 / Slide 052 -->
+<!--
+Master reference: Chapter 1 / Slide 052
+
+(Assistants)
+Assistants bekommen einen Prompt und liefern eine Ausgabe
+
+Sie können für eine bessere Ausgabe auch auf Daten, und Tools zurückgreifen.
+
+Ziel ist es aber am Ende einen Output-Text zu produzieren
+
+(Agents)
+Agents gehen jetzt noch weiter.
+
+Sie sollen Aufgaben übernehmen.
+
+Wichtig ist nicht mehr die Ausgabe, sondern dass die Umgebung beeinflusst wurde.
+
+Dabei hängen sie in einer Feedback-Schleife mit der Umgebung uns stoppen erst, wenn sie von der Umgebung das Feedback bekommen haben, dass die Aufgabe gelöst ist
+
+Der Mensch gibt nur noch einen Prompt rein und den Rest übernimmt der Agent.
+
+Die Umgebung wird dabei durch Tools beeinflusst.
+-->
 
 ---
 layout: center

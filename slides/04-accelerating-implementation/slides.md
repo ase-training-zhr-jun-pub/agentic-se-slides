@@ -6,7 +6,11 @@ background: /backgrounds/4.webp
 
 # Accelerating Implementation
 
-<!-- Master reference: Chapter 4 / Slide 141 -->
+<!--
+Master reference: Chapter 4 / Slide 141
+
+Auf Basis der ganzen Dokumente die wir in der Produkt- und Architekturplanung erzeugt haben, können wir nun die Implementierung beginnen.
+-->
 
 ---
 src: ./context-challenges/slides.md
