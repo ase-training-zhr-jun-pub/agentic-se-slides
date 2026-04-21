@@ -6,7 +6,6 @@ background: petrol
 ### *Use Agents for*
 # Decision Making
 
-<!-- Master reference: Chapter 3 / Slide 120 -->
 
 ---
 layout: center
@@ -15,7 +14,6 @@ layout: center
 ## Software architecture
 ## is all about *trade-offs*
 
-<!-- Master reference: Chapter 3 / Slide 121 -->
 
 ---
 layout: center
@@ -24,7 +22,6 @@ layout: center
 ## Our decisions must be
 ## *well-reasoned* and *transparent*
 
-<!-- Master reference: Chapter 3 / Slide 122 -->
 
 ---
 
@@ -38,7 +35,6 @@ layout: center
 - `Status`: Proposed, accepted, deprecated, or superseded
 - `Consequences`: All consequences, including negative ones
 
-<!-- Master reference: Chapter 3 / Slide 123 -->
 
 ---
 
@@ -55,7 +51,6 @@ layout: center
   - Risk of ping flooding by malicious or careless systems
   - Performance overhead and less simple tests
 
-<!-- Master reference: Chapter 3 / Slide 124 -->
 
 ---
 
@@ -73,7 +68,6 @@ Given the following situation, which options do we have to solve this?
 >
 > When choosing option 1, the consequences would be ...
 
-<!-- Master reference: Chapter 3 / Slide 125 -->
 
 ---
 
@@ -95,4 +89,3 @@ Create an ADR from the transcript.
 Write(/docs/adrs/ADR-0010-adr-title.md)
 ```
 
-<!-- Master reference: Chapter 3 / Slide 126 -->

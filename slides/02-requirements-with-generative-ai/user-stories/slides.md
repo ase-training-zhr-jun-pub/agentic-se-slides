@@ -6,7 +6,6 @@ background: petrol
 ### *Let's talk about*
 # User Stories
 
-<!-- Master reference: Chapter 2 / Slide 088 -->
 
 ---
 
@@ -20,7 +19,6 @@ background: petrol
   <p><span class="font-bold">Recommended Input:</span> User story maps, UX flows, proto-personas, technical requirements, business rules, acceptance criteria guidelines</p>
 </div>
 
-<!-- Master reference: Chapter 2 / Slide 089 -->
 
 ---
 
@@ -48,4 +46,3 @@ background: petrol
   </div>
 </div>
 
-<!-- Master reference: Chapter 2 / Slide 090 -->

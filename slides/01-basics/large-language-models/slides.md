@@ -6,7 +6,6 @@ background: petrol
 ### *Let's understand*
 # Large Language Models
 
-<!-- Master reference: Chapter 1 / Slide 014 -->
 
 ---
 
@@ -59,8 +58,6 @@ background: petrol
 </div>
 
 <!--
-Master reference: Chapter 1 / Slide 015
-
 Das ist der Schlüssel zum Verständnis: LLMs sind fundamentale Rechner, die auf Basis einer Token-Sequenz die Wahrscheinlichkeit für den nächsten Token berechnen. Alles andere - Code-Generierung, Analyse, Kreativität - entsteht aus diesem einfachen Prinzip.
 
 Innerhalb des LLMs läuft eine komplexe Mathematische Berechnung ab, die uns Wahrscheinlichkeiten für den nächst besten Token berechnen.
@@ -78,7 +75,6 @@ layout: center
 
 ## The initial *input sequence* is <br/> typically called a *Prompt*
 
-<!-- Master reference: Chapter 1 / Slide 018 -->
 
 ---
 layout: center
@@ -88,8 +84,6 @@ background: petrol
 <h1 text-accent> Tokens <span text-white>≠</span> Words</h1>
 
 <!--
-Master reference: Chapter 1 / Slide 019
-
 Tokens sind die Grundeinheit, mit der LLMs arbeiten - aber es sind nicht Wörter, sondern Wortteile. Ein häufiger Fehler ist anzunehmen, dass ein Wort gleich ein Token ist.
 
 Im englischen passt es noch oft, im deutschen schon weniger.
@@ -103,8 +97,6 @@ link: https://tiktokenizer.vercel.app/?model=gpt2
 ---
 
 <!--
-Master reference: Chapter 1 / Slide 020
-
 Hier seht ihr, wie Tokenization funktioniert.
 
 Tiktokenizer öffnen und text einfügen
@@ -133,8 +125,6 @@ clicks: 6
 ]" />
 
 <!--
-Master reference: Chapter 1 / Slides 021-025
-
 (The)
 Für jeden Token berechnet das LLM Wahrscheinlichkeiten für alle möglichen nächsten Tokens. Meist gewinnt nicht der wahrscheinlichste, sondern es wird zufällig basierend auf den Wahrscheinlichkeiten gewählt.
 
@@ -173,8 +163,6 @@ Dieser Vorgang wiederholt sich immer weiter, bis die Generierung gestoppt wurde.
 - More adaptive than Top-k: token count can vary depending on the distribution
 
 <!--
-Master reference: Chapter 1 / Slide 026
-
 (Deterministic)
 Wenn das LLM immer den wahrscheinlichsten Token nimmt, ist es deterministisch
 
@@ -212,8 +200,6 @@ Das passt gut bei hoher Temperatur, weil bei hohem T die Anzahl der möglichen T
 → Balances **coherence and creativity**
 
 <!--
-Master reference: Chapter 1 / Slide 027
-
 Falls jemand detailliert fragt, die Formel für Softmax mit Temperature ist:
 
 softmax_i = exp(z_i / T) / sum_j exp(z_j / T)
@@ -243,7 +229,6 @@ background: apricot
 
 *https://bbycroft.net/llm*
 
-<!-- Master reference: Chapter 1 / Slide 028 -->
 
 ---
 layout: sidebar
@@ -267,8 +252,6 @@ image: /backgrounds/4.webp
 <h4 class="text-center">From<br/><em>text completion</em><br/>to <em>assistant</em></h4>
 
 <!--
-Master reference: Chapter 1 / Slide 029
-
 In einem erweiterten Training werden dem Base-Model spezielle Tokens hinzugefügt, mit denen eine Konversation dargestellt werden kann.
 
 So kann das Modell nun auf Konversationen trainiert werden. Dazu werden Testdaten in Form von üblichen Konversationen verwendet.
@@ -290,4 +273,3 @@ Unser Input endet mit <|start|>assistant<|message|> und das LLM fügt die Antwor
 - Tell the model it must adhere to the schema
 - Then, it returns JSON
 
-<!-- Master reference: Chapter 1 / Slide 030 -->

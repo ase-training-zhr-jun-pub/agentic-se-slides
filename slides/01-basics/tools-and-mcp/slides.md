@@ -5,7 +5,6 @@ background: apricot
 
 # Tools
 
-<!-- Master reference: Chapter 1 / Slide 040 -->
 
 ---
 layout: sidebar
@@ -28,7 +27,6 @@ image: /backgrounds/4.webp
 
 <h3 class="text-center">Giving an<br/>agent the<br/><em>ability to act</em></h3>
 
-<!-- Master reference: Chapter 1 / Slide 041 -->
 
 ---
 
@@ -51,7 +49,6 @@ sequenceDiagram
   L ->> U: Final answer including integrated results
 ```
 
-<!-- Master reference: Chapter 1 / Slide 042 -->
 
 ---
 
@@ -92,8 +89,6 @@ sequenceDiagram
 </div>
 
 <!--
-Master reference: Chapter 1 / Slide 043
-
 MCP hat inzwischen den Retrieval Part ersetzt.
 
 Deswegen gehen wir auf den nicht weiter ein
@@ -124,4 +119,3 @@ sequenceDiagram
   L ->> U: Final answer including integrated results
 ```
 
-<!-- Master reference: Chapter 1 / Slide 044 -->

@@ -6,7 +6,6 @@ background: apricot
 ### *Let's talk about*
 # Spec Driven Development
 
-<!-- Master reference: Chapter 4 / Slide 173 -->
 
 ---
 layout: two-cols
@@ -38,7 +37,6 @@ flowchart TD
 
 </div>
 
-<!-- Master reference: Chapter 4 / Slide 174 -->
 
 ---
 
@@ -56,7 +54,6 @@ Use existing documentation like
 2. Keep it close to the agent
 3. Use text-based formats
 
-<!-- Master reference: Chapter 4 / Slide 175 -->
 
 ---
 
@@ -71,7 +68,6 @@ Create a plan for implementing the specs.
 - Do we have to migrate the database?
 - ...
 
-<!-- Master reference: Chapter 4 / Slide 176 -->
 
 ---
 
@@ -82,7 +78,6 @@ Create a plan for implementing the specs.
   - This enables working with multiple agents without merge conflicts
 - Each task contains all information needed to start implementation
 
-<!-- Master reference: Chapter 4 / Slide 177 -->
 
 ---
 
@@ -97,7 +92,6 @@ Create a plan for implementing the specs.
   - Debugging expert -> has access to logs and debugger
   - ...
 
-<!-- Master reference: Chapter 4 / Slide 178 -->
 
 ---
 layout: default
@@ -128,7 +122,6 @@ background: white
   </div>
 </div>
 
-<!-- Master reference: Chapter 4 / Slide 179 -->
 
 ---
 layout: multi-col
@@ -199,4 +192,3 @@ task: Planning & Task Breakdown
 command: git merge uebung-3-5
 ---
 
-<!-- Master reference: Chapter 4 / Slide 180 -->

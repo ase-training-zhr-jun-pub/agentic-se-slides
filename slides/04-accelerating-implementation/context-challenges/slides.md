@@ -5,7 +5,6 @@ background: petrol
 
 # Dealing with context is *hard*.
 
-<!-- Master reference: Chapter 4 / Slide 142 -->
 
 ---
 layout: sidebar
@@ -28,8 +27,6 @@ alignContent: center
 </div>
 
 <!--
-Master reference: Chapter 4 / Slide 143
-
 Ihr wisst nun dass die Kontextgröße begrenzt ist. Zu viel Inhalt sorgt dafür, dass ältere Informationen hinten überfallen.
 -->
 
@@ -55,8 +52,6 @@ alignContent: center
 </div>
 
 <!--
-Master reference: Chapter 4 / Slide 144
-
 Distraction: Irrelevante Informationen lenken das LLM von der eigentlichen Aufgabe ab. Ein README mit Installationsanweisungen beim Code-Review ist Distraction.
 -->
 
@@ -81,7 +76,6 @@ alignContent: center
   <h1 class="text-white">Poisoning</h1>
 </div>
 
-<!-- Master reference: Chapter 4 / Slide 145 -->
 
 ---
 layout: sidebar
@@ -104,7 +98,6 @@ alignContent: center
   <h1 class="text-white">Confusion</h1>
 </div>
 
-<!-- Master reference: Chapter 4 / Slide 146 -->
 
 ---
 layout: sidebar
@@ -127,7 +120,6 @@ alignContent: center
   <h1 class="text-white">Clash</h1>
 </div>
 
-<!-- Master reference: Chapter 4 / Slide 147 -->
 
 ---
 layout: sidebar
@@ -151,7 +143,6 @@ alignContent: center
   <h1 class="text-white">Rot</h1>
 </div>
 
-<!-- Master reference: Chapter 4 / Slide 148 -->
 
 ---
 layout: center
@@ -171,4 +162,3 @@ layout: center
 
 <span text-sm font-serif font-italic text-gray>https://cs.stanford.edu/~nfliu/papers/lost-in-the-middle.arxiv2023.pdf</span>
 
-<!-- Master reference: Chapter 4 / Slide 149 -->

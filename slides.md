@@ -18,11 +18,6 @@ background: /backgrounds/4.webp
 ::header::
 WORKSHOP
 
-<!--
-Master reference: Chapter 1 / Prelude / Slide 1
-tmp/slide-corpus/[MASTER] Workshop_ Agentic Software Engineering (3 Tage)__c1155e03a39b/chapters/01-introduction-and-basics/index.md
--->
-
 ---
 layout: sidebar
 background: petrol
@@ -49,10 +44,6 @@ sidebarBackground: white
 
 ::sidebar::
 <h1 class="text-6xl leading-relaxed px-16">👋<br>Hi</h1>
-
-<!--
-Master reference: Chapter 1 / Prelude / Slide 2
--->
 
 ---
 layout: center
@@ -86,8 +77,6 @@ image: /backgrounds/4.webp
 - Chapter 7: Operations & Monitoring
 
 <!--
-Master reference: Chapter 1 / Prelude / Slide 4
-
 Wir starten mit einer Wiederholung der Grundlagen – weil wir sie für essenziell halten.
 
 Danach schauen wir, wie uns KI bei der Erfassung von Anforderungen unterstützen kann.
@@ -118,8 +107,6 @@ image: /backgrounds/5.webp
 - 16:00 - 17:30 Block 4 (90min)
 
 <!--
-Master reference: Chapter 1 / Prelude / Slide 5
-
 (9:00 - 10:30)
 VOR ORT
 

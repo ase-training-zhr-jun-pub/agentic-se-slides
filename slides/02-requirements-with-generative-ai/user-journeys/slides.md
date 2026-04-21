@@ -6,7 +6,6 @@ background: petrol
 ### *Let's talk about*
 # User Journeys
 
-<!-- Master reference: Chapter 2 / Slide 078 -->
 
 ---
 
@@ -20,7 +19,6 @@ background: petrol
   <p><span class="font-bold">Recommended Input:</span> Workshop artifacts, proto-personas, user research, current state analysis, touchpoint inventory, customer feedback</p>
 </div>
 
-<!-- Master reference: Chapter 2 / Slide 079 -->
 
 ---
 
@@ -30,4 +28,3 @@ background: petrol
 
 <img src="./assets/user-journey-example.png" class="mt-6 w-full max-w-5xl mx-auto rounded-lg" />
 
-<!-- Master reference: Chapter 2 / Slide 080 -->

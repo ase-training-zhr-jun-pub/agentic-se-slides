@@ -6,7 +6,6 @@ background: petrol
 ### *Let's talk about*
 # Quality Assurance
 
-<!-- Master reference: Chapter 5 / Slide 246 -->
 
 ---
 layout: intro
@@ -16,7 +15,6 @@ background: apricot
 ### *Use Agents to*
 # Review Merge Requests
 
-<!-- Master reference: Chapter 5 / Slide 247 -->
 
 ---
 layout: default
@@ -36,7 +34,6 @@ layout: default
   prompt="@claude review this merge request"
 />
 
-<!-- Master reference: Chapter 5 / Slide 248 -->
 
 ---
 layout: intro
@@ -46,7 +43,6 @@ background: apricot
 ### *Use Agents to identify*
 # Security Risks
 
-<!-- Master reference: Chapter 5 / Slide 249 -->
 
 ---
 layout: default
@@ -63,4 +59,3 @@ layout: default
   prompt="@claude analyze the merge request and outline potential vulnerabilities in the implementation"
 />
 
-<!-- Master reference: Chapter 5 / Slide 250 -->

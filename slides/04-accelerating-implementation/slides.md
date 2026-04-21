@@ -7,8 +7,6 @@ background: /backgrounds/4.webp
 # Accelerating Implementation
 
 <!--
-Master reference: Chapter 4 / Slide 141
-
 Auf Basis der ganzen Dokumente die wir in der Produkt- und Architekturplanung erzeugt haben, können wir nun die Implementierung beginnen.
 -->
 
@@ -36,13 +34,11 @@ background: petrol
 ### *Development*
 # Processes
 
-<!-- Master reference: Chapter 4 / Slide 167 -->
 
 ---
 src: ./vibe-coding/slides.md
 ---
 
-<!-- Master reference: Chapter 4 / Slide 170 -->
 
 ---
 src: ./spec-driven-development/slides.md
@@ -60,7 +56,6 @@ task: Coding Buddy
 command: git merge uebung-3-6
 ---
 
-<!-- Master reference: Chapter 4 / Slide 186 -->
 
 ---
 layout: exercise
@@ -70,7 +65,6 @@ task: Create a pull request
 command: git merge uebung-3-7
 ---
 
-<!-- Master reference: Chapter 4 / Slide 187 -->
 
 ---
 layout: exercise
@@ -80,7 +74,6 @@ task: Making Reviews
 command: git merge uebung-3-8
 ---
 
-<!-- Master reference: Chapter 4 / Slide 188 -->
 
 ---
 layout: chapter
@@ -126,7 +119,6 @@ task: Optimize context with subagents
 command: git merge uebung-3-9
 ---
 
-<!-- Master reference: Chapter 4 / Slide 206 -->
 
 ---
 layout: center
@@ -134,7 +126,6 @@ layout: center
 
 <img src="./assets/programmer-excuse-generating.png" class="mx-auto max-h-[78%] w-auto object-contain" />
 
-<!-- Master reference: Chapter 4 / Slide 207 -->
 
 ---
 layout: exercise
@@ -144,7 +135,6 @@ task: Parallelize work
 command: git merge uebung-3-10
 ---
 
-<!-- Master reference: Chapter 4 / Slide 208 -->
 
 ---
 layout: takeaways
@@ -156,4 +146,3 @@ chapter: 4
 3. You push it, you own it
 4. No vibe coding for production
 
-<!-- Master reference: Chapter 4 / Slide 209 -->

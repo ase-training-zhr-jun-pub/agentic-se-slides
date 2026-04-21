@@ -6,7 +6,6 @@ background: petrol
 ### *Understanding*
 # The Agent Harness
 
-<!-- Master reference: Chapter 1 / Slide 045 -->
 
 ---
 layout: content-with-image
@@ -22,7 +21,6 @@ image: ./assets/bender-tool-belt.png
 - Has a set of tools to get the job done
 - Got an attitude
 
-<!-- Master reference: Chapter 1 / Slide 046 -->
 
 ---
 layout: sidebar
@@ -45,7 +43,6 @@ image: /backgrounds/5.webp
 
 <h3 class="text-center">What the<br/>agent<br/><em>operates on</em></h3>
 
-<!-- Master reference: Chapter 1 / Slide 047 -->
 
 ---
 layout: center
@@ -55,7 +52,6 @@ layout: center
 
 ## Unlike assistants that return data, agents **change state**.
 
-<!-- Master reference: Chapter 1 / Slide 048 -->
 
 ---
 layout: sidebar
@@ -80,7 +76,6 @@ image: /backgrounds/5.webp
 
 <h3 class="text-center">How agents<br/>interact<br/>with the<br/><strong>environment</strong></h3>
 
-<!-- Master reference: Chapter 1 / Slide 049 -->
 
 ---
 layout: sidebar
@@ -101,7 +96,6 @@ What agents observe:
 
 <h3 class="text-center">Closing<br/>the<br/><strong>loop</strong></h3>
 
-<!-- Master reference: Chapter 1 / Slide 050 -->
 
 ---
 
@@ -130,7 +124,6 @@ What agents observe:
   </div>
 </div>
 
-<!-- Master reference: Chapter 1 / Slide 051 -->
 
 ---
 layout: comparison
@@ -169,8 +162,6 @@ rightBodyBackground: white
 </div>
 
 <!--
-Master reference: Chapter 1 / Slide 052
-
 (Assistants)
 Assistants bekommen einen Prompt und liefern eine Ausgabe
 
@@ -199,4 +190,3 @@ background: petrol
 
 # Think of agents as *interns*.<br/>Always *verify* their work.
 
-<!-- Master reference: Chapter 1 / Slide 053 -->

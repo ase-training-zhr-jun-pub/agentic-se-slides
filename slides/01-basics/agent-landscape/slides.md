@@ -16,8 +16,6 @@
 </LogoRow>
 
 <!--
-Master reference: Chapter 1 / Slide 055
-
 (Evolution)
 Die Meisten Tools sind als Assistants gestartet und entwickeln sich jetzt immer mehr zu Agents
 
@@ -47,7 +45,6 @@ Chat-Interfaces sind perfekt für Einzelfragen, Brainstorming, Code-Erklärungen
   </LogoCard>
 </LogoRow>
 
-<!-- Master reference: Chapter 1 / Slide 056 -->
 
 ---
 
@@ -76,4 +73,3 @@ Chat-Interfaces sind perfekt für Einzelfragen, Brainstorming, Code-Erklärungen
   </LogoCard>
 </LogoRow>
 
-<!-- Master reference: Chapter 1 / Slide 057 -->

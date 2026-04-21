@@ -10,7 +10,6 @@
   <p class="mt-12 text-2xl text-center">Large, pre-trained models as a basis for<br/>various areas of application</p>
 </div>
 
-<!-- Master reference: Chapter 1 / Slide 011 -->
 
 ---
 
@@ -35,8 +34,6 @@
 </LogoRow>
 
 <!--
-Master reference: Chapter 1 / Slide 012
-
 Hier seht ihr einige der wichtigsten Foundation Models, die heute verfügbar sind.
 
 GPT-5.1 von OpenAI ist der Allrounder mit starker Code-Generierung, ein universeller Assistent
@@ -73,4 +70,3 @@ sidebarBackground: apricot
 
 ### Text, Code, Images, Audio – *everything in one model*
 
-<!-- Master reference: Chapter 1 / Slide 013 -->

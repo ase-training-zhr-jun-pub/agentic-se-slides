@@ -10,7 +10,6 @@ There is no fixed academic definition.
 **For us:** <br/>
 Decisions in and around the software that are hard to change.
 
-<!-- Master reference: Chapter 3 / Slide 108 -->
 
 ---
 
@@ -25,7 +24,6 @@ Decisions in and around the software that are hard to change.
 - Code structure
 - Decisions and trade-offs
 
-<!-- Master reference: Chapter 3 / Slide 109 -->
 
 ---
 layout: center
@@ -35,7 +33,6 @@ background: petrol
 ## How can we *leverage agents*
 ## to support us in these areas?
 
-<!-- Master reference: Chapter 3 / Slide 110 -->
 
 ---
 layout: intro
@@ -45,7 +42,6 @@ background: apricot
 ### *Use Agents for*
 # Quality Requirements
 
-<!-- Master reference: Chapter 3 / Slide 111 -->
 
 ---
 layout: default
@@ -56,7 +52,6 @@ layout: default
 <img src="./assets/iso-25010-quality-model.svg" class="mx-auto h-80" />
 <p class="mt-4 text-sm text-primary/60">https://www.innoq.com/en/articles/2021/08/quality-driven-software-architecture-revised/</p>
 
-<!-- Master reference: Chapter 3 / Slide 112 -->
 
 ---
 
@@ -66,7 +61,6 @@ layout: default
 
 <small text-sm>https://www.innoq.com/en/articles/2021/08/quality-driven-software-architecture-revised/</small>
 
-<!-- Master reference: Chapter 3 / Slide 113 -->
 
 ---
 
@@ -80,7 +74,6 @@ layout: default
   
 <p class="mt-4 text-sm text-primary/60">https://www.innoq.com/en/articles/2021/08/quality-driven-software-architecture-revised/</p>
 
-<!-- Master reference: Chapter 3 / Slide 114 -->
 
 ---
 
@@ -93,7 +86,6 @@ layout: default
 | 3 | Usability | S3 | 98% of new users can start adding photos without online help |
 | ... | ... | ... | ... |
 
-<!-- Master reference: Chapter 3 / Slide 115 -->
 
 ---
 
@@ -106,7 +98,6 @@ layout: default
 - `Response`: Bookings are visible and interactive (first contentful paint)
 - `Measure`: In 300ms for 95% of requests
 
-<!-- Master reference: Chapter 3 / Slide 116 -->
 
 ---
 
@@ -116,7 +107,6 @@ Construct a quality scenario, including a reasonable measure, for the following 
 
 > A consultant views the bookings of an office on the Calvin website. The bookings are visible and interactive (first contentful paint) in 300ms for 95% of the requests.
 
-<!-- Master reference: Chapter 3 / Slide 117 -->
 
 ---
 
@@ -130,4 +120,3 @@ Read in the table of quality scenarios. Find conflicting scenarios and prioritiz
 >
 > Because this is just a prototype and should not run in production, usability is more important than security. So I would prioritize S4 over S13.
 
-<!-- Master reference: Chapter 3 / Slide 118 -->

@@ -6,7 +6,6 @@ background: apricot
 ### *Use Agents for*
 # Documentation
 
-<!-- Master reference: Chapter 3 / Slide 128 -->
 
 ---
 
@@ -24,7 +23,6 @@ background: apricot
 - Minimizes know-how transfer and searching
 - Agents can work on it
 
-<!-- Master reference: Chapter 3 / Slide 129 -->
 
 ---
 layout: two-cols
@@ -57,7 +55,6 @@ rightBackground: white
   <p class="my-0 bg-apricot px-5 py-2">12. Glossary</p>
 </div>
 
-<!-- Master reference: Chapter 3 / Slide 130 -->
 
 ---
 
@@ -71,7 +68,6 @@ rightBackground: white
   - Business context (domain-specific inputs and outputs)
   - Technical context (channels, protocols, hardware)
 
-<!-- Master reference: Chapter 3 / Slide 131 -->
 
 ---
 layout: content-with-image
@@ -89,4 +85,3 @@ imageAlign: center
 ::image::
 <img src="./assets/arc42-building-block-view.png" mt-20 />
 
-<!-- Master reference: Chapter 3 / Slide 132 -->

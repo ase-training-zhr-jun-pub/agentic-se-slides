@@ -7,8 +7,6 @@ background: petrol
 # Human-centered Requirements
 
 <!--
-Master reference: Chapter 2 / Slide 063
-
 Wir erstellen sinnvolle Dokumentation die sowohl für Menschen als auch KI nützlich ist.
 -->
 
@@ -18,7 +16,6 @@ layout: center
 
 <img src="./assets/requirements-overview.png" class="h-full w-full object-contain" />
 
-<!-- Master reference: Chapter 2 / Slide 064 -->
 
 ---
 layout: center
@@ -45,7 +42,6 @@ layout: center
   <div class="text-center text-8xl mt-14">❌</div>
 </div>
 
-<!-- Master reference: Chapter 2 / Slide 065 -->
 
 ---
 layout: center
@@ -72,7 +68,6 @@ layout: center
   <div class="text-center text-8xl mt-10">✅</div>
 </div>
 
-<!-- Master reference: Chapter 2 / Slide 066 -->
 
 ---
 layout: center
@@ -124,7 +119,6 @@ layout: center
   </div>
 </div>
 
-<!-- Master reference: Chapter 2 / Slide 067 -->
 
 ---
 layout: center
@@ -135,7 +129,6 @@ layout: center
   <p class="text-3xl font-serif italic text-apricot">For example Markdown</p>
 </div>
 
-<!-- Master reference: Chapter 2 / Slide 068 -->
 
 ---
 
@@ -151,4 +144,3 @@ layout: center
   <span class="font-bold">Example:</span> Standing Reservation - A permanent, ongoing booking for specific times, typically used for regular meetings or departments with priority access.
 </div>
 
-<!-- Master reference: Chapter 2 / Slide 069 -->

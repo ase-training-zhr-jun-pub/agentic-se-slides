@@ -6,7 +6,6 @@ background: petrol
 ### *Let's talk about*
 # Proto-Personas
 
-<!-- Master reference: Chapter 2 / Slide 071 -->
 
 ---
 
@@ -20,7 +19,6 @@ background: petrol
   <p><span class="font-bold">Recommended Input:</span> User research data, analytics, customer interviews, demographic data, behavioral patterns</p>
 </div>
 
-<!-- Master reference: Chapter 2 / Slide 072 -->
 
 ---
 
@@ -53,4 +51,3 @@ background: petrol
   </div>
 </div>
 
-<!-- Master reference: Chapter 2 / Slide 073 -->

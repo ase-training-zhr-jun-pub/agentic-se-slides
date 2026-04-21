@@ -6,7 +6,6 @@ background: /backgrounds/4.webp
 
 # Operations & Monitoring
 
-<!-- Master reference: Chapter 7 / Slide 270 -->
 
 ---
 layout: intro
@@ -16,7 +15,6 @@ background: petrol
 ### *Use Cases for*
 # Operations & Monitoring
 
-<!-- Master reference: Chapter 7 / Slide 271 -->
 
 ---
 layout: default
@@ -27,7 +25,6 @@ layout: default
 - Implement Logging API
 - Create logs in the right spots
 
-<!-- Master reference: Chapter 7 / Slide 272 -->
 
 ---
 layout: default
@@ -42,7 +39,6 @@ layout: default
 - Execute queries in proprietary query languages
 - Adjust alerts
 
-<!-- Master reference: Chapter 7 / Slide 273 -->
 
 ---
 layout: demo
@@ -51,7 +47,6 @@ layout: demo
 https://play.grafana.org/dashboards <br/>
 https://github.com/grafana/mcp-grafana
 
-<!-- Master reference: Chapter 7 / Slide 274 -->
 
 ---
 layout: default
@@ -63,7 +58,6 @@ layout: default
 - Use logs to locate the source of errors
 - Use the log inspection to fix the bug
 
-<!-- Master reference: Chapter 7 / Slide 275 -->
 
 ---
 layout: exercise
@@ -83,7 +77,6 @@ layout: default
 - Use `EXPLAIN` to inspect index hits
 - Adjust queries & indexes to fix performance issues
 
-<!-- Master reference: Chapter 7 / Slide 276 -->
 
 ---
 layout: default
@@ -95,7 +88,6 @@ layout: default
 - Identify resource-hungry functions
 - Propose changes
 
-<!-- Master reference: Chapter 7 / Slide 277 -->
 
 ---
 layout: center
@@ -109,4 +101,3 @@ background: petrol
 - Write proprietary queries in tools with Agents
 - Agents can fix bugs automatically
 
-<!-- Master reference: Chapter 7 / Slide 278 -->

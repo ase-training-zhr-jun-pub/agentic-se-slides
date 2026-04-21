@@ -6,7 +6,6 @@ background: petrol
 ### *Additional*
 # Agent Features
 
-<!-- Master reference: Chapter 4 / Slide 157 -->
 
 ---
 
@@ -21,7 +20,6 @@ background: petrol
 - `Mac`: `Shift + Tab + Tab`
 - `Windows`: `Shift + Tab + Tab`
 
-<!-- Master reference: Chapter 4 / Slide 158 -->
 
 ---
 
@@ -38,7 +36,6 @@ background: petrol
 - `/context` -- visualize current context usage
 - `/compact` -- focus on code samples and API usage
 
-<!-- Master reference: Chapter 4 / Slide 159 -->
 
 ---
 
@@ -52,4 +49,3 @@ background: petrol
 
 Prevent the agent from reading or writing sensitive files.
 
-<!-- Master reference: Chapter 4 / Slide 160 -->

@@ -6,7 +6,6 @@ background: petrol
 ### *Let's talk about*
 # User Story Maps
 
-<!-- Master reference: Chapter 2 / Slide 081 -->
 
 ---
 
@@ -20,7 +19,6 @@ background: petrol
   <p><span class="font-bold">Recommended Input:</span> Workshop artefacts, user journeys, UX docs, proto-personas, meeting transcripts</p>
 </div>
 
-<!-- Master reference: Chapter 2 / Slide 082 -->
 
 ---
 
@@ -30,4 +28,3 @@ background: petrol
 
 <img src="./assets/user-story-map-example.png" class="mt-4 h-[420px] mx-auto object-contain rounded-lg" />
 
-<!-- Master reference: Chapter 2 / Slide 083 -->

@@ -6,7 +6,6 @@ background: /backgrounds/4.webp
 
 # CI/CD
 
-<!-- Master reference: Chapter 6 / Slide 253 -->
 
 ---
 layout: intro
@@ -16,7 +15,6 @@ background: petrol
 ### *Use Cases for*
 # CI/CD
 
-<!-- Master reference: Chapter 6 / Slide 254 -->
 
 ---
 layout: intro
@@ -26,7 +24,6 @@ background: apricot
 ### *Use Agents to evaluate*
 # CI/CD Strategies
 
-<!-- Master reference: Chapter 6 / Slide 255 -->
 
 ---
 layout: default
@@ -37,7 +34,6 @@ layout: default
 - Use the Agent as input for CI/CD strategies
 - Find the right CI/CD setup for the project
 
-<!-- Master reference: Chapter 6 / Slide 256 -->
 
 ---
 layout: intro
@@ -47,7 +43,6 @@ background: apricot
 ### *Use Agents to help with*
 # Automation
 
-<!-- Master reference: Chapter 6 / Slide 257 -->
 
 ---
 layout: default
@@ -59,7 +54,6 @@ layout: default
 - Automate repetitive work
 - Way faster than before
 
-<!-- Master reference: Chapter 6 / Slide 258 -->
 
 ---
 layout: intro
@@ -69,7 +63,6 @@ background: apricot
 ### *Use Agents to integrate*
 # Feature Flags
 
-<!-- Master reference: Chapter 6 / Slide 259 -->
 
 ---
 layout: default
@@ -81,7 +74,6 @@ layout: default
 - Use the Agent to integrate feature flags in code
 - Find the right location for feature flags
 
-<!-- Master reference: Chapter 6 / Slide 260 -->
 
 ---
 layout: intro
@@ -91,7 +83,6 @@ background: apricot
 ### *Use Agents to write*
 # Pipelines
 
-<!-- Master reference: Chapter 6 / Slide 261 -->
 
 ---
 layout: default
@@ -104,7 +95,6 @@ layout: default
 - Before: We needed DevOps specialists
 - Now: Enablement to build and optimize pipelines
 
-<!-- Master reference: Chapter 6 / Slide 262 -->
 
 ---
 layout: exercise
@@ -122,7 +112,6 @@ background: apricot
 ### *Use Agents in*
 # Pipeline Jobs
 
-<!-- Master reference: Chapter 6 / Slide 263 -->
 
 ---
 layout: default
@@ -137,7 +126,6 @@ layout: default
   - Find untested edge cases
   - Recommend Merge or not
 
-<!-- Master reference: Chapter 6 / Slide 264 -->
 
 ---
 layout: intro
@@ -147,7 +135,6 @@ background: apricot
 ### *Use Agents to create*
 # Infrastructure as Code
 
-<!-- Master reference: Chapter 6 / Slide 265 -->
 
 ---
 layout: default
@@ -160,7 +147,6 @@ layout: default
 - Before: We needed DevOps specialists
 - Now: Everybody is enabled to create IaC files
 
-<!-- Master reference: Chapter 6 / Slide 266 -->
 
 ---
 layout: intro
@@ -170,7 +156,6 @@ background: apricot
 ### *Use Agents to migrate*
 # Infrastructure as Code
 
-<!-- Master reference: Chapter 6 / Slide 267 -->
 
 ---
 layout: default
@@ -181,7 +166,6 @@ layout: default
 - Agents are excellent in translating
 - Use Agents to migrate from one IaC format to another
 
-<!-- Master reference: Chapter 6 / Slide 268 -->
 
 ---
 layout: takeaways
@@ -193,4 +177,3 @@ chapter: 6
 3. Automate user-friendly release notes
 4. Creating and maintaining IaC gets easier
 
-<!-- Master reference: Chapter 6 / Slide 269 -->

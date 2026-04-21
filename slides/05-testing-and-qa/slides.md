@@ -6,7 +6,6 @@ background: /backgrounds/4.webp
 
 # Testing & Quality Assurance
 
-<!-- Master reference: Chapter 5 / Slide 229 -->
 
 ---
 src: ./testing/slides.md
@@ -27,4 +26,3 @@ chapter: 5
 4. Any review is better than no review
 5. Agents can perform tasks in the pipeline
 
-<!-- Master reference: Chapter 5 / Slide 252 -->

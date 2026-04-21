@@ -6,7 +6,6 @@ background: apricot
 ### *Use Agents for*
 # Building Code
 
-<!-- Master reference: Chapter 4 / Slide 182 -->
 
 ---
 
@@ -17,7 +16,6 @@ background: apricot
 3. Refactor other code and tests so all tests pass
 4. Repeat
 
-<!-- Master reference: Chapter 4 / Slide 183 -->
 
 ---
 
@@ -33,7 +31,6 @@ background: apricot
 - Lots of setup code makes review more difficult
 - Requires a good system prompt so the agent actually does it
 
-<!-- Master reference: Chapter 4 / Slide 184 -->
 
 ---
 
@@ -49,7 +46,5 @@ background: apricot
   - It creates another directory with the same files where you can start another agent
 
 <!--
-Master reference: Chapter 4 / Slide 185
-
 Git Worktree
 -->

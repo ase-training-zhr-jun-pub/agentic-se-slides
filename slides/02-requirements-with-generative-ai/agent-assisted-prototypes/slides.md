@@ -6,7 +6,6 @@ background: petrol
 ### *Agent assisted generation of*
 # Prototypes
 
-<!-- Master reference: Chapter 2 / Slide 093 -->
 
 ---
 
@@ -19,7 +18,6 @@ background: petrol
 - Reduce risk - identify problems early (better in prototype than production)
 - Iterate quickly - test and adjust designs without too much code
 
-<!-- Master reference: Chapter 2 / Slide 094 -->
 
 ---
 
@@ -35,7 +33,6 @@ background: petrol
 - Missing documentation - prototype shows what, but not why
 - Technical limitations - real data, states, edge cases are hard to represent
 
-<!-- Master reference: Chapter 2 / Slide 095 -->
 
 ---
 
@@ -50,7 +47,6 @@ background: petrol
 - Product requirements - personas, user journeys, user stories, ...
 - Visual references - sketches, wireframes, mood boards, screenshots
 
-<!-- Master reference: Chapter 2 / Slide 096 -->
 
 ---
 
@@ -70,7 +66,6 @@ background: petrol
   </LogoCard>
 </LogoRow>
 
-<!-- Master reference: Chapter 2 / Slide 097 -->
 
 ---
 
@@ -98,7 +93,6 @@ background: petrol
 
 <div class="text-center text-6xl mt-6">🪦</div>
 
-<!-- Master reference: Chapter 2 / Slide 098 -->
 
 ---
 
@@ -116,8 +110,6 @@ background: petrol
 </LogoRow>
 
 <!--
-Master reference: Chapter 2 / Slide 099
-
 Chat-Interfaces sind perfekt für Einzelfragen, Brainstorming, Code-Erklärungen. Schnell zugänglich, aber ohne Persistenz.
 -->
 
@@ -151,7 +143,6 @@ Chat-Interfaces sind perfekt für Einzelfragen, Brainstorming, Code-Erklärungen
   </LogoCard>
 </LogoRow>
 
-<!-- Master reference: Chapter 2 / Slide 100 -->
 
 ---
 
@@ -166,4 +157,3 @@ Chat-Interfaces sind perfekt für Einzelfragen, Brainstorming, Code-Erklärungen
   - Or using classic design tools like Figma
 - Use your existing baseline documentation to get good results
 
-<!-- Master reference: Chapter 2 / Slide 101 -->

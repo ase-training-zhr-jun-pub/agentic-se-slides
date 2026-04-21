@@ -6,7 +6,6 @@ background: petrol
 ### *Helpful*
 # Prompting Techniques
 
-<!-- Master reference: Chapter 2 / Slide 075 -->
 
 ---
 
@@ -24,7 +23,6 @@ background: petrol
 - When examples would be redundant
 - Exploration
 
-<!-- Master reference: Chapter 2 / Slide 076 -->
 
 ---
 
@@ -42,4 +40,3 @@ background: petrol
 - Specific requirements, like tone or style
 - Edge cases to handle
 
-<!-- Master reference: Chapter 2 / Slide 077 -->

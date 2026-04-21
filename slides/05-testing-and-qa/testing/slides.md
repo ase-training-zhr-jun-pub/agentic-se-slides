@@ -6,7 +6,6 @@ background: petrol
 ### *Let's talk about*
 # Testing
 
-<!-- Master reference: Chapter 5 / Slide 230 -->
 
 ---
 layout: default
@@ -21,7 +20,6 @@ layout: default
 
 **We want automated tests to enable continuous deployment.**
 
-<!-- Master reference: Chapter 5 / Slide 231 -->
 
 ---
 layout: two-cols
@@ -46,7 +44,6 @@ But: oversimplified with just 3 layers.
   <img src="./assets/test-pyramid.svg" class="max-h-[96%] max-w-full w-auto object-contain" />
 </div>
 
-<!-- Master reference: Chapter 5 / Slide 232 -->
 
 ---
 layout: intro
@@ -56,7 +53,6 @@ background: apricot
 ### *Use Agents to generate*
 # Unit Tests
 
-<!-- Master reference: Chapter 5 / Slide 233 -->
 
 ---
 layout: default
@@ -71,7 +67,6 @@ layout: default
 - Lightweight tests
 - Ideal to test domain specific logic in isolation
 
-<!-- Master reference: Chapter 5 / Slide 234 -->
 
 ---
 layout: default
@@ -83,7 +78,6 @@ layout: default
 - **Act:** Call the unit of code
 - **Assert:** Compare expected with actual results
 
-<!-- Master reference: Chapter 5 / Slide 235 -->
 
 ---
 layout: default
@@ -95,7 +89,6 @@ layout: default
 - Generate tests for existing code
 - Identify edge cases that are not tested already
 
-<!-- Master reference: Chapter 5 / Slide 236 -->
 
 ---
 layout: exercise
@@ -105,7 +98,6 @@ task: Write unit tests
 command: git merge uebung-4-1
 ---
 
-<!-- Master reference: Chapter 5 / Slide 237 -->
 
 ---
 layout: intro
@@ -115,7 +107,6 @@ background: apricot
 ### *Use Agents to generate*
 # Integration Tests
 
-<!-- Master reference: Chapter 5 / Slide 238 -->
 
 ---
 layout: default
@@ -130,7 +121,6 @@ layout: default
 - Run application + other needed parts
 - Verify integration is working
 
-<!-- Master reference: Chapter 5 / Slide 239 -->
 
 ---
 layout: default
@@ -145,7 +135,6 @@ layout: default
   <li>Verify the data has been written to the database</li>
 </ol>
 
-<!-- Master reference: Chapter 5 / Slide 240 -->
 
 ---
 layout: content-with-image
@@ -159,7 +148,6 @@ imageFit: contain
 - Use Testcontainers to run databases
 - Use Agents to create test data for integration tests
 
-<!-- Master reference: Chapter 5 / Slide 241 -->
 
 ---
 layout: exercise
@@ -169,7 +157,6 @@ task: Write integration tests
 command: git merge uebung-4-2
 ---
 
-<!-- Master reference: Chapter 5 / Slide 242 -->
 
 ---
 layout: intro
@@ -179,7 +166,6 @@ background: apricot
 ### *Use Agents to generate*
 # End-to-End Tests
 
-<!-- Master reference: Chapter 5 / Slide 243 -->
 
 ---
 layout: default
@@ -195,7 +181,6 @@ layout: default
 - Sometimes fail unexpectedly: false positives
 - But ensure critical paths in the system are working
 
-<!-- Master reference: Chapter 5 / Slide 244 -->
 
 ---
 layout: exercise
@@ -205,4 +190,3 @@ task: Write end-to-end tests
 command: git merge uebung-4-3
 ---
 
-<!-- Master reference: Chapter 5 / Slide 245 -->

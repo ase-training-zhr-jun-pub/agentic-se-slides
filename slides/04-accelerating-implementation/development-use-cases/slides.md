@@ -6,7 +6,6 @@ background: petrol
 ### *Development*
 # Use Cases
 
-<!-- Master reference: Chapter 4 / Slide 194 -->
 
 ---
 layout: intro
@@ -16,7 +15,6 @@ background: apricot
 ### *Use Agents to create*
 # New Features
 
-<!-- Master reference: Chapter 4 / Slide 195 -->
 
 ---
 
@@ -27,7 +25,6 @@ background: apricot
 - Do not provide tasks that are too big
 - Then iterate quickly
 
-<!-- Master reference: Chapter 4 / Slide 196 -->
 
 ---
 layout: intro
@@ -37,7 +34,6 @@ background: apricot
 ### *Use Agents for*
 # Refactorings
 
-<!-- Master reference: Chapter 4 / Slide 197 -->
 
 ---
 layout: default
@@ -51,7 +47,6 @@ layout: default
 
 <p class="mt-18 text-3xl font-semibold">Using agents is no <span class="font-serif italic text-accent">self-purpose.</span></p>
 
-<!-- Master reference: Chapter 4 / Slide 198 -->
 
 ---
 
@@ -70,7 +65,6 @@ layout: default
 - Extract into method
 - Everything that is done faster with your IDE
 
-<!-- Master reference: Chapter 4 / Slide 199 -->
 
 ---
 layout: intro
@@ -80,7 +74,6 @@ background: apricot
 ### *Use Agents to assist with*
 # Version Control
 
-<!-- Master reference: Chapter 4 / Slide 200 -->
 
 ---
 
@@ -93,8 +86,6 @@ background: apricot
 - Find information in the version history
 
 <!--
-Master reference: Chapter 4 / Slide 201
-
 More than just git blame
 -->
 
@@ -106,7 +97,6 @@ background: apricot
 ### *Use Agents to help with*
 # Libraries
 
-<!-- Master reference: Chapter 4 / Slide 202 -->
 
 ---
 
@@ -117,7 +107,6 @@ background: apricot
 - Migrate library from `...` to version `...`
 - Explain core concepts of library `...`
 
-<!-- Master reference: Chapter 4 / Slide 203 -->
 
 ---
 layout: intro
@@ -127,7 +116,6 @@ background: apricot
 ### *Use Agents for*
 # Debugging
 
-<!-- Master reference: Chapter 4 / Slide 204 -->
 
 ---
 
@@ -138,4 +126,3 @@ background: apricot
 - Can you spot errors in my code?
 - Help me debug `...` by using tool `...`
 
-<!-- Master reference: Chapter 4 / Slide 205 -->

@@ -5,7 +5,6 @@ background: apricot
 
 ## This autoregressively generated *input <br/> sequence* is what we call *context*.
 
-<!-- Master reference: Chapter 1 / Slide 031 -->
 
 ---
 
@@ -17,7 +16,6 @@ background: apricot
 - "Learning" or tuning of the model's parameters is solely done during training
 - All the information required for a task, needs to be in the context
 
-<!-- Master reference: Chapter 1 / Slide 032 -->
 
 ---
 layout: center
@@ -27,8 +25,6 @@ layout: center
 <h2 class="font-serif italic text-accent text-5xl">is King</h2>
 
 <!--
-Master reference: Chapter 1 / Slide 033
-
 Wenn LLMs nicht lernen und keine Memory haben, dann ist Context alles!
 
 Das LLM kann nur auf die Informationen zugreifen, die ihr ihm in der aktuellen Session gebt.
@@ -79,8 +75,6 @@ slideNumber: false
 </LogoRow>
 
 <!--
-Master reference: Chapter 1 / Slide 035
-
 Ist das Kontext-Fenster ausgeschöpft, fallen alte Informationen hinten über, wenn neue Informationen hinzugefügt werden
 
 Context ist begrenzt.
@@ -116,8 +110,6 @@ sidebarBackground: white
 ## What's really *relevant*?
 
 <!--
-Master reference: Chapter 1 / Slide 036
-
 Die Kunst liegt darin herauszufinden: Was ist wirklich relevant für meinen Task? Nicht alles kann in den Context, also müssen wir auswählen.
 -->
 
@@ -128,7 +120,6 @@ background: apricot
 
 # Memory
 
-<!-- Master reference: Chapter 1 / Slide 037 -->
 
 ---
 
@@ -140,7 +131,6 @@ background: apricot
 - The model will generate new content based on this information
 - Awareness of context challenges is needed to optimize the model's output
 
-<!-- Master reference: Chapter 1 / Slide 038 -->
 
 ---
 
@@ -153,4 +143,3 @@ background: apricot
   - Databases
   - Knowledge Graphs
 
-<!-- Master reference: Chapter 1 / Slide 039 -->
