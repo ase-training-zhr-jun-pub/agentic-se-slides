@@ -125,26 +125,16 @@ clicks: 6
 ]" />
 
 <!--
-(The)
-Für jeden Token berechnet das LLM Wahrscheinlichkeiten für alle möglichen nächsten Tokens. Meist gewinnt nicht der wahrscheinlichste, sondern es wird zufällig basierend auf den Wahrscheinlichkeiten gewählt.
+Für jeden Token berechnet das LLM Wahrscheinlichkeiten für alle möglichen nächsten Tokens. Meist gewinnt nicht der wahrscheinlichste, sondern es wird zufällig basierend auf den Wahrscheinlichkeiten gewählt – das ist der Zufallsfaktor, der LLMs nicht-deterministisch macht.
 
-Der token [line] hat kein Leerzeichen am Anfang und würde [ sky] zu [sky][line] machen.
+Die Probability-Werte werden mit Softmax normalisiert, sodass die Summe über alle möglichen Werte 1 beträgt. Da wir nur die Top-Kandidaten zeigen, ist die angezeigte Summe etwas kleiner als 1.
 
-Die Probability Werte werden mit Softmax normalisiert, dessen Summe über alle möglichen Werte 1 beträgt, da wir nur die Top 5 zeigen, ist die Summe etwas kleiner als 1.
-
-(·blue)
-Hier gewinnt clear.
-
-(·today)
-Der Satz könnte hier enden.
-
-Oder er geht weiter mit „today”
-
-(.)
-Nun wird der Token mit dem Satzende noch wahrscheinlicher und gewinnt letztendlich.
-
-(<|end|>)
-Dieser Vorgang wiederholt sich immer weiter, bis die Generierung gestoppt wurde.
+- [click] Starten mit dem ersten Token – mehrere Kandidaten, einer wird gezogen.
+- [click] Mit jedem neuen Token verändert sich die Wahrscheinlichkeitsverteilung für den nächsten Token.
+- [click] So wird ein Token nach dem anderen ermittelt …
+- [click] Und mit in die nächte Input-sequenz gehangen
+- [click] Der Satz könnte hier enden...
+- [click] ...und tut es. Dieser Vorgang wiederholt sich immer weiter, bis ein End-Token gezogen wird oder ein Limit erreicht wird.
 -->
 
 ---
@@ -164,9 +154,7 @@ Dieser Vorgang wiederholt sich immer weiter, bis die Generierung gestoppt wurde.
 
 <!--
 (Deterministic)
-Wenn das LLM immer den wahrscheinlichsten Token nimmt, ist es deterministisch
-
-Das Em
+Wenn das LLM immer den wahrscheinlichsten Token nimmt, ist es deterministisch – gleicher Input liefert immer denselben Output.
 
 (Top-K)
 Falls jemand nachbohrt:
@@ -272,4 +260,3 @@ Unser Input endet mit <|start|>assistant<|message|> und das LLM fügt die Antwor
 - Provide a JSON schema in the prompt
 - Tell the model it must adhere to the schema
 - Then, it returns JSON
-

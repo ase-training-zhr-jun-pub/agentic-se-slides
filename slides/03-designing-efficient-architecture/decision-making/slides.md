@@ -14,6 +14,14 @@ layout: center
 ## Software architecture
 ## is all about *trade-offs*
 
+<!--
+Es gibt selten eine "richtige" Architekturentscheidung – es gibt nur bessere und schlechtere Kompromisse für den jeweiligen Kontext.
+
+Jede Entscheidung hat Konsequenzen: Wer Performance wählt, zahlt oft mit Komplexität. Wer Flexibilität wählt, zahlt mit Overhead.
+
+Deswegen ist es so wichtig, Entscheidungen zu dokumentieren – damit zukünftige Teams die Kompromisse verstehen.
+-->
+
 
 ---
 layout: center
@@ -21,6 +29,14 @@ layout: center
 
 ## Our decisions must be
 ## *well-reasoned* and *transparent*
+
+<!--
+Nachvollziehbarkeit ist nicht optional – weder für Teams noch für Agenten.
+
+Ein Agent kann eine bestehende Architektur nur dann sinnvoll weiterentwickeln, wenn er die bisherigen Entscheidungen und ihre Begründungen kennt.
+
+Gut dokumentierte Entscheidungen sind die Grundlage dafür, dass Agenten im richtigen Kontext arbeiten.
+-->
 
 
 ---
@@ -34,6 +50,17 @@ layout: center
 - `Decision`: The reply to the circumstances
 - `Status`: Proposed, accepted, deprecated, or superseded
 - `Consequences`: All consequences, including negative ones
+
+<!--
+ADRs sind das bewährteste Format zur Dokumentation von Architekturentscheidungen. Kurz, strukturiert, versionierbar.
+
+Jedes Feld hat einen klaren Zweck:
+- Context erklärt das "Warum jetzt?"
+- Decision ist der eigentliche Beschluss
+- Consequences zeigt ehrlich auch negative Folgen – das unterscheidet gute ADRs von schlechten
+
+ADRs sollten direkt im Repository neben dem Code liegen, damit sie mit dem Code versioniert werden.
+-->
 
 
 ---
@@ -68,6 +95,14 @@ Given the following situation, which options do we have to solve this?
 >
 > When choosing option 1, the consequences would be ...
 
+<!--
+Der Agent sammelt mögliche Optionen und analysiert deren Konsequenzen – das ist genau die Vorarbeit, die in Architekturmeetings viel Zeit kostet.
+
+Der Mensch trifft die finale Entscheidung. Der Agent beschleunigt die Vorbereitung und stellt sicher, dass keine offensichtlichen Optionen übersehen werden.
+
+Wichtig: Den Kontext des Systems mitgeben (vorhandene Technologien, Constraints, Teamgröße), damit die Optionen realistisch sind.
+-->
+
 
 ---
 
@@ -88,4 +123,12 @@ Create an ADR from the transcript.
 
 Write(/docs/adrs/ADR-0010-adr-title.md)
 ```
+
+<!--
+Hier sehen wir den zweiten Schritt: Aus dem Meeting-Transkript wird automatisch ein strukturiertes ADR generiert.
+
+Der Agent liest das Transkript, extrahiert Kontext, Entscheidung und Konsequenzen, und schreibt das ADR direkt ins Repository.
+
+Das ist einer der stärksten Anwendungsfälle: Meetings erzeugen normalerweise viel Gesprächsstoff aber wenig Dokumentation. Agenten schließen diese Lücke.
+-->
 

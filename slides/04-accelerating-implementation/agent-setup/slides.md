@@ -11,7 +11,7 @@ Document your project knowledge in a memory file:
 
 
 <!--
-Claude.md, cline.rules, …
+AGENTS.md ist der Standard-Dateiname – Claude Code nutzt CLAUDE.md als Ausnahme. Der Inhalt ist derselbe: Projektkontext, Konventionen, Befehle. Diese Datei ist das erste was der Agent liest.
 -->
 
 ---

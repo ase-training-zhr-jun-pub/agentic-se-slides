@@ -75,25 +75,23 @@ slideNumber: false
 </LogoRow>
 
 <!--
-Ist das Kontext-Fenster ausgeschöpft, fallen alte Informationen hinten über, wenn neue Informationen hinzugefügt werden
+Context ist begrenzt. Jedes LLM hat ein Context Window – eine maximale Anzahl von Tokens, die es gleichzeitig verarbeiten kann.
 
-Context ist begrenzt.
+Ist das Kontextfenster ausgeschöpft, fallen ältere Informationen hinten raus, wenn neue hinzukommen.
 
-Jedes LLM hat ein Context Window - eine maximale Anzahl von Tokens, die es gleichzeitig verarbeiten kann.
+Die Spanne ist heute enorm: Von 131K bei DeepSeek V3.2 bis 1M bei Gemini 3 Pro.
 
-Bei modernen Modellen sind das 100k bis 200k Tokens.
-
-Ach wenn das Kontextfenster eines Modells größer ist, setzt Context-Rot ein, was den Nutzen wieder zunichte macht.
+Auch wenn das Kontextfenster sehr groß ist, setzt "Context Rot" ein – die Qualität der Verarbeitung nimmt bei sehr langen Contexts ab.
 
 Quellen:
 
-https://developers.openai.com/api/docs/models/gpt-5.4
+https://developers.openai.com/api/docs/models/gpt-5
 
-https://claude.com/blog/1m-context-ga
+https://claude.com/blog/claude-sonnet-4-5
 
 https://ai.google.dev/gemini-api/docs/models?hl=de
 
-https://docs.mistral.ai/models/devstral-2-25-12
+https://api-docs.deepseek.com/news/news250325
 
 https://qwen.ai/blog?id=qwen3.5
 -->

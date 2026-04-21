@@ -23,6 +23,15 @@ background: apricot
 - Minimizes know-how transfer and searching
 - Agents can work on it
 
+<!--
+Architektur-Dokumentation hat zwei Zielgruppen: Menschen und Agenten.
+
+Für Menschen: Know-how sichern, Onboarding beschleunigen, Entscheidungen nachvollziehbar machen.
+Für Agenten: Kontext bereitstellen, damit sie fundierte Vorschläge machen können statt ins Blaue zu raten.
+
+"Make it available for the agent" ist kein Zusatz – es ist der entscheidende Punkt. Wer seine Dokumentation im Repository pflegt, gibt Agenten automatisch Zugriff darauf.
+-->
+
 
 ---
 layout: two-cols
@@ -55,6 +64,14 @@ rightBackground: white
   <p class="my-0 bg-apricot px-5 py-2">12. Glossary</p>
 </div>
 
+<!--
+Arc42 ist das bekannteste deutschsprachige Architektur-Dokumentationsframework. Es gibt eine klare Struktur vor, ohne zu viel zu erzwingen.
+
+Wichtig: "Just use what is important" – man muss nicht alle 12 Kapitel befüllen. Kleine Systeme brauchen vielleicht nur Kapitel 3, 5 und 9.
+
+Arc42 ist auch mit Agenten gut kombinierbar: Man kann den Agenten beauftragen, bestehende Dokumentation in Arc42-Kapitel zu überführen oder ein neues System direkt nach Arc42 zu dokumentieren.
+-->
+
 
 ---
 
@@ -67,6 +84,14 @@ rightBackground: white
 - If necessary, differentiate
   - Business context (domain-specific inputs and outputs)
   - Technical context (channels, protocols, hardware)
+
+<!--
+Der Systemkontext ist oft der wertvollste Teil der Architekturdokumentation – und der am einfachsten zu erstellende.
+
+Ein Agent kann aus vorhandenem Code, API-Definitionen oder Infrastruktur-Konfigurationen einen ersten Systemkontext-Entwurf erstellen.
+
+Differenzierung Business/Technical Context: Fachlicher Kontext erklärt WAS ausgetauscht wird, technischer Kontext erklärt WIE. Oft reicht der fachliche Kontext.
+-->
 
 
 ---
@@ -84,4 +109,12 @@ imageAlign: center
 
 ::image::
 <img src="./assets/arc42-building-block-view.png" mt-20 />
+
+<!--
+Die Building Block View ist die statische Dekomposition des Systems – vergleichbar mit dem Grundriss eines Hauses.
+
+Level 1 zeigt das Gesamtsystem als White Box mit seinen Hauptbausteinen als Black Boxes. Nur so weit zoomen, wie es dem Verständnis dient.
+
+Agenten können aus Codestrukturen (Packages, Module, Services) automatisch einen ersten Entwurf der Building Block View generieren. Das spart erheblich Zeit beim initialen Dokumentieren.
+-->
 

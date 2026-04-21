@@ -57,6 +57,15 @@ chapter: 3
 3. Accelerate proven methodology
 4. Always validate results
 
+<!--
+Die vier wichtigsten Erkenntnisse aus Kapitel 3:
+
+- Dokumentation ist mit Agenten viel einfacher geworden – Arc42-Templates, ADRs und Systemkontexte können automatisch befüllt und aktuell gehalten werden
+- Agenten können bei Architekturentscheidungen unterstützen: Optionen sammeln, Konsequenzen abwägen, und ADRs aus Meeting-Transkripten erstellen
+- Bewährte Methoden wie ISO 25010 und Arc42 werden nicht ersetzt, sondern beschleunigt
+- Ergebnisse immer validieren – Agenten können falsche Priorisierungen vorschlagen oder Kontexte falsch einschätzen
+-->
+
 
 ---
 src: ./day-1-recap/slides.md

@@ -110,7 +110,7 @@ background: petrol
 </LogoRow>
 
 <!--
-Chat-Interfaces sind perfekt für Einzelfragen, Brainstorming, Code-Erklärungen. Schnell zugänglich, aber ohne Persistenz.
+Chat-Interfaces eignen sich für schnelle Mockups und einmalige Code-Schnipsel. Kein Dateisystem-Zugriff, kein iterativer Build-Loop – deshalb für komplexere Prototypen begrenzt. Die nächste Folie zeigt, warum Agentic Coding hier die bessere Wahl ist.
 -->
 
 ---

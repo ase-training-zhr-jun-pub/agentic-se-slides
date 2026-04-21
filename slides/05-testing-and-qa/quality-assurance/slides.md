@@ -34,6 +34,13 @@ layout: default
   prompt="@claude review this merge request"
 />
 
+<!--
+Der Agent als erster Reviewer: Er gibt sofort Feedback, bevor ein Mensch überhaupt Zeit hatte, sich den MR anzuschauen.
+
+Das reduziert Zykluszeiten und schont die Zeit der menschlichen Reviewer für die wichtigen inhaltlichen Diskussionen.
+
+Wichtig: Der Agent ersetzt nicht den menschlichen Review – er ergänzt ihn.
+-->
 
 ---
 layout: intro
@@ -58,4 +65,10 @@ layout: default
   label="Example: Merge Request Review"
   prompt="@claude analyze the merge request and outline potential vulnerabilities in the implementation"
 />
+
+<!--
+Kein Security-Tool ersetzt einen echten Pentest – aber ein Agent kann schnell bekannte Muster erkennen: SQL Injection, unsichere Deserialisierung, fehlende Authentifizierung, etc.
+
+"Safer than before" ist der Schlüsselsatz: Null Garantie, aber deutlich besser als gar kein Review.
+-->
 

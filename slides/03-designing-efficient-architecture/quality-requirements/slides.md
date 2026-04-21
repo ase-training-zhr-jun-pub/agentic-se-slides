@@ -10,6 +10,14 @@ There is no fixed academic definition.
 **For us:** <br/>
 Decisions in and around the software that are hard to change.
 
+<!--
+Es gibt bewusst keine akademisch korrekte Definition – wir wollen pragmatisch vorgehen.
+
+Die Kernerkenntnis: Architektur sind Entscheidungen, die schwer rückgängig zu machen sind. Technologieauswahl, Schnittstellendesign, Teamstruktur – das sind Architekturentscheidungen.
+
+Kleine Dinge wie Variablennamen sind keine Architektur, auch wenn sie im Code stehen.
+-->
+
 
 ---
 
@@ -33,6 +41,12 @@ background: petrol
 ## How can we *leverage agents*
 ## to support us in these areas?
 
+<!--
+Überleitung: Wir haben gesehen, was Softwarearchitektur umfasst. Jetzt schauen wir, wo Agenten konkret helfen können.
+
+Nicht überall – aber bei Qualitätsanforderungen, Entscheidungen und Dokumentation gibt es klare Mehrwerte.
+-->
+
 
 ---
 layout: intro
@@ -52,6 +66,14 @@ layout: default
 <img src="./assets/iso-25010-quality-model.svg" class="mx-auto h-80" />
 <p class="mt-4 text-sm text-primary/60">https://www.innoq.com/en/articles/2021/08/quality-driven-software-architecture-revised/</p>
 
+<!--
+ISO 25010 ist der internationale Standard für Softwarequalität. Er gibt uns eine gemeinsame Sprache für Qualitätsanforderungen.
+
+Die acht Hauptqualitätsbereiche: Functional Suitability, Performance Efficiency, Compatibility, Usability, Reliability, Security, Maintainability, Portability.
+
+Wichtig: Nicht alle Qualitätsbereiche sind für jedes System gleich relevant. Das Ziel ist es, die für das Projekt wichtigen Bereiche zu identifizieren und zu priorisieren.
+-->
+
 
 ---
 
@@ -60,6 +82,14 @@ layout: default
 <img src="./assets/quality-tree-scenarios.svg" class="h-80" />
 
 <small text-sm>https://www.innoq.com/en/articles/2021/08/quality-driven-software-architecture-revised/</small>
+
+<!--
+Der Quality Tree konkretisiert abstrakte Qualitätsziele in messbare Szenarien.
+
+Struktur: Qualitätsziel → Qualitätsmerkmal → konkretes Szenario mit Stimulus, Reaktion und Maß.
+
+Ohne konkrete Szenarien bleiben Qualitätsziele wie "das System soll performant sein" nichtssagend. Szenarien machen sie überprüfbar.
+-->
 
 
 ---
@@ -107,6 +137,14 @@ Construct a quality scenario, including a reasonable measure, for the following 
 
 > A consultant views the bookings of an office on the Calvin website. The bookings are visible and interactive (first contentful paint) in 300ms for 95% of the requests.
 
+<!--
+Hier zeigen wir, wie ein Agent ein Szenario aus einer informellen Beschreibung heraus formalisiert.
+
+Der Agent ergänzt dabei Felder wie "Environment", "Source", "Artifact" automatisch aus dem Kontext. Das spart Zeit und sorgt für konsistente Formulierungen im ganzen Projekt.
+
+Demo-Tipp: Prompt an Claude Code zeigen, der aus einer User Story ein vollständiges Qualitätsszenario erstellt.
+-->
+
 
 ---
 
@@ -119,4 +157,12 @@ Read in the table of quality scenarios. Find conflicting scenarios and prioritiz
 > S13 is a scenario for security. S4 is a scenario for usability.
 >
 > Because this is just a prototype and should not run in production, usability is more important than security. So I would prioritize S4 over S13.
+
+<!--
+Priorisierung ist eine der schwierigsten Aufgaben in der Architekturarbeit – es gibt keine objektiv richtige Antwort.
+
+Der Agent hilft dabei, Konflikte zu erkennen und Begründungen zu formulieren. Die fachliche Entscheidung bleibt beim Team.
+
+Wichtig: Der Agent liefert hier eine begründete Empfehlung basierend auf dem gegebenen Kontext ("just a prototype"). Im echten Projekt müsste der Kontext explizit mitgegeben werden.
+-->
 

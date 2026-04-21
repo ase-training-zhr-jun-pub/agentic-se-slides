@@ -80,11 +80,12 @@ background: petrol
 4. They change state to reach a goal
 
 <!--
-Die drei wichtigsten Erkenntnisse aus Block 1:
+Die vier wichtigsten Erkenntnisse aus Block 1:
 
-- LLMs sind fundamentale Token-Rechner ohne Memory
-- Context entscheidet über Erfolg oder Misserfolg
-- und verschiedene Tools für verschiedene Anwendungsfälle.
+- LLMs sind fundamentale Token-Rechner – sie berechnen Token für Token die Wahrscheinlichkeit des nächsten Tokens
+- Context ist alles: Ohne die richtigen Informationen im Context kann das LLM die Aufgabe nicht lösen
+- Agents laufen in einer Feedback-Schleife: Reason → Act → Observe
+- Agents verändern die Umgebung (Dateien, Terminal, Git), um ein Ziel zu erreichen – anders als Assistants, die nur Texte zurückliefern
 -->
 
 ---

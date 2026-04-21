@@ -26,3 +26,9 @@ chapter: 5
 4. Any review is better than no review
 5. Agents can perform tasks in the pipeline
 
+<!--
+Punkt 3 bezieht sich auf E2E Tests: Agents können UIs per Playwright lesen und darauf basierend Tests generieren.
+
+Punkt 5 ist der Übergang zu Kapitel 6: Agents laufen nicht nur lokal, sondern auch als Pipeline-Jobs.
+-->
+

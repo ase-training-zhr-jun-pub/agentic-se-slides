@@ -20,6 +20,11 @@ layout: default
 
 **We want automated tests to enable continuous deployment.**
 
+<!--
+Ohne automatisierte Tests wird jede Änderung zum Risiko. Das Team traut sich nichts mehr zu refactoren oder zu deployen.
+
+Continuous Deployment ist ohne eine gute Testabdeckung kaum möglich.
+-->
 
 ---
 layout: two-cols
@@ -44,6 +49,13 @@ But: oversimplified with just 3 layers.
   <img src="./assets/test-pyramid.svg" class="max-h-[96%] max-w-full w-auto object-contain" />
 </div>
 
+<!--
+Die Test Pyramid gibt uns eine Heuristik: Viele schnelle Unit Tests unten, wenige langsame E2E Tests oben.
+
+In der Praxis hat sich gezeigt, dass 3 Ebenen zu simpel sind – z.B. fehlen Service-Tests oder Contract-Tests.
+
+Trotzdem: gutes mentales Modell, um eine ausgewogene Testsuite zu planen.
+-->
 
 ---
 layout: intro
@@ -67,6 +79,11 @@ layout: default
 - Lightweight tests
 - Ideal to test domain specific logic in isolation
 
+<!--
+Unit Tests sind die Basis. Schnell, isoliert, deterministisch.
+
+Mocking ist wichtig: Der Test soll nur die eine Unit testen, nicht ihre Abhängigkeiten.
+-->
 
 ---
 layout: default
@@ -78,6 +95,11 @@ layout: default
 - **Act:** Call the unit of code
 - **Assert:** Compare expected with actual results
 
+<!--
+AAA-Pattern: Arrange, Act, Assert.
+
+Agents kennen dieses Muster und halten sich daran – das macht generierte Tests leicht lesbar und wartbar.
+-->
 
 ---
 layout: default
@@ -89,6 +111,13 @@ layout: default
 - Generate tests for existing code
 - Identify edge cases that are not tested already
 
+<!--
+TDD mit Agents: Tests zuerst schreiben, dann den Agent den Code implementieren lassen.
+
+Vorteil: Der Agent weiß wann er fertig ist – nämlich wenn alle Tests grün sind.
+
+Edge Cases: Agents finden systematisch Grenzfälle, die Menschen beim Schreiben oft übersehen.
+-->
 
 ---
 layout: exercise
@@ -121,6 +150,11 @@ layout: default
 - Run application + other needed parts
 - Verify integration is working
 
+<!--
+Integration Tests testen das Zusammenspiel mit echten externen Systemen.
+
+Das ist aufwendiger als Unit Tests – aber wichtig: Mocks können echte Datenbankverhalten nicht vollständig abbilden.
+-->
 
 ---
 layout: default
@@ -135,6 +169,11 @@ layout: default
   <li>Verify the data has been written to the database</li>
 </ol>
 
+<!--
+Ein typischer Integration-Test-Ablauf: Infrastruktur hochfahren, Daten schreiben, Ergebnis verifizieren.
+
+Der Agent kann diesen Boilerplate-Code gut generieren – er kennt das Muster.
+-->
 
 ---
 layout: content-with-image
@@ -148,6 +187,13 @@ imageFit: contain
 - Use Testcontainers to run databases
 - Use Agents to create test data for integration tests
 
+<!--
+Testcontainers löst das "echte Datenbank in Tests"-Problem elegant: Docker-Container werden automatisch gestartet und nach dem Test wieder entfernt.
+
+Agents können Testcontainers-Code sehr gut generieren – sie kennen die Library gut.
+
+Testdaten generieren ist ebenfalls eine Stärke von Agents: sinnvolle, realistische Daten auf Knopfdruck.
+-->
 
 ---
 layout: exercise
@@ -181,6 +227,13 @@ layout: default
 - Sometimes fail unexpectedly: false positives
 - But ensure critical paths in the system are working
 
+<!--
+E2E Tests sind langsam und flaky – aber unverzichtbar für kritische User Journeys.
+
+Agents können mit Playwright oder ähnlichen Tools E2E Tests generieren und sogar direkt im Browser ausführen (MCP).
+
+False positives sind ein reales Problem: Timing-Issues, animierte UI-Elemente, etc. Agents können dabei helfen, stabile Selektoren zu wählen.
+-->
 
 ---
 layout: exercise

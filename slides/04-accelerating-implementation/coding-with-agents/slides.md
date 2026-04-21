@@ -46,5 +46,5 @@ background: apricot
   - It creates another directory with the same files where you can start another agent
 
 <!--
-Git Worktree
+Git Worktree ermöglicht es, mehrere Agenten gleichzeitig auf demselben Repository laufen zu lassen – jeder in einem eigenen Verzeichnis, jeder auf einem eigenen Branch. Kein Stashing, kein Branch-Wechsel nötig. Ideal um unabhängige Tasks parallelisieren.
 -->

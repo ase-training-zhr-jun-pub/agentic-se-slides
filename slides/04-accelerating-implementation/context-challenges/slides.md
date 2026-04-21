@@ -27,7 +27,7 @@ alignContent: center
 </div>
 
 <!--
-Ihr wisst nun dass die Kontextgröße begrenzt ist. Zu viel Inhalt sorgt dafür, dass ältere Informationen hinten überfallen.
+Ihr wisst nun dass die Kontextgröße begrenzt ist. Zu viel Inhalt sorgt dafür, dass ältere Informationen still aus dem Kontext rausfallen – ohne Warnung.
 -->
 
 ---

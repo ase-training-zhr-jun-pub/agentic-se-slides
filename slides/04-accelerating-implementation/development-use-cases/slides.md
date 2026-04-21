@@ -86,7 +86,7 @@ background: apricot
 - Find information in the version history
 
 <!--
-More than just git blame
+Agents können den gesamten Git-Workflow übernehmen – von Commit-Messages bis zum Durchsuchen der Versionshistorie. Besonders nützlich: Merge-Konflikte lösen und Informationen aus alten Commits heraussuchen.
 -->
 
 ---

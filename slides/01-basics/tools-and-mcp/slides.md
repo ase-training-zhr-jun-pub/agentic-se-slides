@@ -89,9 +89,11 @@ sequenceDiagram
 </div>
 
 <!--
-MCP hat inzwischen den Retrieval Part ersetzt.
+MCP ist ein offenes Protokoll von Anthropic, das den Austausch von Tools zwischen Hosts und Servern standardisiert.
 
-Deswegen gehen wir auf den nicht weiter ein
+Statt jedem Agenten eigene Tool-Adapter zu schreiben, kann ein MCP-Server einmal implementiert und von beliebigen Clients genutzt werden.
+
+Der entscheidende Vorteil: Tool-Definitionen (Name, Parameter, Beschreibung) werden zur Laufzeit vom Server geliefert – der Agent muss sie nicht hart kodieren.
 -->
 
 ---
