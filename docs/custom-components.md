@@ -18,6 +18,41 @@ without importing.
 
 ## Existing components
 
+### `EmojiStack`
+
+Small vertical wrapper for an emoji plus arbitrary centered content underneath. Useful for icon-like
+labels such as requirement categories or control-loop steps.
+
+**Props:**
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `name` | `string` | - | Canonical `node-emoji` name used to resolve the emoji (for example `"brain"` or `"page_facing_up"`) |
+| `emoji` | `string` | - | Direct emoji override, useful when passing the character explicitly |
+| `size` | `'md' \| 'lg'` | `'md'` | Emoji size preset |
+
+If `name` is invalid and `emoji` is not provided, the component renders `?` so lookup mistakes are
+visible in the slide.
+
+**Slots:**
+
+| Slot | Description |
+|------|-------------|
+| default | Arbitrary centered content below the emoji, such as a heading, paragraph, or both |
+
+**Usage:**
+
+```markdown
+<EmojiStack name="eye">
+  <p class="my-0 text-xl">Product Vision</p>
+</EmojiStack>
+
+<EmojiStack name="brain" size="lg">
+  <h3 class="mt-1">Reason</h3>
+  <p class="text-sm leading-snug">Analyze situation,<br/>plan next step</p>
+</EmojiStack>
+```
+
 ### `PromptExample`
 
 Renders a short example label followed by a prompt-like mono card. Useful for CLI or comment
