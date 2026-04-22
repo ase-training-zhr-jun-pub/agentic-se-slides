@@ -1,3 +1,10 @@
+@layer utilities {
+  .anchor-center {
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .slidev-layout :where(h1, h2, h3, h4, h5, h6) :where(small) {
   color: inherit;
   opacity: 0.7;

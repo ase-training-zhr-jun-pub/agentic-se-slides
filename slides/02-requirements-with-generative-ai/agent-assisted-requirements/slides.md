@@ -11,67 +11,52 @@ Wir erstellen sinnvolle Dokumentation die sowohl für Menschen als auch KI nütz
 -->
 
 ---
-layout: default
+layout: center
 ---
 
-<div class="text-primary !font-bold mb-8">
-  <span class="text-accent font-serif font-normal italic">Example</span>
-  <span class="mx-2 font-normal text-primary">|</span>
-  <h1 class="text-primary">Requirements</h1>
-</div>
+#### *Examples of*
+# Requirements
 
-<div class="grid grid-cols-4 gap-x-6 gap-y-6 pt-2 text-center">
-  <div class="space-y-1">
-    <div class="text-2xl">👁️</div>
-    <p class="my-0 text-xl">Product Vision</p>
-  </div>
-  <div class="space-y-1">
-    <div class="text-2xl">🎯</div>
-    <p class="my-0 text-xl">OKRs</p>
-  </div>
-  <div class="space-y-1">
-    <div class="text-2xl">🧾</div>
-    <p class="my-0 text-xl">Specs</p>
-  </div>
-  <div class="space-y-1">
-    <div class="text-2xl">🔧</div>
-    <p class="my-0 text-xl">Functional</p>
-  </div>
+<div class="absolute inset-0">
+  <EmojiStack name="eye" class="anchor-center left-[20%] top-[15%]">
+    <p class="whitespace-nowrap">Product Vision</p>
+  </EmojiStack>
+  <EmojiStack name="dart" class="anchor-center left-[25%] top-[30%]">
+    <p class="whitespace-nowrap">OKRs</p>
+  </EmojiStack>
+  <EmojiStack name="clipboard" class="anchor-center left-[79%] top-[12%]">
+    <p class="whitespace-nowrap">Specs</p>
+  </EmojiStack>
+  <EmojiStack name="wrench" class="anchor-center left-[64%] top-[19%]">
+    <p class="whitespace-nowrap">Functional</p>
+  </EmojiStack>
 
-  <div class="space-y-1">
-    <div class="text-2xl">🧰</div>
-    <p class="my-0 text-xl">Jobs to be done</p>
-  </div>
-  <div class="space-y-1">
-    <div class="text-2xl">✨</div>
-    <p class="my-0 text-xl">Non-Functional</p>
-  </div>
+  <EmojiStack name="briefcase" class="anchor-center left-[11%] top-[49%]">
+    <p class="whitespace-nowrap">Jobs to be done</p>
+  </EmojiStack>
+  <EmojiStack name="sparkles" class="anchor-center left-[85%] top-[29%]">
+    <p class="whitespace-nowrap">Non-Functional</p>
+  </EmojiStack>
 
-  <div class="space-y-1">
-    <div class="text-2xl">👥</div>
-    <p class="my-0 text-xl">Personas</p>
-  </div>
-  <div class="space-y-1">
-    <div class="text-2xl">📍</div>
-    <p class="my-0 text-xl">User Journeys</p>
-  </div>
-  <div class="space-y-1">
-    <div class="text-2xl">🎮</div>
-    <p class="my-0 text-xl">Prototypes</p>
-  </div>
+  <EmojiStack name="busts_in_silhouette" class="anchor-center left-[8%] top-[80%]">
+    <p class="whitespace-nowrap">Personas</p>
+  </EmojiStack>
+  <EmojiStack name="round_pushpin" class="anchor-center left-[23%] top-[68%]">
+    <p class="whitespace-nowrap">User Journeys</p>
+  </EmojiStack>
+  <EmojiStack name="video_game" class="anchor-center left-[88%] top-[64%]">
+    <p class="whitespace-nowrap">Prototypes</p>
+  </EmojiStack>
 
-  <div class="space-y-1">
-    <div class="text-2xl">🗺️</div>
-    <p class="my-0 text-xl">User Story Maps</p>
-  </div>
-  <div class="space-y-1">
-    <div class="text-2xl">📄</div>
-    <p class="my-0 text-xl">User Stories</p>
-  </div>
-  <div class="space-y-1">
-    <div class="text-2xl">🎨</div>
-    <p class="my-0 text-xl">Style Guides</p>
-  </div>
+  <EmojiStack name="world_map" class="anchor-center left-[31%] top-[88%]">
+    <p class="whitespace-nowrap">User Story Maps</p>
+  </EmojiStack>
+  <EmojiStack name="page_facing_up" class="anchor-center left-[53%] top-[80%]">
+    <p class="whitespace-nowrap">User Stories</p>
+  </EmojiStack>
+  <EmojiStack name="art" class="anchor-center left-[81%] top-[84%]">
+    <p class="whitespace-nowrap">Style Guides</p>
+  </EmojiStack>
 </div>
 
 
@@ -134,55 +119,42 @@ layout: default
 
 # How to get there
 
-<div class="mt-10 grid grid-cols-5 items-center">
-  <div class="space-y-8">
-    <div class="flex flex-row text-center">
-      <div>
-        <div class="text-2xl">📚</div>
-        <p class="my-0 mt-2 text-xl font-bold">Baseline</p>
-      </div>
-      <div>+</div>
-      <div>
-        <div class="text-2xl">🧰</div>
-        <p class="my-0 mt-2 text-xl font-bold">Prompts</p>
-      </div>
+<div class="absolute inset-0 [&>*]:absolute">
+    <div flex flex-col top="40%" left="8%">
+        <div flex gap-3>
+            <EmojiStack emoji="📚">
+                <h4>Baseline</h4>
+            </EmojiStack>
+            <EmojiStack emoji=" ">
+                <h4>+</h4>
+            </EmojiStack>
+            <EmojiStack emoji="💼">
+                <h4>Prompts</h4>
+            </EmojiStack>
+        </div>
+        <ul mt-3 text-xs>
+            <li>Glossary</li>
+            <li>Dossiers</li>
+            <li>Concepts</li>
+            <li>Meeting Summaries</li>
+            <li>Studies, Research & Statistics</li>
+            <li>Other internal documents</li>
+            <li>...</li>
+        </ul>
     </div>
-    <div class="space-y-0.5 text-sm leading-snug text-left">
-      <p class="my-0">Glossary</p>
-      <p class="my-0">Dossiers</p>
-      <p class="my-0">Concepts</p>
-      <p class="my-0">Meeting Summaries</p>
-      <p class="my-0">Studies, Research & Statistics</p>
-      <p class="my-0">Other internal documents</p>
-      <p class="my-0">...</p>
-    </div>
-  </div>
-
-  <div class="flex flex-col items-center text-petrol text-3xl gap-16">
-    <div>→</div>
-    <div>←</div>
-  </div>
-
-  <div class="pt-2 space-y-20 text-center">
-    <div class="space-y-3">
-      <div class="text-2xl">📝</div>
-      <p class="my-0 text-xl font-bold leading-tight">Generated Documentation</p>
-    </div>
-    <div class="space-y-3">
-      <div class="text-2xl">📄</div>
-      <p class="my-0 text-xl font-bold leading-tight">Refined Documentation</p>
-    </div>
-  </div>
-  <div class="flex flex-col items-center pt-6 text-petrol text-3xl gap-16">
-    <div>→</div>
-    <div>←</div>
-  </div>
-    <div class="pt-2 space-y-20 text-center">
-    <div class="space-y-3">
-      <div class="text-2xl">💬</div>
-      <p class="my-0 text-xl font-bold leading-tight">Human Feedback</p>
-    </div>
-  </div>
+    <EmojiStack emoji="📝" top="20%" left="45%">
+      <h4 max-w-min>Generrated Documentation</h4>
+    </EmojiStack>
+    <EmojiStack emoji="📄" top="70%" left="45%">
+      <h4 max-w-min>Refined Documentation</h4>
+    </EmojiStack>
+    <EmojiStack emoji="💬" top="45%" right="10%">
+      <h4 max-w-min>Human Feedback</h4>
+    </EmojiStack>
+    <Line start="65% 30%" end="78% 50%" color="apricot" head="triangle" stroke-width="1.5" line-cap="square" />
+    <Line start="77% 62%" end="62% 75%" color="apricot" head="triangle" stroke-width="1.5" line-cap="square" />
+    <Line start="47% 75%" end="30% 70%" color="apricot" head="triangle" stroke-width="1.5" line-cap="square" />
+    <Line start="30% 38%" end="42% 30%" color="apricot" head="triangle" stroke-width="1.5" line-cap="square" />
 </div>
 
 ---
