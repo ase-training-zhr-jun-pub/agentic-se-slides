@@ -58,19 +58,19 @@ slideNumber: false
 
 <LogoRow class="h-full">
   <LogoCard name="400K" subtitle="GPT-5.2">
-    <img src="/logos/openai.svg" class="h-32 w-auto object-contain" />
+    <img src="/logos/openai.svg" size-24 />
   </LogoCard>
   <LogoCard name="200K" subtitle="Claude Sonnet 4.5">
-    <img src="/logos/claude.svg" class="h-32 w-auto object-contain" />
+    <img src="/logos/claude.svg" size-24 />
   </LogoCard>
   <LogoCard name="1M" subtitle="Gemini 3 Pro">
-    <img src="/logos/gemini.svg" class="h-32 w-auto object-contain" />
+    <img src="/logos/gemini.svg" size-24 />
   </LogoCard>
   <LogoCard name="131K" subtitle="DeepSeek V3.2">
-    <img src="/logos/deepseek.svg" class="h-32 w-auto object-contain" />
+    <img src="/logos/deepseek.svg" size-24 />
   </LogoCard>
   <LogoCard name="256K" subtitle="Qwen 3 Coder">
-    <img src="/logos/qwen.svg" class="h-32 w-auto object-contain" />
+    <img src="/logos/qwen.svg" size-24 />
   </LogoCard>
 </LogoRow>
 

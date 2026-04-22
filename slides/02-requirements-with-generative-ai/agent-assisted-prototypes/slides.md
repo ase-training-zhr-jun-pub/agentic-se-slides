@@ -55,13 +55,13 @@ background: petrol
 
 <LogoRow h-full w="4/5" mx-auto>
   <LogoCard name="Framer">
-    <img src="/logos/framer.svg" size-28 />
+    <img src="/logos/framer.svg" size-24 />
   </LogoCard>
   <LogoCard name="Figma">
-    <img src="/logos/figma.svg" size-28 />
+    <img src="/logos/figma.svg" size-24 />
   </LogoCard>
   <LogoCard name="Sketch">
-    <img src="/logos/sketch.svg" size-28 />
+    <img src="/logos/sketch.svg" size-24 />
   </LogoCard>
 </LogoRow>
 
@@ -72,19 +72,19 @@ background: petrol
 
 <LogoRow h-full>
   <LogoCard name="Lovable">
-    <img src="/logos/lovable.svg" size-28 />
+    <img src="/logos/lovable.svg" size-24 />
   </LogoCard>
   <LogoCard name="replit">
-    <img src="/logos/replit.svg" size-28 />
+    <img src="/logos/replit.svg" size-24 />
   </LogoCard>
   <LogoCard name="bolt">
-    <img src="/logos/bolt.svg" size-28 />
+    <img src="/logos/bolt.svg" size-24 />
   </LogoCard>
   <LogoCard name="v0">
-    <img src="/logos/v0.svg" size-28 />
+    <img src="/logos/v0.svg" size-24 />
   </LogoCard>
   <LogoCard name="Galileo">
-      <div relative size-28>
+      <div relative size-24>
           <img src="/logos/galileo-rip.svg" inset-0 />
           <div class="absolute text-4xl -top-3 -right-1">🪦</div>
       </div>
@@ -97,10 +97,10 @@ background: petrol
 
 <LogoRow h-full w="3/5" mx-auto>
   <LogoCard name="ChatGPT">
-    <img src="/logos/openai.svg" size-28 />
+    <img src="/logos/openai.svg" size-24 />
   </LogoCard>
   <LogoCard name="Claude Desktop">
-    <img src="/logos/claude.svg" size-28 />
+    <img src="/logos/claude.svg" size-24 />
   </LogoCard>
 </LogoRow>
 
@@ -114,19 +114,19 @@ Chat-Interfaces eignen sich für schnelle Mockups und einmalige Code-Schnipsel. 
 
 <LogoRow h-full>
   <LogoCard name="Claude Code">
-    <img src="/logos/claude.svg" size-28 />
+    <img src="/logos/claude.svg" size-24 />
   </LogoCard>
   <LogoCard name="Gemini CLI">
-    <img src="/logos/gemini-cli.svg" size-28 />
+    <img src="/logos/gemini-cli.svg" size-24 />
   </LogoCard>
   <LogoCard name="Open Code">
-    <img src="/logos/opencode-square.svg" size-28 />
+    <img src="/logos/opencode-square.svg" size-24 />
   </LogoCard>
   <LogoCard name="Codex CLI">
-    <img src="/logos/codex.svg" size-28 />
+    <img src="/logos/codex.svg" size-24 />
   </LogoCard>
   <LogoCard name="Copilot CLI">
-    <img src="/logos/github-copilot.svg" size-28 />
+    <img src="/logos/github-copilot.svg" size-24 />
   </LogoCard>
 </LogoRow>
 

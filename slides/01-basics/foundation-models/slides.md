@@ -17,19 +17,19 @@
 
 <LogoRow class="h-full">
   <LogoCard name="GPT" subtitle="OpenAI">
-    <img src="/logos/openai.svg" class="h-32 w-auto object-contain" />
+    <img src="/logos/openai.svg" size-24 />
   </LogoCard>
   <LogoCard name="Claude" subtitle="Anthropic">
-    <img src="/logos/claude.svg" class="h-32 w-auto object-contain" />
+    <img src="/logos/claude.svg" size-24 />
   </LogoCard>
   <LogoCard name="Gemini" subtitle="Google">
-    <img src="/logos/gemini.svg" class="h-32 w-auto object-contain" />
+    <img src="/logos/gemini.svg" size-24 />
   </LogoCard>
   <LogoCard name="Mistral" subtitle="Mistral">
-    <img src="/logos/mistral.svg" class="h-32 w-auto object-contain" />
+    <img src="/logos/mistral.svg" size-24 />
   </LogoCard>
   <LogoCard name="Qwen" subtitle="Alibaba">
-    <img src="/logos/qwen.svg" class="h-32 w-auto object-contain" />
+    <img src="/logos/qwen.svg" size-24 />
   </LogoCard>
 </LogoRow>
 

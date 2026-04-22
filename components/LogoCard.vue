@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <VisualCenter class="text-center">
+  <VisualCenter text-center gap-4>
     <slot />
     <template #bottom>
       <div class="font-bold text-xl whitespace-nowrap">{{ name }}</div>
