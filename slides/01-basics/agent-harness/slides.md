@@ -101,28 +101,52 @@ What agents observe:
 
 ---
 
-# The Control Loop
+# The Control<br/>Loop
 
 <div class="flex items-center justify-center h-4/5">
-  <div class="relative w-120 h-90">
-    <div class="absolute top-0 right-16 text-center">
-      <div class="text-4xl">⚡</div>
-      <h3 class="mt-1">Act</h3>
-      <p class="text-sm">Execute tool,<br/>modify environment</p>
-    </div>
-    <div class="absolute left-0 top-1/3 text-center">
-      <div class="text-4xl">🧠</div>
-      <h3 class="mt-1">Reason</h3>
-      <p class="text-sm">Analyze situation,<br/>plan next step</p>
-    </div>
-    <div class="absolute bottom-0 right-16 text-center">
-      <div class="text-4xl">👁️</div>
-      <h3 class="mt-1">Observe</h3>
-      <p class="text-sm">Read results,<br/>evaluate progress</p>
-    </div>
-    <div class="absolute top-12 left-24 text-4xl text-petrol">↗</div>
-    <div class="absolute top-12 right-4 text-4xl text-petrol">↘</div>
-    <div class="absolute bottom-16 left-16 text-4xl text-petrol">↖</div>
+  <div class="absolute inset-0">
+    <ArcLine
+      class="text-petrol"
+      center="50% 56%"
+      radius="36%"
+      :startAngle="77"
+      :endAngle="143"
+      head="arrow"
+      :strokeWidth="3"
+      clockwise
+    />
+    <ArcLine
+      class="text-petrol"
+      center="50% 56%"
+      radius="36%"
+      :startAngle="-33"
+      :endAngle="23"
+      head="arrow"
+      :strokeWidth="3"
+      clockwise
+    />
+    <ArcLine
+      class="text-petrol"
+      center="50% 56%"
+      radius="36%"
+      :startAngle="197"
+      :endAngle="283"
+      head="arrow"
+      :strokeWidth="3"
+      clockwise
+    />
+    <EmojiStack class="absolute anchor-center left-[60%] top-[20%]" name="zap" size="lg">
+      <h3>Act</h3>
+      <p text-sm>Execute tool,<br/>modify environment</p>
+    </EmojiStack>
+    <EmojiStack class="absolute anchor-center left-[63%] top-[77%]" name="eye" size="lg">
+      <h3>Observe</h3>
+      <p text-sm>Read results,<br/>evaluate progress</p>
+    </EmojiStack>
+    <EmojiStack class="absolute anchor-center left-[30%] top-[62%]" name="brain" size="lg">
+      <h3>Reason</h3>
+      <p text-sm>Analyze situation,<br/>plan next step</p>
+    </EmojiStack>
   </div>
 </div>
 
