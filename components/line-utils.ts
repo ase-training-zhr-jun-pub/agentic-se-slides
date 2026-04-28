@@ -30,6 +30,13 @@ export interface Point {
   y: number
 }
 
+export interface BoundingBox {
+  minX: number
+  minY: number
+  width: number
+  height: number
+}
+
 export interface PathGeometry {
   path: string
   startPoint: Point
@@ -74,58 +81,73 @@ export function resolveLineJoin(lineCap: LineCap, lineJoin?: LineJoin): LineJoin
   return lineCap === 'round' ? 'round' : 'miter'
 }
 
-export function useOwnerSvgSize(target: Ref<SVGGeometryElement | null>) {
+export function useParentSize(target: Ref<Element | null>) {
   const width = ref(100)
   const height = ref(100)
-  const unitScale = ref(1)
   let observer: ResizeObserver | null = null
 
   function updateSize() {
-    const svg = target.value?.ownerSVGElement
-    if (!svg)
+    const parent = target.value?.parentElement
+    if (!parent)
       return
 
-    const viewBox = svg.viewBox.baseVal
-    const rect = svg.getBoundingClientRect()
-
-    if (viewBox.width > 0 && viewBox.height > 0) {
-      width.value = viewBox.width
-      height.value = viewBox.height
-      if (rect.width > 0 && rect.height > 0) {
-        unitScale.value = Math.min(viewBox.width / rect.width, viewBox.height / rect.height)
-      }
-      return
-    }
-
+    const rect = parent.getBoundingClientRect()
     width.value = rect.width || 100
     height.value = rect.height || 100
-    unitScale.value = 1
   }
 
   onMounted(() => {
     updateSize()
 
-    const svg = target.value?.ownerSVGElement
-    if (typeof ResizeObserver === 'undefined' || !svg)
+    const parent = target.value?.parentElement
+    if (typeof ResizeObserver === 'undefined' || !parent)
       return
 
     observer = new ResizeObserver(() => {
       updateSize()
     })
-    observer.observe(svg)
+    observer.observe(parent)
   })
 
   onUnmounted(() => {
     observer?.disconnect()
   })
 
-  return { width, height, unitScale }
+  return { width, height }
+}
+
+export function computeBoundingBox(points: Point[]): BoundingBox {
+  let minX = Infinity
+  let minY = Infinity
+  let maxX = -Infinity
+  let maxY = -Infinity
+
+  for (const point of points) {
+    if (point.x < minX) minX = point.x
+    if (point.y < minY) minY = point.y
+    if (point.x > maxX) maxX = point.x
+    if (point.y > maxY) maxY = point.y
+  }
+
+  return {
+    minX,
+    minY,
+    width: maxX - minX,
+    height: maxY - minY,
+  }
+}
+
+export function shiftPoint(point: Point, bbox: BoundingBox): Point {
+  return {
+    x: point.x - bbox.minX,
+    y: point.y - bbox.minY,
+  }
 }
 
 export function parsePoint(value: string, width: number, height: number, label: string): Point {
   const match = value.match(POINT_PATTERN)
   if (!match) {
-    throw new Error(`[${label}] Expected point as \"x% y%\", received \"${value}\".`)
+    throw new Error(`[${label}] Expected point as "x% y%", received "${value}".`)
   }
 
   const [, x, y] = match
@@ -138,7 +160,7 @@ export function parsePoint(value: string, width: number, height: number, label: 
 export function parseRadius(value: string, width: number, height: number, label: string): number {
   const match = value.match(RADIUS_PATTERN)
   if (!match) {
-    throw new Error(`[${label}] Expected radius as \"n%\", received \"${value}\".`)
+    throw new Error(`[${label}] Expected radius as "n%", received "${value}".`)
   }
 
   return Math.min(width, height) * Number(match[1]) / 100
@@ -308,7 +330,7 @@ export function buildMarkerShape(
   }
 }
 
-function polarToPoint(center: Point, radius: number, angle: number): Point {
+export function polarToPoint(center: Point, radius: number, angle: number): Point {
   const radians = angle * Math.PI / 180
 
   return {
@@ -413,7 +435,6 @@ function getOpenArrowLength(strokeWidth: number): number {
 }
 
 function getOpenArrowWidth(strokeWidth: number): number {
-  // 30 degrees per side => width = 2 * length * tan(30deg)
   return getOpenArrowLength(strokeWidth) * 1.5
 }
 
