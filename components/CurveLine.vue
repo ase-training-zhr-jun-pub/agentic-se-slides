@@ -1,118 +1,36 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-import {
-  buildCurveGeometry,
-  buildMarkerShape,
-  commonLineDefaults,
+import BaseLine, {
+  type PointValue,
+  parsePoint,
   computeBoundingBox,
   shiftPoint,
-  STROKE_SCALE,
-  getMarkerTrim,
-  parsePoint,
-  resolveDashArray,
-  resolveLineJoin,
-  resolveStrokeColor,
-  useParentSize,
-  type BaseLineProps,
-  type PointValue,
-} from './line-utils'
+  buildCurveGeometry,
+} from './BaseLine.vue'
 
-interface CurveLineProps extends BaseLineProps {
+defineOptions({ inheritAttrs: false })
+
+const props = defineProps<{
   start: PointValue
   end: PointValue
   via: PointValue
-}
+}>()
 
-const props = withDefaults(defineProps<CurveLineProps>(), commonLineDefaults)
-
-const svgRef = ref<SVGSVGElement | null>(null)
-const { width: parentWidth, height: parentHeight } = useParentSize(svgRef)
-
-const strokeWidth = computed(() => props.strokeWidth * STROKE_SCALE)
-
-const keyPoints = computed(() => {
-  const start = parsePoint(props.start, parentWidth.value, parentHeight.value, 'CurveLine.start')
-  const via = parsePoint(props.via, parentWidth.value, parentHeight.value, 'CurveLine.via')
-  const end = parsePoint(props.end, parentWidth.value, parentHeight.value, 'CurveLine.end')
-  return { start, via, end }
-})
-
-const bbox = computed(() => computeBoundingBox([
-  keyPoints.value.start,
-  keyPoints.value.via,
-  keyPoints.value.end,
-]))
-
-const geometry = computed(() => {
-  const { start, via, end } = keyPoints.value
-  const localStart = shiftPoint(start, bbox.value)
-  const localVia = shiftPoint(via, bbox.value)
-  const localEnd = shiftPoint(end, bbox.value)
-
-  return buildCurveGeometry(
-    localStart,
-    localVia,
-    localEnd,
-    getMarkerTrim(props.tail, strokeWidth.value, props.lineCap),
-    getMarkerTrim(props.head, strokeWidth.value, props.lineCap),
+function pathBuilder(parentWidth: number, parentHeight: number, tailTrim: number, headTrim: number) {
+  const start = parsePoint(props.start, parentWidth, parentHeight, 'CurveLine.start')
+  const via = parsePoint(props.via, parentWidth, parentHeight, 'CurveLine.via')
+  const end = parsePoint(props.end, parentWidth, parentHeight, 'CurveLine.end')
+  const bbox = computeBoundingBox([start, via, end])
+  const geometry = buildCurveGeometry(
+    shiftPoint(start, bbox),
+    shiftPoint(via, bbox),
+    shiftPoint(end, bbox),
+    tailTrim,
+    headTrim,
   )
-})
-
-const strokeColor = computed(() => resolveStrokeColor(props.color))
-const dashArray = computed(() => resolveDashArray(strokeWidth.value, props.dashed))
-const lineJoin = computed(() => resolveLineJoin(props.lineCap, props.lineJoin))
-
-const tailMarker = computed(() => buildMarkerShape(
-  props.tail, geometry.value.startPoint, geometry.value.startTangentAngle, strokeWidth.value, 'tail',
-))
-const headMarker = computed(() => buildMarkerShape(
-  props.head, geometry.value.endPoint, geometry.value.endTangentAngle, strokeWidth.value, 'head',
-))
-
-const svgStyle = computed(() => ({
-  position: 'absolute' as const,
-  left: `${bbox.value.minX / parentWidth.value * 100}%`,
-  top: `${bbox.value.minY / parentHeight.value * 100}%`,
-  width: `${bbox.value.width / parentWidth.value * 100}%`,
-  height: `${bbox.value.height / parentHeight.value * 100}%`,
-}))
+  return { geometry, bbox }
+}
 </script>
 
 <template>
-  <svg
-    ref="svgRef"
-    :style="svgStyle"
-    :viewBox="`0 0 ${bbox.width} ${bbox.height}`"
-    overflow="visible"
-    pointer-events="none"
-    aria-hidden="true"
-    fill="none"
-  >
-    <path
-      :d="geometry.path"
-      :stroke="strokeColor"
-      :stroke-width="strokeWidth"
-      :stroke-dasharray="dashArray"
-      :stroke-linecap="props.lineCap"
-      :stroke-linejoin="lineJoin"
-    />
-    <path
-      v-if="tailMarker"
-      :d="tailMarker.path"
-      :fill="tailMarker.mode === 'fill' ? strokeColor : 'none'"
-      :stroke="tailMarker.mode === 'stroke' ? strokeColor : 'none'"
-      :stroke-width="tailMarker.strokeWidth"
-      :stroke-linecap="props.lineCap"
-      :stroke-linejoin="lineJoin"
-    />
-    <path
-      v-if="headMarker"
-      :d="headMarker.path"
-      :fill="headMarker.mode === 'fill' ? strokeColor : 'none'"
-      :stroke="headMarker.mode === 'stroke' ? strokeColor : 'none'"
-      :stroke-width="headMarker.strokeWidth"
-      :stroke-linecap="props.lineCap"
-      :stroke-linejoin="lineJoin"
-    />
-  </svg>
+  <BaseLine v-bind="$attrs" :path-builder="pathBuilder" />
 </template>

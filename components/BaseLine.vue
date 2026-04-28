@@ -1,4 +1,7 @@
-import { onMounted, onUnmounted, ref, type Ref } from 'vue'
+<script lang="ts">
+import { computed, onMounted, onUnmounted, ref, type Ref } from 'vue'
+
+// ─── Exported types ──────────────────────────────────────────────────
 
 export type Marker = 'none' | 'arrow' | 'triangle' | 'dot' | 'diamond'
 export type LineCap = 'butt' | 'round' | 'square'
@@ -14,16 +17,6 @@ export type StrokeColor =
 
 export type PointValue = `${number}% ${number}%`
 export type RadiusValue = `${number}%`
-
-export interface BaseLineProps {
-  head?: Marker
-  tail?: Marker
-  color?: StrokeColor
-  strokeWidth?: number
-  dashed?: boolean
-  lineCap?: LineCap
-  lineJoin?: LineJoin
-}
 
 export interface Point {
   x: number
@@ -45,75 +38,35 @@ export interface PathGeometry {
   endTangentAngle: number
 }
 
-export interface MarkerShape {
-  path: string
-  mode: 'fill' | 'stroke'
-  strokeWidth?: number
-}
+export type PathBuilderFn = (
+  parentWidth: number,
+  parentHeight: number,
+  tailTrim: number,
+  headTrim: number,
+) => { geometry: PathGeometry; bbox: BoundingBox }
 
-const POINT_PATTERN = /^\s*(-?\d+(?:\.\d+)?)%\s+(-?\d+(?:\.\d+)?)%\s*$/
-const RADIUS_PATTERN = /^\s*(-?\d+(?:\.\d+)?)%\s*$/
+// ─── Exported geometry functions (used by wrapper components) ────────
 
-const COLOR_MAP: Record<Exclude<StrokeColor, 'currentColor'>, string> = {
-  petrol: 'var(--innoq-petrol)',
-  apricot: 'var(--innoq-apricot)',
-  teal: 'var(--innoq-teal)',
-  lightGray: 'var(--innoq-light-gray)',
-  white: 'white',
-  black: 'black',
-}
-
-export const STROKE_SCALE = 4
-
-export const commonLineDefaults = {
-  head: 'none' as Marker,
-  tail: 'none' as Marker,
-  color: 'currentColor' as StrokeColor,
-  strokeWidth: 1,
-  dashed: false,
-  lineCap: 'round' as LineCap,
-}
-
-export function resolveLineJoin(lineCap: LineCap, lineJoin?: LineJoin): LineJoin {
-  if (lineJoin)
-    return lineJoin
-
-  return lineCap === 'round' ? 'round' : 'miter'
-}
-
-export function useParentSize(target: Ref<Element | null>) {
-  const width = ref(100)
-  const height = ref(100)
-  let observer: ResizeObserver | null = null
-
-  function updateSize() {
-    const parent = target.value?.parentElement
-    if (!parent)
-      return
-
-    const rect = parent.getBoundingClientRect()
-    width.value = rect.width || 100
-    height.value = rect.height || 100
+export function parsePoint(value: string, width: number, height: number, label: string): Point {
+  const match = value.match(POINT_PATTERN)
+  if (!match) {
+    throw new Error(`[${label}] Expected point as "x% y%", received "${value}".`)
   }
 
-  onMounted(() => {
-    updateSize()
+  const [, x, y] = match
+  return {
+    x: width * Number(x) / 100,
+    y: height * Number(y) / 100,
+  }
+}
 
-    const parent = target.value?.parentElement
-    if (typeof ResizeObserver === 'undefined' || !parent)
-      return
+export function parseRadius(value: string, width: number, height: number, label: string): number {
+  const match = value.match(RADIUS_PATTERN)
+  if (!match) {
+    throw new Error(`[${label}] Expected radius as "n%", received "${value}".`)
+  }
 
-    observer = new ResizeObserver(() => {
-      updateSize()
-    })
-    observer.observe(parent)
-  })
-
-  onUnmounted(() => {
-    observer?.disconnect()
-  })
-
-  return { width, height }
+  return Math.min(width, height) * Number(match[1]) / 100
 }
 
 export function computeBoundingBox(points: Point[]): BoundingBox {
@@ -144,40 +97,13 @@ export function shiftPoint(point: Point, bbox: BoundingBox): Point {
   }
 }
 
-export function parsePoint(value: string, width: number, height: number, label: string): Point {
-  const match = value.match(POINT_PATTERN)
-  if (!match) {
-    throw new Error(`[${label}] Expected point as "x% y%", received "${value}".`)
-  }
+export function polarToPoint(center: Point, radius: number, angle: number): Point {
+  const radians = angle * Math.PI / 180
 
-  const [, x, y] = match
   return {
-    x: width * Number(x) / 100,
-    y: height * Number(y) / 100,
+    x: center.x + radius * Math.cos(radians),
+    y: center.y + radius * Math.sin(radians),
   }
-}
-
-export function parseRadius(value: string, width: number, height: number, label: string): number {
-  const match = value.match(RADIUS_PATTERN)
-  if (!match) {
-    throw new Error(`[${label}] Expected radius as "n%", received "${value}".`)
-  }
-
-  return Math.min(width, height) * Number(match[1]) / 100
-}
-
-export function resolveStrokeColor(color: StrokeColor): string {
-  if (color === 'currentColor')
-    return 'currentColor'
-
-  return COLOR_MAP[color]
-}
-
-export function resolveDashArray(strokeWidth: number, dashed: boolean): string | undefined {
-  if (!dashed)
-    return undefined
-
-  return `${formatNumber(strokeWidth * 2.5)} ${formatNumber(strokeWidth * 2)}`
 }
 
 export function buildLineGeometry(start: Point, end: Point, startTrim = 0, endTrim = 0): PathGeometry {
@@ -275,7 +201,52 @@ export function buildCurveGeometry(start: Point, via: Point, end: Point, startTr
   }
 }
 
-export function getMarkerTrim(marker: Marker, strokeWidth: number, lineCap: LineCap = 'round'): number {
+// ─── Internal constants ──────────────────────────────────────────────
+
+const POINT_PATTERN = /^\s*(-?\d+(?:\.\d+)?)%\s+(-?\d+(?:\.\d+)?)%\s*$/
+const RADIUS_PATTERN = /^\s*(-?\d+(?:\.\d+)?)%\s*$/
+
+const COLOR_MAP: Record<Exclude<StrokeColor, 'currentColor'>, string> = {
+  petrol: 'var(--innoq-petrol)',
+  apricot: 'var(--innoq-apricot)',
+  teal: 'var(--innoq-teal)',
+  lightGray: 'var(--innoq-light-gray)',
+  white: 'white',
+  black: 'black',
+}
+
+const STROKE_SCALE = 4
+
+// ─── Internal rendering helpers ──────────────────────────────────────
+
+interface MarkerShape {
+  path: string
+  mode: 'fill' | 'stroke'
+  strokeWidth?: number
+}
+
+function resolveStrokeColor(color: StrokeColor): string {
+  if (color === 'currentColor')
+    return 'currentColor'
+
+  return COLOR_MAP[color]
+}
+
+function resolveDashArray(strokeWidth: number, dashed: boolean): string | undefined {
+  if (!dashed)
+    return undefined
+
+  return `${formatNumber(strokeWidth * 2.5)} ${formatNumber(strokeWidth * 2)}`
+}
+
+function resolveLineJoin(lineCap: LineCap, lineJoin?: LineJoin): LineJoin {
+  if (lineJoin)
+    return lineJoin
+
+  return lineCap === 'round' ? 'round' : 'miter'
+}
+
+function getMarkerTrim(marker: Marker, strokeWidth: number, lineCap: LineCap = 'round'): number {
   const capOverhang = lineCap === 'butt' ? 0 : strokeWidth * 0.5
 
   if (marker === 'none')
@@ -293,7 +264,7 @@ export function getMarkerTrim(marker: Marker, strokeWidth: number, lineCap: Line
   return getArrowLength(strokeWidth) - strokeWidth * 0.35
 }
 
-export function buildMarkerShape(
+function buildMarkerShape(
   marker: Marker,
   point: Point,
   tangentAngle: number,
@@ -330,14 +301,44 @@ export function buildMarkerShape(
   }
 }
 
-export function polarToPoint(center: Point, radius: number, angle: number): Point {
-  const radians = angle * Math.PI / 180
+// ─── Composable ──────────────────────────────────────────────────────
 
-  return {
-    x: center.x + radius * Math.cos(radians),
-    y: center.y + radius * Math.sin(radians),
+function useParentSize(target: Ref<Element | null>) {
+  const width = ref(100)
+  const height = ref(100)
+  let observer: ResizeObserver | null = null
+
+  function updateSize() {
+    const parent = target.value?.parentElement
+    if (!parent)
+      return
+
+    const rect = parent.getBoundingClientRect()
+    width.value = rect.width || 100
+    height.value = rect.height || 100
   }
+
+  onMounted(() => {
+    updateSize()
+
+    const parent = target.value?.parentElement
+    if (typeof ResizeObserver === 'undefined' || !parent)
+      return
+
+    observer = new ResizeObserver(() => {
+      updateSize()
+    })
+    observer.observe(parent)
+  })
+
+  onUnmounted(() => {
+    observer?.disconnect()
+  })
+
+  return { width, height }
 }
+
+// ─── Private geometry helpers ────────────────────────────────────────
 
 function normalizedSweep(angle: number): number {
   return ((angle % 360) + 360) % 360
@@ -345,6 +346,56 @@ function normalizedSweep(angle: number): number {
 
 function angleBetween(start: Point, end: Point): number {
   return Math.atan2(end.y - start.y, end.x - start.x) * 180 / Math.PI
+}
+
+function vectorFromAngle(angle: number): Point {
+  const radians = angle * Math.PI / 180
+
+  return {
+    x: Math.cos(radians),
+    y: Math.sin(radians),
+  }
+}
+
+function movePoint(point: Point, angle: number, distance: number): Point {
+  const vector = vectorFromAngle(angle)
+
+  return {
+    x: point.x + vector.x * distance,
+    y: point.y + vector.y * distance,
+  }
+}
+
+function radiansToDegrees(value: number): number {
+  return value * 180 / Math.PI
+}
+
+function getArrowLength(strokeWidth: number): number {
+  return strokeWidth * 6
+}
+
+function getArrowWidth(strokeWidth: number): number {
+  return strokeWidth * 4.5
+}
+
+function getOpenArrowLength(strokeWidth: number): number {
+  return strokeWidth * 3.1
+}
+
+function getOpenArrowWidth(strokeWidth: number): number {
+  return getOpenArrowLength(strokeWidth) * 1.5
+}
+
+function getDotRadius(strokeWidth: number): number {
+  return strokeWidth * 1.8
+}
+
+function getDiamondLength(strokeWidth: number): number {
+  return getDotRadius(strokeWidth) * 2.4
+}
+
+function getDiamondWidth(strokeWidth: number): number {
+  return getDotRadius(strokeWidth) * 2
 }
 
 function buildArrowPath(tip: Point, angle: number, strokeWidth: number): string {
@@ -400,56 +451,6 @@ function buildDotPath(center: Point, strokeWidth: number): string {
   ].join(' ')
 }
 
-function vectorFromAngle(angle: number): Point {
-  const radians = angle * Math.PI / 180
-
-  return {
-    x: Math.cos(radians),
-    y: Math.sin(radians),
-  }
-}
-
-function movePoint(point: Point, angle: number, distance: number): Point {
-  const vector = vectorFromAngle(angle)
-
-  return {
-    x: point.x + vector.x * distance,
-    y: point.y + vector.y * distance,
-  }
-}
-
-function radiansToDegrees(value: number): number {
-  return value * 180 / Math.PI
-}
-
-function getArrowLength(strokeWidth: number): number {
-  return strokeWidth * 6
-}
-
-function getArrowWidth(strokeWidth: number): number {
-  return strokeWidth * 4.5
-}
-
-function getOpenArrowLength(strokeWidth: number): number {
-  return strokeWidth * 3.1
-}
-
-function getOpenArrowWidth(strokeWidth: number): number {
-  return getOpenArrowLength(strokeWidth) * 1.5
-}
-
-function getDotRadius(strokeWidth: number): number {
-  return strokeWidth * 1.8
-}
-
-function getDiamondLength(strokeWidth: number): number {
-  return getDotRadius(strokeWidth) * 2.4
-}
-
-function getDiamondWidth(strokeWidth: number): number {
-  return getDotRadius(strokeWidth) * 2
-}
-
 function buildDiamondPath(center: Point, tangentAngle: number, strokeWidth: number): string {
   const length = getDiamondLength(strokeWidth)
   const width = getDiamondWidth(strokeWidth)
@@ -483,3 +484,95 @@ function formatPoint(point: Point): string {
 function formatNumber(value: number): number {
   return Number(value.toFixed(3))
 }
+</script>
+
+<script setup lang="ts">
+const props = withDefaults(defineProps<{
+  head?: Marker
+  tail?: Marker
+  color?: StrokeColor
+  strokeWidth?: number
+  dashed?: boolean
+  lineCap?: LineCap
+  lineJoin?: LineJoin
+  pathBuilder: PathBuilderFn
+}>(), {
+  head: 'none',
+  tail: 'none',
+  color: 'currentColor',
+  strokeWidth: 1,
+  dashed: false,
+  lineCap: 'round',
+})
+
+const svgRef = ref<SVGSVGElement | null>(null)
+const { width: parentWidth, height: parentHeight } = useParentSize(svgRef)
+
+const strokeWidth = computed(() => props.strokeWidth * STROKE_SCALE)
+const tailTrim = computed(() => getMarkerTrim(props.tail, strokeWidth.value, props.lineCap))
+const headTrim = computed(() => getMarkerTrim(props.head, strokeWidth.value, props.lineCap))
+
+const result = computed(() =>
+  props.pathBuilder(parentWidth.value, parentHeight.value, tailTrim.value, headTrim.value),
+)
+const geometry = computed(() => result.value.geometry)
+const bbox = computed(() => result.value.bbox)
+
+const strokeColor = computed(() => resolveStrokeColor(props.color))
+const dashArray = computed(() => resolveDashArray(strokeWidth.value, props.dashed))
+const lineJoin = computed(() => resolveLineJoin(props.lineCap, props.lineJoin))
+
+const tailMarker = computed(() => buildMarkerShape(
+  props.tail, geometry.value.startPoint, geometry.value.startTangentAngle, strokeWidth.value, 'tail',
+))
+const headMarker = computed(() => buildMarkerShape(
+  props.head, geometry.value.endPoint, geometry.value.endTangentAngle, strokeWidth.value, 'head',
+))
+
+const svgStyle = computed(() => ({
+  position: 'absolute' as const,
+  left: `${bbox.value.minX / parentWidth.value * 100}%`,
+  top: `${bbox.value.minY / parentHeight.value * 100}%`,
+  width: `${bbox.value.width / parentWidth.value * 100}%`,
+  height: `${bbox.value.height / parentHeight.value * 100}%`,
+}))
+</script>
+
+<template>
+  <svg
+    ref="svgRef"
+    :style="svgStyle"
+    :viewBox="`0 0 ${bbox.width} ${bbox.height}`"
+    overflow="visible"
+    pointer-events="none"
+    aria-hidden="true"
+    fill="none"
+  >
+    <path
+      :d="geometry.path"
+      :stroke="strokeColor"
+      :stroke-width="strokeWidth"
+      :stroke-dasharray="dashArray"
+      :stroke-linecap="props.lineCap"
+      :stroke-linejoin="lineJoin"
+    />
+    <path
+      v-if="tailMarker"
+      :d="tailMarker.path"
+      :fill="tailMarker.mode === 'fill' ? strokeColor : 'none'"
+      :stroke="tailMarker.mode === 'stroke' ? strokeColor : 'none'"
+      :stroke-width="tailMarker.strokeWidth"
+      :stroke-linecap="props.lineCap"
+      :stroke-linejoin="lineJoin"
+    />
+    <path
+      v-if="headMarker"
+      :d="headMarker.path"
+      :fill="headMarker.mode === 'fill' ? strokeColor : 'none'"
+      :stroke="headMarker.mode === 'stroke' ? strokeColor : 'none'"
+      :stroke-width="headMarker.strokeWidth"
+      :stroke-linecap="props.lineCap"
+      :stroke-linejoin="lineJoin"
+    />
+  </svg>
+</template>
