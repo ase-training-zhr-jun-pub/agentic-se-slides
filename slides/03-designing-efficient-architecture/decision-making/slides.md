@@ -4,7 +4,7 @@ background: petrol
 ---
 
 ### *Use Agents for*
-# Decision Making
+# Architecture Decisions
 
 
 ---
@@ -80,20 +80,24 @@ ADRs sollten direkt im Repository neben dem Code liegen, damit sie mit dem Code 
 
 
 ---
+layout: sidebar
+slideNumber: false
+---
 
-# Agents for Decision Making
+## Explore Options<br/>and Trade-offs
 
-## Gather
+<AgentChat>
+  <ChatUser mb="1lh">Given the following situation [...], which options do we have to solve this?</ChatUser>
+  <ChatTask agent="explore" description="Identify options" status="completed" collapsed mb="1lh">
+    <ChatTool name="Read" args="docs/architecture.md" />
+    <ChatTool name="Read" args="docs/adrs/ADR-0001-*.md" />
+    <ChatTool name="WebSearch" args="messaging patterns distributed systems" />
+  </ChatTask>
+  <ChatAgent>Here are 3 options:<br/><br/>Option 1: [...]<br/>Option 2: [...]<br/>Option 3: [...]<br/><br/>When choosing option 1, the consequences would be [...]</ChatAgent>
+</AgentChat>
 
-Given the following situation, which options do we have to solve this?
-
-> Here are 3 options:
->
-> Option 1: ...
-> Option 2: ...
-> Option 3: ...
->
-> When choosing option 1, the consequences would be ...
+::sidebar::
+## *Use Agents for* Architecture Decisions
 
 <!--
 Der Agent sammelt mögliche Optionen und analysiert deren Konsequenzen – das ist genau die Vorarbeit, die in Architekturmeetings viel Zeit kostet.
@@ -105,24 +109,27 @@ Wichtig: Den Kontext des Systems mitgeben (vorhandene Technologien, Constraints,
 
 
 ---
+layout: sidebar
+---
 
-# Agents for Decision Making
+## Document Decisions
 
-## Document
+<AgentChat>
+  <ChatUser>
+      We held an architecture meeting where we discussed topic [...].
+      The meeting transcript is here: <strong>@docs/meetings/M-0042-meeting-title.md</strong>.
+      Create an ADR from the transcript.
+  </ChatUser>
+  <ChatTool mt="0.5lh" mb="1lh" name="Read" args="/docs/meetings/M-0042-meeting-title.md" collapsed />
+  <ChatAgent>
+      I've read the <em>transcript</em> and identified the key decision, context, and consequences. Let me read the ADR template and create the document.
+  </ChatAgent>
+  <ChatTool mt="0.5lh" name="Read" args="/docs/adrs/template.md" collapsed />
+  <ChatTool name="Write" args="/docs/adrs/ADR-0010-adr-title.md" collapsed />
+</AgentChat>
 
-We held an architecture meeting where we discussed topic `...`.
-
-The meeting transcript is here: `/docs/meetings/M-0042-meeting-title.md`
-
-Create an ADR from the transcript.
-
-```text
-> Read(/docs/meetings/ADR-0010-adr-title.md)
-
-* Thinking
-
-Write(/docs/adrs/ADR-0010-adr-title.md)
-```
+::sidebar::
+## *Use Agents for* Architecture Decisions
 
 <!--
 Hier sehen wir den zweiten Schritt: Aus dem Meeting-Transkript wird automatisch ein strukturiertes ADR generiert.
@@ -131,4 +138,3 @@ Der Agent liest das Transkript, extrahiert Kontext, Entscheidung und Konsequenze
 
 Das ist einer der stärksten Anwendungsfälle: Meetings erzeugen normalerweise viel Gesprächsstoff aber wenig Dokumentation. Agenten schließen diese Lücke.
 -->
-

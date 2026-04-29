@@ -29,10 +29,9 @@ layout: default
 - Agents tend to find even little things like typos, which humans sometimes miss
 - Agents can also make changes on the spot
 
-<PromptExample
-  label="Example: Merge Request Review"
-  prompt="@claude review this merge request"
-/>
+<AgentChat mt-6 max-w="4/5" mx-auto hide-title>
+  <ChatInput>review merge request https://gitlab.example.com/my-group/my-project/-/merge_requests/42</ChatInput>
+</AgentChat>
 
 <!--
 Der Agent als erster Reviewer: Er gibt sofort Feedback, bevor ein Mensch überhaupt Zeit hatte, sich den MR anzuschauen.
@@ -61,10 +60,9 @@ layout: default
 - Use agents to find vulnerabilities
 - If the agent does not find any, you are not safe, but safer than before
 
-<PromptExample
-  label="Example: Merge Request Review"
-  prompt="@claude analyze the merge request and outline potential vulnerabilities in the implementation"
-/>
+<AgentChat mt-10 max-w="4/5" mx-auto hide-title>
+  <ChatInput>analyze the merge request and outline potential vulnerabilities in the implementation</ChatInput>
+</AgentChat>
 
 <!--
 Kein Security-Tool ersetzt einen echten Pentest – aber ein Agent kann schnell bekannte Muster erkennen: SQL Injection, unsichere Deserialisierung, fehlende Authentifizierung, etc.

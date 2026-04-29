@@ -20,6 +20,15 @@ without importing.
 
 | Component | Category | Details |
 |-----------|----------|---------|
+| `AgentChat` | Agent Chat | [Agent Chat](./custom-components/agent-chat.md#agentchat) |
+| `ChatUser` | Agent Chat | [Agent Chat](./custom-components/agent-chat.md#chatuser) |
+| `ChatAgent` | Agent Chat | [Agent Chat](./custom-components/agent-chat.md#chatagent) |
+| `ChatTool` | Agent Chat | [Agent Chat](./custom-components/agent-chat.md#chattool) |
+| `ChatSkill` | Agent Chat | [Agent Chat](./custom-components/agent-chat.md#chatskill) |
+| `ChatTask` | Agent Chat | [Agent Chat](./custom-components/agent-chat.md#chattask) |
+| `ChatInput` | Agent Chat | [Agent Chat](./custom-components/agent-chat.md#chatinput) |
+| `Typewriter` | Agent Chat | [Agent Chat](./custom-components/agent-chat.md#typewriter) |
+| `AsciiSpinner` | Agent Chat | [Agent Chat](./custom-components/agent-chat.md#asciispinner) |
 | `Token` | Common | [Common](./custom-components/common.md#token) |
 | `EmojiStack` | Common | [Common](./custom-components/common.md#emojistack) |
 | `Line` | Drawings | [Drawings](./custom-components/drawings.md#line) |

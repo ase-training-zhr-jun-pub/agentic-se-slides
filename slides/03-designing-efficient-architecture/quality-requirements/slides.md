@@ -133,9 +133,11 @@ footerLink: https://www.innoq.com/en/articles/2021/08/quality-driven-software-ar
 
 # Gather <small>Quality Scenarios</small>
 
-Construct a quality scenario, including a reasonable measure, for the following situation:
-
-> A consultant views the bookings of an office on the Calvin website. The bookings are visible and interactive (first contentful paint) in 300ms for 95% of the requests.
+<AgentChat>
+  <ChatUser mb="1lh">In normal use, a consultant opens the Calvin website to view the bookings for an office. Turn this into a quality scenario and add a measurable response-time target.</ChatUser>
+  <ChatAgent>A consultant views the bookings of an office on the Calvin website. The bookings are visible and interactive (first contentful paint) in 300ms for 95% of the requests.</ChatAgent>
+  <ChatInput />
+</AgentChat>
 
 <!--
 Hier zeigen wir, wie ein Agent ein Szenario aus einer informellen Beschreibung heraus formalisiert.
@@ -147,16 +149,17 @@ Demo-Tipp: Prompt an Claude Code zeigen, der aus einer User Story ein vollständ
 
 
 ---
+slideNumber: false
+---
 
-# Prioritize <small>Quality Scenarios</small>
+## Prioritize <small>Quality Scenarios</small>
 
-Read in the table of quality scenarios. Find conflicting scenarios and prioritize them while respecting technical complexity and domain-specific need.
-
-> S13 conflicts with S4.
->
-> S13 is a scenario for security. S4 is a scenario for usability.
->
-> Because this is just a prototype and should not run in production, usability is more important than security. So I would prioritize S4 over S13.
+<AgentChat max-h-90>
+  <ChatUser>Read in the table of quality scenarios. Find conflicting scenarios and prioritize them while respecting technical complexity and domain-specific need.</ChatUser>
+  <ChatTool mb="1lh" name="Read" args="docs/architecture/quality-scenarios.md" />
+  <ChatAgent>S13 conflicts with S4. S13 is a scenario for security. S4 is a scenario for usability.<br/><br/>Because this is just a prototype and should not run in production, usability is more important than security. So I would prioritize S4 over S13.</ChatAgent>
+  <ChatInput />
+</AgentChat>
 
 <!--
 Priorisierung ist eine der schwierigsten Aufgaben in der Architekturarbeit – es gibt keine objektiv richtige Antwort.
