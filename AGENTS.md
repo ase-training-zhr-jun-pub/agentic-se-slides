@@ -39,6 +39,16 @@ All agent skills live in `.agents/skills/<skill-name>/`. This is the single sour
 
 When creating a new skill, always place it in `.agents/skills/<skill-name>/`.
 
+## Temporary files
+
+All temporary files — including screenshots, PDF exports, image crops, slide renders, or any other
+intermediate artifacts — MUST be written to the local `tmp/` directory in this repository. This
+directory is gitignored and safe for scratch work.
+
+Never write temporary files to system directories (`/tmp/`, `/var/tmp/`), the user's home directory,
+the Desktop, or any ad-hoc directory created in the repository root (e.g. `pr-screenshots/`,
+`exports/`, `screenshots/`, etc.).
+
 ## Agent workflow notes
 
 For tasks about creating or editing slides, prefer `npm run dev` because it gives fast feedback with hot reload.
