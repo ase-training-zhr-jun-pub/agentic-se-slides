@@ -165,7 +165,7 @@ rightBodyBackground: white
 
 <img h-44 object-contain mb-8 mx-auto src="./assets/assistant-worflow.png" />
 
-- Linear execution path
+- **Linear** execution path
 - Returns data to human
 - Human provides context
 - No environment modification
@@ -176,7 +176,7 @@ rightBodyBackground: white
 
 <img h-44 object-contain mb-8 mx-auto src="./assets/agent-workflow.png" />
 
-- Uses Iterative feedback loop
+- Uses **iterative feedback** loop
 - Modifies environment directly
 - Discovers own context
 - Self-corrects on errors
