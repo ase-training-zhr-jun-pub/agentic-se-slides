@@ -185,3 +185,17 @@ src: ./slides/06-cicd/slides.md
 ---
 src: ./slides/07-operations-and-monitoring/slides.md
 ---
+
+---
+layout: team
+---
+
+::header::
+# Vielen Dank! Fragen?!
+
+::default::
+<Person name="Jörg Müller" image="https://res.cloudinary.com/innoq/image/upload/c_thumb,e_grayscale,f_auto,g_center,h_1600,q_auto,w_1600/v1/uploads-production/5nouikqbo2fcaexr2rtzqum89las?_a=BACJ3SAE" direction="vertical">Principal Consultant</Person>
+<Person name="Torben Keller" image="https://res.cloudinary.com/innoq/image/upload/c_thumb,e_grayscale,f_auto,g_center,h_1600,q_auto,w_1600/v1/uploads-production/87viwn9wbdpjad8ujdw10t0yycyx?_a=BACJ3SAE" direction="vertical">Consultant</Person>
+
+::footer::
+<InnoqLogo class="h-8" />
