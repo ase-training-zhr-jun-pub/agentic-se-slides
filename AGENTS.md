@@ -29,6 +29,16 @@ npm run present  # Build and preview the deck for presentations
 
 Components and slides use UnoCSS/Windi CSS attributify mode for styling.
 
+## Skills
+
+All agent skills live in `.agents/skills/<skill-name>/`. This is the single source of truth.
+
+- **Never** create skill directories directly in `.claude/skills/` or `.opencode/skills/`.
+- `.claude/skills` is a symlink to `.agents/skills/` — Claude picks up all skills automatically.
+- OpenCode reads `.agents/skills/` directly — no symlinks or extra configuration needed.
+
+When creating a new skill, always place it in `.agents/skills/<skill-name>/`.
+
 ## Agent workflow notes
 
 For tasks about creating or editing slides, prefer `npm run dev` because it gives fast feedback with hot reload.
