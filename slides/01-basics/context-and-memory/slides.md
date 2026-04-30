@@ -66,8 +66,8 @@ slideNumber: false
   <LogoCard name="1M" subtitle="Gemini 3 Pro">
     <img src="/logos/gemini.svg" size-24 />
   </LogoCard>
-  <LogoCard name="131K" subtitle="DeepSeek V3.2">
-    <img src="/logos/deepseek.svg" size-24 />
+  <LogoCard name="256K" subtitle="Devstral 2">
+    <img src="/logos/mistral.svg" size-24 />
   </LogoCard>
   <LogoCard name="256K" subtitle="Qwen 3 Coder">
     <img src="/logos/qwen.svg" size-24 />
@@ -79,7 +79,7 @@ Context ist begrenzt. Jedes LLM hat ein Context Window – eine maximale Anzahl 
 
 Ist das Kontextfenster ausgeschöpft, fallen ältere Informationen hinten raus, wenn neue hinzukommen.
 
-Die Spanne ist heute enorm: Von 131K bei DeepSeek V3.2 bis 1M bei Gemini 3 Pro.
+Die Spanne ist heute enorm: Von 200K bei Claude Sonnet 4.5 bis 1M bei Gemini 3 Pro.
 
 Auch wenn das Kontextfenster sehr groß ist, setzt "Context Rot" ein – die Qualität der Verarbeitung nimmt bei sehr langen Contexts ab.
 
@@ -91,7 +91,7 @@ https://claude.com/blog/claude-sonnet-4-5
 
 https://ai.google.dev/gemini-api/docs/models?hl=de
 
-https://api-docs.deepseek.com/news/news250325
+https://docs.mistral.ai/models/model-cards/devstral-2-25-12
 
 https://qwen.ai/blog?id=qwen3.5
 -->
