@@ -318,6 +318,18 @@ When adding individual slides to an existing file, just insert the new `---` sep
 block at the appropriate position within that file. Respect the existing flow: intros come
 first, content slides follow, exercises at the end.
 
+#### Finding global slide numbers
+
+Use [`scripts/find-slide-numbers.mjs`](scripts/find-slide-numbers.mjs) when you need global
+Slidev numbers for export or review. The script uses Slidev's own parser and resolves `src:`
+includes, so prefer it over manual counting.
+
+```bash
+node .agents/skills/slidev-slide/scripts/find-slide-numbers.mjs decision-making
+node .agents/skills/slidev-slide/scripts/find-slide-numbers.mjs --file slides/03-designing-efficient-architecture/decision-making/slides.md
+node .agents/skills/slidev-slide/scripts/find-slide-numbers.mjs --range --match "Explore Options"
+```
+
 ### 6. Review and verify
 
 After creating or modifying slides, **always run the `slidev-review` skill** to verify the

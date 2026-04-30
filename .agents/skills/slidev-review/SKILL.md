@@ -52,12 +52,18 @@ typo in a bullet point), you can skip the export and note it in the checklist.
 
 #### Determine slide numbers
 
-Count through the include chain to find the global slide numbers of the changed slides:
+Use the slidev-slide helper script to find global slide numbers. It uses Slidev's own parser and
+resolves `src:` includes, so prefer it over manual counting:
 
-1. Read `slides.md` and follow `src:` includes in order
-2. Read each chapter file and follow its `src:` includes
-3. Count slides (separated by `---`) sequentially across all files
-4. Note the range of slides that correspond to the changed files
+```bash
+node .agents/skills/slidev-slide/scripts/find-slide-numbers.mjs --file slides/03-designing-efficient-architecture/decision-making/slides.md
+node .agents/skills/slidev-slide/scripts/find-slide-numbers.mjs --range --match "Explore Options"
+```
+
+Script reference:
+[`../../../.agents/skills/slidev-slide/scripts/find-slide-numbers.mjs`](../../../.agents/skills/slidev-slide/scripts/find-slide-numbers.mjs)
+
+Use the printed numbers or compact range for PNG export.
 
 #### Export as PNG
 
