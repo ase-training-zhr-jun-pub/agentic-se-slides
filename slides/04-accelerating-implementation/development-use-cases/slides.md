@@ -45,8 +45,9 @@ layout: default
 - You still have your IDE, use it when it is faster.
 - Only use agents when it accelerates your task.
 
-<p class="mt-18 text-3xl font-semibold">Using agents is no <span class="font-serif italic text-accent">self-purpose.</span></p>
-
+<h3 mt-30 text-center font-semibold>
+  Using agents is <em>no self-purpose.</em>
+</h3>
 
 ---
 
@@ -125,4 +126,3 @@ background: apricot
 - Rubber ducking: I did `...`, then `...`. The result was `...`
 - Can you spot errors in my code?
 - Help me debug `...` by using tool `...`
-
