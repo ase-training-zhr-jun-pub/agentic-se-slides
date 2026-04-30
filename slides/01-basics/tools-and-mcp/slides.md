@@ -71,13 +71,13 @@ footerLink: https://modelcontextprotocol.io/specification
     - Transport Layer (STDIO / HTTP)
     - Data Layer
       - Lifecycle Management
-      - Server Features
-      - Client Features
-      - Utility Features
+      - Server-/Client-/Utility-Features
 
   </div>
   <img src="./assets/mcp-bsp.png" class="w-full object-contain" />
 </div>
+
+https://modelcontextprotocol.io/specification
 
 <!--
 MCP ist ein offenes Protokoll von Anthropic, das den Austausch von Tools zwischen Hosts und Servern standardisiert.
