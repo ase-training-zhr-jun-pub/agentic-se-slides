@@ -130,16 +130,14 @@ Dann: Refactoring-Vorschläge direkt im Code, z.B. Caching einbauen, ineffizient
 -->
 
 ---
-layout: center
-background: petrol
+layout: takeaways
+chapter: 7
 ---
 
-## Chapter 7 -- Key Takeaways
-
-- Agents can interact with Ops tools
-- Agents can help to find performance issues
-- Write proprietary queries in tools with Agents
-- Agents can fix bugs automatically
+1. Agents can interact with Ops tools
+2. Agents can help to find performance issues
+3. Write proprietary queries in tools with Agents
+4. Agents can fix bugs automatically
 
 <!--
 Operations war lange eine Blackbox für viele Developers.
