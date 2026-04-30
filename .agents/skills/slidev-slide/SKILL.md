@@ -50,8 +50,10 @@ node_modules/slidev-theme-innoq/README.md
 This file documents every layout with props, slots, and examples. Read it before choosing a
 layout -- don't guess from the layout name alone.
 
-This project also has custom layouts and components beyond what the theme provides. Read them
-before building slides from scratch:
+This project also has custom layouts and components beyond what the theme provides. **Always read
+both files before using or recommending any component or layout** -- regardless of whether you
+are creating a new slide or editing an existing one. Never infer usage from source code in
+`components/` or `layouts/` -- the docs are the authoritative reference:
 
 - `docs/custom-layouts.md` -- Project-specific layouts (`chapter`, `intro`, `demo`, and any
   added during migration). Documents props, slots, and usage examples.

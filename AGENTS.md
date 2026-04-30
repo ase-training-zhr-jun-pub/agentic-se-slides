@@ -19,9 +19,11 @@ npm run present  # Build and preview the deck for presentations
 
 - `slides.md` - Main entry point for the deck; chapter order is defined here via `src:` includes
 - `docs/slide-structure.md` - Source of truth for how slide content, local assets, and topic folders are organized
-- `docs/` - Workshop notes, structure docs, and supporting documentation
-- `components/` - Reusable Vue components available in slides
-- `layouts/` - Custom Slidev layouts used by the deck
+- `docs/custom-components.md` - Primary reference for all reusable Vue components; read this before using or exploring `components/` source code
+- `docs/custom-layouts.md` - Primary reference for all custom layouts; read this before using or exploring `layouts/` source code
+- `docs/` - Further workshop notes and supporting documentation
+- `components/` - Vue component source code (prefer `docs/custom-components.md` over reading source directly)
+- `layouts/` - Custom layout source code (prefer `docs/custom-layouts.md` over reading source directly)
 - `slides/` - Chapter and topic slide content following `docs/slide-structure.md`
 - `public/` - Global reusable assets such as backgrounds, logos, shared images, and videos
 
