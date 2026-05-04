@@ -27,7 +27,7 @@ layout: default
 - This reduces idle time to wait for human reviews
 - If something comes up in the agent review, you can fix it before "wasting time" of other teammates
 - Agents tend to find even little things like typos, which humans sometimes miss
-- Agent can also make changes on the spot
+- Agents can also make changes on the spot
 
 <PromptExample
   label="Example: Merge Request Review"
@@ -71,4 +71,3 @@ Kein Security-Tool ersetzt einen echten Pentest – aber ein Agent kann schnell 
 
 "Safer than before" ist der Schlüsselsatz: Null Garantie, aber deutlich besser als gar kein Review.
 -->
-
