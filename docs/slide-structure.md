@@ -207,17 +207,16 @@ Beispiel:
 
 ## Frontmatter-Optionen
 
-Fuer globale Darstellungsoptionen einzelner Slides koennen zusaetzliche Frontmatter-Keys gesetzt werden.
+Für globale Darstellungsoptionen einzelner Slides können zusätzliche Frontmatter-Keys gesetzt werden.
 
 ### `slideNumber`
 
-Steuert die Anzeige der globalen Seitenzahl pro Slide.
+Steuert die Sichtbarkeit der globalen Seitenzahl pro Slide.
 
-- nicht gesetzt: Farbe wird automatisch aus dem Slide-Hintergrund abgeleitet
+- nicht gesetzt oder `true`: Seitenzahl anzeigen
 - `false`: Seitenzahl auf dieser Slide ausblenden
-- `'petrol' | 'apricot' | 'white' | 'black' | 'primary' | 'accent'`: Seitenzahl mit fixer Farbe anzeigen
 
-Beispiele:
+Beispiel:
 
 ```yaml
 ---
@@ -225,10 +224,73 @@ slideNumber: false
 ---
 ```
 
+### `footerDir`
+
+Steuert die Anordnung von Footer-Link und Seitenzahl.
+
+- nicht gesetzt oder `default`: Link links, Seitenzahl rechts
+- `reverse`: Seitenzahl links, Link rechts
+
+Beispiele:
+
 ```yaml
 ---
-background: apricot
-slideNumber: white
+footerLink: https://example.com/source
+footerDir: reverse
+---
+```
+
+Auch wenn `slideNumber: false` gesetzt ist, wirkt `footerDir` auf die Position des Links:
+
+```yaml
+---
+slideNumber: false
+footerLink: https://example.com/source
+footerDir: reverse
+---
+```
+
+Ergebnis: Keine Seitenzahl, Link steht rechts.
+
+### `footerLink`
+
+Zeigt einen oder mehrere Links im globalen Footer an. Der Linktext ist immer die vollständige URL.
+Bei mehreren Links werden die URLs untereinander angezeigt.
+
+Beispiele:
+
+```yaml
+---
+footerLink: https://example.com/source
+---
+```
+
+```yaml
+---
+footerLink:
+  - https://example.com/source
+  - https://github.com/example/repo
+---
+```
+
+### `footerLinkColor`
+
+Farbe des Footer-Links. Wenn nicht gesetzt, wird die Farbe automatisch aus dem Slide-Hintergrund abgeleitet.
+
+Erlaubte Werte: `petrol`, `apricot`, `white`, `black`, `primary`, `accent`.
+
+### `slideNumberColor`
+
+Farbe der Seitenzahl. Wenn nicht gesetzt, wird die Farbe automatisch aus dem Slide-Hintergrund abgeleitet.
+
+Erlaubte Werte: `petrol`, `apricot`, `white`, `black`, `primary`, `accent`.
+
+Beispiel (z. B. für Sidebar-Slides mit geteiltem Hintergrund):
+
+```yaml
+---
+footerLinkColor: white
+slideNumberColor: petrol
 ---
 ```
 
