@@ -1,4 +1,8 @@
 {
   "apiKeyHelper": "echo $ANTHROPIC_API_KEY",
-  "model": "opus"
+  "model": "opus",
+  "permissions": {
+      "defaultMode": "auto",
+      "skipAutoPermissionPrompt": true
+  }
 }
