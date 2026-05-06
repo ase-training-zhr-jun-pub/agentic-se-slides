@@ -59,12 +59,12 @@ background: apricot
 
 ---
 layout: default
+footerLink: https://www.innoq.com/en/articles/2021/08/quality-driven-software-architecture-revised/
 ---
 
 # Quality Model <small>ISO 25010</small>
 
 <img src="./assets/iso-25010-quality-model.svg" class="mx-auto h-80" />
-<p class="mt-4 text-sm text-primary/60">https://www.innoq.com/en/articles/2021/08/quality-driven-software-architecture-revised/</p>
 
 <!--
 ISO 25010 ist der internationale Standard für Softwarequalität. Er gibt uns eine gemeinsame Sprache für Qualitätsanforderungen.
@@ -76,12 +76,12 @@ Wichtig: Nicht alle Qualitätsbereiche sind für jedes System gleich relevant. D
 
 
 ---
+footerLink: https://www.innoq.com/en/articles/2021/08/quality-driven-software-architecture-revised/
+---
 
 # Scenarios <small>Quality Tree</small>
 
 <img src="./assets/quality-tree-scenarios.svg" class="h-80" />
-
-<small text-sm>https://www.innoq.com/en/articles/2021/08/quality-driven-software-architecture-revised/</small>
 
 <!--
 Der Quality Tree konkretisiert abstrakte Qualitätsziele in messbare Szenarien.
@@ -93,6 +93,8 @@ Ohne konkrete Szenarien bleiben Qualitätsziele wie "das System soll performant 
 
 
 ---
+footerLink: https://www.innoq.com/en/articles/2021/08/quality-driven-software-architecture-revised/
+---
 
 # Priorities <small>Quality Tree</small>
 <div class="relative w-full h-80 aspect-[1960/1104]">
@@ -101,8 +103,6 @@ Ohne konkrete Szenarien bleiben Qualitätsziele wie "das System soll performant 
     <span class="absolute left-[39%] top-[61.5%] grid size-6 place-items-center rounded-full bg-apricot text-white font-bold text-[1.15rem] leading-none">2</span>
     <span class="absolute left-[39%] top-[83%] grid size-6 place-items-center rounded-full bg-apricot text-white font-bold text-[1.15rem] leading-none">3</span>
 </div>
-  
-<p class="mt-4 text-sm text-primary/60">https://www.innoq.com/en/articles/2021/08/quality-driven-software-architecture-revised/</p>
 
 
 ---
@@ -165,4 +165,3 @@ Der Agent hilft dabei, Konflikte zu erkennen und Begründungen zu formulieren. D
 
 Wichtig: Der Agent liefert hier eine begründete Empfehlung basierend auf dem gegebenen Kontext ("just a prototype"). Im echten Projekt müsste der Kontext explizit mitgegeben werden.
 -->
-

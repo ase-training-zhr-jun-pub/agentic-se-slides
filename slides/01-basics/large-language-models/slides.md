@@ -218,21 +218,20 @@ https://medium.com/thinking-sand/mastering-llm-temperature-a-step-by-step-guide-
 ---
 layout: center
 background: apricot
+footerLink: https://bbycroft.net/llm
 ---
 
 ## Further Information
 
 <img mt-10 h-80 w-auto mx-auto rounded shadow-lg src="./assets/bbycroft-screenshot.png" />
 
-<p mt-6 mb-10 text-center text-xl font-serif italic text-accent>
-  <a href="https://bbycroft.net/llm" !border-none !text-accent hover:!text-accent>https://bbycroft.net/llm</a>
-</p>
-
-
 ---
 layout: sidebar
 sidebarBackground: petrol
 image: /backgrounds/4.webp
+footerLink: https://cookbook.openai.com/articles/openai-harmony#special-tokens
+slideNumber: false
+footerDir: reverse
 ---
 
 ## Teaching to converse
@@ -243,10 +242,6 @@ image: /backgrounds/4.webp
   - <Token text-sm leading-tight value="<|end|>" />
 - These tokens allow us to represent a conversation
 - LLMs are good at replicating patterns, so they can continue the conversation naturally
-
-<p class="mt-6 mb-10 text-sm font-serif italic">
-  <a href="https://bbycroft.net/llm" class="!border-none hover:!text-accent">https://cookbook.openai.com/articles/openai-harmony#special-tokens</a>
-</p>
 
 ::sidebar::
 

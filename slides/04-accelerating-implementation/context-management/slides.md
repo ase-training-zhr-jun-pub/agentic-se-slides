@@ -7,6 +7,8 @@ background: petrol
 # Building Blocks
 
 ---
+footerLink: https://agents.md
+---
 
 # Memory: <small>Agents.md</small>
 
@@ -14,10 +16,6 @@ background: petrol
 - Agents.md files get automatically attached to the context on a new session
 - Agents.md files in subdirectories get attached when the agent works in the subdirectory
 - Implemented by most Agents. Exception: Claude Code (`CLAUDE.md`)
-
-<div class="mt-8 inline-block rounded-lg bg-lightGray px-5 py-3 font-mono text-primary">
-  https://agents.md
-</div>
 
 ---
 

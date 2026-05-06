@@ -56,6 +56,8 @@ sequenceDiagram
 </div>
 
 ---
+footerLink: https://modelcontextprotocol.io/specification
+---
 
 # Model Context Protocol (MCP)
 

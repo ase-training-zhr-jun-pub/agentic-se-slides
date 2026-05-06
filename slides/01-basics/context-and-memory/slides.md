@@ -98,6 +98,7 @@ https://qwen.ai/blog?id=qwen3.5
 
 ---
 layout: default
+footerLink: https://www.philschmid.de/context-engineering
 ---
 
 <div class="mt-4 mb-6 h-full flex flex-col">
@@ -106,9 +107,6 @@ layout: default
     <img src="./assets/context-engineering.png" class="max-h-[24rem] w-auto object-contain" />
   </div>
 
-  <p class="text-center text-sm font-serif italic">
-    <a href="https://www.philschmid.de/context-engineering" class="!border-none hover:!text-accent">https://www.philschmid.de/context-engineering</a>
-  </p>
 </div>
 
 <!--
@@ -145,4 +143,3 @@ background: apricot
   - Markdown Documents
   - Databases
   - Knowledge Graphs
-

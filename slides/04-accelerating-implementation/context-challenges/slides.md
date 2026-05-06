@@ -146,6 +146,7 @@ alignContent: center
 
 ---
 layout: center
+footerLink: https://cs.stanford.edu/~nfliu/papers/lost-in-the-middle.arxiv2023.pdf
 ---
 
 ## „Lost in the middle”
@@ -159,6 +160,4 @@ layout: center
         Position in conversation
     </div>
 </div>
-
-<span text-sm font-serif font-italic text-gray>https://cs.stanford.edu/~nfliu/papers/lost-in-the-middle.arxiv2023.pdf</span>
 
