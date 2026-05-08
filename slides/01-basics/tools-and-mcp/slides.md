@@ -102,10 +102,10 @@ sequenceDiagram
 
   autonumber
 
-  U ->> A: Request / Task (Prompt)
-  Note right of A: Agent still knows its own tools
   A -->> S: Discover tools (list, schemas, capabilities)
   S -->> A: Tool registry (names, params, metadata)
+  Note right of A: Agent adds to its on tool list
+  U ->> A: Request / Task (Prompt)
   A ->> L: Context: Tool list (incl. Tools from MCP) & Prompt 
   L ->> A: Tool call (name, params)
   A ->> S: Execute tool via MCP (name, params)
