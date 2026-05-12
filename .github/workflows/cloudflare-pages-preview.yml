@@ -34,6 +34,13 @@ jobs:
           node-version: 22
           cache: npm
 
+      - name: Configure GitHub dependency auth
+        env:
+          GH_READ_TOKEN: ${{ secrets.SLIDEV_THEME_GITHUB_TOKEN || github.token }}
+        run: |
+          git config --global url."https://x-access-token:${GH_READ_TOKEN}@github.com/".insteadOf "ssh://git@github.com/"
+          git config --global url."https://x-access-token:${GH_READ_TOKEN}@github.com/".insteadOf "git@github.com:"
+
       - name: Install dependencies
         run: npm ci
 
