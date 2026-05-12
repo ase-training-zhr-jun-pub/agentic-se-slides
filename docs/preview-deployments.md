@@ -155,9 +155,9 @@ Ablauf:
 2. Preview-Deployments des Cloudflare Pages Projekts werden als JSON gelistet.
 3. Die Liste wird auf Deployments mit Branch `pr-<PR-Nummer>` gefiltert.
 4. Alle passenden Deployment IDs werden mit `wrangler pages deployment delete ... --force` gelöscht.
-5. Der PR-Kommentar wird auf `Cloudflare Pages Preview removed.` aktualisiert.
+5. Der PR-Kommentar wird best-effort auf `Cloudflare Pages Preview removed.` aktualisiert.
 
-Das Löschen nutzt `--force`, weil Cloudflare Deployments mit aktivem Alias sonst nicht ohne Weiteres löschen kann.
+Das Löschen nutzt `--force`, weil Cloudflare Deployments mit aktivem Alias sonst nicht ohne Weiteres löschen kann. Das Aktualisieren des PR-Kommentars ist bewusst `continue-on-error`, damit ein GitHub-Permissions-Problem beim Kommentieren den eigentlichen Teardown nicht als fehlgeschlagen markiert.
 
 ## Troubleshooting
 
@@ -189,6 +189,10 @@ Prüfen:
 - Der Deploy-Schritt war erfolgreich.
 - Der Workflow hat `issues: write` und `pull-requests: write` Permissions.
 - Es gibt keinen Fehler im `actions/github-script`-Schritt.
+
+### `Resource not accessible by integration` Beim Kommentar-Update
+
+GitHub hat dem `GITHUB_TOKEN` nicht erlaubt, PR-Kommentare zu lesen oder zu schreiben. Der Workflow setzt für beide Jobs `issues: write` und `pull-requests: write`. Im Cleanup ist das Kommentar-Update zusätzlich `continue-on-error`, damit der Cloudflare-Teardown trotzdem erfolgreich bleibt.
 
 ### Preview Wird Nach PR-Schließung Nicht Gelöscht
 
