@@ -34,12 +34,24 @@ jobs:
           node-version: 22
           cache: npm
 
-      - name: Configure GitHub dependency auth
+      - name: Configure theme SSH deploy key
         env:
-          GH_READ_TOKEN: ${{ secrets.SLIDEV_THEME_GITHUB_TOKEN || github.token }}
+          SLIDEV_THEME_DEPLOY_KEY: ${{ secrets.SLIDEV_THEME_DEPLOY_KEY }}
         run: |
-          git config --global url."https://x-access-token:${GH_READ_TOKEN}@github.com/".insteadOf "ssh://git@github.com/"
-          git config --global url."https://x-access-token:${GH_READ_TOKEN}@github.com/".insteadOf "git@github.com:"
+          if [ -z "$SLIDEV_THEME_DEPLOY_KEY" ]; then
+            echo "SLIDEV_THEME_DEPLOY_KEY secret is not configured."
+            exit 1
+          fi
+
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SLIDEV_THEME_DEPLOY_KEY" > ~/.ssh/slidev-theme-innoq
+          chmod 600 ~/.ssh/slidev-theme-innoq
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          cat >> ~/.ssh/config <<'EOF'
+          Host github.com
+            IdentityFile ~/.ssh/slidev-theme-innoq
+            IdentitiesOnly yes
+          EOF
 
       - name: Install dependencies
         run: npm ci
