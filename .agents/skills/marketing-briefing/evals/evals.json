@@ -1,0 +1,47 @@
+{
+  "skill_name": "marketing-briefing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Erzeuge aus diesem Slidev-Projekt ein Marketingbriefing für unser Agentic-Software-Engineering-Training. Das Ergebnis soll als Markdown-Datei unter docs/marketing-briefing.md liegen und für Marketing extern weiterverwendbar sein.",
+      "expected_output": "Eine Markdown-Datei mit Kurzbeschreibung, Zielgruppe, Nutzenversprechen, Themenblöcken, Techniken, praktischem Anteil, Didaktik und extern kommunizierbaren Highlights. Keine internen Branches, Commands, Exercise-IDs, Sprecherregie oder konkrete Beschreibung des Beispielprojekts.",
+      "files": [],
+      "assertions": [
+        "Output is a Markdown briefing with the expected top-level sections for marketing handoff.",
+        "Output covers topics, techniques/workflows, practical exercises or example project, and didactic methods.",
+        "Output avoids internal commands, branch names, exercise IDs, file paths, speaker notes, and overly detailed training instructions.",
+        "Output describes the example project only abstractly as a concrete software project, without project name, domain, or feature details.",
+        "Output contains only marketing-usable briefing information and no internal meta sections.",
+        "Output uses a sober briefing style rather than finished marketing copy or promotional slogans."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Bitte fasse das Training so zusammen, dass unser Marketing daraus eine Landingpage bauen kann. Wichtig: grobe Themen, Methoden, Hands-on-Anteil und dass Praktiken an einem konkreten Softwareprojekt geübt werden, aber keine konkreten Projektdetails, tiefen Übungsdetails oder internen Ablaufnotizen.",
+      "expected_output": "Eine kompakte, marketingtaugliche Zusammenfassung in Markdown mit bewerbbaren Informationen zu Themen, Methoden, Hands-on-Anteil und Didaktik.",
+      "files": [],
+      "assertions": [
+        "Output is a Markdown briefing with the expected top-level sections for marketing handoff.",
+        "Output covers topics, techniques/workflows, practical exercises or example project, and didactic methods.",
+        "Output avoids internal commands, branch names, exercise IDs, file paths, speaker notes, and overly detailed training instructions.",
+        "Output describes the example project only abstractly as a concrete software project, without project name, domain, or feature details.",
+        "Output contains only marketing-usable briefing information and no internal meta sections.",
+        "Output uses a sober briefing style rather than finished marketing copy or promotional slogans."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Wir brauchen eine externe Beschreibung für Vertrieb und Eventankündigung: Welche Themen behandelt der Workshop, mit welchen KI-/Agent-Techniken arbeiten die Teilnehmer:innen, und wie ist das Training didaktisch aufgebaut? Bitte als Markdown-Briefing erstellen.",
+      "expected_output": "Ein deutschsprachiges Markdown-Briefing, das den Workshop entlang der groben Themenblöcke beschreibt, Techniken und Arbeitsweisen abstrahiert darstellt und die didaktischen Methoden explizit nennt.",
+      "files": [],
+      "assertions": [
+        "Output is a Markdown briefing with the expected top-level sections for marketing handoff.",
+        "Output covers topics, techniques/workflows, practical exercises or example project, and didactic methods.",
+        "Output avoids internal commands, branch names, exercise IDs, file paths, speaker notes, and overly detailed training instructions.",
+        "Output describes the example project only abstractly as a concrete software project, without project name, domain, or feature details.",
+        "Output contains only marketing-usable briefing information and no internal meta sections.",
+        "Output uses a sober briefing style rather than finished marketing copy or promotional slogans."
+      ]
+    }
+  ]
+}
