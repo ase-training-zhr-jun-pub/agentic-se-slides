@@ -49,6 +49,10 @@ src: ./spec-driven-development/slides.md
 ---
 
 ---
+src: ./harness-engineering/slides.md
+---
+
+---
 src: ./coding-with-agents/slides.md
 ---
 
