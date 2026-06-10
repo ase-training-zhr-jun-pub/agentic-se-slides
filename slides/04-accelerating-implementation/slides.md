@@ -15,6 +15,10 @@ src: ./context-challenges/slides.md
 ---
 
 ---
+src: ./agent-modes/slides.md
+---
+
+---
 src: ./additional-agent-features/slides.md
 ---
 
@@ -38,6 +42,43 @@ background: petrol
 ### *Development*
 # Processes
 
+
+---
+src: ./autonomy-and-topology/slides.md
+---
+
+---
+background: white
+---
+
+# From Spectrum to Practice
+
+<div class="text-center text-base mb-6">We skip the old normal & zoom into the agentic end</div>
+
+<div class="flex items-start justify-between gap-3 px-2 text-petrol">
+  <div class="opacity-30"><EmojiStack emoji="🙌" size="lg"><p class="my-0 text-base font-bold">Manual</p></EmojiStack></div>
+  <div class="opacity-30"><EmojiStack emoji="💪" size="lg"><p class="my-0 text-base font-bold">Assisted</p></EmojiStack></div>
+  <div><EmojiStack emoji="📋" size="lg"><p class="my-0 text-base font-bold">SDD</p><p class="my-0 text-xs text-apricot font-serif italic">deep dive</p></EmojiStack></div>
+  <div><EmojiStack emoji="🛡️" size="lg"><p class="my-0 text-base font-bold">Harness</p><p class="my-0 text-xs text-apricot font-serif italic">deep dive</p></EmojiStack></div>
+  <div><EmojiStack emoji="🏄" size="lg"><p class="my-0 text-base font-bold">Vibed</p><p class="my-0 text-xs text-apricot font-serif italic">deep dive</p></EmojiStack></div>
+  <div class="opacity-30"><EmojiStack emoji="🏭" size="lg"><p class="my-0 text-base font-bold">Autonomous</p></EmojiStack></div>
+</div>
+
+<div class="mt-12 grid grid-cols-3 gap-4 text-center text-petrol">
+  <div class="bg-lightGray px-4 py-3"><span class="text-apricot font-serif italic">1</span><br/><strong>Vibe Coding</strong></div>
+  <div class="bg-lightGray px-4 py-3"><span class="text-apricot font-serif italic">2</span><br/><strong>Spec-Driven Development</strong></div>
+  <div class="bg-lightGray px-4 py-3"><span class="text-apricot font-serif italic">3</span><br/><strong>Harness Engineering</strong></div>
+</div>
+
+<!--
+Übergang vom Spektrum in die Praxis. Manual und Assisted sind der alte Normalfall — die
+lassen wir bewusst links liegen, darüber müssen wir nicht weiter reden. Autonomous ist das
+ganz andere Ende: die "Software-Factory" — das vertiefen wir erst in Kapitel 9.
+
+Wir zoomen jetzt ins agentische Feld und gehen drei Wege durch: zuerst Vibe Coding (der
+wilde Einstieg), dann Spec-Driven Development (Disziplin), dann Harness Engineering (die
+konstruierte Mitte — Ziel + Constraints + Validierung).
+-->
 
 ---
 src: ./vibe-coding/slides.md
