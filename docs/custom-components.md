@@ -40,3 +40,28 @@ without importing.
 | `ContextWindowAnimation` | Special Purpose | [Special Purpose](./custom-components/special-purpose.md#contextwindowanimation) |
 | `Timetable` | Special Purpose | [Special Purpose](./custom-components/special-purpose.md#timetable) |
 | `Counter` | Special Purpose | [Special Purpose](./custom-components/special-purpose.md#counter) |
+| `LethalTrifecta` | Security | [LethalTrifecta](#lethaltrifecta) |
+
+## LethalTrifecta
+
+Renders the three elements of Simon Willison's Lethal Trifecta as circular bubbles arranged
+in a triangle: "private data" (top-center, yellow), "communicate externally" (bottom-left,
+green), and "untrusted content" (bottom-right, pink). Content is fixed — the labels are the
+canonical trifecta terms. Uses a `<style scoped>` block because `grid-template-areas` with
+named regions cannot be expressed in UnoCSS.
+
+**Props:** None
+
+**Slots:** None
+
+**Usage:**
+
+```markdown
+---
+layout: default
+---
+
+# The Lethal Trifecta
+
+<LethalTrifecta />
+```

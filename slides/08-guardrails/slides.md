@@ -12,6 +12,10 @@ src: ./guardrails/slides.md
 ---
 
 ---
+src: ./lethal-trifecta/slides.md
+---
+
+---
 src: ./sandboxing/slides.md
 ---
 
@@ -25,3 +29,5 @@ chapter: 8
 2. Fitness Functions: ausführbar, reproduzierbar, blockierend
 3. Java: ArchUnit; TypeScript: dependency-cruiser / ts-arch; sprachübergreifend: Semgrep
 4. Jede Entscheidung sucht sich das passende Werkzeug — Test bleibt das Prinzip
+5. Lethal Trifecta: private Daten + untrusted Input + externe Kommunikation — nie alle drei zugleich (Rule of Two)
+6. Sandboxes + Network Policies adressieren zusammen alle drei Trifecta-Elemente
