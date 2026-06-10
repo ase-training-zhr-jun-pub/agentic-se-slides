@@ -36,16 +36,3 @@ background: petrol
 - `/context` -- visualize current context usage
 - `/compact` -- focus on code samples and API usage
 
-
----
-
-# Hooks
-
-- Allows registration of custom scripts on agent lifecycle hooks
-- Hooks get triggered on actions like writing a file or ending a user task
-- Can be used to run deterministic tools like a linter, type checks, or tests
-
-#### Example: File protection hook
-
-Prevent the agent from reading or writing sensitive files.
-

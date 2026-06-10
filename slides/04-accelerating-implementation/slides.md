@@ -19,7 +19,11 @@ src: ./additional-agent-features/slides.md
 ---
 
 ---
-src: ./context-management/slides.md
+layout: exercise
+chapter: 4
+exercise: 1 + 2
+task: Setup backend development
+command: git switch main
 ---
 
 ---

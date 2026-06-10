@@ -115,3 +115,7 @@ background: petrol
 - One Shot Example:
 "Schreibe mir mal ein Raumbuchungssystem für INNOQ"
 -->
+
+---
+src: ./building-blocks/slides.md
+---
