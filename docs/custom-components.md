@@ -45,10 +45,11 @@ without importing.
 ## LethalTrifecta
 
 Renders the three elements of Simon Willison's Lethal Trifecta as circular bubbles arranged
-in a triangle: "private data" (top-center, yellow), "communicate externally" (bottom-left,
-green), and "untrusted content" (bottom-right, pink). Content is fixed — the labels are the
-canonical trifecta terms. Uses a `<style scoped>` block because `grid-template-areas` with
-named regions cannot be expressed in UnoCSS.
+in a triangle: "private data" (top-center, apricot), "communicate externally" (bottom-left,
+teal), and "untrusted content" (bottom-right, petrol). Content is fixed — the labels are the
+canonical trifecta terms. Colors use theme classes; a minimal `<style scoped>` block remains
+only for the bubble grid, because `grid-template-areas` with named regions cannot be
+expressed in UnoCSS.
 
 **Props:** None
 

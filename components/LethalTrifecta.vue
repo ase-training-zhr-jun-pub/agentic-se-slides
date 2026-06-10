@@ -1,8 +1,8 @@
 <template>
   <ol class="trifecta-list" role="list">
-    <li class="bubble trifecta-data">Access to <strong>private data</strong></li>
-    <li class="bubble trifecta-communicate">Ability to <strong>communicate externally</strong></li>
-    <li class="bubble trifecta-untrusted">Exposure to <strong>untrusted content</strong></li>
+    <li class="bubble trifecta-data bg-apricot text-white">Access to <strong>private data</strong></li>
+    <li class="bubble trifecta-communicate bg-teal text-white">Ability to <strong>communicate externally</strong></li>
+    <li class="bubble trifecta-untrusted bg-petrol text-white">Exposure to <strong>untrusted content</strong></li>
   </ol>
 </template>
 
@@ -37,7 +37,7 @@
   align-self: start;
 }
 
-.trifecta-data        { grid-area: data; background-color: #FFD166; }
-.trifecta-communicate { grid-area: comm; background-color: #88C9A5; }
-.trifecta-untrusted   { grid-area: untr; background-color: #E8AFCA; }
+.trifecta-data        { grid-area: data; }
+.trifecta-communicate { grid-area: comm; }
+.trifecta-untrusted   { grid-area: untr; }
 </style>

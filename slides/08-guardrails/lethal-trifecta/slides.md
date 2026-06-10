@@ -95,10 +95,10 @@ Apply [Agents Rule of Two](https://ai.meta.com/blog/practical-ai-agent-security/
 
 Choose Two:
 
-<span style="border-radius:50%;padding:0.3em 0.55em;margin-right:0.4em;background-color:#FFD166">A</span> An agent can access sensitive data
+<span class="inline-block rounded-full bg-apricot text-white px-2.5 py-1 mr-2">A</span> An agent can access sensitive data
 
-<span style="border-radius:50%;padding:0.3em 0.55em;margin-right:0.4em;background-color:#E8AFCA">B</span> An agent can process untrustworthy inputs
+<span class="inline-block rounded-full bg-petrol text-white px-2.5 py-1 mr-2">B</span> An agent can process untrustworthy inputs
 
-<span style="border-radius:50%;padding:0.3em 0.55em;margin-right:0.4em;background-color:#88C9A5">C</span> An agent can change state or communicate externally
+<span class="inline-block rounded-full bg-teal text-white px-2.5 py-1 mr-2">C</span> An agent can change state or communicate externally
 
 **Note**: in practice, it isn't possible to separate B & C because both are possible via a GET request in the internet

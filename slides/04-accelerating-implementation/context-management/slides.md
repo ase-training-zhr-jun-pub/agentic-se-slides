@@ -95,7 +95,7 @@ Brücke zur folgenden Dev-Folie: dieses Briefing heißt AGENTS.md — bei Claude
 - **Claude Code** uses `CLAUDE.md` — connect both via an `@AGENTS.md` import or a symlink
 - Path-scoped rules: `.claude/rules/**/*.md` with a `paths` glob in the frontmatter
 
-<div class="mt-8 inline-block rounded-lg bg-lightGray px-5 py-3 font-serif italic text-gray">
+<div class="mt-8 inline-block rounded-lg bg-lightGray px-5 py-3 font-serif italic text-petrol">
   <a href="https://agents.md">https://agents.md</a>
 </div>
 
@@ -223,7 +223,7 @@ Execute a custom commit command. <br/>
 - Beware: External skills from registries like skills.sh can execute arbitrary code.
 - Treat external skills like npm packages. Double check before install.
 
-<div class="mt-8 inline-block rounded-lg bg-lightGray px-5 py-3 font-serif italic text-gray">
+<div class="mt-8 inline-block rounded-lg bg-lightGray px-5 py-3 font-serif italic text-petrol">
   <a href="https://agentskills.io/home">https://agentskills.io</a>
 </div>
 
