@@ -9,49 +9,49 @@ background: petrol
 
 ---
 
-# Warum Sandboxing?
+# Why Sandboxing?
 
-- Der Kochtopf als Falle
-- Agents werden autonomer, wir profitieren davon aber wollen die Autonomie steuern
-- Lokal Zugriff auf ALLE Dateien, ssh keys, Tokens, Cookies.. 🥸
-- Aber: Overhead (je nach persönlicher Perspektive)
+- The boiling-frog trap
+- Agents become more autonomous — we benefit, but want to control that autonomy
+- Locally: access to ALL files, SSH keys, tokens, cookies... 🥸
+- But: overhead (depending on your personal perspective)
 
 ---
 
 # Claude Sandbox
 
-- Versuche unbefriedigend: Config im Workdir, Verwirrung, OS Integration ging nicht
-- Herstellerabhängig
-- Erfordert für mich zu viel _Believe and Trust_
+- My attempts were unsatisfying: config in the workdir, confusion, OS integration didn't work
+- Vendor-specific
+- Requires too much _believe and trust_ for my taste
 
 ---
 
 # Container
 
-- Reiner Container für Agent
-- oder Dev-Container
-- lightweight
-- Konfiguration von Hand, wenig Konventionen
-- Problem Docker-in-Docker
-  - sysbox-runc Runtime kann das lösen
-- Cloud-Native
-- Angeblich Ausbrüche des Agents erfolgt
+- Plain container for the agent
+- or a dev container
+- Lightweight
+- Manual configuration, few conventions
+- Docker-in-Docker is a problem
+  - the sysbox-runc runtime can solve it
+- Cloud-native
+- Agent breakouts have reportedly happened
 
 ---
 
 # Docker Sandbox
 
-- Simpel zu installieren für lokales Setup
-- early access, aber kommerziell (derzeit gratis)
-- Micro-VM, kein Container
-  - Start ist Docker-Image
-  - Dann aber vollwertige Disk
-  - Braucht mehr Disk-Space
-  - Updates nur in der VM (oder re-create)
-- Privater DockerD in der Sandbox
-- LLM Proxy für Auth und Audit/Logging
-- Pfade bleiben gleich
-- => eingebaute Konventionen
+- Simple to install for a local setup
+- Early access, but commercial (currently free)
+- Micro-VM, not a container
+  - Starts from a Docker image
+  - But then a full-fledged disk
+  - Needs more disk space
+  - Updates only inside the VM (or re-create)
+- Private dockerd inside the sandbox
+- LLM proxy for auth and audit/logging
+- Paths stay the same
+- ⇒ built-in conventions
 
 ---
 layout: default

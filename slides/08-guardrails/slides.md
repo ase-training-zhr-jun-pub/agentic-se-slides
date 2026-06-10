@@ -4,7 +4,7 @@ no: 8
 background: /backgrounds/4.webp
 ---
 
-# Guardrails & Qualitätsprüfung
+# Guardrails & Quality Assurance
 
 
 ---
@@ -25,9 +25,9 @@ background: petrol
 chapter: 8
 ---
 
-1. Architekturvorgaben ohne LLM testbar und im CI verankern — nicht nur Empfehlung
-2. Fitness Functions: ausführbar, reproduzierbar, blockierend
-3. Java: ArchUnit; TypeScript: dependency-cruiser / ts-arch; sprachübergreifend: Semgrep
-4. Jede Entscheidung sucht sich das passende Werkzeug — Test bleibt das Prinzip
-5. Lethal Trifecta: private Daten + untrusted Input + externe Kommunikation — nie alle drei zugleich (Rule of Two)
-6. Sandboxes + Network Policies adressieren zusammen alle drei Trifecta-Elemente
+1. Make architecture rules testable without an LLM and anchor them in CI — not just a recommendation
+2. Fitness functions: executable, reproducible, blocking
+3. Java: ArchUnit; TypeScript: dependency-cruiser / ts-arch; cross-language: Semgrep
+4. Every decision picks its own tool — testing remains the principle
+5. Lethal Trifecta: private data + untrusted input + external communication — never all three at once (Rule of Two)
+6. Sandboxes + network policies together address all three trifecta elements

@@ -5,40 +5,40 @@ background: apricot
 
 ### _Detour —_
 
-# Guardrails & Qualitätsanforderungen prüfen
+# Verifying Guardrails & Quality Requirements
 
 ---
 
-# Architektur verlässlich machen
+# Making Architecture Reliable
 
-- ADRs können verstauben, Reviews fangen nur was der Reviewer erinnert
-- Agent mit neuer Session manchmal wie neuer Trainee: alles vergessen 🙃
-- SonarQube/Linter prüfen innere Qualität (also handwerkliche Aspekte), nicht deine konkreten Architekturentscheide
-- Ziel: ohne LLM ausführbare, versionierte, im CI verankerte Architekturvorgaben. Ähnlich Checkstyle, aber für konkrete Vorgaben mit Verbindung zu Qualitätszielen
-- Konzeptionell wie: Architectural Fitness Functions (aus _Building Evolutionary Architectures_, O'Reilly 2017), aber ausführbar
-- Unterschied zu Rules/Prompts: testbar, reproduzierbar, blockierend — nicht nur Empfehlung
+- ADRs gather dust, reviews only catch what the reviewer remembers
+- An agent in a fresh session is like a new trainee: everything forgotten 🙃
+- SonarQube/linters check internal quality (craftsmanship), not your concrete architecture decisions
+- Goal: architecture rules that run without an LLM — versioned and anchored in CI. Like Checkstyle, but for concrete rules tied to quality goals
+- Conceptually like Architectural Fitness Functions (from _Building Evolutionary Architectures_, O'Reilly 2017), but executable
+- Unlike rules/prompts: testable, reproducible, blocking — not just a recommendation
 - https://evolutionaryarchitecture.com/ffkatas/
 
 ---
 
-# Was lässt sich überhaupt testen?
+# What can be tested at all?
 
-- Layering & Abhängigkeitsrichtungen (Domain ↛ Infrastructure)
-- homogenes Fehlerhandling (null vs. Exception, Handling auf gleichen Ebenen)
-- State-Lokalisierung (Side-Effects minimieren, )
-- Migrationsdisziplin (kein DDL ausser über Flyway/Liquibase/Alembic, keine Initialdaten im Code, ..)
-- Externe Schnittstellen: Versionierung (`/v{n}/...`), explizite DTOs, nie Domain-Entities an der API
-- Annotations als Contracts (`@PublicApi` ⇒ muss `@since` haben, OpenAPI-Eintrag, Test)
-- Naming, Package-Cuts, "kein `System.out`", "kein `java.util.Date`"
+- Layering & dependency directions (Domain ↛ Infrastructure)
+- Consistent error handling (null vs. exception, handling on the same layers)
+- State localization (minimize side effects)
+- Migration discipline (no DDL outside Flyway/Liquibase/Alembic, no seed data in code, ...)
+- External interfaces: versioning (`/v{n}/...`), explicit DTOs, never expose domain entities at the API
+- Annotations as contracts (`@PublicApi` ⇒ requires `@since`, OpenAPI entry, test)
+- Naming, package cuts, "no `System.out`", "no `java.util.Date`"
 
 ---
 
-# Werkzeug Java: ArchUnit
+# Tooling for Java: ArchUnit
 
-- DSL-artige Tests, laufen als JUnit
-- Bestimmte Architekturmuster wie Layered oder Onion als fertige Templates
-- Custom `ArchCondition` für eigene Regeln (z. B. "Controller-Methode mit `@PostMapping` muss DTO zurückgeben")
-- Beispiel-Test: "Mocks noch aktuell zur API Spec?"
+- DSL-style tests, run as JUnit
+- Common architecture patterns like Layered or Onion as ready-made templates
+- Custom `ArchCondition` for your own rules (e.g. "controller method with `@PostMapping` must return a DTO")
+- Example test: "are the mocks still in sync with the API spec?"
 - https://www.codecentric.de/en/knowledge-hub/blog/archunit-in-practice-keep-your-architecture-clean
 
 ```java
@@ -48,9 +48,9 @@ noClasses().that().resideInAPackage("..domain..")
 
 ---
 
-# ArchUnit Beispiel
+# ArchUnit Example
 
-- Controller werfen selbst nur ApiException
+- Controllers themselves only throw ApiException
 
 ```java
 @ArchTest
@@ -75,11 +75,11 @@ static final ArchRule controllers_only_declare_api_exceptions =
 
 ---
 
-# Andere Stacks
+# Other Stacks
 
-- TypeScript: dependency-cruiser (Regeln in JSON/YAML, im CI), ts-arch (ArchUnit-Stil-API)
-- python: import-linter
-- Sprachübergreifend: Semgrep (Kommerziell, eher Security-orientiert. Pattern-Matching mit AST, eigene Regeln in YAML) — ideal für "verbotene API-Aufrufe", Annotation-Constraints
-- API-Verträge: Spectral (OpenAPI-Lint mit eigenen Rulesets), Pact (Consumer-driven Contracts)
-- Config/IaC: Conftest/OPA (Rego-Policies gegen YAML/JSON)
-- Mind-Shift: jede Architekturentscheidung sucht sich das passende Werkzeug — Test bleibt das Prinzip
+- TypeScript: dependency-cruiser (rules in JSON/YAML, runs in CI), ts-arch (ArchUnit-style API)
+- Python: import-linter
+- Cross-language: Semgrep (commercial, security-leaning; AST pattern matching, custom rules in YAML) — ideal for "forbidden API calls", annotation constraints
+- API contracts: Spectral (OpenAPI linting with custom rulesets), Pact (consumer-driven contracts)
+- Config/IaC: Conftest/OPA (Rego policies against YAML/JSON)
+- Mind shift: every architecture decision picks its own tool — testing remains the principle
