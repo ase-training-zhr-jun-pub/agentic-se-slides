@@ -15,6 +15,61 @@ src: ./context-challenges/slides.md
 ---
 
 ---
+layout: intro
+background: petrol
+---
+
+### *Agent Features*
+# From *Primitives* to *Control*
+
+<!--
+Wir bauen jetzt das mentale Modell für alles, was ein Agent ausmacht.
+Drei Ebenen, die du dir merken solltest.
+-->
+
+---
+layout: default
+background: white
+---
+
+# Three Levels
+
+<div class="grid grid-cols-3 gap-6 pt-10 text-center text-petrol">
+  <div class="bg-lightGray px-6 py-8">
+    <div class="text-apricot font-serif italic text-xl mb-3">Level 1 — Block A</div>
+    <h2 class="!text-3xl !mb-4">Primitives</h2>
+    <p class="text-base">What the agent <em>has</em></p>
+  </div>
+  <div class="bg-lightGray px-6 py-8">
+    <div class="text-apricot font-serif italic text-xl mb-3">Level 2 — Block B</div>
+    <h2 class="!text-3xl !mb-4">Modes</h2>
+    <p class="text-base">How the agent <em>operates</em></p>
+  </div>
+  <div class="bg-lightGray px-6 py-8">
+    <div class="text-apricot font-serif italic text-xl mb-3">Level 3 — Block C</div>
+    <h2 class="!text-3xl !mb-4">Control</h2>
+    <p class="text-base">How <em>I stay</em> in charge</p>
+  </div>
+</div>
+
+<!--
+Drei Ebenen, ein roter Faden.
+
+Block A — die Primitives. Was hat der Agent? Memory, Instructions, Tools, Verification, Delegation.
+Das sind die fünf Bausteine.
+
+Block B — die Modes. Wenn ich an den Primitives schraube, bekomme ich verschiedene Profile:
+Planning, Assisted, Autopilot, YOLO, Research.
+
+Block C — die operative Kontrolle. Wenn der Agent läuft, wie behalte ich den Überblick?
+Session, Fleet, Ecosystem.
+-->
+
+---
+src: ./context-management/slides.md
+---
+
+---
 src: ./agent-modes/slides.md
 ---
 
