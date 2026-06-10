@@ -145,6 +145,10 @@ command: git merge uebung-3-10
 
 
 ---
+src: ./token-economy/slides.md
+---
+
+---
 layout: takeaways
 chapter: 4
 ---
