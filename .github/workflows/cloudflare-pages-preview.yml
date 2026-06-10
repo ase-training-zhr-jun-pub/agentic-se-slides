@@ -1,7 +1,12 @@
 name: Cloudflare Pages Preview
 
+# Uses `pull_request` (NOT `pull_request_target`) so that GitHub's built-in
+# trust boundary applies: forked PRs run without access to repository secrets,
+# which makes it impossible for untrusted PR code (executed via `npm ci` /
+# `npm run build`) to exfiltrate them. Same-repo PRs — authored by users who
+# already have write access — do receive secrets and get a preview deploy.
 on:
-  pull_request_target:
+  pull_request:
     types: [opened, synchronize, reopened, ready_for_review, closed]
 
 concurrency:
@@ -14,7 +19,15 @@ env:
 
 jobs:
   deploy-preview:
-    if: github.event.action != 'closed'
+    # Security: skip forked PRs entirely. Under `pull_request` they get no
+    # secrets (so the SSH theme key check below would fail anyway), and the
+    # private theme can't be fetched without it — so a fork preview is neither
+    # possible nor safe. Gating here avoids noisy failed runs and is a second
+    # layer behind GitHub's secret boundary. Same-repo branches are authored by
+    # users who already have write access, so building their code is trusted.
+    if: >-
+      github.event.action != 'closed' &&
+      github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     permissions:
       contents: read
