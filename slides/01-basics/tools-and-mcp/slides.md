@@ -77,8 +77,6 @@ footerLink: https://modelcontextprotocol.io/specification
   <img src="./assets/mcp-bsp.png" class="w-full object-contain" />
 </div>
 
-https://modelcontextprotocol.io/specification
-
 <!--
 MCP ist ein offenes Protokoll von Anthropic, das den Austausch von Tools zwischen Hosts und Servern standardisiert.
 

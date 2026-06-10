@@ -5,7 +5,7 @@ background: /backgrounds/4.webp
 ---
 
 # Introduction & Basics
-Mach 
+
 ---
 layout: center
 background: petrol

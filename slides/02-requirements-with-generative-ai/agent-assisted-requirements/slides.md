@@ -132,7 +132,7 @@ layout: default
                 <h4>Prompts</h4>
             </EmojiStack>
         </div>
-        <ul mt-3 text-xs>
+        <ul class="mt-3 text-xs">
             <li>Glossary</li>
             <li>Dossiers</li>
             <li>Concepts</li>
@@ -143,7 +143,7 @@ layout: default
         </ul>
     </div>
     <EmojiStack emoji="📝" top="20%" left="45%">
-      <h4 max-w-min>Generrated Documentation</h4>
+      <h4 max-w-min>Generated Documentation</h4>
     </EmojiStack>
     <EmojiStack emoji="📄" top="70%" left="45%">
       <h4 max-w-min>Refined Documentation</h4>
