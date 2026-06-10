@@ -9,6 +9,7 @@ Mach
 ---
 layout: center
 background: petrol
+disabled: true
 ---
 
 <div mt-10 relative>
@@ -38,6 +39,7 @@ Das sieht einfach aus, aber dahinter steckt...
 
 ---
 layout: center
+disabled: true
 ---
 
 <img src="./assets/chatgpt-meme.png" />

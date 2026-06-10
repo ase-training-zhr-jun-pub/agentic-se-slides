@@ -24,6 +24,8 @@ Chat-Interfaces sind perfekt für Einzelfragen, Brainstorming, Code-Erklärungen
 -->
 
 ---
+disabled: true
+---
 
 <h1 text-center>IDE Agents</h1>
 

@@ -28,17 +28,10 @@ sidebarBackground: white
 <div class="flex justify-around">
     <Person 
         direction="vertical" 
-        name="Jörg Müller" 
-        image="https://res.cloudinary.com/innoq/image/upload/c_thumb,e_grayscale,f_auto,g_center,h_1600,q_auto,w_1600/v1/uploads-production/5nouikqbo2fcaexr2rtzqum89las?_a=BACJ3SAE"
+        name="Ole Wendland" 
+        image="/ole-wendland-ava.webp"
     >
-        Principal Consultant
-    </Person>
-    <Person 
-        direction="vertical" 
-        name="Torben Keller" 
-        image="https://res.cloudinary.com/innoq/image/upload/c_thumb,e_grayscale,f_auto,g_center,h_1600,q_auto,w_1600/v1/uploads-production/87viwn9wbdpjad8ujdw10t0yycyx?_a=BACJ3SAE"
-    >
-        Consultant
+        Senior Consultant
     </Person>
 </div>
 
@@ -104,7 +97,7 @@ image: /backgrounds/5.webp
     { label: 'Block 1', duration: 90 },
     { label: 'Coffee Break', duration: 15, rowClass: 'opacity-60' },
     { label: 'Block 2', duration: 90 },
-    { label: 'Lunch', duration: 90, rowClass: 'text-apricot' },
+    { label: 'Lunch', duration: 60, rowClass: 'text-apricot' },
     { label: 'Block 3', duration: 90 },
     { label: 'Coffee Break', duration: 15, rowClass: 'opacity-60' },
     { label: 'Block 4', duration: 90 },
@@ -184,6 +177,10 @@ src: ./slides/06-cicd/slides.md
 
 ---
 src: ./slides/07-operations-and-monitoring/slides.md
+---
+
+---
+src: ./slides/08-guardrails/slides.md
 ---
 
 ---
