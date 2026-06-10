@@ -184,6 +184,10 @@ src: ./slides/08-guardrails/slides.md
 ---
 
 ---
+src: ./slides/09-challenges/slides.md
+---
+
+---
 layout: team
 ---
 
