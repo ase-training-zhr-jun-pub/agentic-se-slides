@@ -24,6 +24,10 @@ layout: content-with-image
 
 <img src="./assets/bender-tool-belt.png" alt="" class="h-full w-full object-cover" />
 
+<!--
+Manages the context for you. Or tries to.
+-->
+
 ---
 layout: sidebar
 sidebarBackground: petrol

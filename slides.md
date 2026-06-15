@@ -26,9 +26,9 @@ sidebarBackground: white
 ---
 
 <div class="flex justify-around">
-    <Person 
-        direction="vertical" 
-        name="Ole Wendland" 
+    <Person
+        direction="vertical"
+        name="Ole Wendland"
         image="/ole-wendland-ava.webp"
     >
         Senior Consultant
@@ -146,6 +146,7 @@ alignContent: center
 ### What's your name?
 ### What do you do?
 ### Have you used AI so far?
+### Coffee or tea?
 
 ::sidebar::
 

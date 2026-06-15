@@ -123,6 +123,8 @@ background: apricot
 
 
 ---
+layout: content-with-image
+---
 
 # Short-Term Memory
 
@@ -132,6 +134,9 @@ background: apricot
 - The model will generate new content based on this information
 - Awareness of context challenges is needed to optimize the model's output
 
+::image::
+
+<img src="./assets/memento.png" alt="" class="h-full w-full object-cover" />
 
 ---
 
