@@ -117,5 +117,5 @@ background: petrol
 -->
 
 ---
-src: ./building-blocks/slides.md
+src: ./skills/slides.md
 ---

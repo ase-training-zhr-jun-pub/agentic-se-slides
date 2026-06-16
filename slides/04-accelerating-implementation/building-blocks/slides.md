@@ -3,13 +3,47 @@ layout: intro
 background: petrol
 ---
 
-### *Customizing your Agent*
+### *Block A — What does my agent have?*
 # Building Blocks
 
 <!--
-Ihr habt nun gesehen wie ein Agent grundsätzlich funktioniert.
+Block A: die Bausteine, mit denen wir einen Agenten an unser Projekt und unsere Arbeitsweise anpassen.
 
-Jetzt schauen wir uns die Bausteine an, mit denen wir einen Agenten an unser Projekt und unsere Arbeitsweise anpassen.
+Egal ob Claude Code, Copilot, Cursor — alle nutzen dieselben Konzepte. Die Frage ist nur:
+was stelle ich als Mensch bereit, was holt sich der Agent selbst — und wo lebt die Information?
+-->
+
+---
+
+# Agent Primitives
+
+<div class="text-lg [&_td]:!py-3 [&_th]:!py-3">
+
+| Problem | Building Block | Design Principle |
+|---|---|---|
+| Doesn't know the project | **Memory** | *Less is more* |
+| Needs knowledge at runtime | **Instructions** | *Progressive Disclosure* |
+| Needs capabilities | **Tools** | Too many = *"Dumb Zone"* |
+| Makes mistakes unnoticed | **Verification** | *Success is silent* |
+| Context window fills up | **Delegation** | *Context Firewall* |
+
+</div>
+
+<div class="mt-6 text-sm font-serif italic text-petrol">
+
+For each block: the *problem* it solves, the *principle* that keeps it lean, and the concrete setup.
+
+</div>
+
+<!--
+Die Tabelle ist der rote Faden für Block A — bewusst auf drei Spalten reduziert:
+
+- "Problem": warum brauche ich das Primitive überhaupt? Jedes hat einen klaren Schmerz.
+- "Building Block": der Baustein selbst.
+- "Design Principle": die Faustregel, die hängen bleibt.
+
+Verification wird oft vergessen, ist aber der Mechanismus, der den Agent eigenständig iterieren
+lässt, ohne dass ich daneben sitzen muss.
 -->
 
 ---
@@ -40,13 +74,16 @@ footerLink: https://agents.md
 
 - Persistent instructions, automatically attached to the context on a new session
 - AGENTS.md files in subdirectories get attached when the agent works in the subdirectory
-- Keep it short — every line costs context on every task
+- Keep it short — every line costs context on every task: *less is more*
 - Implemented by most agents. Exception: Claude Code (`CLAUDE.md`)
 
 <!--
 AGENTS.md ist der Standard-Dateiname, Claude Code nutzt CLAUDE.md. Mit einem Import (@AGENTS.md) oder Symlink lässt sich beides verbinden.
 
 Richtwert: unter 200 Zeilen. Je länger die Datei, desto mehr Kontext kostet sie und desto schlechter werden einzelne Regeln befolgt.
+
+ETH-Zürich-Studie hat 138 AGENTS.md-Files getestet: LLM-generierte schaden der Performance,
+von Menschen geschriebene helfen nur ~4%. Less is more.
 -->
 
 ---
@@ -131,14 +168,21 @@ Ohne paths wäre sie eine ganz normale, immer geladene Regel-Datei.
 - The agent maintains its own notes across sessions
 - An index file is loaded at startup, topic files are read on demand
 - Local to your machine — not shared with the team
-- Deliberately move team-relevant insights into AGENTS.md, rules, or skills
+- ✅ No manual effort &nbsp;·&nbsp; ⚠️ it can remember wrong things, and you won't notice
 
 **Example:** Claude Code stores notes per project in `~/.claude/projects/<project>/memory/`
+
+<div class="mt-6 font-serif italic text-petrol">
+
+Start manual. Move to hybrid. Use automatic with caution — team knowledge always belongs in *AGENTS.md*.
+
+</div>
 
 <!--
 Auto Memory ist NICHT die CLAUDE.md – der Agent schreibt sich selbst lokale Notizen, die nicht im Repo landen.
 
-Wichtig fürs Team: Erkenntnisse, die alle brauchen, bewusst in AGENTS.md, eine Rule oder einen Skill überführen.
+Risiko: Memory Pollution — der Agent merkt sich Falsches und du merkst es nicht. Und: Automatic
+Memory ist per-Person. Erkenntnisse, die alle brauchen, bewusst in AGENTS.md, eine Rule oder einen Skill überführen.
 -->
 
 ---
@@ -196,13 +240,16 @@ footerLink: https://agentskills.io
 - The description is the most important trigger: what the skill does *and* when to use it
 - The agent decides when to read the full skill
 - Scripts are executed — their source code never enters the context
+- ⚠️ External skills run arbitrary code — treat them like npm packages, vet before install
 
 <!--
-Skills sind ein offener Standard (agentskills.io).
+Skills habt ihr in Kapitel 1 schon kurz kennengelernt und in den Übungen benutzt — hier die volle Referenz.
 
 Die Description entscheidet, ob der Skill gefunden wird: Aufgabe + Trigger + Grenzen. "Helps with documents" ist zu schwach.
 
 SKILL.md unter 500 Zeilen halten, Details in kleine Referenz-Dateien auslagern.
+
+Security: Skill Registries (skills.sh & Co.) sind ein neuer Vektor für Supply-Chain-Angriffe — wie npm.
 -->
 
 ---
@@ -295,18 +342,143 @@ Damit verschwimmt die Grenze zwischen Commands und Skills: Custom Commands sind 
 
 ---
 
+# Tools: <small>The Idea</small>
+
+- Tools give the agent *hands* — ways to act in the real world, not just talk
+- Each tool is one capability: search, send, query, execute, …
+- Tools define the agent's *capability boundary*
+- But more isn't better: too many tools confuse the agent — the *"Dumb Zone"*
+- Curate a small, relevant set
+
+<!--
+Analogie: der Unterschied zwischen einem Assistenten, mit dem du nur reden kannst, und einem,
+der Zugriff auf Kalender und Postfach hat und Dinge erledigt.
+
+Anti-Pattern: 50 Tools gleichzeitig aktiv. Jede Tool-Beschreibung kostet Tokens und mit zu vielen
+Optionen wählt der Agent schlechter — die "Dumb Zone".
+-->
+
+---
+
+# Tools: <small>MCP Servers</small>
+
+- MCP = standard protocol to plug external tools in: GitHub, Jira, databases, browsers
+- Team-shared configuration lives in the repo, e.g. `.mcp.json` — no secrets, use env vars
+- **Too many tool definitions fill the context window**
+- CLI wrappers often beat MCP servers (less context, well-known patterns)
+- Tool descriptions land in the *system prompt* — only connect trusted servers (prompt-injection & supply-chain risk)
+
+<!--
+MCP als Baustein des Projekt-Setups: Die .mcp.json liegt im Repo und wird vom Team geteilt –
+jeder bekommt dieselben Integrationen. Secrets in Umgebungsvariablen, nie in die committete Config.
+
+Bei populären CLIs (git, gh, docker, kubectl) ist Prompting des Agenten zur CLI-Nutzung oft besser
+als ein dedizierter MCP-Server — die CLI ist im Training reichlich vorhanden.
+
+Sicherheitslücke: MCP-Tool-Beschreibungen können Prompt-Injections enthalten und landen ungefragt
+im System Prompt. Niemals untrusted Server connecten.
+-->
+
+---
+
+# MCP: <small>Example</small>
+
+`.mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "internal-api": {
+      "type": "http",
+      "url": "https://mcp.example.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${INTERNAL_API_TOKEN}"
+      }
+    }
+  }
+}
+```
+
+Committed to the repo — the token stays in an environment variable.
+
+<!--
+Typisches Muster: Die Config ist team-shared im Repo, das Token kommt aus der Umgebung.
+
+Tool-Definitionen liefert der Server zur Laufzeit – moderne Agents laden Schemas erst, wenn ein Tool wirklich gebraucht wird (Tool Search).
+-->
+
+---
+
+# Verification: <small>Hooks</small>
+
+- Automatic lifecycle handlers: **Event → Matcher → Handler**
+- Run because an event occurs — not because the agent remembers
+- Checks report problems back to the *agent*, so it self-corrects: *human-in* → *human-on* the loop
+- *Success is silent* (exit 0 → nothing in context) · *failures are loud* (exit 2 → errors re-injected)
+- Back-pressure: linters, tests, typecheck, coverage gates, UI tests (Playwright)
+
+<!--
+Hooks sind der deterministische Baustein: Sie laufen IMMER, wenn das Event eintritt – egal was das Modell gerade denkt.
+
+Verification ist der Kern von Harness Engineering: Ohne sie ist der Agent darauf angewiesen, dass
+der Mensch jede Änderung prüft. Mit ihr iteriert der Agent eigenständig — Human-in-the-Loop wird
+zu Human-on-the-Loop.
+
+Events: SessionStart, UserPromptSubmit, PreToolUse, PostToolUse, Stop, SubagentStop.
+PostToolUse kann nichts mehr verhindern, was schon passiert ist – zum Blockieren PreToolUse nutzen.
+Output-Hygiene: Wenn der Linter durchläuft, soll nichts im Context landen — nur Fehler.
+-->
+
+---
+
+# Hooks: <small>Example</small>
+
+`.claude/settings.json`
+
+```json
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          { "type": "command",
+            "command": "node .claude/hooks/format-changed-file.mjs" }
+        ]
+      }
+    ]
+  }
+}
+```
+
+After every file change, the formatter runs — deterministic, every time.
+
+<!--
+Event: PostToolUse – nach jedem erfolgreichen Tool-Aufruf.
+Matcher: Edit|Write – nur bei Dateiänderungen.
+Handler: ein Script, das die geänderte Datei formatiert.
+
+Das Script bekommt die Tool-Details als JSON über stdin. Blockierende Hooks (PreToolUse) signalisieren mit Exit-Code 2.
+-->
+
+---
+
 # Delegation: <small>Subagents</small>
 
 - Agents can spawn subagents with their own context, tools, and model
-- Noisy work — research, test runs, reviews — does not fill the main context
+- *Context firewall*: noisy work — research, test runs, reviews — never fills the main context
 - The orchestrating agent gives instructions and receives a compact result
 - Custom subagents can have a separate system prompt and be limited to certain tools and permissions
-- Context will not be shared between agents
+- Use subagents for *context isolation*, not role specialization ("frontend" vs "backend")
 
 <!--
-Subagents isolieren Arbeit: Der rohe Output (Testlogs, Suchergebnisse) bleibt im Subagent-Kontext, zurück kommt nur die Zusammenfassung.
+Sub-Agents isolieren Arbeit: Der rohe Output (Testlogs, Suchergebnisse) bleibt im Subagent-Kontext, zurück kommt nur die Zusammenfassung.
 
-Trigger: per Prompt (generische Subagents) oder als konfigurierte, spezialisierte Subagents – Beispiel auf der nächsten Folie.
+Antipattern: zwei Sub-Agents "frontend dev" und "backend dev" — die teilen sich keine Information,
+müssen alles re-discovern, kosten Token und bringen nichts.
+
+Chroma's Context-Rot-Research begründet, warum längerer Context nicht hilft: bei jeder Verlängerung
+sinkt die Recall-Rate auch auf einfachen Tasks. Sub-Agents schaffen das Problem aus der Welt.
 -->
 
 ---
@@ -357,109 +529,10 @@ Die wichtigsten Felder über name/description hinaus:
 
 - tools: Allowlist – ein Reviewer braucht kein Write
 - model/effort: Kostensteuerung – Recherche und Tests brauchen selten das größte Modell
-- skills: lädt benannte Skills komplett in den Subagent-Kontext – der Subagent muss sie nicht erst entdecken
+- skills: lädt benannte Skills komplett in den Subagent-Kontext
 - memory: eigenes persistentes Gedächtnis über Sessions hinweg; project ist teilbar im Repo
 - background: läuft parallel weiter, Ergebnis kommt später
-- isolation worktree: eigener Git-Worktree – mehrere Agents können parallel an Dateien arbeiten, ohne sich in die Quere zu kommen
--->
-
-
----
-
-# Execution: <small>Hooks</small>
-
-- Automatic lifecycle handlers: **Event → Matcher → Handler**
-- Run because an event occurs — not because the agent remembers
-- Deterministic rules and quality gates: don't hope, enforce
-- Events: before/after tool use, prompt submitted, session start, agent stops
-- Handlers can block an action before it happens
-
-<!--
-Hooks sind der deterministische Baustein: Sie laufen IMMER, wenn das Event eintritt – egal was das Modell gerade denkt.
-
-Typische Gates: Linter/Formatter nach jedem Write, Tests vor dem Abschluss, gefährliche Shell-Kommandos blockieren.
-
-PostToolUse kann nichts mehr verhindern, was schon passiert ist – zum Blockieren PreToolUse nutzen.
--->
-
----
-
-# Hooks: <small>Example</small>
-
-`.claude/settings.json`
-
-```json
-{
-  "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Edit|Write",
-        "hooks": [
-          { "type": "command",
-            "command": "node .claude/hooks/format-changed-file.mjs" }
-        ]
-      }
-    ]
-  }
-}
-```
-
-After every file change, the formatter runs — deterministic, every time.
-
-<!--
-Event: PostToolUse – nach jedem erfolgreichen Tool-Aufruf.
-Matcher: Edit|Write – nur bei Dateiänderungen.
-Handler: ein Script, das die geänderte Datei formatiert.
-
-Das Script bekommt die Tool-Details als JSON über stdin. Blockierende Hooks (PreToolUse) signalisieren mit Exit-Code 2.
--->
-
----
-
-# Execution: <small>MCP Servers</small>
-
-- Connect the agent to external systems: GitHub, Jira, databases, browsers
-- You know the protocol — as a building block it's part of your team setup
-- Team-shared configuration lives in the repo, e.g. `.mcp.json`
-- No secrets in the config — use environment variables
-- Only add trusted servers: prompt-injection and supply-chain risks
-
-<!--
-MCP kennt ihr schon aus dem Tools-Teil. Hier geht es um MCP als Baustein des Projekt-Setups:
-
-Die .mcp.json liegt im Repo und wird vom Team geteilt – jeder bekommt dieselben Integrationen.
-
-Secrets gehören in Umgebungsvariablen, nie in die committete Config.
-
-MCP-Server liefern Inhalte in euren Kontext – nur vertrauenswürdige Server einbinden.
--->
-
----
-
-# MCP: <small>Example</small>
-
-`.mcp.json`
-
-```json
-{
-  "mcpServers": {
-    "internal-api": {
-      "type": "http",
-      "url": "https://mcp.example.com/mcp",
-      "headers": {
-        "Authorization": "Bearer ${INTERNAL_API_TOKEN}"
-      }
-    }
-  }
-}
-```
-
-Committed to the repo — the token stays in an environment variable.
-
-<!--
-Typisches Muster: Die Config ist team-shared im Repo, das Token kommt aus der Umgebung.
-
-Tool-Definitionen liefert der Server zur Laufzeit – moderne Agents laden Schemas erst, wenn ein Tool wirklich gebraucht wird (Tool Search).
+- isolation worktree: eigener Git-Worktree – mehrere Agents können parallel an Dateien arbeiten
 -->
 
 ---
@@ -482,19 +555,26 @@ Erst wenn mehrere Repos oder Teams dasselbe Setup brauchen, lohnt sich ein Plugi
 
 # Building Blocks: <small>Summary</small>
 
-| Building Block | Where it lives | Use it for |
+| Building Block | Where it lives | Design Principle |
 | --- | --- | --- |
-| AGENTS.md | always in context | what the agent must always know |
-| Rules | startup or per path | area-specific conventions |
-| Commands | manual entry point | user-triggered workflows |
-| Skills | loaded when needed | repeatable workflows & knowledge |
-| Subagents | own context | noisy or parallel work |
-| Hooks | outside the model | deterministic enforcement |
-| MCP Servers | outside the model | external systems & tools |
-| Plugins | packaged & installed | distribution across repos & teams |
+| AGENTS.md | always in context | *less is more* |
+| Rules | startup or per path | scope to the area |
+| Commands | manual entry point | human-triggered side effects |
+| Skills | loaded when needed | *progressive disclosure* |
+| Tools / MCP | capability boundary | avoid the *"Dumb Zone"* |
+| Hooks | outside the model | *success is silent* |
+| Subagents | own context | *context firewall* |
+| Plugins | packaged & installed | distribute once, reuse |
+
+<div class="mt-6 font-serif italic text-petrol">
+
+These blocks combine into operating *Modes* — that's Block B, next.
+
+</div>
 
 <!--
-Die Abschluss-Tabelle schließt den Kreis zur Eingangsfrage: Wo lebt die Information?
+Die Abschluss-Tabelle schließt den Kreis zur Eingangsfrage: Wo lebt die Information? Und welches Prinzip hält den Baustein schlank?
 
-Faustregel: AGENTS.md und Rules enthalten nur, was der Agent fast immer wissen muss. Skills enthalten wiederholbare Abläufe. Subagents isolieren Arbeit. Hooks erzwingen Verhalten deterministisch. MCP verbindet externe Systeme. Plugins verteilen das Setup ins Team.
+Brücke zu Block B: Wenn ich an diesen Bausteinen schraube, bekomme ich verschiedene Profile —
+Planning, Assisted, Autopilot, Research. Das sind die Modes.
 -->

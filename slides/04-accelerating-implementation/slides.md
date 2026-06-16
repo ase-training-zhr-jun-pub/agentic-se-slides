@@ -66,7 +66,7 @@ Session, Fleet, Ecosystem.
 -->
 
 ---
-src: ./context-management/slides.md
+src: ./building-blocks/slides.md
 ---
 
 ---
