@@ -92,6 +92,8 @@ background: petrol
 </LogoRow>
 
 ---
+disabled: true
+---
 
 <h1 text-center>General-purpose AI chatbots</h1>
 
@@ -108,6 +110,8 @@ background: petrol
 Chat-Interfaces eignen sich für schnelle Mockups und einmalige Code-Schnipsel. Kein Dateisystem-Zugriff, kein iterativer Build-Loop – deshalb für komplexere Prototypen begrenzt. Die nächste Folie zeigt, warum Agentic Coding hier die bessere Wahl ist.
 -->
 
+---
+disabled: true
 ---
 
 <h1 text-center>Agentic Coding</h1>
