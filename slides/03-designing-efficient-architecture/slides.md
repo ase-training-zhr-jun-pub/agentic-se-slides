@@ -16,7 +16,7 @@ layout: exercise
 chapter: 3
 exercise: 1
 task: Specify quality requirements
-command: git switch uebung-2-1
+command: git switch main
 ---
 
 
@@ -29,7 +29,6 @@ layout: exercise
 chapter: 3
 exercise: 2
 task: Make decisions
-command: git switch uebung-2-2
 ---
 
 
@@ -42,7 +41,6 @@ layout: exercise
 chapter: 3
 exercise: 3
 task: Update your documentation
-command: git switch uebung-2-3
 ---
 
 

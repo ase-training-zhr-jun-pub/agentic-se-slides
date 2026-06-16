@@ -121,7 +121,6 @@ layout: exercise
 chapter: 6
 exercise: 1
 task: Setup a CI pipeline
-command: git merge uebung-5-1
 ---
 
 ---

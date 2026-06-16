@@ -189,6 +189,5 @@ layout: exercise
 chapter: 4
 exercise: 5
 task: Planning & Task Breakdown
-command: git merge uebung-3-5
 ---
 

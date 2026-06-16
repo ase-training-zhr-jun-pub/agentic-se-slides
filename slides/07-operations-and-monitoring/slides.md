@@ -90,7 +90,6 @@ layout: exercise
 chapter: 7
 exercise: 1
 task: Trigger claude from issues
-command: git merge uebung-6-1
 ---
 
 ---

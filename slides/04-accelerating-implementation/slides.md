@@ -82,7 +82,6 @@ layout: exercise
 chapter: 4
 exercise: 1 + 2
 task: Setup backend development
-command: git switch main
 ---
 
 ---
@@ -157,7 +156,6 @@ layout: exercise
 chapter: 4
 exercise: 6
 task: Coding Buddy
-command: git merge uebung-3-6
 ---
 
 
@@ -166,7 +164,6 @@ layout: exercise
 chapter: 4
 exercise: 7
 task: Create a pull request
-command: git merge uebung-3-7
 ---
 
 
@@ -175,7 +172,6 @@ layout: exercise
 chapter: 4
 exercise: 8
 task: Making Reviews
-command: git merge uebung-3-8
 ---
 
 
@@ -220,7 +216,6 @@ layout: exercise
 chapter: 4
 exercise: 9
 task: Optimize context with subagents
-command: git merge uebung-3-9
 ---
 
 
@@ -236,7 +231,6 @@ layout: exercise
 chapter: 4
 exercise: 10
 task: Parallelize work
-command: git merge uebung-3-10
 ---
 
 

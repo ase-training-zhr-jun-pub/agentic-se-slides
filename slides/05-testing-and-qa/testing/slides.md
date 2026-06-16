@@ -124,7 +124,6 @@ layout: exercise
 chapter: 5
 exercise: 1
 task: Write unit tests
-command: git merge uebung-4-1
 ---
 
 
@@ -200,7 +199,6 @@ layout: exercise
 chapter: 5
 exercise: 2
 task: Write integration tests
-command: git merge uebung-4-2
 ---
 
 
@@ -240,6 +238,5 @@ layout: exercise
 chapter: 5
 exercise: 3
 task: Write end-to-end tests
-command: git merge uebung-4-3
 ---
 

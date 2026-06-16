@@ -34,7 +34,6 @@ layout: exercise
 chapter: 4
 exercise: 4
 task: Vibe Coding
-command: git merge uebung-3-4
 ---
 
 ---

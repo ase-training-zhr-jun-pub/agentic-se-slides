@@ -57,5 +57,4 @@ layout: exercise
 chapter: 4
 exercise: 3
 task: Agent Setup
-command: git merge uebung-3-3
 ---
