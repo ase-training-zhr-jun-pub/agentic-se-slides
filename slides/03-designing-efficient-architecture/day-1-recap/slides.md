@@ -2,6 +2,7 @@
 layout: chapter
 background: /backgrounds/4.webp
 label: Recap
+disabled: true
 ---
 
 # Day 1
@@ -16,6 +17,7 @@ Ziel: Sicherstellen, dass die Grundlagen aus Tag 1 präsent sind, bevor wir in d
 ---
 layout: intro
 background: apricot
+disabled: true
 ---
 
 ### *What is?*
@@ -29,6 +31,7 @@ Erwartete Antwort: LLMs generieren Token für Token – jeder neue Token wird ba
 ---
 layout: intro
 background: apricot
+disabled: true
 ---
 
 ### *What is?*
@@ -42,6 +45,7 @@ Erwartete Antwort: Die Eingabe an das LLM – Text, Anweisungen, Kontext, Beispi
 ---
 layout: intro
 background: apricot
+disabled: true
 ---
 
 ### *What is?*
@@ -55,6 +59,7 @@ Erwartete Antwort: Eine Funktion oder Fähigkeit, die dem Agenten ermöglicht, m
 ---
 layout: intro
 background: apricot
+disabled: true
 ---
 
 ### *What is?*
@@ -68,6 +73,7 @@ Erwartete Antwort: Der Kreislauf, in dem ein Agent eine Aktion ausführt, das Er
 ---
 layout: intro
 background: apricot
+disabled: true
 ---
 
 ### *What is?*
