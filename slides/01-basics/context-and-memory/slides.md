@@ -57,13 +57,13 @@ slideNumber: false
 # Context Window Sizes
 
 <LogoRow class="h-full">
-  <LogoCard name="400K" subtitle="GPT-5.2">
+  <LogoCard name="1M" subtitle="GPT-5.5">
     <img src="/logos/openai.svg" size-24 />
   </LogoCard>
-  <LogoCard name="200K" subtitle="Claude Sonnet 4.5">
+  <LogoCard name="1M" subtitle="Claude Opus 4.8">
     <img src="/logos/claude.svg" size-24 />
   </LogoCard>
-  <LogoCard name="1M" subtitle="Gemini 3 Pro">
+  <LogoCard name="1M" subtitle="Gemini 3.1 Pro">
     <img src="/logos/gemini.svg" size-24 />
   </LogoCard>
   <LogoCard name="256K" subtitle="Devstral 2">
@@ -79,21 +79,21 @@ Context ist begrenzt. Jedes LLM hat ein Context Window – eine maximale Anzahl 
 
 Ist das Kontextfenster ausgeschöpft, fallen ältere Informationen hinten raus, wenn neue hinzukommen.
 
-Die Spanne ist heute enorm: Von 200K bei Claude Sonnet 4.5 bis 1M bei Gemini 3 Pro.
+Die Frontier-Modelle konvergieren mittlerweile bei rund 1M Tokens (GPT-5.5, Claude Opus 4.8, Gemini 3.1 Pro). Offene Coding-Modelle wie Devstral 2 und Qwen 3 Coder liegen bei 256K.
 
 Auch wenn das Kontextfenster sehr groß ist, setzt "Context Rot" ein – die Qualität der Verarbeitung nimmt bei sehr langen Contexts ab.
 
 Quellen:
 
-https://developers.openai.com/api/docs/models/gpt-5
+https://developers.openai.com/api/docs/models/gpt-5.5
 
-https://claude.com/blog/claude-sonnet-4-5
+https://docs.claude.com/en/docs/build-with-claude/context-windows
 
-https://ai.google.dev/gemini-api/docs/models?hl=de
+https://deepmind.google/models/model-cards/gemini-3-1-pro/
 
 https://docs.mistral.ai/models/model-cards/devstral-2-25-12
 
-https://qwen.ai/blog?id=qwen3.5
+https://github.com/QwenLM/Qwen3-Coder
 -->
 
 ---
