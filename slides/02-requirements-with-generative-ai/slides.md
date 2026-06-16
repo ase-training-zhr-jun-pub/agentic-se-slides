@@ -44,6 +44,15 @@ background: petrol
 
 
 ---
+layout: exercise
+chapter: 2
+exercise: 1
+task: Create a Glossary
+command: git switch uebung-1-1
+---
+
+
+---
 src: ./proto-personas/slides.md
 ---
 
@@ -95,17 +104,17 @@ command: git switch uebung-1-4
 
 
 ---
+src: ./agent-assisted-prototypes/slides.md
+---
+
+---
 layout: exercise
 chapter: 2
 exercise: 5
-task: Split a user story
-command: git switch uebung-1-5
+task: Build a frontend prototype
+command: git switch main
 ---
 
-
----
-src: ./agent-assisted-prototypes/slides.md
----
 
 ---
 layout: takeaways
