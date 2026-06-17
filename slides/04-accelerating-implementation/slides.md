@@ -103,6 +103,7 @@ src: ./autonomy-and-topology/slides.md
 
 ---
 background: white
+disabled: true
 ---
 
 # From Spectrum to Practice

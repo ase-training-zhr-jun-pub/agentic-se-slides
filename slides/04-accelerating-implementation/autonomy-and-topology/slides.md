@@ -91,6 +91,7 @@ Datenmigration mit etablierter Pipeline Harness Eng oder gar Autonomous.
 ---
 layout: intro
 background: apricot
+disabled: true
 ---
 
 ### *Orthogonal axis*
@@ -103,6 +104,7 @@ Wie viele Agenten arbeiten parallel? Ein Agent kann auf jeder Autonomie-Stufe la
 
 ---
 background: white
+disabled: true
 ---
 
 # Agent Topology *at a glance*
@@ -133,6 +135,8 @@ Multi-Branch: mehrere Agents auf eigenen Branches, asynchron. Von links nach rec
 die Delegation — und mit ihr der Koordinationsaufwand.
 -->
 
+---
+disabled: true
 ---
 
 # Agent Topology — *How Many Agents?*
@@ -179,6 +183,7 @@ als auf Spec Driven Niveau. Topologie und Autonomie sind orthogonale Achsen.
 ---
 layout: intro
 background: apricot
+disabled: true
 ---
 
 ### *The other side of the table*
@@ -191,6 +196,7 @@ Wie viele arbeiten zusammen? Das war lange trivial — wird mit Agents aber zur 
 
 ---
 background: white
+disabled: true
 ---
 
 # Human Topology — *Before Agents*
@@ -218,6 +224,7 @@ Das war der Normalfall. Jetzt kommen die Agents obendrauf — und vervielfachen 
 
 ---
 background: white
+disabled: true
 ---
 
 # Human Topology — *With Agents on Top*
